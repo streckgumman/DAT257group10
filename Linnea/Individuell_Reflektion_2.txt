@@ -1,0 +1,13 @@
+what do I want to learn or understand better?
+Jag vill lära mig mer om att arbeta i grupp och hur vi ska lägga upp projektet på ett bra sätt
+
+how can I help someone else, or the entire team, to learn something new?
+Lite oklart just nu, jag kan lära de andra i gruppen mitt sätt att lägga upp projekt, men det skulle kanske inte vara så produktivt.
+
+what is my contribution towards the team’s use of Scrum?
+Än så länge har vår grupp inte använt oss av scrum i så stor utsträckning, men det kommer väl igång när vi börjar koda.
+
+what is my contribution towards the team’s deliveries?
+Den här veckan har vi som går IT hjälpt de som går I att förstå User Stories. 
+Vi har också arbetat på project scope, business model canvas och vår mockup.
+En i gruppen har haft en intervju med en intressent men det var jag inte en del av.
