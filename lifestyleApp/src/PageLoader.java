@@ -4,24 +4,15 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.layout.AnchorPane;
 
-/**
- * A Factory Method that loads and creates all the fxml/Anchorpanes that we need
- *
- * @author Hanna
- */
 public class PageLoader {
     private static MainController model;
 
-    /**
-     * Needs to be a static variable so that we can divide min5a to the controllers that are in need
-     * of the information
-     *
-     * @param model min5a
-     */
+    // Sets the model
     public static void setModel(MainController model) {
         PageLoader.model = model;
     }
 
+   // This is a new class in which way we can create a result
     private static class Result<T> {
         T ctrl;
         AnchorPane root;
@@ -32,6 +23,7 @@ public class PageLoader {
         }
     }
 
+    // This will be a standard fxml loader that will give us the ctrl and the root that we can load.
     private static <T> Result<T> loadPage(String fxml) {
         Result<T> result = null;
         try {
