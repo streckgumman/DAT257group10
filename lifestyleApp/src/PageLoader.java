@@ -39,7 +39,7 @@ public class PageLoader {
     }
 
     public static Parent createMainPage() {
-        Result<MainPageController> res = loadPage("resources/fxml/mainPage.fxml");
+        Result<MainPageController> res = loadPage("fxml/mainPage.fxml");
         res.ctrl.initPage(model, Optional.empty());
         return res.root;
     }

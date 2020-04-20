@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e58e48c-3d95-4584-836b-9034806ca01b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/lifestyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lifestyleApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lifestyleApp.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LifestyleApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LifestyleApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PageLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PageLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/fxml/mainPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/fxml/mainPage.fxml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,22 +39,26 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Objektorienterad programmeringsprojekt TDA367/TDA367project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hanna\OneDrive\Documents\Chalmers\Agile software project management\DAT257group10\lifestyleApp\resources" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hanna\OneDrive\Documents\Chalmers\Agile software project management\DAT257group10\lifestyleApp\resources\fxml" />
+      <recent name="C:\Users\hanna\OneDrive\Documents\Chalmers\Agile software project management\DAT257group10\lifestyleApp" />
       <recent name="C:\Users\hanna\OneDrive\Documents\Chalmers\Agile software project management\DAT257group10\lifestyleApp\src\resources\fxml" />
       <recent name="C:\Users\hanna\OneDrive\Documents\Chalmers\Agile software project management\DAT257group10\lifestyleApp\src" />
-      <recent name="C:\Users\hanna\OneDrive\Documents\Chalmers\Agile software project management\DAT257group10\lifestyleApp" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -98,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586037152957</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Created a skeleton for the application">
+      <created>1586037296201</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1586037296201</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
