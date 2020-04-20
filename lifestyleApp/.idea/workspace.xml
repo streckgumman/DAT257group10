@@ -2,18 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e58e48c-3d95-4584-836b-9034806ca01b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/lifestyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lifestyleApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lifestyleApp.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LifestyleApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LifestyleApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PageLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PageLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/fxml/mainPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/fxml/mainPage.fxml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="lifestyle" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -48,17 +61,17 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\hanna\OneDrive\Documents\Chalmers\Agile software project management\DAT257group10\lifestyleApp\resources" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\hanna\OneDrive\Documents\Chalmers\Agile software project management\DAT257group10\lifestyleApp\resources\fxml" />
       <recent name="C:\Users\hanna\OneDrive\Documents\Chalmers\Agile software project management\DAT257group10\lifestyleApp" />
       <recent name="C:\Users\hanna\OneDrive\Documents\Chalmers\Agile software project management\DAT257group10\lifestyleApp\src\resources\fxml" />
       <recent name="C:\Users\hanna\OneDrive\Documents\Chalmers\Agile software project management\DAT257group10\lifestyleApp\src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hanna\OneDrive\Documents\Chalmers\Agile software project management\DAT257group10\lifestyleApp\resources" />
     </key>
   </component>
   <component name="RunDashboard">
