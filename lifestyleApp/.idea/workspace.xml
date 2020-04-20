@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e58e48c-3d95-4584-836b-9034806ca01b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="3e58e48c-3d95-4584-836b-9034806ca01b" name="Default Changelist" comment="Created a skeleton for the application">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/fxml/mainPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/fxml/mainPage.fxml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,17 +61,17 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hanna\OneDrive\Documents\Chalmers\Agile software project management\DAT257group10\lifestyleApp\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\hanna\OneDrive\Documents\Chalmers\Agile software project management\DAT257group10\lifestyleApp\resources\fxml" />
       <recent name="C:\Users\hanna\OneDrive\Documents\Chalmers\Agile software project management\DAT257group10\lifestyleApp" />
       <recent name="C:\Users\hanna\OneDrive\Documents\Chalmers\Agile software project management\DAT257group10\lifestyleApp\src\resources\fxml" />
       <recent name="C:\Users\hanna\OneDrive\Documents\Chalmers\Agile software project management\DAT257group10\lifestyleApp\src" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\hanna\OneDrive\Documents\Chalmers\Agile software project management\DAT257group10\lifestyleApp\resources" />
     </key>
   </component>
   <component name="RunDashboard">
