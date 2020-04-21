@@ -16,8 +16,8 @@
               <items>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                      <children>
-                        <Button fx:id="headerButtonCalendar" layoutX="34.0" layoutY="7.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="86.0" />
-                        <Button fx:id="headerButtonStatistics" layoutX="200.0" layoutY="7.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="86.0" />
+                        <Button fx:id="headerButtonCalendar" layoutX="34.0" layoutY="7.0" mnemonicParsing="false" onAction="#showCalendarPage" prefHeight="85.0" prefWidth="86.0" />
+                        <Button fx:id="headerButtonStatistics" layoutX="200.0" layoutY="7.0" mnemonicParsing="false" onAction="#showStatisticsPage" prefHeight="85.0" prefWidth="86.0" />
                         <Button fx:id="headerButtonWorkout" layoutX="900.0" layoutY="7.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="86.0">
                            <graphic>
                               <ImageView fx:id="HeaderImage5" fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" />
@@ -41,7 +41,24 @@
                         <TextField fx:id="HeaderTextFieldDate" layoutX="457.0" layoutY="58.0" prefHeight="35.0" prefWidth="289.0" />
                         <Text fx:id="headerName" layoutX="371.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NAMN" wrappingWidth="439.47015380859375" />
                      </children></AnchorPane>
-                <AnchorPane fx:id="mainAnchorPane" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+                <AnchorPane fx:id="mainpageAnchorpane" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <AnchorPane fx:id="statisticsAnchorPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: White;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Text layoutX="462.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Statistic" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="calendarAnchorPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: Red;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Text layoutX="565.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Calendar" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="homePageAnchorPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: Blue;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Text layoutX="552.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="homePage" />
+                           </children>
+                        </AnchorPane>
+                     </children></AnchorPane>
               </items>
             </SplitPane>
          </children>
