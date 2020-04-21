@@ -1,14 +1,17 @@
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import model.MainModel;
+import viewcontroller.PageLoader;
+
 import java.io.IOException;
 
 public class LifestyleApp extends Application {
-    private static MainController model;
+    private static MainModel model;
 
     @Override
     public void start(Stage stage) throws IOException {
-        model = MainController.createMainController();
+        model = MainModel.createMainController();
 
         PageLoader.setModel(model);
         Scene scene = new Scene(PageLoader.createMainPage(), 1200, 700);
