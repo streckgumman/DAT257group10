@@ -32,10 +32,10 @@ public class MainPageController {
 
 
     public void initPage(MainModel model, Optional<MainPageController> mainPage) {
-        this.model = model;
+       /* this.model = model;
          homePage = (AnchorPane) PageLoader.createMainPage(this);
         calendarPage = PageLoader.createCalendarPage(this);
-        statisticsPage = PageLoader.createStatisticsPage(this);
+        statisticsPage = PageLoader.createStatisticsPage(this);*/
 
     }
 

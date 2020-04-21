@@ -1,11 +1,13 @@
 package viewcontroller;
 
-import java.io.IOException;
-import java.util.Optional;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.layout.AnchorPane;
 import model.MainModel;
+import viewcontroller.MainPageController;
+
+import java.io.IOException;
+import java.util.Optional;
 
 public class PageLoader {
     private static MainModel model;
@@ -15,7 +17,7 @@ public class PageLoader {
         PageLoader.model = model;
     }
 
-   // This is a new class in which way we can create a result
+    // This is a new class in which way we can create a result
     private static class Result<T> {
         T ctrl;
         AnchorPane root;
@@ -41,21 +43,10 @@ public class PageLoader {
         return result;
     }
 
-    public static Parent createMainPage(MainPageController mainPageController) {
+    public static Parent createMainPage() {
         Result<MainPageController> res = loadPage("fxml/mainPage.fxml");
         res.ctrl.initPage(model, Optional.empty());
         return res.root;
     }
-    static AnchorPane createCalendarPage(MainPageController parent) {
-        Result<CalendarPage> res = loadPage("fxml/CalendarPage.fxml");
-        res.ctrl.initPage(model, Optional.of(parent));
-        return res.root;
-    }
-
-    static AnchorPane createStatisticsPage(MainPageController parent) {
-        Result<StatisticsPage> res = loadPage("fxml/StatisticsPage.fxml");
-        res.ctrl.initPage(model, Optional.of(parent));
-        return res.root;
-    }
-
 }
+
