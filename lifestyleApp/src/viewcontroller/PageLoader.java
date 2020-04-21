@@ -46,4 +46,11 @@ public class PageLoader {
         res.ctrl.initPage(model, Optional.empty());
         return res.root;
     }
+
+    public static AnchorPane createJournal() {
+        Result<JournalController> res = loadPage("fxml/Journal.fxml");
+        res.ctrl.initPage(model, Optional.empty());
+        return res.root;
+    }
+
 }
