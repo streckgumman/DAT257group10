@@ -5,6 +5,7 @@ import java.util.Optional;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.layout.AnchorPane;
+import model.Journal;
 import model.MainModel;
 
 public class PageLoader {
@@ -47,8 +48,9 @@ public class PageLoader {
         return res.root;
     }
 
-    public static AnchorPane createJournal() {
+    public static AnchorPane createJournal(Journal journal) {
         Result<JournalController> res = loadPage("fxml/Journal.fxml");
+        res.ctrl.setJournal(journal);
         res.ctrl.initPage(model, Optional.empty());
         return res.root;
     }

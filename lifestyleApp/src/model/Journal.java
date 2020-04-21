@@ -6,7 +6,10 @@ import java.util.Date;
 
 public class Journal extends RuntimeException {
 
-    private ArrayList<JournalEntry> journal;
+    private ArrayList<JournalEntry> journal = new ArrayList<>();
+
+
+
     private JournalEntry currentEntry;
 
 
@@ -23,7 +26,7 @@ public class Journal extends RuntimeException {
 
     }
 
-    public void getEntry(Date date) {
+    public void getNewEntry(Date date) {
 
         for (JournalEntry entry : journal) {
             if (entry.getDate().equals(date)) {
@@ -34,4 +37,7 @@ public class Journal extends RuntimeException {
         }
     }
 
+    public JournalEntry getCurrentEntry() {
+        return currentEntry;
+    }
 }

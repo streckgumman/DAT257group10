@@ -1,13 +1,14 @@
 package model;
 
-import java.util.Date;
+import java.time.LocalDate;
+
 
 public class JournalEntry {
 
     private String entry;
-    private Date date;
+    private LocalDate date;
 
-    public JournalEntry(String entry, Date date){
+    public JournalEntry(String entry, LocalDate date){
         this.entry = entry;
         this. date = date;
     }
@@ -16,7 +17,7 @@ public class JournalEntry {
         return entry;
     }
 
-    public Date getDate() {
+    public LocalDate getDate() {
         return date;
     }
 
