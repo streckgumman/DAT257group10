@@ -6,6 +6,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Text?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewcontroller.MainPageController">
    <children>
@@ -15,40 +16,32 @@
               <items>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                      <children>
-                        <Button fx:id="HeaderButton1" layoutX="34.0" layoutY="7.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="86.0">
-                           <graphic>
-                              <ImageView fx:id="HeaderImage1" fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" />
-                           </graphic>
-                        </Button>
-                        <Button fx:id="HeaderButton2" layoutX="200.0" layoutY="7.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="86.0">
-                           <graphic>
-                              <ImageView fx:id="HeaderImage2" fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" />
-                           </graphic>
-                        </Button>
-                        <Button fx:id="HeaderButton5" layoutX="900.0" layoutY="7.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="86.0">
+                        <Button fx:id="headerButtonCalendar" layoutX="34.0" layoutY="7.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="86.0" />
+                        <Button fx:id="headerButtonStatistics" layoutX="200.0" layoutY="7.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="86.0" />
+                        <Button fx:id="headerButtonWorkout" layoutX="900.0" layoutY="7.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="86.0">
                            <graphic>
                               <ImageView fx:id="HeaderImage5" fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" />
                            </graphic>
                         </Button>
-                        <Button fx:id="HeaderButton6" layoutX="1075.0" layoutY="7.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="86.0">
+                        <Button fx:id="headerButtonSettings" layoutX="1075.0" layoutY="7.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="86.0">
                            <graphic>
                               <ImageView fx:id="HeaderImage6" fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" />
                            </graphic>
                         </Button>
-                        <Button fx:id="HeaderButton3" layoutX="375.0" layoutY="58.0" mnemonicParsing="false">
+                        <Button fx:id="headerButtonYesterday" layoutX="375.0" layoutY="58.0" mnemonicParsing="false">
                            <graphic>
                               <ImageView fx:id="HeaderImage3" fitHeight="25.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
                            </graphic>
                         </Button>
-                        <Button fx:id="HeaderButton4" layoutX="758.0" layoutY="58.0" mnemonicParsing="false">
+                        <Button fx:id="headerButtonTomorrow" layoutX="758.0" layoutY="58.0" mnemonicParsing="false">
                            <graphic>
                               <ImageView fx:id="HeaderImage4" fitHeight="25.0" fitWidth="50.0" layoutX="375.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true" />
                            </graphic>
                         </Button>
-                        <TextField fx:id="HeaderTextFieldName" layoutX="375.0" layoutY="7.0" prefHeight="43.0" prefWidth="451.0" />
                         <TextField fx:id="HeaderTextFieldDate" layoutX="457.0" layoutY="58.0" prefHeight="35.0" prefWidth="289.0" />
+                        <Text fx:id="headerName" layoutX="371.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NAMN" wrappingWidth="439.47015380859375" />
                      </children></AnchorPane>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+                <AnchorPane fx:id="mainAnchorPane" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
               </items>
             </SplitPane>
          </children>
