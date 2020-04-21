@@ -1,14 +1,17 @@
+package viewcontroller;
+
 import java.io.IOException;
 import java.util.Optional;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.layout.AnchorPane;
+import model.MainModel;
 
 public class PageLoader {
-    private static MainController model;
+    private static MainModel model;
 
     // Sets the model
-    public static void setModel(MainController model) {
+    public static void setModel(MainModel model) {
         PageLoader.model = model;
     }
 
