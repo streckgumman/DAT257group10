@@ -4,7 +4,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane fx:id="calendarPageAnchorPane" prefHeight="540.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.CalendarPage">
+<AnchorPane fx:id="calendarPageAnchorPane" prefHeight="540.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewcontroller.CalendarPageController">
    <children>
       <Text layoutX="300.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clender" />
    </children>

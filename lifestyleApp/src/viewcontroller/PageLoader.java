@@ -4,8 +4,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.layout.AnchorPane;
 import model.MainModel;
-import viewcontroller.MainPageController;
-
 import java.io.IOException;
 import java.util.Optional;
 
@@ -43,6 +41,8 @@ public class PageLoader {
         return result;
     }
 
+
+        //Create pages
     public static Parent createMainPage() {
         Result<MainPageController> res = loadPage("fxml/mainPage.fxml");
         res.ctrl.initPage(model, Optional.empty());
@@ -63,6 +63,12 @@ public class PageLoader {
 
     public static AnchorPane createStatisticsPage() {
         Result<StatisticsPageController> res = loadPage("fxml/statisticsPage.fxml");
+        res.ctrl.initPage(model, Optional.empty());
+        return res.root;
+    }
+
+    public static AnchorPane createSettingsPage() {
+        Result<SettingsPageController> res = loadPage("fxml/settingsPage.fxml");
         res.ctrl.initPage(model, Optional.empty());
         return res.root;
     }
