@@ -5,7 +5,7 @@ import javafx.scene.layout.AnchorPane;
 import model.MainModel;
 import java.util.Optional;
 
-public class CalendarPage {
+public class CalendarPageController {
     @FXML
     private AnchorPane calendarPageAnchorPane;
 

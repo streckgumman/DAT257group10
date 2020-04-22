@@ -6,7 +6,7 @@ import model.MainModel;
 
 import java.util.Optional;
 
-public class StatisticsPage {
+public class StatisticsPageController {
 
     @FXML
     private AnchorPane statisticsPageAnchorpane;
