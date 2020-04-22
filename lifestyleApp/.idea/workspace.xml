@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e58e48c-3d95-4584-836b-9034806ca01b" name="Default Changelist" comment="Created a skeleton for the application">
+    <list default="true" id="3e58e48c-3d95-4584-836b-9034806ca01b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/fxml/rate.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/1star.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/1star.xcf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/2star.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/3star.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/4star.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/5star.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/RatingEntry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Ratings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/viewcontroller/RateController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/fxml/mainPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/fxml/mainPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LifestyleApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LifestyleApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/viewcontroller/PageLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewcontroller/PageLoader.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,6 +42,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -126,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586037296201</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Modules">
+      <created>1587453609177</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1587453609177</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -145,7 +164,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Created a skeleton for the application" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created a skeleton for the application" />
+    <MESSAGE value="Modules" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modules" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
