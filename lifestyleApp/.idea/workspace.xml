@@ -1,20 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e58e48c-3d95-4584-836b-9034806ca01b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/fxml/rate.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/images/1star.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/images/1star.xcf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/images/2star.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/images/3star.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/images/4star.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/images/5star.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/RatingEntry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Ratings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/viewcontroller/RateController.java" afterDir="false" />
+    <list default="true" id="3e58e48c-3d95-4584-836b-9034806ca01b" name="Default Changelist" comment="Created a skeleton for the application">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LifestyleApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LifestyleApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/viewcontroller/PageLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewcontroller/PageLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Ratings.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/viewcontroller/RateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewcontroller/RateController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -112,6 +102,16 @@
         <item itemvalue="Application.LifestyleApp" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand />
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
