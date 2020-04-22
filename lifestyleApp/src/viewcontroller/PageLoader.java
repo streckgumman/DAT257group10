@@ -48,5 +48,23 @@ public class PageLoader {
         res.ctrl.initPage(model, Optional.empty());
         return res.root;
     }
+
+    public static AnchorPane createCalendarPage() {
+        Result<CalendarPageController> res = loadPage("fxml/calendarPage.fxml");
+        res.ctrl.initPage(model, Optional.empty());
+        return res.root;
+    }
+
+    public static AnchorPane createHomePage() {
+        Result<HomePageController> res = loadPage("fxml/homePage.fxml");
+        res.ctrl.initPage(model, Optional.empty());
+        return res.root;
+    }
+
+    public static AnchorPane createStatisticsPage() {
+        Result<StatisticsPageController> res = loadPage("fxml/statisticsPage.fxml");
+        res.ctrl.initPage(model, Optional.empty());
+        return res.root;
+    }
 }
 

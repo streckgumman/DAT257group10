@@ -8,11 +8,19 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
 import model.MainModel;
+
+import java.awt.*;
+import java.awt.event.MouseEvent;
 import java.util.Optional;
 //hej
 
 public class MainPageController {
+    MainModel model;
 
+    // Other Pagers
+    private AnchorPane homePage;
+    private AnchorPane calendarPage;
+    private AnchorPane statisticPage;
 
     @FXML
     private Button headerButtonCalendar;
@@ -47,34 +55,44 @@ public class MainPageController {
     @FXML
     private TextField HeaderTextFieldDate;
 
-    @FXML
-    private Text headerName;
 
     @FXML
     private AnchorPane mainpageAnchorpane;
 
-    @FXML
-    private AnchorPane calendarAnchorPane;
 
-    @FXML
-    private AnchorPane statisticsAnchorPane;
+    //@FXML
+    //private AnchorPane calendarAnchorPane;
+
+    //@FXML
+    //private AnchorPane statisticsAnchorPane;
 
 
     @FXML
     void showCalendarPage(ActionEvent event) {
-    calendarAnchorPane.toFront();
-    System.out.print("Calendar");
+        showPage(calendarPage);
+        System.out.print("Calendar");
     }
 
     @FXML
     void showStatisticsPage(ActionEvent event) {
-        statisticsAnchorPane.toFront();
-        System.out.print("statistics");
+        showPage(statisticPage);
+        System.out.print("Calendar");
     }
+
 
     public void initPage(MainModel model, Optional<Object> empty) {
+        this.model = model;
+        calendarPage = PageLoader.createCalendarPage();
+        homePage = PageLoader.createHomePage();
+        statisticPage = PageLoader.createStatisticsPage();
+
     }
 
+    private void showPage(AnchorPane pane) {
+        mainpageAnchorpane.getChildren().clear();
+        mainpageAnchorpane.getChildren().add(pane);
+        mainpageAnchorpane.toFront();
+    }
 
 
 
