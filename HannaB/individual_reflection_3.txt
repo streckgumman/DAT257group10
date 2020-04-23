@@ -1,0 +1,18 @@
+Utgår från:
+
+... the current situation or "what is" (A),
+... what you want the situation to be or "what might or should be" (B), and 
+... a plan for getting from where you are to where you want to be or "feedback designed to reduce the gap" (A -> B).
+
+•	what do I want to learn or understand better?
+•	how can I help someone else, or the entire team, to learn something new?
+•	what is my contribution towards the team’s use of Scrum?
+•	what is my contribution towards the team’s deliveries?
+
+Under denna veckan har vi kommit igång mer konkret med projektet. Jag har fått hjälp med hur Git fungerar och har nu lite bättre koll på det. Utöver det så har vi börjat koda och jag har tillsammans med Naomi gjort Journal delen av vårt projekt. Vi har parprogrammerat och även om jag kände mig lite ringrostig till att börja med då det var längesen vi kodade, så har jag ändå hängt med bra tycker jag. Gällande Scrum har jag tagit på mig rollen som Scrum master för Retrospective. Jag har även gjort ett burn-down chart som vi ska använda som en av våra KPI:er, denna är inte perfekt ännu, men kan användas, så det kan jag jobba på. Gällande just KPI:er känner jag att jag har bra koll på dessa och kan bidra med min kunskap om just varför vi behöver dessa samt hur vi ska använda dem. 
+
+Kommande vill jag växa in i Scrum master rollen under Retrospective delen och möjligtvis testa olika sätt vi kan göra Retrospective. När jag googlade lite verkade det finnas massa olika metoder på hur Retrospective kan utföras och det hade varit intressant att testa dessa i gruppen om de andra också vill detta. För att kunna göra detta måste jag dock läsa på lite mer så att vi får ut det vi vill från tiden vi lägger på Retrospective. På detta sätt kan även resten av gruppen få en bättre förståelse för denna del av Scrum även om inte de är Scrum master.
+
+Jag hoppas kunna känna mig mer bekväm i kodandet och ska försöka att inte jämföra mig för mycket med hur snabb jag är relativt till den jag programmerar med. För att underlätta för mig själv ska jag dock försöka sitta lite själv i förväg bara för att kunna tänka igenom själv också innan vi ses och kör tillsammans. På så sätt får jag chansen att komma in i tankesättet igen i min egen takt. 
+
+Gällande Git har jag som sagt betydligt bättre koll nu (startade liksom från noll), men hoppas få ännu bättre koll. Detta har jag redan och känner att jag även i fortsättningen kan få hjälp med av IT-studenterna i min grupp. Jag känner mig trygg i att kunna fråga dem och alla är superhjälpsamma vilket jag är glad över. Detta gäller även den koddel som berör GUI då det är något vi arbetat väldigt, väldigt lite med på I (eftersom det togs bort i vår första kurs). Jag har denna vecka lärt mig lite tips och tricks och fått hjälp med verktyg som man kan använda för att underlätta. Det känns bra att jag arbetar även med det även om jag inte har bra koll på det från början för då lär jag mig förhoppningsvis på vägen genom att vi parprogrammerar. 
