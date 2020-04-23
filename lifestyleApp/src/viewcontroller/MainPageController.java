@@ -1,6 +1,7 @@
 package viewcontroller;
 
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
@@ -21,6 +22,10 @@ public class MainPageController {
     @FXML
     private AnchorPane mainpageAnchorpane;
 
+    @FXML
+    void showHomePage(ActionEvent event) {
+        showPage(homePage);
+    }
 
     @FXML
     void showSettingsPage(MouseEvent event) {
