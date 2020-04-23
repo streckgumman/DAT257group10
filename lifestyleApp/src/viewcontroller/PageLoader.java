@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.layout.AnchorPane;
 import model.MainModel;
+import model.RatingEntry;
 
 public class PageLoader {
     private static MainModel model;
@@ -41,8 +42,7 @@ public class PageLoader {
         return result;
     }
 
-
-        //Create pages
+        // Create pages
     public static Parent createMainPage() {
         Result<MainPageController> res = loadPage("fxml/mainPage.fxml");
         res.ctrl.initPage(model, Optional.empty());
