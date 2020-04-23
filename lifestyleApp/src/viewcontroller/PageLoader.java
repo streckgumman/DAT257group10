@@ -1,11 +1,11 @@
 package viewcontroller;
 
-import java.io.IOException;
-import java.util.Optional;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.layout.AnchorPane;
 import model.MainModel;
+import java.io.IOException;
+import java.util.Optional;
 
 public class PageLoader {
     private static MainModel model;
@@ -15,7 +15,7 @@ public class PageLoader {
         PageLoader.model = model;
     }
 
-   // This is a new class in which way we can create a result
+    // This is a new class in which way we can create a result
     private static class Result<T> {
         T ctrl;
         AnchorPane root;
@@ -41,9 +41,36 @@ public class PageLoader {
         return result;
     }
 
+
+        //Create pages
     public static Parent createMainPage() {
         Result<MainPageController> res = loadPage("fxml/mainPage.fxml");
         res.ctrl.initPage(model, Optional.empty());
         return res.root;
     }
+
+    public static AnchorPane createCalendarPage() {
+        Result<CalendarPageController> res = loadPage("fxml/calendarPage.fxml");
+        res.ctrl.initPage(model, Optional.empty());
+        return res.root;
+    }
+
+    public static AnchorPane createHomePage() {
+        Result<HomePageController> res = loadPage("fxml/homePage.fxml");
+        res.ctrl.initPage(model, Optional.empty());
+        return res.root;
+    }
+
+    public static AnchorPane createStatisticsPage() {
+        Result<StatisticsPageController> res = loadPage("fxml/statisticsPage.fxml");
+        res.ctrl.initPage(model, Optional.empty());
+        return res.root;
+    }
+
+    public static AnchorPane createSettingsPage() {
+        Result<SettingsPageController> res = loadPage("fxml/settingsPage.fxml");
+        res.ctrl.initPage(model, Optional.empty());
+        return res.root;
+    }
 }
+
