@@ -1,25 +1,23 @@
 package model;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class RatingEntry {
-    private String name;
     private int rating;
-    private Date date;
+    private String topic;
+    private LocalDate date;
 
-    public RatingEntry(String name) {
-        this.name = name;
-        this.date = getDate();
+    public RatingEntry(String topic, LocalDate date) {
+        this.topic = topic;
+        this.date = date;
     }
 
-    public String getName() {
-        return name;
-    }
+    // Getters and Setters
 
-    public void setName(String name) {
-        this.name = name;
+    public String getTopic() {
+        return topic;
     }
-
 
     public int getRating() {
         return rating;
@@ -29,11 +27,11 @@ public class RatingEntry {
         this.rating = rating;
     }
 
-    public Date getDate() {
+    public LocalDate getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(LocalDate date) {
         this.date = date;
     }
 }

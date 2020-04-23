@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane fx:id="homePageAnchorPane" prefHeight="540.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewcontroller.HomePageController">
+<AnchorPane prefHeight="540.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewcontroller.HomePageController">
    <children>
-      <Text layoutX="306.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="home" />
+      <Text layoutX="509.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rate your day">
+         <font>
+            <Font size="30.0" />
+         </font></Text>
+      <ScrollPane hbarPolicy="NEVER" layoutX="261.0" layoutY="74.0" prefHeight="451.0" prefWidth="478.0" AnchorPane.leftAnchor="330.0" AnchorPane.rightAnchor="330.0">
+         <content>
+            <FlowPane fx:id="ratingFlowPane" prefHeight="455.0" prefWidth="520.0" />
+         </content>
+      </ScrollPane>
    </children>
 </AnchorPane>
