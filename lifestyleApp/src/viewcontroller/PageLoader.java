@@ -6,7 +6,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.layout.AnchorPane;
 import model.MainModel;
-import model.RatingEntry;
 
 public class PageLoader {
     private static MainModel model;
@@ -42,6 +41,8 @@ public class PageLoader {
         return result;
     }
 
+
+        //Create pages
     public static Parent createMainPage() {
         Result<MainPageController> res = loadPage("fxml/mainPage.fxml");
         res.ctrl.initPage(model, Optional.empty());
@@ -51,6 +52,30 @@ public class PageLoader {
     public static AnchorPane createRateItem(RatingEntry re) {
         Result<RateController> res = loadPage("fxml/rate.fxml");
         res.ctrl.setRating(re);
+        res.ctrl.initPage(model, Optional.empty());
+        return res.root;
+    }
+
+    public static AnchorPane createCalendarPage() {
+        Result<CalendarPageController> res = loadPage("fxml/calendarPage.fxml");
+        res.ctrl.initPage(model, Optional.empty());
+        return res.root;
+    }
+
+    public static AnchorPane createHomePage() {
+        Result<HomePageController> res = loadPage("fxml/homePage.fxml");
+        res.ctrl.initPage(model, Optional.empty());
+        return res.root;
+    }
+
+    public static AnchorPane createStatisticsPage() {
+        Result<StatisticsPageController> res = loadPage("fxml/statisticsPage.fxml");
+        res.ctrl.initPage(model, Optional.empty());
+        return res.root;
+    }
+
+    public static AnchorPane createSettingsPage() {
+        Result<SettingsPageController> res = loadPage("fxml/settingsPage.fxml");
         res.ctrl.initPage(model, Optional.empty());
         return res.root;
     }
