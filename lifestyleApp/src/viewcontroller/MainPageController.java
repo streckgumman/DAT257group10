@@ -1,6 +1,6 @@
 package viewcontroller;
 
-import javafx.event.ActionEvent;
+
 import javafx.fxml.FXML;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
@@ -21,10 +21,6 @@ public class MainPageController {
     @FXML
     private AnchorPane mainpageAnchorpane;
 
-    @FXML
-    void showHomePage(ActionEvent event) {
-        showPage(homePage);
-    }
 
     @FXML
     void showSettingsPage(MouseEvent event) {
@@ -41,7 +37,13 @@ public class MainPageController {
         showPage(calendarPage);
     }
 
-    public void initPage(MainModel model, Optional<Object> empty) {
+    @FXML
+    void showOtherPage(MouseEvent event) {
+
+    }
+
+
+    void initPage(MainModel model, Optional<Object> empty) {
         this.model = model;
         calendarPage = PageLoader.createCalendarPage();
         homePage = PageLoader.createHomePage();
