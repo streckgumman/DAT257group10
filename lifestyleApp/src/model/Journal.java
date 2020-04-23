@@ -7,9 +7,6 @@ import java.util.Date;
 public class Journal extends RuntimeException {
 
     private ArrayList<JournalEntry> journal = new ArrayList<>();
-
-
-
     private JournalEntry currentEntry;
 
 
@@ -17,12 +14,13 @@ public class Journal extends RuntimeException {
     public void addEntry(JournalEntry entry) {
         journal.add(entry);
         currentEntry = entry;
+
     }
 
     public void deleteEntry(JournalEntry entry) {
-        int indexOfcurrent = journal.indexOf(entry);
-        currentEntry = journal.get(indexOfcurrent -1);
         journal.remove(entry);
+
+        System.out.println(journal.size());
 
     }
 

@@ -21,4 +21,8 @@ public class JournalEntry {
         return date;
     }
 
+    public void setText(String text){
+        this.entry = text;
+    }
+
 }

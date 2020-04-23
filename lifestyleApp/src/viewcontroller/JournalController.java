@@ -19,34 +19,44 @@ import java.util.ResourceBundle;
 public class JournalController {
 
     private Journal journal;
+    private JournalEntry currentEntry = null;
 
     @FXML
     private TextArea textArea;
-
     @FXML
     private Button saveButton;
-
     @FXML
     private Button deleteButton;
 
-    @FXML
-    private DatePicker datePicker;
+
+
 
     public void initPage(MainModel model, Optional<Object> empty) {
+        //För att init sidan , måste vi matcha datum och JournalEntries.
+
     }
 
     @FXML
     void saveEntry( ActionEvent event){
-       String text = textArea.getText();
-       LocalDate date = datePicker.getValue();
-       createJournalEntry( text, date);
+        String text = textArea.getText();
+        if(currentEntry == null){
+            //TODO just nu hårdkodat, kommer kopplas ihop med mainpage datum.
+            LocalDate date = LocalDate.now();
+            JournalEntry entry =  new JournalEntry(text, date);
+            createJournalEntry(entry);
+            currentEntry = entry;
+
+        }
+        currentEntry.setText(text);
+
+
     }
 
     @FXML
     void deleteEntry(ActionEvent e){
         journal.deleteEntry(journal.getCurrentEntry());
-        textArea.setText(journal.getCurrentEntry().getEntry());
-        datePicker.setValue(journal.getCurrentEntry().getDate());
+        textArea.setText("");
+
     }
 
 
@@ -54,9 +64,9 @@ public class JournalController {
 
 
                    // ----------funktionalitet--------------------
-   public void createJournalEntry(String text, LocalDate date) {
-       JournalEntry entry =  new JournalEntry(text, date);
+   public void createJournalEntry(JournalEntry entry) {
        journal.addEntry(entry);
+       System.out.println("create journal method");
 
    }
 
