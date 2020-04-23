@@ -12,6 +12,9 @@ public class MainModel {
         return new MainModel();
     }
 
+    public Journal getJournal(){
+        return user.getJournal();
+    }
 
     public List<Ratings> getRatings(){
         return user.getRatings();

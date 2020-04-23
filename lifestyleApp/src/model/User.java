@@ -5,10 +5,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class User {
-    public List<Ratings> getRatings() {
-        return ratings;
-    }
 
+    private Journal journal = new Journal();
     private List<Ratings> ratings= new ArrayList<>();
 
     void addRating(String topic, LocalDate date){
@@ -27,4 +25,12 @@ public class User {
         }
     }
 
+    // Getters and Setters
+    public Journal getJournal() {
+        return journal;
+    }
+
+    List<Ratings> getRatings() {
+        return ratings;
+    }
 }

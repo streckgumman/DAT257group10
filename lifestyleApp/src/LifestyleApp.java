@@ -27,7 +27,7 @@ public class LifestyleApp extends Application {
 
 
         PageLoader.setModel(model);
-        Scene scene = new Scene(PageLoader.createJournal(journal), 314, 430);
+        Scene scene = new Scene(PageLoader.createMainPage(), 1200, 700);
         stage.setTitle("Welcome");
         stage.setScene(scene);
         stage.show();
