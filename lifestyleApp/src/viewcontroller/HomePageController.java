@@ -13,9 +13,18 @@ import java.util.Optional;
 public class HomePageController {
     private MainModel model;
 
+    @FXML
+    private AnchorPane journalAnchorPane;
+
     public void initPage(MainModel model, Optional<Object> empty) {
         this.model=model;
         showRatings(model.getRatings());
+        initJournal();
+    }
+
+    private void initJournal() {
+        journalAnchorPane.getChildren().clear();
+        journalAnchorPane.getChildren().add(PageLoader.createJournal(model.getJournal()));
     }
 
     @FXML
