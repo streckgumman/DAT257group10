@@ -1,14 +1,10 @@
 package viewcontroller;
 
-import java.io.IOException;
-import java.util.Optional;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.layout.AnchorPane;
-import model.Journal;
 import model.MainModel;
-import java.io.IOException;
-import java.util.Optional;
+import model.RatingEntry;
 
 public class PageLoader {
     private static MainModel model;
@@ -18,7 +14,7 @@ public class PageLoader {
         PageLoader.model = model;
     }
 
-    // This is a new class in which way we can create a result
+   // This is a new class in which way we can create a result
     private static class Result<T> {
         T ctrl;
         AnchorPane root;
@@ -44,10 +40,16 @@ public class PageLoader {
         return result;
     }
 
-
-        //Create pages
+        // Create pages
     public static Parent createMainPage() {
         Result<MainPageController> res = loadPage("fxml/mainPage.fxml");
+        res.ctrl.initPage(model, Optional.empty());
+        return res.root;
+    }
+
+    public static AnchorPane createRateItem(RatingEntry re) {
+        Result<RateController> res = loadPage("fxml/rate.fxml");
+        res.ctrl.setRating(re);
         res.ctrl.initPage(model, Optional.empty());
         return res.root;
     }
@@ -83,4 +85,3 @@ public class PageLoader {
         return res.root;
     }
 
-}
