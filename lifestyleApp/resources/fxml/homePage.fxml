@@ -14,7 +14,7 @@
          </font></Text>
       <ScrollPane hbarPolicy="NEVER" layoutX="261.0" layoutY="74.0" prefHeight="451.0" prefWidth="478.0" AnchorPane.leftAnchor="330.0" AnchorPane.rightAnchor="330.0">
          <content>
-            <FlowPane fx:id="ratingFlowPane" prefHeight="455.0" prefWidth="520.0" />
+            <FlowPane fx:id="ratingFlowPane" prefHeight="212.0" prefWidth="520.0" />
          </content>
       </ScrollPane>
       <AnchorPane fx:id="journalAnchorPane" layoutX="870.0" layoutY="74.0" prefHeight="430.0" prefWidth="314.0" />

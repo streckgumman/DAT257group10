@@ -6,53 +6,52 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="79.0" prefWidth="532.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewcontroller.RateController">
    <children>
-      <Label fx:id="topic" prefHeight="79.0" prefWidth="146.0" text="Topic" wrapText="true">
+      <Label fx:id="topic" layoutX="9.0" prefHeight="79.0" prefWidth="121.0" text="Topic" wrapText="true">
          <font>
             <Font size="32.0" />
          </font>
       </Label>
-      <AnchorPane fx:id="star1anchor" blendMode="OVERLAY" layoutX="133.0" layoutY="6.0" prefHeight="70.0" prefWidth="68.0">
+      <AnchorPane fx:id="star1anchor" layoutX="133.0" layoutY="4.0" prefHeight="70.0" prefWidth="68.0" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="4.0">
          <children>
-            <ImageView fitHeight="70.0" fitWidth="75.0" onMouseClicked="#rate1star" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="65.0" fitWidth="68.0" layoutX="2.0" onMouseClicked="#rate1star" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="1.0">
                <image>
                   <Image url="@../images/1star.png" />
                </image>
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="star2anchor" blendMode="OVERLAY" layoutX="211.0" layoutY="4.0" prefHeight="70.0" prefWidth="68.0">
+      <AnchorPane fx:id="star2anchor" layoutX="211.0" layoutY="4.0" prefHeight="70.0" prefWidth="68.0" AnchorPane.topAnchor="4.0">
          <children>
-            <ImageView fitHeight="70.0" fitWidth="68.0" layoutY="1.0" onMouseClicked="#rate2star" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="70.0" fitWidth="68.0" layoutY="1.0" onMouseClicked="#rate2star" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="1.0">
                <image>
                   <Image url="@../images/2star.png" />
                </image>
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="star3anchor" blendMode="OVERLAY" layoutX="289.0" layoutY="6.0" prefHeight="70.0" prefWidth="68.0">
+      <AnchorPane fx:id="star3anchor" layoutX="289.0" layoutY="4.0" prefHeight="70.0" prefWidth="68.0" AnchorPane.topAnchor="5.0">
          <children>
-            <ImageView fitHeight="70.0" fitWidth="68.0" onMouseClicked="#rate3star" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="70.0" fitWidth="68.0" onMouseClicked="#rate3star" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="1.0">
                <image>
                   <Image url="@../images/3star.png" />
                </image>
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="star4anchor" blendMode="OVERLAY" layoutX="368.0" layoutY="4.0" prefHeight="70.0" prefWidth="68.0">
+      <AnchorPane fx:id="star4anchor" layoutX="368.0" layoutY="4.0" prefHeight="70.0" prefWidth="68.0" AnchorPane.topAnchor="5.0">
          <children>
-            <ImageView fitHeight="70.0" fitWidth="68.0" onMouseClicked="#rate4star" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="68.0" fitWidth="68.0" layoutY="6.0" onMouseClicked="#rate4star" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1.0">
                <image>
                   <Image url="@../images/4star.png" />
                </image>
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="star5anchor" blendMode="OVERLAY" layoutX="456.0" layoutY="6.0" prefHeight="70.0" prefWidth="68.0">
+      <AnchorPane fx:id="star5anchor" layoutX="443.0" layoutY="4.0" prefHeight="70.0" prefWidth="68.0" AnchorPane.leftAnchor="445.0" AnchorPane.topAnchor="5.0">
          <children>
-            <ImageView fitHeight="70.0" fitWidth="68.0" onMouseClicked="#rate5star" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="70.0" fitWidth="68.0" layoutY="1.0" onMouseClicked="#rate5star" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="1.0">
                <image>
                   <Image url="@../images/5star.png" />
                </image>
