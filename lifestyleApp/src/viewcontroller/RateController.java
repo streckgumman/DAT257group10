@@ -55,6 +55,7 @@ public class RateController {
     void rate2star(MouseEvent event) {
         if (star2anchor.getBlendMode() == BlendMode.SRC_OVER && star3anchor.getBlendMode() == BlendMode.OVERLAY) {
             resetStars();
+            re.setRating(0);
         } else {
             star1anchor.setBlendMode(BlendMode.SRC_OVER);
             star2anchor.setBlendMode(BlendMode.SRC_OVER);
@@ -69,6 +70,7 @@ public class RateController {
     void rate3star(MouseEvent event) {
         if (star3anchor.getBlendMode() == BlendMode.SRC_OVER && star4anchor.getBlendMode() == BlendMode.OVERLAY) {
             resetStars();
+            re.setRating(0);
         } else {
             star1anchor.setBlendMode(BlendMode.SRC_OVER);
             star2anchor.setBlendMode(BlendMode.SRC_OVER);
@@ -83,6 +85,7 @@ public class RateController {
     void rate4star(MouseEvent event) {
         if (star4anchor.getBlendMode() == BlendMode.SRC_OVER && star5anchor.getBlendMode() == BlendMode.OVERLAY) {
             resetStars();
+            re.setRating(0);
         } else {
             star1anchor.setBlendMode(BlendMode.SRC_OVER);
             star2anchor.setBlendMode(BlendMode.SRC_OVER);
@@ -97,6 +100,7 @@ public class RateController {
     void rate5star(MouseEvent event) {
         if (star5anchor.getBlendMode() == BlendMode.SRC_OVER) {
             resetStars();
+            re.setRating(0);
         } else {
             star1anchor.setBlendMode(BlendMode.SRC_OVER);
             star2anchor.setBlendMode(BlendMode.SRC_OVER);
@@ -113,7 +117,6 @@ public class RateController {
         star3anchor.setBlendMode(BlendMode.OVERLAY);
         star4anchor.setBlendMode(BlendMode.OVERLAY);
         star5anchor.setBlendMode(BlendMode.OVERLAY);
-        re.setRating(0);
     }
 
     public void initPage(MainModel model, Optional<Object> empty) {
@@ -122,7 +125,7 @@ public class RateController {
         //fadeBlend.setMode(BlendMode.OVERLAY);
 
         // images
-        star1anchor.setBlendMode(BlendMode.OVERLAY);
+        resetStars();
     }
 
     public void setRating(RatingEntry re) {
