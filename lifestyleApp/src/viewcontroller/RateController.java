@@ -121,8 +121,6 @@ public class RateController {
 
     public void initPage(MainModel model, Optional<Object> empty) {
         topic.setText(re.getTopic());
-        //filledBlend.setMode(BlendMode.SRC_OVER);
-        //fadeBlend.setMode(BlendMode.OVERLAY);
 
         // images
         resetStars();
