@@ -13,8 +13,6 @@ public class LifestyleApp extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         model = MainModel.createMainController();
-        Journal journal = new Journal();
-
 
         User user = new User();
         model.setUser(user);

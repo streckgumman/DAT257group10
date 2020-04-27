@@ -18,7 +18,7 @@ public class MainPageController {
     private AnchorPane calendarPage;
     private AnchorPane statisticPage;
     private AnchorPane settingsPage;
-    private AnchorPane sleepePage;
+   private AnchorPane sleepPanel;
 
     @FXML
     private AnchorPane mainpageAnchorpane;
@@ -55,6 +55,7 @@ public class MainPageController {
         homePage = PageLoader.createHomePage();
         statisticPage = PageLoader.createStatisticsPage();
         settingsPage = PageLoader.createSettingsPage();
+        //sleepPanel = PageLoader.createSleepPage(s);
 
 
         showPage(homePage);
