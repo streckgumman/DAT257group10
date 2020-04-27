@@ -37,7 +37,7 @@ public class JournalController {
     }
 
     @FXML
-    void saveEntry( ActionEvent event){
+    void saveEntry(ActionEvent event){
         String text = textArea.getText();
         if(currentEntry == null){
             //TODO just nu hårdkodat, kommer kopplas ihop med mainpage datum.

@@ -8,6 +8,7 @@ import javafx.scene.layout.AnchorPane;
 import model.Journal;
 import model.MainModel;
 import model.RatingEntry;
+import model.Sleep;
 
 public class PageLoader {
     private static MainModel model;
@@ -83,9 +84,15 @@ public class PageLoader {
 
     public static AnchorPane createJournal(Journal journal) {
         Result<JournalController> res = loadPage("fxml/Journal.fxml");
-        res.ctrl.setJournal(journal);
         res.ctrl.initPage(model, Optional.empty());
         return res.root;
     }
+
+   public static AnchorPane createSleepPage() {
+        Result<SleepController> res = loadPage("fxml/sleepPanel.fxml");
+        res.ctrl.initPage(model, Optional.empty());
+        return res.root;
+    }
+
 }
 
