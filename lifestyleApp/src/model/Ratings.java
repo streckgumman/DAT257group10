@@ -32,4 +32,8 @@ public class Ratings {
         return null;
     }
 
+    public List<RatingEntry> getRatings(){
+        return ratings;
+    }
+
 }
