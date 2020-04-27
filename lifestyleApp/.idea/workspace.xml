@@ -2,18 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e58e48c-3d95-4584-836b-9034806ca01b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/fxml/sleepPanel.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/LifestyleApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lifestyleApp/LifestyleApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/fxml/homePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lifestyleApp/fxml/homePage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/viewcontroller/HomePageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lifestyleApp/viewcontroller/HomePageController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/viewcontroller/MainPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lifestyleApp/viewcontroller/MainPageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/viewcontroller/PageLoader$Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lifestyleApp/viewcontroller/PageLoader$Result.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/viewcontroller/PageLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lifestyleApp/viewcontroller/PageLoader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/fxml/sleep.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/fxml/homePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/fxml/homePage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/fxml/sleepPanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/fxml/sleepPanel.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LifestyleApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LifestyleApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Sleep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Sleep.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/SleepEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/SleepEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/viewcontroller/HomePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewcontroller/HomePageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/viewcontroller/MainPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewcontroller/MainPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/viewcontroller/PageLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewcontroller/PageLoader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/viewcontroller/SleepController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewcontroller/SleepController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +37,9 @@
         </projects_view>
       </state>
     </system>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="lifestyleApp" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -165,7 +168,13 @@
       <option name="presentableId" value="LOCAL−00005" />
       <updated>1587983504931</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL−00006" summary="the program is now runnable. You can now set and get the different times for wake up and bed time with the help of spinners.">
+      <created>1588009805280</created>
+      <option name="number" value="LOCAL−00006" />
+      <option name="presentableId" value="LOCAL−00006" />
+      <updated>1588009805280</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -186,7 +195,8 @@
     <MESSAGE value="Created some buttons for the header." />
     <MESSAGE value="merge with master" />
     <MESSAGE value="branch" />
-    <option name="LAST_COMMIT_MESSAGE" value="branch" />
+    <MESSAGE value="the program is now runnable. You can now set and get the different times for wake up and bed time with the help of spinners." />
+    <option name="LAST_COMMIT_MESSAGE" value="the program is now runnable. You can now set and get the different times for wake up and bed time with the help of spinners." />
   </component>
   <component name="WindowStateProjectService">
     <state x="535" y="214" key="#com.intellij.fileTypes.FileTypeChooser" />

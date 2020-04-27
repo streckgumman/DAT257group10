@@ -18,7 +18,7 @@ public class MainPageController {
     private AnchorPane calendarPage;
     private AnchorPane statisticPage;
     private AnchorPane settingsPage;
-   private AnchorPane sleepPanel;
+
 
     @FXML
     private AnchorPane mainpageAnchorpane;

@@ -16,15 +16,24 @@ public class HomePageController {
     @FXML
     private AnchorPane journalAnchorPane;
 
+    @FXML
+    private AnchorPane sleepAnchorpane;
+
     public void initPage(MainModel model, Optional<Object> empty) {
         this.model=model;
         showRatings(model.getRatings());
         initJournal();
+        initSleepPanel();
     }
 
     private void initJournal() {
         journalAnchorPane.getChildren().clear();
         journalAnchorPane.getChildren().add(PageLoader.createJournal(model.getJournal()));
+    }
+
+    private void initSleepPanel() {
+        sleepAnchorpane.getChildren().clear();
+        sleepAnchorpane.getChildren().add(PageLoader.createSleepPage());
     }
 
     @FXML
