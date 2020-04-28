@@ -3,9 +3,13 @@ package viewcontroller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import model.MainModel;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.Optional;
 
 
@@ -19,6 +23,8 @@ public class MainPageController {
     private AnchorPane statisticPage;
     private AnchorPane settingsPage;
 
+    @FXML
+    private Label dateLabel;
 
     @FXML
     private AnchorPane mainpageAnchorpane;
@@ -51,6 +57,7 @@ public class MainPageController {
 
     void initPage(MainModel model, Optional<Object> empty) {
         this.model = model;
+        setDateLabel();
         calendarPage = PageLoader.createCalendarPage();
         homePage = PageLoader.createHomePage();
         statisticPage = PageLoader.createStatisticsPage();
@@ -68,6 +75,12 @@ public class MainPageController {
         mainpageAnchorpane.toFront();
     }
 
+    private void setDateLabel() {
+        int day = model.getDate().getDayOfMonth();
+        String month = model.getDate().getMonth().toString().toLowerCase();
+        String date = day + " " + month;
+        dateLabel.setText(date);
 
+    }
 
 }
