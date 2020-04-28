@@ -3,9 +3,14 @@ package viewcontroller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import model.MainModel;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.Optional;
 
 
@@ -20,8 +25,12 @@ public class MainPageController {
     private AnchorPane settingsPage;
 
 
+
     @FXML
-    private AnchorPane mainpageAnchorpane;
+    private DatePicker datePicker;
+
+    @FXML
+    private AnchorPane mainPageAnchorPane;
 
     @FXML
     void showHomePage(ActionEvent event) {
@@ -48,26 +57,44 @@ public class MainPageController {
 
     }
 
+    //-------------- Date Buttons -------------------
+    @FXML
+    void previousDate(ActionEvent event){
+        model.setDate(model.getDate().minusDays(1));
+        updateDateLabel();
+    }
+
+    @FXML
+    void nextDate(ActionEvent event){
+        model.setDate(model.getDate().plusDays(1));
+        updateDateLabel();
+    }
 
     void initPage(MainModel model, Optional<Object> empty) {
         this.model = model;
+        updateDateLabel();
         calendarPage = PageLoader.createCalendarPage();
         homePage = PageLoader.createHomePage();
         statisticPage = PageLoader.createStatisticsPage();
         settingsPage = PageLoader.createSettingsPage();
         //sleepPanel = PageLoader.createSleepPage(s);
-
-
         showPage(homePage);
+
+        datePicker.valueProperty().addListener((ov, oldValue, newValue) -> {
+            model.setDate(datePicker.getValue());
+        });
 
     }
 
     private void showPage(AnchorPane pane) {
-        mainpageAnchorpane.getChildren().clear();
-        mainpageAnchorpane.getChildren().add(pane);
-        mainpageAnchorpane.toFront();
+        mainPageAnchorPane.getChildren().clear();
+        mainPageAnchorPane.getChildren().add(pane);
+        mainPageAnchorPane.toFront();
     }
 
+    private void updateDateLabel() {
+        datePicker.setValue(model.getDate());
+    }
 
 
 }

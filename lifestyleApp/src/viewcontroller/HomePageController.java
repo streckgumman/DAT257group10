@@ -10,7 +10,7 @@ import model.Ratings;
 
 import java.util.Optional;
 
-public class HomePageController {
+public class HomePageController implements DateObserver {
     private MainModel model;
 
     @FXML
@@ -21,7 +21,8 @@ public class HomePageController {
 
     public void initPage(MainModel model, Optional<Object> empty) {
         this.model=model;
-        showRatings(model.getRatings());
+        model.attach(this);
+        showRatings();
         initJournal();
         initSleepPanel();
     }
@@ -39,21 +40,22 @@ public class HomePageController {
     @FXML
     private FlowPane ratingFlowPane;
 
-    void showRatings(Iterable<Ratings> ratings) {
+    void showRatings() {
         ratingFlowPane.getChildren().clear();
 
-        for (Ratings rating : ratings) {
-            AnchorPane ratingItem = PageLoader.createRateItem(rating.getRating(model.getDate()));
-            //setShadow(ratingItem);
+        for (Ratings rating : model.getRatings()) {
+            AnchorPane ratingItem = PageLoader.createRateItem(rating);
             ratingFlowPane.getChildren().add(ratingItem);
         }
     }
 
-    private static void setShadow(AnchorPane courseItem) {
-        DropShadow dropShadow = new DropShadow();
-        dropShadow.setColor(Color.DARKGRAY);
-        dropShadow.setOffsetX(3);
-        dropShadow.setOffsetY(3);
-        courseItem.setEffect(dropShadow);
+
+    @Override
+    public void notified() {
+        update();
+    }
+
+    private void update(){
+        showRatings();
     }
 }

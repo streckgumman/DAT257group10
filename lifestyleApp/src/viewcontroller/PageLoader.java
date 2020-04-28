@@ -5,10 +5,7 @@ import java.util.Optional;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.layout.AnchorPane;
-import model.Journal;
-import model.MainModel;
-import model.RatingEntry;
-import model.Sleep;
+import model.*;
 
 public class PageLoader {
     private static MainModel model;
@@ -51,9 +48,9 @@ public class PageLoader {
         return res.root;
     }
 
-    public static AnchorPane createRateItem(RatingEntry re) {
+    public static AnchorPane createRateItem(Ratings r) {
         Result<RateController> res = loadPage("fxml/rate.fxml");
-        res.ctrl.setRating(re);
+        res.ctrl.setRating(r);
         res.ctrl.initPage(model, Optional.empty());
         return res.root;
     }
