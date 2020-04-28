@@ -54,17 +54,27 @@ public class MainPageController {
 
     }
 
+    //-------------- Date Buttons -------------------
+    @FXML
+    void previousDate(ActionEvent event){
+        model.setDate(model.getDate().minusDays(1));
+        updateDateLabel();
+    }
+
+    @FXML
+    void nextDate(ActionEvent event){
+        model.setDate(model.getDate().plusDays(1));
+        updateDateLabel();
+    }
 
     void initPage(MainModel model, Optional<Object> empty) {
         this.model = model;
-        setDateLabel();
+        updateDateLabel();
         calendarPage = PageLoader.createCalendarPage();
         homePage = PageLoader.createHomePage();
         statisticPage = PageLoader.createStatisticsPage();
         settingsPage = PageLoader.createSettingsPage();
         //sleepPanel = PageLoader.createSleepPage(s);
-
-
         showPage(homePage);
 
     }
@@ -75,12 +85,13 @@ public class MainPageController {
         mainpageAnchorpane.toFront();
     }
 
-    private void setDateLabel() {
+    private void updateDateLabel() {
         int day = model.getDate().getDayOfMonth();
         String month = model.getDate().getMonth().toString().toLowerCase();
         String date = day + " " + month;
         dateLabel.setText(date);
 
     }
+
 
 }
