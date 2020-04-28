@@ -1,12 +1,12 @@
 package model;
 
 import java.time.LocalDate;
-import java.util.Date;
 import java.util.List;
+
 
 public class MainModel {
     User user;
-    LocalDate date; // TODO ändra
+    LocalDate date;
 
     public static MainModel createMainController() {
         return new MainModel();
