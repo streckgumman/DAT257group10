@@ -22,7 +22,7 @@ public class Ratings {
     }
 
     // Getters and setters
-    String getTopic() {
+    public String getTopic() {
         return topic;
     }
 

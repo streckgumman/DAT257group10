@@ -144,6 +144,7 @@ public class RateController {
         r.addRatingEntry(model.getDate());
         this.re = r.getRating(model.getDate());
         setStars();
+        topic.setText(r.getTopic());
 
     }
 
