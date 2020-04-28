@@ -59,13 +59,13 @@ public class MainPageController {
 
     //-------------- Date Buttons -------------------
     @FXML
-    void previousDate(ActionEvent event){
+    void previousDate(MouseEvent event){
         model.setDate(model.getDate().minusDays(1));
         updateDateLabel();
     }
 
     @FXML
-    void nextDate(ActionEvent event){
+    void nextDate(MouseEvent event){
         model.setDate(model.getDate().plusDays(1));
         updateDateLabel();
     }

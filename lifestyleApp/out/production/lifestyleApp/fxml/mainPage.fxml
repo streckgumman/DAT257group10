@@ -17,6 +17,24 @@
               <items>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                      <children>
+                        <AnchorPane layoutX="430.0" layoutY="48.0" prefHeight="50.0" prefWidth="50.0">
+                           <children>
+                              <ImageView fitHeight="50.0" fitWidth="50.0" onMouseClicked="#previousDate" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/previousDate.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="715.0" layoutY="49.0" prefHeight="50.0" prefWidth="50.0">
+                           <children>
+                              <ImageView fitHeight="50.0" fitWidth="50.0" onMouseClicked="#nextDate" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/nextDate.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
                         <DatePicker fx:id="datePicker" layoutX="481.0" layoutY="58.0" prefHeight="30.0" prefWidth="232.0" />
                         <AnchorPane fx:id="calendarIconAnchorpane" layoutX="31.0" layoutY="14.0" prefHeight="80.0" prefWidth="80.0" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="10.0">
                            <children>
@@ -54,8 +72,6 @@
                               </ImageView>
                            </children>
                         </AnchorPane>
-                        <Button layoutX="715.0" layoutY="61.0" mnemonicParsing="false" onAction="#nextDate" text="&gt;" AnchorPane.leftAnchor="715.0" />
-                        <Button layoutX="453.0" layoutY="61.0" mnemonicParsing="false" onAction="#previousDate" text="&lt;" AnchorPane.leftAnchor="453.0" AnchorPane.rightAnchor="719.0" />
                         <Button layoutX="423.0" layoutY="3.0" mnemonicParsing="false" onAction="#showHomePage" prefHeight="0.0" prefWidth="347.0" styleClass="panel-button" stylesheets="@../lifestyle.css" text="Johanna Wiberg" AnchorPane.topAnchor="3.0">
                            <font>
                               <Font size="30.0" />
