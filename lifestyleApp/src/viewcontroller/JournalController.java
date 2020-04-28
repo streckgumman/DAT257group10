@@ -23,6 +23,7 @@ public class JournalController implements DateObserver{
 
     @FXML
     void saveEntry(ActionEvent event){
+        journal.deleteEntry(journal.getCurrentEntry(model.getDate()));
         String text = textArea.getText();
         journal.newEntry(text,model.getDate());
         update();
