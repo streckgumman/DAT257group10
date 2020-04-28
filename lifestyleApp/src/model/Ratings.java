@@ -9,27 +9,34 @@ public class Ratings {
     private List<RatingEntry> ratings = new ArrayList<>();
     private String topic;
 
-    public Ratings(String topic) {
+    Ratings(String topic) {
         this.topic = topic;
     }
 
     public void addRatingEntry(LocalDate date) {
-        ratings.add(new RatingEntry(topic, date));
+        if (getRating(date) == null) {
+            RatingEntry nueva = new RatingEntry(topic, date);
+            nueva.setRating(0);
+            ratings.add(nueva);
+        }
     }
 
     // Getters and setters
-    public String getTopic() {
+    String getTopic() {
         return topic;
     }
 
 
     public RatingEntry getRating(LocalDate date){
         for (RatingEntry re : ratings){
-            if (re.getDate()==date){
+            if (re.getDate().equals(date)){
                 return re;
             }
         }
-        return null;
+        RatingEntry nueva = new RatingEntry(topic, date);
+        nueva.setRating(0);
+        ratings.add(nueva);
+        return nueva;
     }
 
 }
