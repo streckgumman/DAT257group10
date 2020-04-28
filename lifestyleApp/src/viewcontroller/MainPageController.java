@@ -3,6 +3,7 @@ package viewcontroller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
@@ -23,11 +24,13 @@ public class MainPageController {
     private AnchorPane statisticPage;
     private AnchorPane settingsPage;
 
-    @FXML
-    private Label dateLabel;
+
 
     @FXML
-    private AnchorPane mainpageAnchorpane;
+    private DatePicker datePicker;
+
+    @FXML
+    private AnchorPane mainPageAnchorPane;
 
     @FXML
     void showHomePage(ActionEvent event) {
@@ -77,20 +80,20 @@ public class MainPageController {
         //sleepPanel = PageLoader.createSleepPage(s);
         showPage(homePage);
 
+        datePicker.valueProperty().addListener((ov, oldValue, newValue) -> {
+            model.setDate(datePicker.getValue());
+        });
+
     }
 
     private void showPage(AnchorPane pane) {
-        mainpageAnchorpane.getChildren().clear();
-        mainpageAnchorpane.getChildren().add(pane);
-        mainpageAnchorpane.toFront();
+        mainPageAnchorPane.getChildren().clear();
+        mainPageAnchorPane.getChildren().add(pane);
+        mainPageAnchorPane.toFront();
     }
 
     private void updateDateLabel() {
-        int day = model.getDate().getDayOfMonth();
-        String month = model.getDate().getMonth().toString().toLowerCase();
-        String date = day + " " + month;
-        dateLabel.setText(date);
-
+        datePicker.setValue(model.getDate());
     }
 
 
