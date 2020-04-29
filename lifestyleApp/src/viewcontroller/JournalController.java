@@ -1,78 +1,51 @@
 package viewcontroller;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextArea;
 import model.Journal;
 import model.JournalEntry;
 import model.MainModel;
 
-import javax.swing.*;
-import java.net.URL;
-import java.time.LocalDate;
-import java.util.Date;
 import java.util.Optional;
-import java.util.ResourceBundle;
 
-public class JournalController {
-
+public class JournalController implements DateObserver{
+    private MainModel model;
     private Journal journal;
-    private JournalEntry currentEntry = null;
 
     @FXML
     private TextArea textArea;
-    @FXML
-    private Button saveButton;
-    @FXML
-    private Button deleteButton;
-
-
-
 
     public void initPage(MainModel model, Optional<Object> empty) {
-        //För att init sidan , måste vi matcha datum och JournalEntries.
-
+        model.attach(this);
+        this.model = model;
+        this.journal = model.getJournal();
     }
 
     @FXML
-    void saveEntry( ActionEvent event){
+    void saveEntry(ActionEvent event){
+        journal.deleteEntry(journal.getCurrentEntry(model.getDate()));
         String text = textArea.getText();
-        if(currentEntry == null){
-            //TODO just nu hårdkodat, kommer kopplas ihop med mainpage datum.
-            LocalDate date = LocalDate.now();
-            JournalEntry entry =  new JournalEntry(text, date);
-            createJournalEntry(entry);
-            currentEntry = entry;
-
-        }
-        currentEntry.setText(text);
-
-
+        journal.newEntry(text,model.getDate());
+        update();
     }
 
     @FXML
     void deleteEntry(ActionEvent e){
-        journal.deleteEntry(journal.getCurrentEntry());
-        textArea.setText("");
-
+        journal.deleteEntry(journal.getCurrentEntry(model.getDate()));
+        update();
     }
 
+    @Override
+    public void notified() {
+        update();
+    }
 
-
-
-
-                   // ----------funktionalitet--------------------
-   public void createJournalEntry(JournalEntry entry) {
-       journal.addEntry(entry);
-       System.out.println("create journal method");
-
-   }
-
-   public void setJournal(Journal j){
-        this.journal = j;
-
-   }
-
+    private void update() {
+        JournalEntry entry = journal.getCurrentEntry(model.getDate());
+        if(entry != null){
+            textArea.setText(entry.getEntry());
+        } else {
+            textArea.setText("");
+        }
+    }
 }

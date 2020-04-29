@@ -10,16 +10,21 @@ import model.Ratings;
 
 import java.util.Optional;
 
-public class HomePageController {
+public class HomePageController implements DateObserver {
     private MainModel model;
 
     @FXML
     private AnchorPane journalAnchorPane;
 
+    @FXML
+    private AnchorPane sleepAnchorpane;
+
     public void initPage(MainModel model, Optional<Object> empty) {
         this.model=model;
-        showRatings(model.getRatings());
+        model.attach(this);
+        showRatings();
         initJournal();
+        initSleepPanel();
     }
 
     private void initJournal() {
@@ -27,24 +32,30 @@ public class HomePageController {
         journalAnchorPane.getChildren().add(PageLoader.createJournal(model.getJournal()));
     }
 
+    private void initSleepPanel() {
+        sleepAnchorpane.getChildren().clear();
+        sleepAnchorpane.getChildren().add(PageLoader.createSleepPage());
+    }
+
     @FXML
     private FlowPane ratingFlowPane;
 
-    void showRatings(Iterable<Ratings> ratings) {
+    void showRatings() {
         ratingFlowPane.getChildren().clear();
 
-        for (Ratings rating : ratings) {
-            AnchorPane ratingItem = PageLoader.createRateItem(rating.getRating(model.getDate()));
-            //setShadow(ratingItem);
+        for (Ratings rating : model.getRatings()) {
+            AnchorPane ratingItem = PageLoader.createRateItem(rating);
             ratingFlowPane.getChildren().add(ratingItem);
         }
     }
 
-    private static void setShadow(AnchorPane courseItem) {
-        DropShadow dropShadow = new DropShadow();
-        dropShadow.setColor(Color.DARKGRAY);
-        dropShadow.setOffsetX(3);
-        dropShadow.setOffsetY(3);
-        courseItem.setEffect(dropShadow);
+
+    @Override
+    public void notified() {
+        update();
+    }
+
+    private void update(){
+        showRatings();
     }
 }

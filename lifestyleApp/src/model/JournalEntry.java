@@ -10,7 +10,7 @@ public class JournalEntry {
 
     public JournalEntry(String entry, LocalDate date){
         this.entry = entry;
-        this. date = date;
+        this.date = date;
     }
 
     public String getEntry() {

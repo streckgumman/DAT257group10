@@ -1,10 +1,7 @@
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import model.Journal;
-import model.MainModel;
-import model.RatingEntry;
-import model.User;
+import model.*;
 import viewcontroller.PageLoader;
 
 import java.io.IOException;
@@ -16,7 +13,6 @@ public class LifestyleApp extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         model = MainModel.createMainController();
-        Journal journal = new Journal();
 
         User user = new User();
         model.setUser(user);
@@ -28,7 +24,7 @@ public class LifestyleApp extends Application {
 
         PageLoader.setModel(model);
         Scene scene = new Scene(PageLoader.createMainPage(), 1200, 700);
-        stage.setTitle("Welcome");
+        stage.setTitle("LifeStyle");
         stage.setScene(scene);
         stage.show();
     }
