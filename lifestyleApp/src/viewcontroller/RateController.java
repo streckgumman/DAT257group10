@@ -18,6 +18,7 @@ import java.util.Optional;
 public class RateController {
     private Ratings r;
     private RatingEntry re;
+    private MainModel model;
 
 
     @FXML
@@ -42,10 +43,12 @@ public class RateController {
     void rate1star(MouseEvent event) {
         if (star1anchor.getBlendMode() == BlendMode.SRC_OVER && star2anchor.getBlendMode() == BlendMode.OVERLAY) {
             resetStars();
-            re.setRating(0);
+            //re.setRating(0);
+            model.setRateing(re,0);
         } else {
             oneStars();
-            re.setRating(1);
+            //re.setRating(1);
+            model.setRateing(re,1);
         }
     }
 
@@ -53,10 +56,12 @@ public class RateController {
     void rate2star(MouseEvent event) {
         if (star2anchor.getBlendMode() == BlendMode.SRC_OVER && star3anchor.getBlendMode() == BlendMode.OVERLAY) {
             resetStars();
-            re.setRating(0);
+            //re.setRating(0);
+            model.setRateing(re,0);
         } else {
             twoStars();
-            re.setRating(2);
+            //re.setRating(2);
+            model.setRateing(re,2);
         }
     }
 
@@ -64,10 +69,12 @@ public class RateController {
     void rate3star(MouseEvent event) {
         if (star3anchor.getBlendMode() == BlendMode.SRC_OVER && star4anchor.getBlendMode() == BlendMode.OVERLAY) {
             resetStars();
-            re.setRating(0);
+            //re.setRating(0);
+            model.setRateing(re,0);
         } else {
             threeStars();
-            re.setRating(3);
+            //re.setRating(3);
+            model.setRateing(re,3);
         }
     }
 
@@ -75,10 +82,12 @@ public class RateController {
     void rate4star(MouseEvent event) {
         if (star4anchor.getBlendMode() == BlendMode.SRC_OVER && star5anchor.getBlendMode() == BlendMode.OVERLAY) {
             resetStars();
-            re.setRating(0);
+            //re.setRating(0);
+            model.setRateing(re,0);
         } else {
             fourStars();
-            re.setRating(4);
+            //re.setRating(4);
+            model.setRateing(re,4);
         }
     }
 
@@ -86,10 +95,12 @@ public class RateController {
     void rate5star(MouseEvent event) {
         if (star5anchor.getBlendMode() == BlendMode.SRC_OVER) {
             resetStars();
-            re.setRating(0);
+            //re.setRating(0);
+            model.setRateing(re,0);
         } else {
             fiveStars();
-            re.setRating(5);
+            //re.setRating(5);
+            model.setRateing(re,5);
         }
     }
     private void oneStars(){
@@ -142,6 +153,7 @@ public class RateController {
 
     public void initPage(MainModel model, Optional<Object> empty) {
         r.addRatingEntry(model.getDate());
+        this.model = model;
         this.re = r.getRating(model.getDate());
         setStars();
         topic.setText(r.getTopic());

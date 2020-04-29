@@ -1,6 +1,7 @@
 package model;
 
 import viewcontroller.DateObserver;
+import viewcontroller.RatingObserver;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -20,7 +21,7 @@ public class MainModel {
 
     private List<DateObserver> observers = new ArrayList<DateObserver>();
 
-    public void attach(DateObserver observer){
+    public void attachDateOb(DateObserver observer){
         observers.add(observer);
     }
 
@@ -29,7 +30,6 @@ public class MainModel {
             o.notified();
         }
     }
-
 
     //---------------Setters and Getters----------------
 
@@ -60,5 +60,32 @@ public class MainModel {
     public void setDate(LocalDate date) {
         this.date = date;
         notifyAllObservers();
+    }
+
+
+    public void setRateing (RatingEntry re, int rateing){
+        for (Ratings r : user.getRatings()){
+            if (r.getTopic().equals(re.getTopic())){
+                r.getRating(re.getDate()).setRating(rateing);
+            }
+        }
+        notifyAllRateObservers();
+
+    }
+
+    //-------------observer stuff-------------
+
+
+    private List<RatingObserver> rateObservers = new ArrayList<>();
+
+    public void attachRateOb(RatingObserver observer){
+        rateObservers.add(observer);
+    }
+
+    public void notifyAllRateObservers(){
+        for (RatingObserver o : rateObservers) {
+            o.notified();
+
+        }
     }
 }
