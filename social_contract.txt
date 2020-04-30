@@ -42,7 +42,7 @@ Vid muntlig kommunikation används applikationen discord.
      C.   Möten
 	i) Schemalagt
 Handledning varje vecka på måndag förmiddag.
-Veckomöte hålls som utgångspunkt på måndagar kl 16.
+Ändring 30/4 -20: Möten hålls två gånger i veckan, måndag och tordag, om inget annat bestäms. 
 Nästa mötes tid och dag bekräftas eller bestäms i slutet av varje möte. 
  	ii) Närvaro
 Om man inte meddelat annat förväntas personen i fråga att delta på mötet. 
