@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e58e48c-3d95-4584-836b-9034806ca01b" name="Default Changelist" comment="Johanna &amp; Linnea:&#10;Todo done!">
-      <change afterPath="$PROJECT_DIR$/resources/fxml/fitnessPage.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/images/exercise.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/images/home.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/viewcontroller/FitnessController.java" afterDir="false" />
+    <list default="true" id="3e58e48c-3d95-4584-836b-9034806ca01b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/model/WorkoutEntry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/fxml/mainPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lifestyleApp/fxml/mainPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/fxml/mainPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/fxml/mainPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/viewcontroller/MainPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewcontroller/MainPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/viewcontroller/PageLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewcontroller/PageLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/fxml/fitnessPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/fxml/fitnessPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/viewcontroller/FitnessController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewcontroller/FitnessController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
