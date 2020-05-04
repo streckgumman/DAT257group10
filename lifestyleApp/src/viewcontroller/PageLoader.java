@@ -96,5 +96,11 @@ public class PageLoader {
         res.ctrl.initPage(model, Optional.empty());
         return res.root;
     }
+
+    public static AnchorPane createTodoPane() {
+        Result<TodoController> res = loadPage("fxml/todoPanel.fxml");
+        res.ctrl.initPage(model, Optional.empty());
+        return res.root;
+    }
 }
 

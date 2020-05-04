@@ -19,14 +19,19 @@
          </content>
       </ScrollPane>
       <AnchorPane fx:id="journalAnchorPane" layoutX="870.0" layoutY="74.0" prefHeight="430.0" prefWidth="314.0" />
-      <AnchorPane fx:id="sleepAnchorpane" layoutX="14.0" layoutY="23.0" prefHeight="150.0" prefWidth="300.0" style="-fx-background-color: #e4f7e6;">
+      <AnchorPane fx:id="sleepAnchorpane" layoutX="14.0" layoutY="14.0" prefHeight="150.0" prefWidth="300.0" style="-fx-background-color: #e4f7e6;">
          <effect>
             <DropShadow />
          </effect>
       </AnchorPane>
-<AnchorPane fx:id="waterIntakeAnchorPane" layoutX="14.0" layoutY="193.0" prefHeight="155.0" prefWidth="300.0" style="-fx-background-color: #e4f7e6;">
+<AnchorPane fx:id="waterIntakeAnchorPane" layoutX="14.0" layoutY="178.0" prefHeight="155.0" prefWidth="300.0" style="-fx-background-color: #e4f7e6;">
 <effect>
    <DropShadow />
 </effect></AnchorPane>
+      <AnchorPane fx:id="todoAnchorPane" layoutX="14.0" layoutY="346.0" prefHeight="180.0" prefWidth="300.0" style="-fx-background-color: #e4f7e6;">
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
    </children>
 </AnchorPane>
