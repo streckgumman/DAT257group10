@@ -15,6 +15,7 @@ import model.Ratings;
 import sun.awt.ConstrainableGraphics;
 
 import java.time.LocalDate;
+import java.time.YearMonth;
 import java.time.temporal.TemporalField;
 import java.time.temporal.WeekFields;
 import java.util.*;
@@ -34,10 +35,10 @@ public class StatisticsPageController  implements DateObserver, RatingObserver {
     private AnchorPane monthAnchorPane;
 
     @FXML
-    private BarChart<?, ?> monthGraph;
+    private BarChart<?, ?> weekGraph;
 
     @FXML
-    private BarChart<?, ?> weekGraph;
+    private LineChart<String, Number> monthLineGraph;
 
     @FXML
     private ComboBox<String> ratingTopicComboBox;
@@ -90,12 +91,27 @@ public class StatisticsPageController  implements DateObserver, RatingObserver {
         }
         weekGraph.getData().setAll(dataSeries1);
 
+    }
+
+    @FXML
+    private void populateMonthGraph() {
+        List<RatingEntry> monthStatistics = getMonthStatistics(currentDate, ratingTopicComboBox.getSelectionModel().getSelectedItem());
+
+        XYChart.Series dataSeries2 = new XYChart.Series();
+        Collections.sort(monthStatistics);
+
+        for (RatingEntry entry : monthStatistics) {
+            dataSeries2.getData().add(new XYChart.Data("" + entry.getDate().getDayOfMonth(), entry.getRating()));
+            monthLineGraph.getData().setAll(dataSeries2);
+        }
 
     }
+
 
     @FXML
     void changeTopicActionEvent(ActionEvent event) {
         populateWeekGraph();
+        populateMonthGraph();
 
     }
 
@@ -110,7 +126,7 @@ public class StatisticsPageController  implements DateObserver, RatingObserver {
             if( ratings.getTopic().equals(topic)){
 
                 for( RatingEntry entry: ratings.getRatings()){
-                    if( weeknumber == entry.getDate().get(woy)){
+                    if( (weeknumber == entry.getDate().get(woy)) && (date.getYear() == entry.getDate().getYear()) ){
                         entries.add(entry);
                     }
                 }
@@ -121,7 +137,29 @@ public class StatisticsPageController  implements DateObserver, RatingObserver {
 
     }
 
-   // ------------Observer stuff-----------------------
+    private List<RatingEntry> getMonthStatistics(LocalDate date, String topic){
+        List<RatingEntry> entries = new ArrayList<>();
+
+
+        for(Ratings ratings: mainmodel.getRatings()){
+            if( ratings.getTopic().equals(topic)){
+
+                for( RatingEntry entry: ratings.getRatings()){
+                    if( (date.getMonth().equals(entry.getDate().getMonth())) && (date.getYear() == entry.getDate().getYear())){
+                        entries.add(entry);
+                    }
+                }
+                break;
+            }
+        }
+        return entries;
+
+    }
+
+
+
+
+    // ------------Observer stuff-----------------------
 
     @Override
     public void notified() {
@@ -130,6 +168,7 @@ public class StatisticsPageController  implements DateObserver, RatingObserver {
 
     private void update() {
        currentDate = mainmodel.getDate();
+       populateMonthGraph();
        populateWeekGraph();
        weekLabel.setText("" + currentDate.get(woy));
     }
@@ -148,10 +187,18 @@ public class StatisticsPageController  implements DateObserver, RatingObserver {
         ObservableList<String> weekdays = FXCollections.observableArrayList("Monday", "Tuesday","Wednesday", "Thursday","Friday","Saturday","Sunday");
         weekAxisX.setCategories(weekdays);
 
-        monthGraph.getYAxis().setLabel("Rating");
-        monthGraph.getXAxis().setLabel("Time");
-        NumberAxis monthAxisY = (NumberAxis) monthGraph.getYAxis();
-        monthGraph.getYAxis().setAutoRanging(false);
+        monthLineGraph.getYAxis().setLabel("Rating");
+        monthLineGraph.getXAxis().setLabel("Time");
+        NumberAxis monthAxisY = (NumberAxis) monthLineGraph.getYAxis();
+        CategoryAxis monthAxisX = (CategoryAxis) monthLineGraph.getXAxis();
+
+
+
+        monthLineGraph.getYAxis().setAutoRanging(false);
+
+
+
+
         monthAxisY.setLowerBound(0);
         monthAxisY.setUpperBound(5);
     }

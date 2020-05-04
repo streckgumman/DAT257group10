@@ -3,7 +3,7 @@ package model;
 import java.time.LocalDate;
 import java.util.Date;
 
-public class RatingEntry {
+public class RatingEntry implements Comparable<RatingEntry> {
     private int rating;
     private String topic;
     private LocalDate date;
@@ -33,5 +33,10 @@ public class RatingEntry {
 
     public void setDate(LocalDate date) {
         this.date = date;
+    }
+
+    @Override
+    public int compareTo(RatingEntry o) {
+        return this.date.compareTo(o.getDate());
     }
 }
