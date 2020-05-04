@@ -22,6 +22,9 @@ public class HomePageController implements DateObserver {
     @FXML
     private AnchorPane waterIntakeAnchorPane;
 
+    @FXML
+    private AnchorPane todoAnchorPane;
+
     public void initPage(MainModel model, Optional<Object> empty) {
         this.model=model;
         model.attachDateOb(this);
@@ -29,6 +32,7 @@ public class HomePageController implements DateObserver {
         initJournal();
         initSleepPanel();
         initWaterIntakePanel();
+        initTodoPanel();
     }
 
     private void initJournal() {
@@ -44,6 +48,11 @@ public class HomePageController implements DateObserver {
     private void initWaterIntakePanel() {
         waterIntakeAnchorPane.getChildren().clear();
         waterIntakeAnchorPane.getChildren().add(PageLoader.createWaterIntakePane());
+    }
+
+    private void initTodoPanel() {
+        todoAnchorPane.getChildren().clear();
+        todoAnchorPane.getChildren().add(PageLoader.createTodoPane());
     }
 
     @FXML
