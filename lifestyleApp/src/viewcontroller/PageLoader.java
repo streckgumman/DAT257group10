@@ -55,8 +55,8 @@ public class PageLoader {
         return res.root;
     }
 
-    public static AnchorPane createCalendarPage() {
-        Result<CalendarPageController> res = loadPage("fxml/calendarPage.fxml");
+    public static AnchorPane createFitnessPage() {
+        Result<FitnessController> res = loadPage("fxml/fitnessPage.fxml");
         res.ctrl.initPage(model, Optional.empty());
         return res.root;
     }
