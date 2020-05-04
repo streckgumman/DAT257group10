@@ -39,4 +39,8 @@ public class Ratings {
         return nueva;
     }
 
+    public List<RatingEntry> getRatings(){
+        return ratings;
+    }
+
 }
