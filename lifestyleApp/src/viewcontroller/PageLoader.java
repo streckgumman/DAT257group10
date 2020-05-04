@@ -91,5 +91,10 @@ public class PageLoader {
         return res.root;
     }
 
+    public static AnchorPane createWaterIntakePane() {
+        Result<WaterIntakeController> res = loadPage("fxml/waterIntake.fxml");
+        res.ctrl.initPage(model, Optional.empty());
+        return res.root;
+    }
 }
 

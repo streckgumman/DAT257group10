@@ -19,12 +19,16 @@ public class HomePageController implements DateObserver {
     @FXML
     private AnchorPane sleepAnchorpane;
 
+    @FXML
+    private AnchorPane waterIntakeAnchorPane;
+
     public void initPage(MainModel model, Optional<Object> empty) {
         this.model=model;
         model.attachDateOb(this);
         showRatings();
         initJournal();
         initSleepPanel();
+        initWaterIntakePanel();
     }
 
     private void initJournal() {
@@ -35,6 +39,11 @@ public class HomePageController implements DateObserver {
     private void initSleepPanel() {
         sleepAnchorpane.getChildren().clear();
         sleepAnchorpane.getChildren().add(PageLoader.createSleepPage());
+    }
+
+    private void initWaterIntakePanel() {
+        waterIntakeAnchorPane.getChildren().clear();
+        waterIntakeAnchorPane.getChildren().add(PageLoader.createWaterIntakePane());
     }
 
     @FXML
