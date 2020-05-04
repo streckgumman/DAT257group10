@@ -1,21 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.FlowPane?>
-
+<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="180.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewcontroller.TodoController">
    <children>
-      <FlowPane prefHeight="170.0" prefWidth="300.0" AnchorPane.bottomAnchor="38.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <FlowPane layoutY="45.0" prefHeight="126.0" prefWidth="300.0" AnchorPane.bottomAnchor="38.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="45.0">
          <children>
-            <ListView fx:id="todoListView" prefHeight="170.0" prefWidth="300.0" style="-fx-background-color: #e4f7e6;" />
+            <ListView fx:id="todoListView" prefHeight="126.0" prefWidth="300.0" style="-fx-background-color: #e4f7e6;" />
          </children>
       </FlowPane>
       <TextArea fx:id="todoTextArea" layoutY="266.0" prefHeight="30.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="171.0" />
       <Button layoutX="200.0" layoutY="171.0" mnemonicParsing="false" onAction="#addTodoButton" prefHeight="37.0" prefWidth="50.0" text="+" />
       <Button layoutX="251.0" layoutY="171.0" mnemonicParsing="false" onAction="#deleteTodoButton" prefHeight="37.0" prefWidth="50.0" text="-" AnchorPane.rightAnchor="0.0" />
+      <Label layoutX="123.0" layoutY="10.0" text="Todo">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
