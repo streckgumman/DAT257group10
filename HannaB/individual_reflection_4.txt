@@ -1,0 +1,18 @@
+Utgår från:
+
+... the current situation or "what is" (A), 
+... what you want the situation to be or "what might or should be" (B), and 
+... a plan for getting from where you are to where you want to be or "feedback designed to reduce the gap" (A -> B).
+
+•	what do I want to learn or understand better?
+•	how can I help someone else, or the entire team, to learn something new?
+•	what is my contribution towards the team’s use of Scrum?
+•	what is my contribution towards the team’s deliveries?
+
+Denna veckan har vi fortsatt arbeta på samma sätt som förra veckan med parprogrammering där vi mestadels suttit tillsammans i skolan vilket har underlättat. Vi bytte par för att bättre kunna ta del av varandras kunskaper och detta är något jag hoppas vi fortsätter göra. Jag, Linnea och Johanna tog på oss att göra sleep-tracker och water-tracker, två lite mindre uppgifter vilket passade när vi var tre och det blev lättare att dela upp. Vid sleep trackern blev det lite problem då vi kollade mycket på hur vi gjort i Journal vilket inte riktigt var så vi borde gjort. Därför fick vi börja om efter ett tag. Av detta lärde iallafall jag mig att det är lätt att tro att det som ser ut att vara den enkla vägen också är det, men man måste stanna upp och tänka igenom innan. Förra veckan när jag jobbade med Naomi märkte jag att hon var duktig på detta, att stanna upp och tänka innan man skriver, så det tar jag med mig och ska försöka jobba mer med. 
+
+Efter handledningen ändrade vi vårat burn down chart som jag är ansvarig för. Tidigare utgick det endast från antal user stories, nu har vi ”värderat” våra userstories där hard är 15 poäng, medium 10 poäng och easy 5 poäng och använder dessa i chartet istället. Efter denna ändring kunde vi se att vi ligger före och att det kan vara därför vi tyckt det varit lite många user stories denna veckan. Eftersom jag är ansvarig för detta är det också viktigt att jag förmedlar läget till gruppen, vilket jag gör under våra scrum meetings. 
+
+Utöver det har jag under gångna veckan för första gången fått testa min roll som Scrum master för Retrospective. Jag tycker det gick bra och känner att jag börjar få koll på vad denna del innebär och att det verkligen kan bidra till bra gemensamma reflektioner över hur vi som grupp jobbar. En utmaning jag ser med det är att få resten av gruppen att också förstå vikten av denna del av processen. Vi är en grupp där vi gärna vill komma fram med projektet mer konkret, men jag tror det är viktigt att ta sig tiden för reflektion kring arbetet för att sedan kunna jobba mer effektivt. Därför kan jag jobba med att försöka förmedla detta till gruppen för att både belysa denna del av Scrum men också hur det påverkar vårat resultat i projektet. 
+
+Sist men inte minst har jag denna veckan bidragit med måndagsfika vilket verkade uppskattas av hela gruppen. Det är viktigt att hålla humöret uppe och att ha det trevligt tillsammans. Förhoppningsvis höjdes allas fist of five med i alla fall en liten gnutta efter fikan.
