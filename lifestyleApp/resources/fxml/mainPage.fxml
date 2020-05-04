@@ -36,18 +36,18 @@
                            </children>
                         </AnchorPane>
                         <DatePicker fx:id="datePicker" layoutX="481.0" layoutY="58.0" prefHeight="30.0" prefWidth="232.0" />
-                        <AnchorPane fx:id="calendarIconAnchorpane" layoutX="31.0" layoutY="14.0" prefHeight="80.0" prefWidth="80.0" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="10.0">
+                        <AnchorPane fx:id="homeIconAnchorpane" layoutX="31.0" layoutY="14.0" prefHeight="80.0" prefWidth="80.0" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="10.0">
                            <children>
-                              <ImageView fitHeight="80.0" fitWidth="80.0" onMouseClicked="#showCalendarPage" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="0.0">
+                              <ImageView fitHeight="65.0" fitWidth="72.0" layoutX="8.0" layoutY="15.0" onMouseClicked="#showHomepage2" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="15.0">
                                  <image>
-                                    <Image url="@../images/calendarIcon.png" />
+                                    <Image url="@../images/home.png" />
                                  </image>
                               </ImageView>
                            </children>
                         </AnchorPane>
                         <AnchorPane layoutX="171.0" layoutY="15.0" prefHeight="80.0" prefWidth="80.0" AnchorPane.leftAnchor="160.0" AnchorPane.topAnchor="10.0">
                            <children>
-                              <ImageView fitHeight="80.0" fitWidth="80.0" onMouseClicked="#showStatisticsPage" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="0.0">
+                              <ImageView fitHeight="86.0" fitWidth="92.0" onMouseClicked="#showStatisticsPage" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="0.0">
                                  <image>
                                     <Image url="@../images/statisticsIcon.png" />
                                  </image>
@@ -63,11 +63,11 @@
                               </ImageView>
                            </children>
                         </AnchorPane>
-                        <AnchorPane layoutX="910.0" layoutY="14.0" prefHeight="80.0" prefWidth="80.0" AnchorPane.rightAnchor="160.0" AnchorPane.topAnchor="10.0">
+                        <AnchorPane fx:id="fitnessIconAnchorPane" layoutX="910.0" layoutY="14.0" prefHeight="80.0" prefWidth="80.0" AnchorPane.rightAnchor="160.0" AnchorPane.topAnchor="10.0">
                            <children>
-                              <ImageView fitHeight="80.0" fitWidth="80.0" onMouseClicked="#showOtherPage" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="65.0" fitWidth="72.0" layoutY="8.0" onMouseClicked="#showFitnessPage" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../images/otherPageIcon.png" />
+                                    <Image url="@../images/exercise.png" />
                                  </image>
                               </ImageView>
                            </children>

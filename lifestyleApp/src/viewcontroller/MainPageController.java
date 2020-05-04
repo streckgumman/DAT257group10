@@ -23,7 +23,7 @@ public class MainPageController {
     private AnchorPane calendarPage;
     private AnchorPane statisticPage;
     private AnchorPane settingsPage;
-
+    private AnchorPane fitnessPage;
 
 
     @FXML
@@ -48,14 +48,18 @@ public class MainPageController {
     }
 
     @FXML
-    void showCalendarPage(MouseEvent event) {
-        showPage(calendarPage);
+    void showHomepage2(MouseEvent event) {
+        showPage(homePage);
+
     }
 
     @FXML
-    void showOtherPage(MouseEvent event) {
+    void showFitnessPage(MouseEvent event) {
+        showPage(fitnessPage);
 
     }
+
+
 
     //-------------- Date Buttons -------------------
     @FXML
@@ -73,11 +77,11 @@ public class MainPageController {
     void initPage(MainModel model, Optional<Object> empty) {
         this.model = model;
         updateDateLabel();
-        calendarPage = PageLoader.createCalendarPage();
+        ;
         homePage = PageLoader.createHomePage();
         statisticPage = PageLoader.createStatisticsPage();
         settingsPage = PageLoader.createSettingsPage();
-        //sleepPanel = PageLoader.createSleepPage(s);
+        fitnessPage = PageLoader.createFitnessPage();
         showPage(homePage);
 
         datePicker.valueProperty().addListener((ov, oldValue, newValue) -> {
