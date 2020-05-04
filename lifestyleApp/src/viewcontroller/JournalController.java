@@ -16,7 +16,7 @@ public class JournalController implements DateObserver{
     private TextArea textArea;
 
     public void initPage(MainModel model, Optional<Object> empty) {
-        model.attach(this);
+        model.attachDateOb(this);
         this.model = model;
         this.journal = model.getJournal();
     }

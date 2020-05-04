@@ -21,7 +21,7 @@ public class HomePageController implements DateObserver {
 
     public void initPage(MainModel model, Optional<Object> empty) {
         this.model=model;
-        model.attach(this);
+        model.attachDateOb(this);
         showRatings();
         initJournal();
         initSleepPanel();

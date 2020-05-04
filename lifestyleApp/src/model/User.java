@@ -43,7 +43,7 @@ public class User {
         return journal;
     }
 
-    List<Ratings> getRatings() {
+    public List<Ratings> getRatings() {
         return ratings;
     }
 }
