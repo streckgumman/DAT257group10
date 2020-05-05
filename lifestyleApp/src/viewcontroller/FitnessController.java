@@ -7,15 +7,18 @@ import javafx.scene.control.Slider;
 import javafx.scene.control.Spinner;
 import javafx.scene.input.MouseEvent;
 import model.MainModel;
+import model.TodoEntry;
 
 import java.text.DecimalFormat;
 import java.util.Optional;
 
 public class FitnessController {
 
+    public TodoEntry todoEntry;
     private int workoutHour;
     private int workoutMinute;
     private double intensity;
+
 
     @FXML
     private Label intensityLabel;
@@ -40,7 +43,7 @@ public class FitnessController {
 
     @FXML
     void setWorkoutMin(MouseEvent event) {
-        workoutMinute = (Integer) workoutMinSpinner.getValue();
+      setWorkoutTime(workoutHour,workoutMinute);
 
     }
 
@@ -73,6 +76,12 @@ public class FitnessController {
 
     @FXML
     void setTrainingTypeWieght(MouseEvent event) {
+
+    }
+
+    void setWorkoutTime(int workoutHour, int workoutMinute){
+        workoutHour = (Integer) workoutHourSpinner.getValue();
+        workoutMinute = (Integer) workoutMinSpinner.getValue();
 
     }
     public void initPage(MainModel model, Optional<Object> empty) {

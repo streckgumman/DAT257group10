@@ -25,6 +25,8 @@ public class TodoController implements page{
     @FXML
     private ListView<TodoEntry> todoListView = new ListView<>();
 
+
+
     @FXML
     void addTodoButton(ActionEvent event) {
         if (todoTextArea.getText() != null) {

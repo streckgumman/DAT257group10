@@ -7,7 +7,7 @@ import java.util.List;
 public class Water {
     private List<WaterEntry> waterEntries = new ArrayList<>();
     private WaterEntry wa;
-    double waterEntry;
+    private double waterEntry;
     public Water() {
 
     }
