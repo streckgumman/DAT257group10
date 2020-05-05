@@ -73,8 +73,15 @@ public class PageLoader {
         return res.root;
     }
 
-    public static AnchorPane createSettingsPage() {
+    public static AnchorPane createSettingsPage(MainPageController parent) {
         Result<SettingsPageController> res = loadPage("fxml/settingsPage.fxml");
+        res.ctrl.initPage(model, Optional.of(parent));
+        return res.root;
+    }
+
+    public static AnchorPane createItemSettingsPage(Ratings r) {
+        Result<RateItemSettingsController> res = loadPage("fxml/rateItemSettingsPage.fxml");
+        res.ctrl.setRating(r);
         res.ctrl.initPage(model, Optional.empty());
         return res.root;
     }

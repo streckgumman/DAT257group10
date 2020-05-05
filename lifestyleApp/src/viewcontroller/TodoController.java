@@ -14,7 +14,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.ListView;
 import model.TodoEntry;
 
-public class TodoController {
+public class TodoController implements page{
 
     private ObservableList<TodoEntry> todoEntries = FXCollections.observableArrayList();
     private ArrayList<TodoEntry> todoEntryArrayList = new ArrayList<>();
@@ -53,6 +53,6 @@ public class TodoController {
         }
     }
 
-    public void initPage(MainModel model, Optional<Object> empty) {
+    public void initPage(MainModel model, Optional<MainPageController> empty) {
     }
 }
