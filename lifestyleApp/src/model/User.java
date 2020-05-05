@@ -6,6 +6,10 @@ import java.util.List;
 
 public class User {
 
+
+
+
+    private String name;
     private Journal journal = new Journal();
     private List<Ratings> ratings= new ArrayList<>();
 
@@ -45,5 +49,13 @@ public class User {
 
     public List<Ratings> getRatings() {
         return ratings;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

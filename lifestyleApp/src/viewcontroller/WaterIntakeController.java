@@ -11,7 +11,7 @@ import model.WaterEntry;
 
 import java.util.Optional;
 
-public class WaterIntakeController {
+public class WaterIntakeController implements page {
     private WaterEntry we;
 
     double totalWaterIntake;
@@ -296,7 +296,7 @@ public class WaterIntakeController {
         water10.setBlendMode(BlendMode.OVERLAY);
     }
 
-    public void initPage(MainModel model, Optional<Object> empty) {
+    public void initPage(MainModel model, Optional<MainPageController> empty) {
         // images
         resetGlasses();
     }

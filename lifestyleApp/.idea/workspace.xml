@@ -2,15 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e58e48c-3d95-4584-836b-9034806ca01b" name="Default Changelist" comment="Johanna &amp; Linnea:&#10;Todo done!">
-      <change afterPath="$PROJECT_DIR$/resources/fxml/fitnessPage.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/images/exercise.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/images/home.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/viewcontroller/FitnessController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/fxml/rateItemSettingsPage.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/viewcontroller/RateItemSettingsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/viewcontroller/observers/MainObserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/viewcontroller/observers/UserObserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/viewcontroller/page.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/LifestyleApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lifestyleApp/LifestyleApp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/fxml/mainPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lifestyleApp/fxml/mainPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/fxml/settingsPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lifestyleApp/fxml/settingsPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/model/MainModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lifestyleApp/model/MainModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lifestyleApp/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/viewcontroller/CalendarPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lifestyleApp/viewcontroller/CalendarPageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/viewcontroller/HomePageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lifestyleApp/viewcontroller/HomePageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/viewcontroller/JournalController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lifestyleApp/viewcontroller/JournalController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/viewcontroller/MainPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lifestyleApp/viewcontroller/MainPageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/viewcontroller/PageLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lifestyleApp/viewcontroller/PageLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/viewcontroller/RateController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lifestyleApp/viewcontroller/RateController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/viewcontroller/SettingsPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lifestyleApp/viewcontroller/SettingsPageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/viewcontroller/StatisticsPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lifestyleApp/viewcontroller/StatisticsPageController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/fxml/mainPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/fxml/mainPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/fxml/settingsPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/fxml/settingsPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lifestyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lifestyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LifestyleApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LifestyleApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/MainModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/MainModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/viewcontroller/CalendarPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewcontroller/CalendarPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/viewcontroller/DateObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewcontroller/observers/DateObserver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/viewcontroller/HomePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewcontroller/HomePageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/viewcontroller/JournalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewcontroller/JournalController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/viewcontroller/MainPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewcontroller/MainPageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/viewcontroller/PageLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewcontroller/PageLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/viewcontroller/RateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewcontroller/RateController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/viewcontroller/RatingObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewcontroller/observers/RatingObserver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/viewcontroller/SettingsPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewcontroller/SettingsPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/viewcontroller/SleepController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewcontroller/SleepController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/viewcontroller/StatisticsPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewcontroller/StatisticsPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/viewcontroller/TodoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewcontroller/TodoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/viewcontroller/WaterIntakeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewcontroller/WaterIntakeController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +64,172 @@
       </state>
     </system>
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1155876806">
+      <usages-collector id="statistics.vcs.git.usages">
+        <counts>
+          <entry key="git.branch.checkout.local" value="1" />
+          <entry key="git.branch.create.new" value="3" />
+          <entry key="git.branch.delete.local" value="1" />
+          <entry key="git.branch.merge" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="1" />
+          <entry key="fxml" value="5" />
+          <entry key="gitignore" value="1" />
+          <entry key="java" value="45" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="1" />
+          <entry key="JAVA" value="45" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="XML" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="css" value="139" />
+          <entry key="java" value="1388" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="139" />
+          <entry key="JAVA" value="1388" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="lifestyleApp" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/LifestyleApp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/viewcontroller/SettingsPageController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="227">
+              <caret line="33" column="74" lean-forward="true" selection-start-line="33" selection-start-column="74" selection-end-line="33" selection-end-column="74" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#906#907#0" expanded="true" />
+                <element signature="e#939#940#0" expanded="true" />
+                <element signature="e#1710#1711#0" expanded="true" />
+                <element signature="e#1734#1735#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/viewcontroller/observers/RatingObserver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/RatingEntry.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/viewcontroller/HomePageController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="79" selection-start-line="79" selection-end-line="79" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2051#2052#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/viewcontroller/RateItemSettingsController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="22" column="35" lean-forward="true" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#414#415#0" expanded="true" />
+                <element signature="e#581#582#0" expanded="true" />
+                <element signature="e#601#602#0" expanded="true" />
+                <element signature="e#498#499#0" expanded="true" />
+                <element signature="e#523#524#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/viewcontroller/SleepController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/fxml/settingsPage.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="29" column="18" lean-forward="true" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/MainModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="319">
+              <caret line="71" column="44" lean-forward="true" selection-start-line="71" selection-start-column="44" selection-end-line="71" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1668#1669#0" expanded="true" />
+                <element signature="e#1695#1696#0" expanded="true" />
+                <element signature="e#2263#2264#0" expanded="true" />
+                <element signature="e#2306#2307#0" expanded="true" />
+                <element signature="e#2611#2612#0" expanded="true" />
+                <element signature="e#2654#2655#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/viewcontroller/StatisticsPageController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="131" column="7" selection-start-line="131" selection-start-column="7" selection-end-line="131" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -44,16 +239,104 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$/.." value="master" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/viewcontroller/observers/DateObserver.java" />
+        <option value="$PROJECT_DIR$/src/viewcontroller/observers/UserObserver.java" />
+        <option value="$PROJECT_DIR$/src/model/User.java" />
+        <option value="$PROJECT_DIR$/src/LifestyleApp.java" />
+        <option value="$PROJECT_DIR$/src/viewcontroller/observers/RatingObserver.java" />
+        <option value="$PROJECT_DIR$/src/viewcontroller/observers/MainObserver.java" />
+        <option value="$PROJECT_DIR$/src/viewcontroller/page.java" />
+        <option value="$PROJECT_DIR$/src/viewcontroller/CalendarPageController.java" />
+        <option value="$PROJECT_DIR$/src/viewcontroller/JournalController.java" />
+        <option value="$PROJECT_DIR$/src/viewcontroller/MainPageController.java" />
+        <option value="$PROJECT_DIR$/src/viewcontroller/RateController.java" />
+        <option value="$PROJECT_DIR$/src/viewcontroller/SleepController.java" />
+        <option value="$PROJECT_DIR$/src/viewcontroller/TodoController.java" />
+        <option value="$PROJECT_DIR$/src/viewcontroller/WaterIntakeController.java" />
+        <option value="$PROJECT_DIR$/resources/lifestyle.css" />
+        <option value="$PROJECT_DIR$/src/viewcontroller/PageLoader.java" />
+        <option value="$PROJECT_DIR$/src/viewcontroller/HomePageController.java" />
+        <option value="$PROJECT_DIR$/src/viewcontroller/RateItemSettingsController.java" />
+        <option value="$PROJECT_DIR$/src/viewcontroller/SettingsPageController.java" />
+        <option value="$PROJECT_DIR$/src/model/MainModel.java" />
+        <option value="$PROJECT_DIR$/src/viewcontroller/StatisticsPageController.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="807" />
   </component>
   <component name="ProjectId" id="1ZybIBekdFqfGXuRPhNKVwCfB1s" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="lifestyleApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lifestyleApp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lifestyleApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lifestyleApp" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lifestyleApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lifestyleApp" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="fxml" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lifestyleApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lifestyleApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lifestyleApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lifestyleApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lifestyleApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lifestyleApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="viewcontroller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lifestyleApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lifestyleApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="viewcontroller" type="462c0819:PsiDirectoryNode" />
+              <item name="observers" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+    </panes>
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -64,7 +347,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588076826938" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588677056045" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -185,6 +468,66 @@
     <option name="localTasksCounter" value="9" />
     <servers />
   </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="807" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4965035" visible="true" weight="0.21745351" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.5034965" side_tool="true" weight="0.21745351" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49785408" visible="true" weight="0.23636363" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50214595" side_tool="true" weight="0.23636363" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" visible="true" weight="0.24964234" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4965035" visible="true" weight="0.21745351" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.5034965" side_tool="true" weight="0.21745351" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49785408" visible="true" weight="0.23636363" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50214595" side_tool="true" weight="0.23636363" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+    </layout-to-restore>
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -194,6 +537,12 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
               <option name="COLUMN_ORDER" />
             </State>
           </value>
@@ -261,9 +610,245 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/PageLoader.java</url>
           <line>29</line>
+          <properties />
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/viewcontroller/SettingsPageController.java</url>
+          <line>86</line>
+          <properties />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/model/MainModel.java</url>
+          <line>65</line>
+          <properties />
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/viewcontroller/observers/DateObserver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/viewcontroller/observers/MainObserver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/fxml/mainPage.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="40" column="142" selection-start-line="40" selection-start-column="142" selection-end-line="40" selection-end-column="142" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/viewcontroller/observers/UserObserver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/viewcontroller/CalendarPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/viewcontroller/FitnessController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/viewcontroller/JournalController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="18" column="69" selection-start-line="18" selection-start-column="69" selection-end-line="18" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/viewcontroller/TodoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/viewcontroller/WaterIntakeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="302" lean-forward="true" selection-start-line="302" selection-end-line="302" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/viewcontroller/page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/lifestyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/viewcontroller/MainPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="607">
+          <caret line="92" selection-start-line="92" selection-end-line="92" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/viewcontroller/RateController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1692">
+          <caret line="185" column="4" lean-forward="true" selection-start-line="185" selection-start-column="4" selection-end-line="187" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
+          <folding>
+            <element signature="e#1277#1278#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/viewcontroller/PageLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="83" column="30" lean-forward="true" selection-start-line="83" selection-start-column="30" selection-end-line="83" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/fxml/rateItemSettingsPage.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/fxml/settingsPage.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="29" column="18" lean-forward="true" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/viewcontroller/observers/RatingObserver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/viewcontroller/HomePageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2051#2052#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/viewcontroller/RateItemSettingsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="22" column="35" lean-forward="true" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#414#415#0" expanded="true" />
+            <element signature="e#581#582#0" expanded="true" />
+            <element signature="e#601#602#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+            <element signature="e#523#524#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/viewcontroller/SleepController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/viewcontroller/SettingsPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="33" column="74" lean-forward="true" selection-start-line="33" selection-start-column="74" selection-end-line="33" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#906#907#0" expanded="true" />
+            <element signature="e#939#940#0" expanded="true" />
+            <element signature="e#1710#1711#0" expanded="true" />
+            <element signature="e#1734#1735#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/RatingEntry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LifestyleApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/MainModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="71" column="44" lean-forward="true" selection-start-line="71" selection-start-column="44" selection-end-line="71" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1668#1669#0" expanded="true" />
+            <element signature="e#1695#1696#0" expanded="true" />
+            <element signature="e#2263#2264#0" expanded="true" />
+            <element signature="e#2306#2307#0" expanded="true" />
+            <element signature="e#2611#2612#0" expanded="true" />
+            <element signature="e#2654#2655#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/viewcontroller/StatisticsPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="131" column="7" selection-start-line="131" selection-start-column="7" selection-end-line="131" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

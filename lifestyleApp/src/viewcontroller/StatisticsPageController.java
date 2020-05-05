@@ -5,21 +5,21 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.chart.*;
-import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import model.MainModel;
 import model.RatingEntry;
 import model.Ratings;
-import sun.awt.ConstrainableGraphics;
+import viewcontroller.observers.DateObserver;
+import viewcontroller.observers.RatingObserver;
 
 import java.time.LocalDate;
 import java.time.temporal.TemporalField;
 import java.time.temporal.WeekFields;
 import java.util.*;
 
-public class StatisticsPageController  implements DateObserver, RatingObserver {
+public class StatisticsPageController  implements DateObserver, RatingObserver, page {
 
 
     private MainModel mainmodel;
@@ -129,9 +129,11 @@ public class StatisticsPageController  implements DateObserver, RatingObserver {
     }
 
     private void update() {
+       initTopicComoBox();
        currentDate = mainmodel.getDate();
        populateWeekGraph();
        weekLabel.setText("" + currentDate.get(woy));
+
     }
 
     //-----------init GUI  methods------------
