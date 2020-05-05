@@ -3,18 +3,24 @@ package viewcontroller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import model.MainModel;
+import viewcontroller.observers.DateObserver;
+import viewcontroller.observers.MainObserver;
+import viewcontroller.observers.UserObserver;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 
-public class MainPageController {
+public class MainPageController implements UserObserver, page {
 
     MainModel model;
 
@@ -25,6 +31,8 @@ public class MainPageController {
     private AnchorPane settingsPage;
     private AnchorPane fitnessPage;
 
+    @FXML
+    private Button nameMainPage;
 
     @FXML
     private DatePicker datePicker;
@@ -40,6 +48,7 @@ public class MainPageController {
     @FXML
     void showSettingsPage(MouseEvent event) {
         showPage(settingsPage);
+        notifyAllObservers();
     }
 
     @FXML
@@ -74,13 +83,14 @@ public class MainPageController {
         updateDateLabel();
     }
 
-    void initPage(MainModel model, Optional<Object> empty) {
+    public void initPage(MainModel model, Optional<MainPageController> empty) {
         this.model = model;
         updateDateLabel();
-        ;
+        model.attachUserOb(this);
+        update();
         homePage = PageLoader.createHomePage();
         statisticPage = PageLoader.createStatisticsPage();
-        settingsPage = PageLoader.createSettingsPage();
+        settingsPage = PageLoader.createSettingsPage(this);
         fitnessPage = PageLoader.createFitnessPage();
         showPage(homePage);
 
@@ -101,4 +111,24 @@ public class MainPageController {
     }
 
 
+    @Override
+    public void notified() {
+        update();
+    }
+
+    private void update() {
+        nameMainPage.setText(model.getUser().getName());
+    }
+
+    private List<MainObserver> observers = new ArrayList<MainObserver>();
+
+    public void attachMainOb(MainObserver observer){
+        observers.add(observer);
+    }
+
+    public void notifyAllObservers(){
+        for (MainObserver o : observers) {
+            o.notified();
+        }
+    }
 }

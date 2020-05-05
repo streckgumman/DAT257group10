@@ -1,12 +1,12 @@
 package model;
 
-import viewcontroller.DateObserver;
-import viewcontroller.RatingObserver;
+import viewcontroller.observers.DateObserver;
+import viewcontroller.observers.RatingObserver;
+import viewcontroller.observers.UserObserver;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Observer;
 
 
 public class MainModel {
@@ -25,7 +25,7 @@ public class MainModel {
         observers.add(observer);
     }
 
-    public void notifyAllObservers(){
+    public void notifyAllDateObservers(){
         for (DateObserver o : observers) {
             o.notified();
         }
@@ -41,6 +41,11 @@ public class MainModel {
         return user.getRatings();
     }
 
+    public void removeRating(Ratings rating) {
+        user.getRatings().remove(rating);
+        notifyAllRateObservers();
+    }
+
     public User getUser() {
         return user;
     }
@@ -49,8 +54,24 @@ public class MainModel {
         this.user = user;
     }
 
+    public void setUserName(String name){
+        user.setName(name);
+        notifyAllUserObservers();
+    }
+
+    public String getUserName(){return user.getName();}
+
     public void addRating(String topic){
-        user.addRating(topic);
+        boolean found = false;
+        for(Ratings r : user.getRatings()){
+            if (r.getTopic().equals(topic)){
+                found = true;
+            }
+        }
+        if (!found && !topic.equals("")){
+            user.addRating(topic);
+            notifyAllRateObservers(); 
+        }
     }
 
     public LocalDate getDate() {
@@ -59,7 +80,7 @@ public class MainModel {
 
     public void setDate(LocalDate date) {
         this.date = date;
-        notifyAllObservers();
+        notifyAllDateObservers();
     }
 
 
@@ -88,4 +109,22 @@ public class MainModel {
 
         }
     }
+
+    //-------------observer stuff-------------
+
+
+    private List<UserObserver> userObservers = new ArrayList<>();
+
+    public void attachUserOb(UserObserver observer){
+        userObservers.add(observer);
+    }
+
+    public void notifyAllUserObservers(){
+        for (UserObserver o : userObservers) {
+            o.notified();
+
+        }
+    }
+
+
 }
