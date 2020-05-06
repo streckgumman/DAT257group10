@@ -13,6 +13,8 @@ import model.MainModel;
 import model.RatingEntry;
 import model.Ratings;
 import sun.awt.ConstrainableGraphics;
+import viewcontroller.observers.DateObserver;
+import viewcontroller.observers.RatingObserver;
 
 import java.time.LocalDate;
 import java.time.YearMonth;
@@ -180,6 +182,7 @@ public class StatisticsPageController  implements DateObserver, RatingObserver {
        currentDate = mainmodel.getDate();
        populateMonthGraph();
        populateWeekGraph();
+       initTopicComoBox();
 
        if(isWeekGraphShowing){
            weekMonthLabel.setText("Week: ");
