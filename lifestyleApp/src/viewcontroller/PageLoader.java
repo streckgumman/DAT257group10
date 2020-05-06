@@ -55,8 +55,8 @@ public class PageLoader {
         return res.root;
     }
 
-    public static AnchorPane createCalendarPage() {
-        Result<CalendarPageController> res = loadPage("fxml/calendarPage.fxml");
+    public static AnchorPane createFitnessPage() {
+        Result<FitnessController> res = loadPage("fxml/fitnessPage.fxml");
         res.ctrl.initPage(model, Optional.empty());
         return res.root;
     }
@@ -73,8 +73,15 @@ public class PageLoader {
         return res.root;
     }
 
-    public static AnchorPane createSettingsPage() {
+    public static AnchorPane createSettingsPage(MainPageController parent) {
         Result<SettingsPageController> res = loadPage("fxml/settingsPage.fxml");
+        res.ctrl.initPage(model, Optional.of(parent));
+        return res.root;
+    }
+
+    public static AnchorPane createItemSettingsPage(Ratings r) {
+        Result<RateItemSettingsController> res = loadPage("fxml/rateItemSettingsPage.fxml");
+        res.ctrl.setRating(r);
         res.ctrl.initPage(model, Optional.empty());
         return res.root;
     }
@@ -91,5 +98,16 @@ public class PageLoader {
         return res.root;
     }
 
+    public static AnchorPane createWaterIntakePane() {
+        Result<WaterIntakeController> res = loadPage("fxml/waterIntake.fxml");
+        res.ctrl.initPage(model, Optional.empty());
+        return res.root;
+    }
+
+    public static AnchorPane createTodoPane() {
+        Result<TodoController> res = loadPage("fxml/todoPanel.fxml");
+        res.ctrl.initPage(model, Optional.empty());
+        return res.root;
+    }
 }
 

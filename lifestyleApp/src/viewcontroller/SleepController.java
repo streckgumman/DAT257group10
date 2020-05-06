@@ -10,7 +10,7 @@ import model.Sleep;
 
 import java.util.Optional;
 
-public class SleepController {
+public class SleepController implements page{
     private int bedTimeHour=12;
     private int bedTimeMinute = 30;
     private int wakeUpTimeHour= 12;
@@ -112,6 +112,6 @@ public class SleepController {
     }
 
 
-    public void initPage(MainModel model, Optional<Object> empty) {
+    public void initPage(MainModel model, Optional<MainPageController> empty) {
     }
 }

@@ -1,17 +1,18 @@
 package viewcontroller;
 
 import javafx.fxml.FXML;
-import javafx.scene.effect.DropShadow;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.FlowPane;
-import javafx.scene.paint.Color;
 import model.MainModel;
 import model.Ratings;
+import viewcontroller.observers.DateObserver;
+import viewcontroller.observers.RatingObserver;
 
 import java.util.Optional;
 
-public class HomePageController implements DateObserver {
+public class HomePageController implements DateObserver, RatingObserver, page {
     private MainModel model;
+    private MainPageController parent;
 
     @FXML
     private AnchorPane journalAnchorPane;
@@ -19,12 +20,22 @@ public class HomePageController implements DateObserver {
     @FXML
     private AnchorPane sleepAnchorpane;
 
-    public void initPage(MainModel model, Optional<Object> empty) {
+    @FXML
+    private AnchorPane waterIntakeAnchorPane;
+
+    @FXML
+    private AnchorPane todoAnchorPane;
+
+    public void initPage(MainModel model, Optional<MainPageController> mainPage) {
         this.model=model;
+        mainPage.ifPresent(page -> parent = page);
         model.attachDateOb(this);
+        model.attachRateOb(this);
         showRatings();
         initJournal();
         initSleepPanel();
+        initWaterIntakePanel();
+        initTodoPanel();
     }
 
     private void initJournal() {
@@ -35,6 +46,16 @@ public class HomePageController implements DateObserver {
     private void initSleepPanel() {
         sleepAnchorpane.getChildren().clear();
         sleepAnchorpane.getChildren().add(PageLoader.createSleepPage());
+    }
+
+    private void initWaterIntakePanel() {
+        waterIntakeAnchorPane.getChildren().clear();
+        waterIntakeAnchorPane.getChildren().add(PageLoader.createWaterIntakePane());
+    }
+
+    private void initTodoPanel() {
+        todoAnchorPane.getChildren().clear();
+        todoAnchorPane.getChildren().add(PageLoader.createTodoPane());
     }
 
     @FXML

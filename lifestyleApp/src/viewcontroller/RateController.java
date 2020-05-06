@@ -15,7 +15,7 @@ import model.Ratings;
 import javax.swing.text.html.ImageView;
 import java.util.Optional;
 
-public class RateController {
+public class RateController implements page{
     private Ratings r;
     private RatingEntry re;
     private MainModel model;
@@ -151,7 +151,7 @@ public class RateController {
         star5anchor.setBlendMode(BlendMode.OVERLAY);
     }
 
-    public void initPage(MainModel model, Optional<Object> empty) {
+    public void initPage(MainModel model, Optional<MainPageController> empty) {
         r.addRatingEntry(model.getDate());
         this.model = model;
         this.re = r.getRating(model.getDate());

@@ -5,17 +5,18 @@ import javafx.scene.control.TextArea;
 import model.Journal;
 import model.JournalEntry;
 import model.MainModel;
+import viewcontroller.observers.DateObserver;
 
 import java.util.Optional;
 
-public class JournalController implements DateObserver{
+public class JournalController implements DateObserver, page {
     private MainModel model;
     private Journal journal;
 
     @FXML
     private TextArea textArea;
 
-    public void initPage(MainModel model, Optional<Object> empty) {
+    public void initPage(MainModel model, Optional<MainPageController> empty) {
         model.attachDateOb(this);
         this.model = model;
         this.journal = model.getJournal();
