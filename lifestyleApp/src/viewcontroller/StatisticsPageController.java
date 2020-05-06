@@ -102,8 +102,8 @@ public class StatisticsPageController  implements DateObserver, RatingObserver {
 
         for (RatingEntry entry : monthStatistics) {
             dataSeries2.getData().add(new XYChart.Data("" + entry.getDate().getDayOfMonth(), entry.getRating()));
-            monthLineGraph.getData().setAll(dataSeries2);
         }
+        monthLineGraph.getData().setAll(dataSeries2);
 
     }
 
