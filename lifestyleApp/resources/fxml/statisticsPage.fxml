@@ -18,18 +18,6 @@
             <Font name="Courier New" size="64.0" />
          </font>
       </Label>
-      <AnchorPane fx:id="weekAnchorPane" layoutX="317.0" layoutY="140.0" prefHeight="350.0" prefWidth="500.0" style="-fx-background-color: #269190;">
-         <children>
-            <BarChart fx:id="weekGraph" layoutX="-2.0" layoutY="1.0" prefHeight="281.0" prefWidth="439.0" title="Week" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-              <xAxis>
-                <CategoryAxis side="BOTTOM" />
-              </xAxis>
-              <yAxis>
-                <NumberAxis side="LEFT" />
-              </yAxis>
-            </BarChart>
-         </children>
-      </AnchorPane>
       <Button fx:id="weekButton" layoutX="402.0" layoutY="508.0" mnemonicParsing="false" onAction="#weekGraphToFront" text="Week" />
       <Button fx:id="monthbutton" layoutX="616.0" layoutY="508.0" mnemonicParsing="false" onAction="#monthGraphToFront" text="Month" />
       <ComboBox fx:id="ratingTopicComboBox" layoutX="503.0" layoutY="90.0" onAction="#changeTopicActionEvent" prefWidth="150.0" />
@@ -50,12 +38,24 @@
             </LineChart>
          </children>
       </AnchorPane>
-      <Label layoutX="682.0" layoutY="89.0" text="Week">
+      <AnchorPane fx:id="weekAnchorPane" layoutX="317.0" layoutY="140.0" prefHeight="350.0" prefWidth="500.0" style="-fx-background-color: #269190;">
+         <children>
+            <BarChart fx:id="weekGraph" layoutX="-2.0" layoutY="1.0" prefHeight="281.0" prefWidth="439.0" title="Week" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </BarChart>
+         </children>
+      </AnchorPane>
+      <Label fx:id="weekMonthLabel" layoutX="682.0" layoutY="89.0" text="Week">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Label fx:id="weekLabel" layoutX="751.0" layoutY="89.0" text="Label">
+      <Label fx:id="specWeekMonthLabel" layoutX="751.0" layoutY="89.0" text="Label">
          <font>
             <Font size="18.0" />
          </font>

@@ -25,6 +25,7 @@ public class StatisticsPageController  implements DateObserver, RatingObserver {
 
     private MainModel mainmodel;
     private LocalDate currentDate;
+    private Boolean isWeekGraphShowing = true;
 
     //-----------FXML variables-------------
 
@@ -44,7 +45,10 @@ public class StatisticsPageController  implements DateObserver, RatingObserver {
     private ComboBox<String> ratingTopicComboBox;
 
     @FXML
-    private Label weekLabel;
+    private Label weekMonthLabel;
+
+    @FXML
+    private Label specWeekMonthLabel;
 
     private TemporalField woy = WeekFields.of(Locale.getDefault()).weekOfWeekBasedYear();
 
@@ -65,11 +69,17 @@ public class StatisticsPageController  implements DateObserver, RatingObserver {
     @FXML
     private void weekGraphToFront(ActionEvent event){
         weekAnchorPane.toFront();
+        isWeekGraphShowing = true;
+        weekMonthLabel.setText("Week: ");
+        specWeekMonthLabel.setText("" + currentDate.get(woy));
     }
 
     @FXML
     private void monthGraphToFront(ActionEvent event){
         monthAnchorPane.toFront();
+        isWeekGraphShowing = false;
+        weekMonthLabel.setText("Month: ");
+        specWeekMonthLabel.setText("" + currentDate.getMonth().toString());
     }
 
     @FXML
@@ -170,7 +180,15 @@ public class StatisticsPageController  implements DateObserver, RatingObserver {
        currentDate = mainmodel.getDate();
        populateMonthGraph();
        populateWeekGraph();
-       weekLabel.setText("" + currentDate.get(woy));
+
+       if(isWeekGraphShowing){
+           weekMonthLabel.setText("Week: ");
+           specWeekMonthLabel.setText("" + currentDate.get(woy));
+       }else{
+           weekMonthLabel.setText("Month: ");
+           specWeekMonthLabel.setText("" + currentDate.getMonth().toString());
+       }
+
     }
 
     //-----------init GUI  methods------------
@@ -191,10 +209,15 @@ public class StatisticsPageController  implements DateObserver, RatingObserver {
         monthLineGraph.getXAxis().setLabel("Time");
         NumberAxis monthAxisY = (NumberAxis) monthLineGraph.getYAxis();
         CategoryAxis monthAxisX = (CategoryAxis) monthLineGraph.getXAxis();
-
-
-
         monthLineGraph.getYAxis().setAutoRanging(false);
+
+        if(isWeekGraphShowing){
+            weekMonthLabel.setText("Week: ");
+            specWeekMonthLabel.setText("" + currentDate.get(woy));
+        }else{
+            weekMonthLabel.setText("Month: ");
+            specWeekMonthLabel.setText("" + currentDate.getMonth().toString());
+        }
 
 
 
