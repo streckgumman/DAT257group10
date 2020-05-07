@@ -24,8 +24,6 @@ public class FitnessController {
     @FXML
     private ListView<String> workoutListView = new ListView<>();
 
-
-
     @FXML
     private Label intensityLabel;
 
@@ -49,7 +47,7 @@ public class FitnessController {
 
     @FXML
     void setWorkoutMin(MouseEvent event) {
-      setWorkoutTime(workoutHour,workoutMinute);
+        workoutMinute = (Integer) workoutMinSpinner.getValue();
 
     }
 
@@ -62,27 +60,27 @@ public class FitnessController {
 
     @FXML
     void setTrainingTypeMindFull(MouseEvent event) {
-
+        type = WorkoutEntry.TrainingType.MINDFULNESS;
     }
 
     @FXML
     void setTrainingTypeOther(MouseEvent event) {
-
+        type = WorkoutEntry.TrainingType.OTHER;
     }
 
     @FXML
     void setTrainingTypeRunning(MouseEvent event) {
-
+        type = WorkoutEntry.TrainingType.RUNNING;
     }
 
     @FXML
     void setTrainingTypeWalk(MouseEvent event) {
-
+        type = WorkoutEntry.TrainingType.WALKING;
     }
 
     @FXML
-    void setTrainingTypeWieght(MouseEvent event) {
-
+    void setTrainingTypeWeight(MouseEvent event) {
+        type = WorkoutEntry.TrainingType.WEIGHT;
     }
 
     void setWorkoutTime(int workoutHour, int workoutMinute){
@@ -101,6 +99,17 @@ public class FitnessController {
         workoutListView.setItems(workoutEntries);
     }
 
+    @FXML
+    void deleteWorkout(ActionEvent event) {
+
+      final int selectedWorkout = workoutListView.getSelectionModel().getSelectedIndex();
+      if (selectedWorkout!= -1) {
+          final int newSelectedWorkout = (selectedWorkout == workoutListView.getItems().size() - 1) ? selectedWorkout - 1 : selectedWorkout;
+          workoutListView.getItems().remove(selectedWorkout);
+          workoutListView.getSelectionModel().select(newSelectedWorkout);
+      }
+
+    }
 
 }
 

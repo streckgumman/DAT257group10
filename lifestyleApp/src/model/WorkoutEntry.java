@@ -12,8 +12,8 @@ public class WorkoutEntry {
     public enum TrainingType{
         WEIGHT,
         RUNNING,
-        WALKNING,
-        MINDFULLNESS,
+        WALKING,
+        MINDFULNESS,
         OTHER
     }
 
@@ -61,7 +61,7 @@ public class WorkoutEntry {
 
     @Override
     public String toString(){
-        return "Workout: " + hour + " hour(s), " + minute + " minutes. " + " Workouttype: " + type +  ", intensity: " + String.valueOf(new DecimalFormat("#.#").format(intensity));
+        return "Workout: " + hour + " hour(s), " + minute + " minute(s). " + " Workouttype: " + type +  ", intensity: " + String.valueOf(new DecimalFormat("#.#").format(intensity));
     }
 
 }
