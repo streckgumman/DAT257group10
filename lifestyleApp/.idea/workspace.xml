@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e58e48c-3d95-4584-836b-9034806ca01b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/images/fashion.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/fitness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/run.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/sports-and-competition.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/sports.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/model/MainModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lifestyleApp/model/MainModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lifestyleApp/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/fxml/fitnessPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/fxml/fitnessPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/MainModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/MainModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/SleepEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/SleepEntry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/TodoEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/TodoEntry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Water.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Water.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/viewcontroller/FitnessController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewcontroller/FitnessController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/viewcontroller/TodoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewcontroller/TodoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/viewcontroller/WaterIntakeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewcontroller/WaterIntakeController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,11 +50,6 @@
         <entry key="$PROJECT_DIR$/.." value="master" />
       </map>
     </option>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="807" />
   </component>
   <component name="ProjectId" id="1ZybIBekdFqfGXuRPhNKVwCfB1s" />
   <component name="ProjectLevelVcsManager">
@@ -139,7 +128,7 @@
       <option name="presentableId" value="Default" />
       <updated>1585814198043</updated>
       <workItem from="1588586038216" duration="2009000" />
-      <workItem from="1588683661993" duration="2408000" />
+      <workItem from="1588683661993" duration="3774000" />
     </task>
     <task id="LOCAL-00001" summary="Created a skeleton for the application">
       <created>1586037152957</created>
@@ -201,7 +190,13 @@
       <option name="project" value="LOCAL" />
       <updated>1588677368451</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL−00010" summary="Small fix">
+      <created>1588686512475</created>
+      <option name="number" value="LOCAL−00010" />
+      <option name="presentableId" value="LOCAL−00010" />
+      <updated>1588686512475</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,7 +224,8 @@
     <MESSAGE value="push with error //w Hanna T" />
     <MESSAGE value="Johanna &amp; Linnea:&#10;Todo done!" />
     <MESSAGE value="Jobbat hela dagen med settings, lägga till ratings ändra namn etc. Även kodoptimerat då en del kod såg svajig ut. with Hanna T" />
-    <option name="LAST_COMMIT_MESSAGE" value="Jobbat hela dagen med settings, lägga till ratings ändra namn etc. Även kodoptimerat då en del kod såg svajig ut. with Hanna T" />
+    <MESSAGE value="Small fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Small fix" />
   </component>
   <component name="WindowStateProjectService">
     <state x="535" y="214" key="#com.intellij.fileTypes.FileTypeChooser" />
