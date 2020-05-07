@@ -1,23 +1,29 @@
 package viewcontroller;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.Slider;
-import javafx.scene.control.Spinner;
+import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
 import model.MainModel;
 import model.TodoEntry;
+import model.WorkoutEntry;
 
 import java.text.DecimalFormat;
 import java.util.Optional;
 
 public class FitnessController {
 
-    public TodoEntry todoEntry;
     private int workoutHour;
     private int workoutMinute;
     private double intensity;
+    private WorkoutEntry.TrainingType type;
+    private ObservableList<String> workoutEntries = FXCollections.observableArrayList();
+
+    @FXML
+    private ListView<String> workoutListView = new ListView<>();
+
 
 
     @FXML
@@ -84,8 +90,17 @@ public class FitnessController {
         workoutMinute = (Integer) workoutMinSpinner.getValue();
 
     }
+
     public void initPage(MainModel model, Optional<Object> empty) {
     }
+
+    @FXML
+    void saveWorkout(ActionEvent event) {
+        WorkoutEntry entry = new WorkoutEntry(workoutHour, workoutMinute, intensity, type);
+        workoutEntries.add(entry.toString());
+        workoutListView.setItems(workoutEntries);
+    }
+
 
 }
 
