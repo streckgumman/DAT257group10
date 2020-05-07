@@ -2,12 +2,14 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.Slider?>
 <?import javafx.scene.control.Spinner?>
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="540.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewcontroller.FitnessController">
@@ -110,11 +112,16 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <Slider fx:id="sliderIntensity" layoutX="126.0" layoutY="299.0" max="5" min="1" onMouseReleased="#setIntensity" prefHeight="14.0" prefWidth="225.0" />
-            <Button fx:id="saveTraningButton" layoutX="322.0" layoutY="351.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="116.0" text="Spara" />
+            <Slider fx:id="sliderIntensity" layoutX="126.0" layoutY="299.0" max="5" min="1" onMouseReleased="#setIntensity" prefHeight="14.0" prefWidth="225.0" showTickMarks="true" value="1.0" />
+            <Button fx:id="saveTraningButton" layoutX="322.0" layoutY="351.0" mnemonicParsing="false" onAction="#saveWorkout" prefHeight="25.0" prefWidth="116.0" text="Spara" />
             <Label fx:id="intensityLabel" layoutX="335.0" layoutY="276.0" text="1" />
             <Label layoutX="129.0" layoutY="313.0" prefHeight="17.0" prefWidth="225.0" text="1              2              3              4              5" />
          </children>
       </AnchorPane>
+      <FlowPane layoutX="587.0" layoutY="106.0" prefHeight="190.0" prefWidth="531.0">
+         <children>
+            <ListView fx:id="workoutListView" prefHeight="200.0" prefWidth="540.0" />
+         </children>
+      </FlowPane>
    </children>
 </AnchorPane>

@@ -18,6 +18,8 @@ public class TodoController implements page{
 
     private ObservableList<TodoEntry> todoEntries = FXCollections.observableArrayList();
     private ArrayList<TodoEntry> todoEntryArrayList = new ArrayList<>();
+    private MainModel model;
+
 
     @FXML
     private TextArea todoTextArea;
@@ -30,7 +32,7 @@ public class TodoController implements page{
     @FXML
     void addTodoButton(ActionEvent event) {
         if (todoTextArea.getText() != null) {
-            TodoEntry todo = new TodoEntry(todoTextArea.getText());
+            TodoEntry todo = new TodoEntry(todoTextArea.getText(), model.getDate());
             todoEntries.add(todo);
             todoListView.setItems(todoEntries);
 
