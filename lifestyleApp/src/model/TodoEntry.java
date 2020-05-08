@@ -8,7 +8,7 @@ public class TodoEntry {
     private LocalDate date;
 
     // Constructor, a todoItem is not done when created
-    public TodoEntry(String description) {
+    public TodoEntry(String description, LocalDate date) {
         this.description = description;
         this.date = date;
 
