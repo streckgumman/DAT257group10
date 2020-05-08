@@ -17,7 +17,6 @@ public class Water {
     }
 
 
-
     public WaterEntry getWaterEntry(LocalDate date){
         for (WaterEntry we : waterEntries){
             if (we.getDate()==date){
