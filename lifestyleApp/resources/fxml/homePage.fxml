@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -7,19 +14,19 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="540.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewcontroller.HomePageController">
+<AnchorPane prefHeight="540.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewcontroller.HomePageController">
    <children>
-      <Text layoutX="509.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rate your day">
+      <Text layoutX="497.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rate your day">
          <font>
-            <Font size="30.0" />
+            <Font name="American Typewriter" size="36.0" />
          </font></Text>
       <ScrollPane hbarPolicy="NEVER" layoutX="261.0" layoutY="74.0" prefHeight="451.0" prefWidth="478.0" AnchorPane.leftAnchor="330.0" AnchorPane.rightAnchor="330.0">
          <content>
             <FlowPane fx:id="ratingFlowPane" prefHeight="212.0" prefWidth="520.0" />
          </content>
       </ScrollPane>
-      <AnchorPane fx:id="journalAnchorPane" layoutX="870.0" layoutY="74.0" prefHeight="430.0" prefWidth="314.0" />
-      <AnchorPane fx:id="sleepAnchorpane" layoutX="14.0" layoutY="14.0" prefHeight="150.0" prefWidth="300.0" style="-fx-background-color: #e4f7e6;">
+      <AnchorPane fx:id="journalAnchorPane" layoutX="886.0" layoutY="95.0" prefHeight="430.0" prefWidth="300.0" />
+      <AnchorPane fx:id="sleepAnchorpane" layoutX="14.0" layoutY="14.0" prefHeight="150.0" prefWidth="300.0" style="-fx-background-color: #e4f7e6;" AnchorPane.topAnchor="20.0">
          <effect>
             <DropShadow />
          </effect>
@@ -29,6 +36,12 @@
    <DropShadow />
 </effect></AnchorPane>
       <AnchorPane fx:id="todoAnchorPane" layoutX="14.0" layoutY="346.0" prefHeight="180.0" prefWidth="300.0" style="-fx-background-color: #e4f7e6;">
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <AnchorPane fx:id="water5" layoutX="250.0" layoutY="65.0" prefHeight="51.0" prefWidth="51.0" />
+      <AnchorPane fx:id="weatherAnchorpane" layoutX="886.0" layoutY="20.0" prefHeight="58.0" prefWidth="300.0" style="-fx-background-color: #e4f7e6;" AnchorPane.topAnchor="20.0">
          <effect>
             <DropShadow />
          </effect>

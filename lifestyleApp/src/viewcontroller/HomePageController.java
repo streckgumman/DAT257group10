@@ -26,6 +26,9 @@ public class HomePageController implements DateObserver, RatingObserver, page {
     @FXML
     private AnchorPane todoAnchorPane;
 
+    @FXML
+    private AnchorPane weatherAnchorpane;
+
     public void initPage(MainModel model, Optional<MainPageController> mainPage) {
         this.model=model;
         mainPage.ifPresent(page -> parent = page);
@@ -36,8 +39,13 @@ public class HomePageController implements DateObserver, RatingObserver, page {
         initSleepPanel();
         initWaterIntakePanel();
         initTodoPanel();
+        initWeather();
     }
 
+    private void initWeather(){
+       weatherAnchorpane.getChildren().clear();
+       weatherAnchorpane.getChildren().add(PageLoader.createWeatherPane());
+    }
     private void initJournal() {
         journalAnchorPane.getChildren().clear();
         journalAnchorPane.getChildren().add(PageLoader.createJournal(model.getJournal()));
