@@ -10,6 +10,9 @@ public class User {
     private String name;
     private Journal journal = new Journal();
     private List<Ratings> ratings= new ArrayList<>();
+    ArrayList<SleepEntry> bedtimeList= new ArrayList<SleepEntry>();
+
+
 
     void addRating(String topic){
         boolean exists = false;
@@ -52,4 +55,20 @@ public class User {
     public WaterEntry getWaterIntake(LocalDate date) {
         return getWater().getWaterEntry(date);
     }
+
+    public SleepEntry getSleepEntry(LocalDate date){
+        for (SleepEntry se : bedtimeList){
+            if (se.getDate().equals(date)){
+                return se;
+            }
+        }
+        SleepEntry nueva = new SleepEntry(date);
+        bedtimeList.add(nueva);
+        return nueva;
+    }
+
+    public List<SleepEntry> getSleepEntries(){
+        return bedtimeList;
+    }
+
 }

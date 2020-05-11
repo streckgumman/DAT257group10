@@ -10,11 +10,11 @@ public class SleepEntry {
     private int wakeupTimeMinute;
     private LocalDate date;
 
-    public SleepEntry(int bedtimeHour, int bedtimeMinute, int wakeupTimeHour, int wakeupTimeMinute, LocalDate date) {
-        this.bedtimeHour = bedtimeHour;
-        this.bedtimeMinute = bedtimeMinute;
-        this.wakeupTimeHour = wakeupTimeHour;
-        this.wakeupTimeMinute = wakeupTimeMinute;
+    public SleepEntry(LocalDate date) {
+        this.bedtimeHour = 22;
+        this.bedtimeMinute = 0;
+        this.wakeupTimeHour = 6;
+        this.wakeupTimeMinute = 0;
         this.date = date;
     }
 
@@ -40,7 +40,7 @@ public class SleepEntry {
         this.date = date;
     }
 
-    //Gettes
+    //Getters
 
     public int getBedtimeHour() {
         return bedtimeHour;
