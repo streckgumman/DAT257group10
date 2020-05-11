@@ -5,6 +5,8 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import javafx.scene.effect.BlendMode;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import model.MainModel;
 import model.TodoEntry;
@@ -40,6 +42,21 @@ public class FitnessController implements page{
     private Button saveTraningButton;
 
     @FXML
+    private ImageView weightPicture;
+
+    @FXML
+    private ImageView runningPictures;
+
+    @FXML
+    private ImageView walkingPicture;
+
+    @FXML
+    private ImageView mindfullnessPicuture;
+
+    @FXML
+    private ImageView otherPicture;
+
+    @FXML
     void setWorkoutHour(MouseEvent event) {
         workoutHour = (Integer) workoutHourSpinner.getValue();
 
@@ -61,26 +78,37 @@ public class FitnessController implements page{
     @FXML
     void setTrainingTypeMindFull(MouseEvent event) {
         type = WorkoutEntry.TrainingType.MINDFULNESS;
+        feedbackMindfullness();
     }
 
     @FXML
     void setTrainingTypeOther(MouseEvent event) {
         type = WorkoutEntry.TrainingType.OTHER;
+        feedbackOther();
     }
 
     @FXML
     void setTrainingTypeRunning(MouseEvent event) {
         type = WorkoutEntry.TrainingType.RUNNING;
+        feedbackRunning();
     }
 
     @FXML
     void setTrainingTypeWalk(MouseEvent event) {
         type = WorkoutEntry.TrainingType.WALKING;
+        feedbackWalking();
     }
 
     @FXML
     void setTrainingTypeWeight(MouseEvent event) {
         type = WorkoutEntry.TrainingType.WEIGHT;
+        feedbackWeight();
+    }
+
+    private void setTraingsTypeNull(){
+        type = null;
+        resetPictures();
+
     }
 
     void setWorkoutTime(int workoutHour, int workoutMinute){
@@ -96,6 +124,7 @@ public class FitnessController implements page{
         WorkoutEntry entry = new WorkoutEntry(workoutHour, workoutMinute, intensity, type);
         workoutEntries.add(entry.toString());
         workoutListView.setItems(workoutEntries);
+        setTraingsTypeNull();
     }
 
     @FXML
@@ -110,6 +139,53 @@ public class FitnessController implements page{
 
     }
 
+    private void feedbackOther(){
+       otherPicture.setBlendMode(BlendMode.SRC_OVER);
+        weightPicture.setBlendMode(BlendMode.OVERLAY);
+        runningPictures.setBlendMode(BlendMode.OVERLAY);
+        walkingPicture.setBlendMode(BlendMode.OVERLAY);
+        mindfullnessPicuture.setBlendMode(BlendMode.OVERLAY);
+    }
+
+    private void feedbackWeight(){
+        weightPicture.setBlendMode(BlendMode.SRC_OVER);
+        otherPicture.setBlendMode(BlendMode.OVERLAY);
+        runningPictures.setBlendMode(BlendMode.OVERLAY);
+        walkingPicture.setBlendMode(BlendMode.OVERLAY);
+        mindfullnessPicuture.setBlendMode(BlendMode.OVERLAY);
+    }
+
+    private void feedbackRunning(){
+        runningPictures.setBlendMode(BlendMode.SRC_OVER);
+        weightPicture.setBlendMode(BlendMode.OVERLAY);
+        otherPicture.setBlendMode(BlendMode.OVERLAY);
+        walkingPicture.setBlendMode(BlendMode.OVERLAY);
+        mindfullnessPicuture.setBlendMode(BlendMode.OVERLAY);
+    }
+
+    private void feedbackWalking(){
+        walkingPicture.setBlendMode(BlendMode.SRC_OVER);
+        weightPicture.setBlendMode(BlendMode.OVERLAY);
+        runningPictures.setBlendMode(BlendMode.OVERLAY);
+        otherPicture.setBlendMode(BlendMode.OVERLAY);
+        mindfullnessPicuture.setBlendMode(BlendMode.OVERLAY);
+    }
+
+    private void feedbackMindfullness(){
+        mindfullnessPicuture.setBlendMode(BlendMode.SRC_OVER);
+        weightPicture.setBlendMode(BlendMode.OVERLAY);
+        runningPictures.setBlendMode(BlendMode.OVERLAY);
+        walkingPicture.setBlendMode(BlendMode.OVERLAY);
+        otherPicture.setBlendMode(BlendMode.OVERLAY);
+    }
+
+    private void resetPictures(){
+        mindfullnessPicuture.setBlendMode(BlendMode.SRC_OVER);
+        weightPicture.setBlendMode(BlendMode.SRC_OVER);
+        runningPictures.setBlendMode(BlendMode.SRC_OVER);
+        walkingPicture.setBlendMode(BlendMode.SRC_OVER);
+        otherPicture.setBlendMode(BlendMode.SRC_OVER);
+    }
     @Override
     public void initPage(MainModel model, Optional<MainPageController> mainPage) {
 
