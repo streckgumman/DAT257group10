@@ -95,7 +95,6 @@ public class FitnessController implements page, DateObserver {
 
     }
 
-
     @FXML
     void saveWorkout(ActionEvent event) {
         if (type != null) {
