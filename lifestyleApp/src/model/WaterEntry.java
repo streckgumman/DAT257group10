@@ -7,12 +7,12 @@ public class WaterEntry {
     private double waterEntry;
     private LocalDate date;
 
-    public WaterEntry(double waterEntry, LocalDate date) {
-        this.waterEntry = waterEntry;
+    public WaterEntry(LocalDate date) {
         this.date = date;
     }
 
     // Getters and Setters
+
 
     public double getWaterEntry() {
         return waterEntry;

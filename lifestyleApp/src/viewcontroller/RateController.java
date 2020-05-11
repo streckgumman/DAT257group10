@@ -1,10 +1,7 @@
 package viewcontroller;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
-import javafx.scene.control.RadioButton;
-import javafx.scene.effect.Blend;
 import javafx.scene.effect.BlendMode;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
@@ -12,7 +9,6 @@ import model.MainModel;
 import model.RatingEntry;
 import model.Ratings;
 
-import javax.swing.text.html.ImageView;
 import java.util.Optional;
 
 public class RateController implements page{
@@ -44,11 +40,11 @@ public class RateController implements page{
         if (star1anchor.getBlendMode() == BlendMode.SRC_OVER && star2anchor.getBlendMode() == BlendMode.OVERLAY) {
             resetStars();
             //re.setRating(0);
-            model.setRateing(re,0);
+            model.setRating(re,0);
         } else {
             oneStars();
             //re.setRating(1);
-            model.setRateing(re,1);
+            model.setRating(re,1);
         }
     }
 
@@ -57,11 +53,11 @@ public class RateController implements page{
         if (star2anchor.getBlendMode() == BlendMode.SRC_OVER && star3anchor.getBlendMode() == BlendMode.OVERLAY) {
             resetStars();
             //re.setRating(0);
-            model.setRateing(re,0);
+            model.setRating(re,0);
         } else {
             twoStars();
             //re.setRating(2);
-            model.setRateing(re,2);
+            model.setRating(re,2);
         }
     }
 
@@ -70,11 +66,11 @@ public class RateController implements page{
         if (star3anchor.getBlendMode() == BlendMode.SRC_OVER && star4anchor.getBlendMode() == BlendMode.OVERLAY) {
             resetStars();
             //re.setRating(0);
-            model.setRateing(re,0);
+            model.setRating(re,0);
         } else {
             threeStars();
             //re.setRating(3);
-            model.setRateing(re,3);
+            model.setRating(re,3);
         }
     }
 
@@ -83,11 +79,11 @@ public class RateController implements page{
         if (star4anchor.getBlendMode() == BlendMode.SRC_OVER && star5anchor.getBlendMode() == BlendMode.OVERLAY) {
             resetStars();
             //re.setRating(0);
-            model.setRateing(re,0);
+            model.setRating(re,0);
         } else {
             fourStars();
             //re.setRating(4);
-            model.setRateing(re,4);
+            model.setRating(re,4);
         }
     }
 
@@ -96,11 +92,11 @@ public class RateController implements page{
         if (star5anchor.getBlendMode() == BlendMode.SRC_OVER) {
             resetStars();
             //re.setRating(0);
-            model.setRateing(re,0);
+            model.setRating(re,0);
         } else {
             fiveStars();
             //re.setRating(5);
-            model.setRateing(re,5);
+            model.setRating(re,5);
         }
     }
     private void oneStars(){
@@ -152,7 +148,7 @@ public class RateController implements page{
     }
 
     public void initPage(MainModel model, Optional<MainPageController> empty) {
-        r.addRatingEntry(model.getDate());
+        r.getRating(model.getDate());
         this.model = model;
         this.re = r.getRating(model.getDate());
         setStars();

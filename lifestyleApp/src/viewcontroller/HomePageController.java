@@ -79,6 +79,8 @@ public class HomePageController implements DateObserver, RatingObserver, page {
     }
 
 
+
+
     @Override
     public void notified() {
         update();
@@ -86,5 +88,6 @@ public class HomePageController implements DateObserver, RatingObserver, page {
 
     private void update(){
         showRatings();
+        initWaterIntakePanel();
     }
 }

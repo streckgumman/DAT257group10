@@ -17,21 +17,23 @@ public class MainModel {
         return new MainModel();
     }
 
-    //----------------Date-Observers-------------------------
-
-    private List<DateObserver> observers = new ArrayList<DateObserver>();
-
-    public void attachDateOb(DateObserver observer){
-        observers.add(observer);
-    }
-
-    public void notifyAllDateObservers(){
-        for (DateObserver o : observers) {
-            o.notified();
-        }
-    }
-
     //---------------Setters and Getters----------------
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user){
+        this.user = user;
+    }
+
+    public void setUserName(String name){
+        user.setName(name);
+        notifyAllUserObservers();
+    }
+
+    public String getUserName(){return user.getName();}
+
 
     public Journal getJournal(){
         return user.getJournal();
@@ -49,20 +51,6 @@ public class MainModel {
         notifyAllRateObservers();
     }
 
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user){
-        this.user = user;
-    }
-
-    public void setUserName(String name){
-        user.setName(name);
-        notifyAllUserObservers();
-    }
-
-    public String getUserName(){return user.getName();}
 
     public void addRating(String topic){
         boolean found = false;
@@ -77,6 +65,25 @@ public class MainModel {
         }
     }
 
+    public void setRating(RatingEntry re, int rateing){
+        for (Ratings r : user.getRatings()){
+            if (r.getTopic().equals(re.getTopic())){
+                r.getRating(re.getDate()).setRating(rateing);
+            }
+        }
+        notifyAllRateObservers();
+    }
+
+    public void setWaterIntake(double intake){
+        user.addWaterEntry(this.date, intake);
+    }
+
+    public WaterEntry getWaterIntake(){
+        return user.getWaterIntake(this.date);
+    }
+
+
+
     public LocalDate getDate() {
         return date;
     }
@@ -86,18 +93,21 @@ public class MainModel {
         notifyAllDateObservers();
     }
 
+    //----------------Date-Observers-------------------------
 
-    public void setRateing (RatingEntry re, int rateing){
-        for (Ratings r : user.getRatings()){
-            if (r.getTopic().equals(re.getTopic())){
-                r.getRating(re.getDate()).setRating(rateing);
-            }
-        }
-        notifyAllRateObservers();
+    private List<DateObserver> observers = new ArrayList<DateObserver>();
 
+    public void attachDateOb(DateObserver observer){
+        observers.add(observer);
     }
 
-    //-------------observer stuff-------------
+    public void notifyAllDateObservers(){
+        for (DateObserver o : observers) {
+            o.notified();
+        }
+    }
+
+    //-------------Rate observer-------------
 
 
     private List<RatingObserver> rateObservers = new ArrayList<>();
@@ -113,7 +123,7 @@ public class MainModel {
         }
     }
 
-    //-------------observer stuff-------------
+    //-------------User observer-------------
 
 
     private List<UserObserver> userObservers = new ArrayList<>();
