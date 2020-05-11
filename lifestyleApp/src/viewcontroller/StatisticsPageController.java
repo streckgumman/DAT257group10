@@ -14,11 +14,15 @@ import sun.awt.ConstrainableGraphics;
 import viewcontroller.observers.DateObserver;
 import viewcontroller.observers.RatingObserver;
 
+import java.text.DecimalFormat;
 import java.time.LocalDate;
 import java.time.YearMonth;
 import java.time.temporal.TemporalField;
 import java.time.temporal.WeekFields;
 import java.util.*;
+
+import java.util.ArrayList;
+import java.util.Collections;
 
 public class StatisticsPageController  implements page, DateObserver, RatingObserver {
 
@@ -241,20 +245,23 @@ public class StatisticsPageController  implements page, DateObserver, RatingObse
         ratingTopicComboBox.getSelectionModel().select(0);
     }
 
-    Water water;
 
+    //Average water intake
     @FXML
     private Label averageWaterLabel;
 
     @FXML
     void averageWaterIntake (ActionEvent event) {
-        List<WaterEntry> waterlist = water.getWaterEntries();
         double av = 0;
-        for(int j = waterlist.size()-1;  j > waterlist.size() - 8;j--){
-            av += waterlist.get(j).getWaterEntry();
+        LocalDate startDate = mainmodel.getDate();
+        LocalDate endDate = startDate.minusDays(6);
+        for (LocalDate date = startDate; date.isAfter(endDate); date = date.minusDays(1)) {
+            av += mainmodel.getWater().getWaterEntry(date).getWaterEntry();
         }
+        av = av/7;
 
-        averageWaterLabel.setText(String.valueOf(av));
+        averageWaterLabel.setText(String.valueOf(new DecimalFormat("#.#").format(av)) + " liter(s)");
+
 
     }
 }
