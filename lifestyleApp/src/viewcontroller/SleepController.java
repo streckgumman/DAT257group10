@@ -69,15 +69,16 @@ public class SleepController implements page {
         return 0;
     }
 
-    private int getHoursOfSleep() {
-        if (se.getBedtimeHour() < se.getWakeupTimeHour()) {
-            return (se.getWakeupTimeHour() - se.getBedtimeHour());
-        } else if (se.getBedtimeHour() > se.getWakeupTimeHour()) {
-            if (se.getWakeupTimeMinute() > se.getBedtimeMinute()) {
-                return ((24 - se.getBedtimeHour()) + se.getWakeupTimeHour());
+    private int getHoursOfSleep(){
+        if(se.getBedtimeHour()<se.getWakeupTimeHour()){
+            if(se.getWakeupTimeMinute() < se.getBedtimeMinute()) {
+                return (se.getWakeupTimeHour()-se.getBedtimeHour() - 1);
+            }             return (se.getWakeupTimeHour()-se.getBedtimeHour());
+        } else if (se.getBedtimeHour()> se.getWakeupTimeHour()){
+            if(se.getWakeupTimeMinute() < se.getBedtimeMinute()) {
+                return ((24-se.getBedtimeHour()) + se.getWakeupTimeHour() -1);
             }
-
-            return ((24 - se.getBedtimeHour()) + se.getWakeupTimeHour()) - 1;
+            return ((24-se.getBedtimeHour()) + se.getWakeupTimeHour());
         }
         return 0;
     }
