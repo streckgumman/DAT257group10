@@ -76,7 +76,7 @@
                </image>
             </ImageView>
             <Button layoutX="193.0" layoutY="105.0" mnemonicParsing="false" onAction="#averageWaterIntake" styleClass="check-button" text="Calculate" />
-            <Label fx:id="averageWaterLabel" layoutX="79.0" layoutY="73.0" prefHeight="33.0" prefWidth="79.0" text="No input">
+            <Label fx:id="averageWaterLabel" layoutX="79.0" layoutY="73.0" prefHeight="33.0" prefWidth="150.0" text="No input">
                <font>
                   <Font size="20.0" />
                </font></Label>
