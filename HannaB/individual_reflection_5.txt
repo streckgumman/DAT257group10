@@ -1,0 +1,20 @@
+Utgår från:
+
+... the current situation or "what is" (A), 
+... what you want the situation to be or "what might or should be" (B), and 
+... a plan for getting from where you are to where you want to be or "feedback designed to reduce the gap" (A -> B).
+
+•	what do I want to learn or understand better?
+•	how can I help someone else, or the entire team, to learn something new?
+•	what is my contribution towards the team’s use of Scrum?
+•	what is my contribution towards the team’s deliveries?
+
+Denna veckan blev lite speciell för min del då jag hade migrän i måndags. Detta gjorde att jag denna veckan missade vårt veckoliga, längre Scrum meeting. Som tur var så hjälpte det nu att vi varit tydliga att allt ska antecknas, så det var bara för mig att gå in och kolla dokument från både möte och handledning så var jag med på banan igen. Det är väldigt tacksamt i sådana här tillfällen att alla i gruppen följer de vi bestämt angående att anteckna och kommunicera tydligt. 
+
+Resten av veckan har jag mått bra och jag har fortsatt jobba i team med Johanna och Linnea, men det blev att jag satt mest med Linnea. Vi har jobbat på träningssidan av våran app och det har flutit på bra. Ett problem jag stötte på var att jag inte kunde öppna det som Johanna och Linnea börjat på i måndags i Scene builder på min dator. Troligtvis berodde det på att några bilder/ikoner som användes inte var pushade. Men det löste sig efter lite kommunikation och jag kunde jobba vidare tillsammans med Linnea. 
+
+Utöver det har vi fortsatt fokusera på design och utformning denna veckan och i den frågan har jag dels bidragit med mina egna tankar. Till exempel vill vi verkligen att man ska skriva in vikt och vad man äter? Å ena sidan förstår jag det, men å andra sidan var vi flera som reagerade över detta direkt då det är väldigt många unga (speciellt tjejer, och vi är majoritet tjejer i vårt team). I detta fall är det enligt mig viktigt att prata med vår stakeholder och höra vad hon säger men även diskutera våra tankar. Det är något jag tycker jag bidrar med från vecka till vecka, att påminna att det är vår stakeholder vi utvecklar appen för. Så även om vi gillar ett visst typsnitt eller en viss färg så är det i slutändan vår Stakeholder som vi måste lyssna på och kontinuerligt uppdatera med nya förslag. 
+
+Något jag inte är säker på ännu är hur jag mergar branchen jag jobbat på med vår master. Det är något jag vill känna mig säker på så jag inte förstör och Hanna T har lovat att gå igenom det grundligt med mig och Ebba vilket jag är tacksam för. 
+
+Sist men inte minst fick vi på handledningen tips om att använda ett burn up chart istället eftersom vi inte vet exakt hur mycket vi kommer hinna med. Detta är något jag tagit ansvar för att fixa och presentera för gruppen på måndag. 

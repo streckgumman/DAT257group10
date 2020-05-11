@@ -109,5 +109,11 @@ public class PageLoader {
         res.ctrl.initPage(model, Optional.empty());
         return res.root;
     }
+
+    public static AnchorPane createWeatherPane(){
+        Result<WeatherController> res = loadPage("fxml/weather.fxml");
+        res.ctrl.initPage(model, Optional.empty());
+        return res.root;
+    }
 }
 

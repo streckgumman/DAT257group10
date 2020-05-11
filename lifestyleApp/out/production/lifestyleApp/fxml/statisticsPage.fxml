@@ -2,6 +2,7 @@
 
 <?import javafx.scene.chart.BarChart?>
 <?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
 <?import javafx.scene.chart.NumberAxis?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
@@ -17,16 +18,24 @@
             <Font name="Courier New" size="64.0" />
          </font>
       </Label>
+      <Button fx:id="weekButton" layoutX="402.0" layoutY="508.0" mnemonicParsing="false" onAction="#weekGraphToFront" text="Week" />
+      <Button fx:id="monthbutton" layoutX="616.0" layoutY="508.0" mnemonicParsing="false" onAction="#monthGraphToFront" text="Month" />
+      <ComboBox fx:id="ratingTopicComboBox" layoutX="503.0" layoutY="90.0" onAction="#changeTopicActionEvent" prefWidth="150.0" />
+      <Text layoutX="361.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="See statistics for" wrappingWidth="174.936767578125">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
       <AnchorPane fx:id="monthAnchorPane" layoutX="317.0" layoutY="140.0" prefHeight="350.0" prefWidth="500.0" style="-fx-background-color: #2693B0;">
          <children>
-            <BarChart fx:id="monthGraph" layoutX="4.0" layoutY="1.0" prefHeight="278.0" prefWidth="434.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-               <xAxis>
-                  <CategoryAxis side="BOTTOM" />
-               </xAxis>
-               <yAxis>
-                  <NumberAxis side="LEFT" />
-               </yAxis>
-            </BarChart>
+            <LineChart fx:id="monthLineGraph" layoutY="-40.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </LineChart>
          </children>
       </AnchorPane>
       <AnchorPane fx:id="weekAnchorPane" layoutX="317.0" layoutY="140.0" prefHeight="350.0" prefWidth="500.0" style="-fx-background-color: #269190;">
@@ -41,20 +50,12 @@
             </BarChart>
          </children>
       </AnchorPane>
-      <Button fx:id="weekButton" layoutX="402.0" layoutY="508.0" mnemonicParsing="false" onAction="#weekGraphToFront" text="Week" />
-      <Button fx:id="monthbutton" layoutX="616.0" layoutY="508.0" mnemonicParsing="false" onAction="#monthGraphToFront" text="Month" />
-      <ComboBox fx:id="ratingTopicComboBox" layoutX="503.0" layoutY="90.0" onAction="#changeTopicActionEvent" prefWidth="150.0" />
-      <Text layoutX="361.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="See statistics for" wrappingWidth="174.936767578125">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Text>
-      <Label layoutX="682.0" layoutY="89.0" text="Week">
+      <Label fx:id="weekMonthLabel" layoutX="682.0" layoutY="89.0" text="Week">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Label fx:id="weekLabel" layoutX="751.0" layoutY="89.0" text="Label">
+      <Label fx:id="specWeekMonthLabel" layoutX="751.0" layoutY="89.0" text="Label">
          <font>
             <Font size="18.0" />
          </font>

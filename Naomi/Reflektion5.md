@@ -1,0 +1,8 @@
+## What do I want to learn or understand better?
+För nästa sprint så känner jag att jag vill lära mig mer om att ladda in anchopanes i anchorpanes, jag vill känna att själva GUI arbetet kommer lite mer intuitivt. Detta då jag känner att backend är mer intressant och lättare. Gruppsvis käner jag att jag vill bli bättre på att lägga till värde i gruppens team freflection, det har jag vart lite dålig på. Jag ska försöka uppnå det i nästa veckas sprint.
+## How can I help someone else, or the entire team, to learn something new?
+Som sagt i tidihgare sprint försöka hjälpa till i mergecommits till mastern, där det ofta har bliviti problem för andra tidigare. Sat fortsätta parprogrammring vilket bidrar till att folk lär sig av varandra. 
+## What is my contribution towards the team's use of Scrum?
+Pratar med stakeholder inför varje Scrummöte, delar med mig av hennes input. Deltar med mitt eget input för våra KPIer.
+## What is my contribution towards my team's deliveries?
+Denna vecka har jag jobbat tillsammans med Ebba igen. Det kändes bra att vara i samma par igen för att sedan slutföra vårt arbete med statistiksidan som vi påbörjade förra veckan. Efter lite problemlösning under kodandet kunde vi avsluta statistik-user storien, där både den veckovisa och månadsvisa grafen nu var avklarad. Även nu så såg vi till att mergea till master när vi var klara istället för att vänta tills scrummötet på måndagar. Detta för att se till så att man verkligen kan säga att sprinten är klar och åbörja nästa sprint på måndagen. Man vet aldrig hur lång tid det hade tagit om vi lämnat detta arbete till måndagen, något som vi gjort tidigare veckor i gruppen. Som tur gick alla merges denna vecka smoothly.
