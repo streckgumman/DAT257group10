@@ -22,7 +22,7 @@ import java.time.temporal.TemporalField;
 import java.time.temporal.WeekFields;
 import java.util.*;
 
-public class StatisticsPageController  implements DateObserver, RatingObserver {
+public class StatisticsPageController  implements page, DateObserver, RatingObserver {
 
 
     private MainModel mainmodel;

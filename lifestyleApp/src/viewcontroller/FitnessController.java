@@ -13,7 +13,7 @@ import model.WorkoutEntry;
 import java.text.DecimalFormat;
 import java.util.Optional;
 
-public class FitnessController {
+public class FitnessController implements page{
 
     private int workoutHour;
     private int workoutMinute;
@@ -89,8 +89,7 @@ public class FitnessController {
 
     }
 
-    public void initPage(MainModel model, Optional<Object> empty) {
-    }
+
 
     @FXML
     void saveWorkout(ActionEvent event) {
@@ -111,6 +110,10 @@ public class FitnessController {
 
     }
 
+    @Override
+    public void initPage(MainModel model, Optional<MainPageController> mainPage) {
+
+    }
 }
 
 

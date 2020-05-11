@@ -16,7 +16,7 @@ public class LifestyleApp extends Application {
 
         User user = new User();
         model.setUser(user);
-        model.setUserName("Johanna Wiberg");
+        model.setUserName("Name");
 
         model.setDate(LocalDate.now());
         model.addRating("Overall");
