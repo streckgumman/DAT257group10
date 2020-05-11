@@ -129,12 +129,13 @@
                   </ListView>
                </children>
             </FlowPane>
-            <Button layoutX="207.0" layoutY="345.0" mnemonicParsing="false" onAction="#deleteWorkout" prefHeight="25.0" prefWidth="188.0" text="Ta bort träningspass" />
+            <Button fx:id="deleteWorkoutButton" blendMode="OVERLAY" layoutX="207.0" layoutY="345.0" mnemonicParsing="false" onAction="#deleteWorkout" prefHeight="25.0" prefWidth="188.0" text="Ta bort träningspass" />
             <Label layoutX="158.0" layoutY="14.0" text="Dagen träningspass">
                <font>
                   <Font size="33.0" />
                </font>
             </Label>
+            <Label fx:id="samePageErrorWorkout" layoutX="403.0" layoutY="331.0" prefHeight="49.0" prefWidth="163.0" textFill="RED" wrapText="true" />
          </children>
          <effect>
             <DropShadow />

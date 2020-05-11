@@ -42,6 +42,9 @@ public class FitnessController implements page{
     private Button saveTraningButton;
 
     @FXML
+    private Label samePageErrorWorkout;
+
+    @FXML
     private ImageView weightPicture;
 
     @FXML
@@ -55,6 +58,9 @@ public class FitnessController implements page{
 
     @FXML
     private ImageView otherPicture;
+
+    @FXML
+    private Button deleteWorkoutButton;
 
     @FXML
     void setWorkoutHour(MouseEvent event) {
@@ -111,12 +117,6 @@ public class FitnessController implements page{
 
     }
 
-    void setWorkoutTime(int workoutHour, int workoutMinute){
-        workoutHour = (Integer) workoutHourSpinner.getValue();
-        workoutMinute = (Integer) workoutMinSpinner.getValue();
-
-    }
-
 
 
     @FXML
@@ -125,16 +125,23 @@ public class FitnessController implements page{
         workoutEntries.add(entry.toString());
         workoutListView.setItems(workoutEntries);
         setTraingsTypeNull();
+        deleteWorkoutButton.setBlendMode(BlendMode.SRC_OVER);
     }
 
     @FXML
     void deleteWorkout(ActionEvent event) {
-
       final int selectedWorkout = workoutListView.getSelectionModel().getSelectedIndex();
-      if (selectedWorkout!= -1) {
+      if (selectedWorkout == -1){
+          samePageErrorWorkout.setText("*Du måste markera träningspasset du vill ta bort");
+
+      }
+      else {
           final int newSelectedWorkout = (selectedWorkout == workoutListView.getItems().size() - 1) ? selectedWorkout - 1 : selectedWorkout;
           workoutListView.getItems().remove(selectedWorkout);
           workoutListView.getSelectionModel().select(newSelectedWorkout);
+          samePageErrorWorkout.setText("");
+          if (workoutEntries.size() == 0);
+          deleteWorkoutButton.setBlendMode(BlendMode.OVERLAY);
       }
 
     }
@@ -188,6 +195,7 @@ public class FitnessController implements page{
     }
     @Override
     public void initPage(MainModel model, Optional<MainPageController> mainPage) {
+
 
     }
 }

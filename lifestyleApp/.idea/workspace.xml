@@ -192,7 +192,13 @@
       <option name="project" value="LOCAL" />
       <updated>1588677368451</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL−00010" summary="Fixed feedback on training type buttons">
+      <created>1589205297865</created>
+      <option name="number" value="LOCAL−00010" />
+      <option name="presentableId" value="LOCAL−00010" />
+      <updated>1589205297865</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,7 +226,8 @@
     <MESSAGE value="push with error //w Hanna T" />
     <MESSAGE value="Johanna &amp; Linnea:&#10;Todo done!" />
     <MESSAGE value="Jobbat hela dagen med settings, lägga till ratings ändra namn etc. Även kodoptimerat då en del kod såg svajig ut. with Hanna T" />
-    <option name="LAST_COMMIT_MESSAGE" value="Jobbat hela dagen med settings, lägga till ratings ändra namn etc. Även kodoptimerat då en del kod såg svajig ut. with Hanna T" />
+    <MESSAGE value="Fixed feedback on training type buttons" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed feedback on training type buttons" />
   </component>
   <component name="WindowStateProjectService">
     <state x="535" y="214" key="#com.intellij.fileTypes.FileTypeChooser" />
