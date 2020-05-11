@@ -1,6 +1,8 @@
 package model;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 public class SleepEntry {
 
@@ -9,6 +11,7 @@ public class SleepEntry {
     private int wakeupTimeHour;
     private int wakeupTimeMinute;
     private LocalDate date;
+    private double sleepEntry;
 
     public SleepEntry(LocalDate date) {
         this.bedtimeHour = 22;
@@ -18,6 +21,9 @@ public class SleepEntry {
         this.date = date;
     }
 
+    public double getSleepEntry() {
+        return sleepEntry;
+    }
 
     //setters
     public void setBedtimeHour(int bedtimeHour) {
@@ -61,4 +67,31 @@ public class SleepEntry {
     public LocalDate getDate() {
         return date;
     }
+
+    public int getMinutesOfSleep() {
+        if (bedtimeMinute < wakeupTimeMinute) {
+            return (wakeupTimeMinute - bedtimeMinute);
+
+        } else if (bedtimeMinute > wakeupTimeMinute) {
+            return ((60 - bedtimeMinute) + wakeupTimeMinute);
+        }
+
+        return 0;
+    }
+
+    public int getHoursOfSleep(){
+        if(bedtimeHour < wakeupTimeHour){
+            if(wakeupTimeMinute < bedtimeMinute) {
+                return (wakeupTimeHour - bedtimeHour - 1);
+            }             return (wakeupTimeHour - bedtimeHour);
+        } else if (bedtimeHour > wakeupTimeHour){
+            if(wakeupTimeMinute < bedtimeMinute) {
+                return ((24-bedtimeHour) + wakeupTimeHour -1);
+            }
+            return ((24-bedtimeHour) + wakeupTimeHour);
+        }
+        return 0;
+    }
+
+
 }

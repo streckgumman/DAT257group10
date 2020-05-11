@@ -58,29 +58,6 @@ public class SleepController implements page {
         se.setBedtimeMinute((Integer) bedTimeMinuteSpinner.getValue());
     }
 
-    private int getMinutesOfSleep() {
-        if (se.getBedtimeMinute() < se.getWakeupTimeMinute()) {
-            return (se.getWakeupTimeMinute() - se.getBedtimeMinute());
-
-        } else if (se.getBedtimeMinute() > se.getWakeupTimeMinute()) {
-            return ((60 - se.getBedtimeMinute()) + se.getWakeupTimeMinute());
-        }
-
-        return 0;
-    }
-
-    private int getHoursOfSleep() {
-        if (se.getBedtimeHour() < se.getWakeupTimeHour()) {
-            return (se.getWakeupTimeHour() - se.getBedtimeHour());
-        } else if (se.getBedtimeHour() > se.getWakeupTimeHour()) {
-            if (se.getWakeupTimeMinute() > se.getBedtimeMinute()) {
-                return ((24 - se.getBedtimeHour()) + se.getWakeupTimeHour());
-            }
-
-            return ((24 - se.getBedtimeHour()) + se.getWakeupTimeHour()) - 1; //Eventuellt -1
-        }
-        return 0;
-    }
 
     @FXML
     void totalSleep(ActionEvent event) {
@@ -92,8 +69,8 @@ public class SleepController implements page {
         bedTimeMinuteSpinner.getValueFactory().setValue(se.getBedtimeMinute());
         wakeUpTimeHourSpinner.getValueFactory().setValue(se.getWakeupTimeHour());
         wakeUpTimeMinuteSpinner.getValueFactory().setValue(se.getWakeupTimeMinute());
-        String totalHoursOfSleep = Integer.toString(getHoursOfSleep());
-        String totalMinutesOfSleep = Integer.toString(getMinutesOfSleep());
+        String totalHoursOfSleep = Integer.toString(se.getHoursOfSleep());
+        String totalMinutesOfSleep = Integer.toString(se.getMinutesOfSleep());
         totalSleepLabel.setText(totalHoursOfSleep + " hours " + totalMinutesOfSleep + " minutes");
     }
 
