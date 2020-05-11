@@ -88,7 +88,8 @@ public class StatisticsPageController implements page, DateObserver, RatingObser
 
     @FXML
     private void populateWeekGraph() {
-        List<RatingEntry> weekStatistics = getWeekStatistics(currentDate, ratingTopicComboBox.getSelectionModel().getSelectedItem());
+        List<RatingEntry> weekStatistics = getWeekStatistics(currentDate,
+                                                             ratingTopicComboBox.getSelectionModel().getSelectedItem());
 
         XYChart.Series dataSeries1 = new XYChart.Series();
 
@@ -123,7 +124,8 @@ public class StatisticsPageController implements page, DateObserver, RatingObser
 
     @FXML
     private void populateMonthGraph() {
-        List<RatingEntry> monthStatistics = getMonthStatistics(currentDate, ratingTopicComboBox.getSelectionModel().getSelectedItem());
+        List<RatingEntry> monthStatistics = getMonthStatistics(currentDate,
+                                                            ratingTopicComboBox.getSelectionModel().getSelectedItem());
 
         XYChart.Series dataSeries2 = new XYChart.Series();
         Collections.sort(monthStatistics);
@@ -172,7 +174,8 @@ public class StatisticsPageController implements page, DateObserver, RatingObser
             if (ratings.getTopic().equals(topic)) {
 
                 for (RatingEntry entry : ratings.getRatings()) {
-                    if ((date.getMonth().equals(entry.getDate().getMonth())) && (date.getYear() == entry.getDate().getYear())) {
+                    if ((date.getMonth().equals(entry.getDate().getMonth())) &&
+                                                                        (date.getYear() == entry.getDate().getYear())) {
                         entries.add(entry);
                     }
                 }
@@ -218,7 +221,8 @@ public class StatisticsPageController implements page, DateObserver, RatingObser
 
 
         CategoryAxis weekAxisX = (CategoryAxis) weekGraph.getXAxis();
-        ObservableList<String> weekdays = FXCollections.observableArrayList("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday");
+        ObservableList<String> weekdays = FXCollections.observableArrayList
+                                ("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday");
         weekAxisX.setCategories(weekdays);
 
         monthLineGraph.getYAxis().setLabel("Rating");
@@ -295,10 +299,17 @@ public class StatisticsPageController implements page, DateObserver, RatingObser
             hours += mainmodel.getUser().getSleepEntry(date).getHoursOfSleep();
         }
 
-        hours = hours / 7; //todo: fixa hur dessa ska kunna bli minuter om de ej är ett heltal
-        mins = mins / 7; //todo: fixa hur dessa ska bli 1 hour för varje 60 min och dra av 60 min på mins
+        double averageHours = hours / 7;        // EX: 5.98 Hours
+        double averageMinutes = mins / 7;       // EX: 40 Minutes
 
-        averageSleepLabel.setText(String.valueOf(new DecimalFormat("#.#").format(hours)) + " hours " + String.valueOf(new DecimalFormat("#.#").format(mins)) + " mins");
+        //                   EX: 5.98 -> 5.0
+        double fullHours = Math.floor(averageHours);
+
+        //                   EX: 40 min + ((5.98 - 5) * 60 hours) -> ____ minutes
+        double fullMinutes = averageMinutes + ((averageHours - Math.floor(averageHours))*60);
+
+        averageSleepLabel.setText(String.valueOf(new DecimalFormat("#.#").format(fullHours)) + " hours " +
+                                  String.valueOf(new DecimalFormat("#.#").format((int)fullMinutes)) + " mins");
 
     }
 
