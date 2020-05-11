@@ -77,7 +77,7 @@ public class SleepController implements page {
                 return ((24 - se.getBedtimeHour()) + se.getWakeupTimeHour());
             }
 
-            return ((24 - se.getBedtimeHour()) + se.getWakeupTimeHour()) - 1; //Eventuellt -1
+            return ((24 - se.getBedtimeHour()) + se.getWakeupTimeHour()) - 1;
         }
         return 0;
     }

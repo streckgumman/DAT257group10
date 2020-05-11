@@ -24,7 +24,7 @@ import java.util.*;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class StatisticsPageController  implements page, DateObserver, RatingObserver {
+public class StatisticsPageController implements page, DateObserver, RatingObserver {
 
 
     private MainModel mainmodel;
@@ -69,9 +69,9 @@ public class StatisticsPageController  implements page, DateObserver, RatingObse
     }
 
 
-//----------------GUI-------------------
+    //----------------GUI-------------------
     @FXML
-    private void weekGraphToFront(ActionEvent event){
+    private void weekGraphToFront(ActionEvent event) {
         weekAnchorPane.toFront();
         isWeekGraphShowing = true;
         weekMonthLabel.setText("Week: ");
@@ -79,7 +79,7 @@ public class StatisticsPageController  implements page, DateObserver, RatingObse
     }
 
     @FXML
-    private void monthGraphToFront(ActionEvent event){
+    private void monthGraphToFront(ActionEvent event) {
         monthAnchorPane.toFront();
         isWeekGraphShowing = false;
         weekMonthLabel.setText("Month: ");
@@ -87,20 +87,34 @@ public class StatisticsPageController  implements page, DateObserver, RatingObse
     }
 
     @FXML
-    private void populateWeekGraph(){
+    private void populateWeekGraph() {
         List<RatingEntry> weekStatistics = getWeekStatistics(currentDate, ratingTopicComboBox.getSelectionModel().getSelectedItem());
 
         XYChart.Series dataSeries1 = new XYChart.Series();
 
-        for (RatingEntry entry : weekStatistics){
-            switch (entry.getDate().getDayOfWeek()){
-                case MONDAY: dataSeries1.getData().add(new XYChart.Data("Monday", entry.getRating())); break;
-                case TUESDAY: dataSeries1.getData().add(new XYChart.Data("Tuesday", entry.getRating())); break;
-                case WEDNESDAY: dataSeries1.getData().add(new XYChart.Data("Wednesday", entry.getRating())); break;
-                case THURSDAY: dataSeries1.getData().add(new XYChart.Data("Thursday", entry.getRating())); break;
-                case FRIDAY: dataSeries1.getData().add(new XYChart.Data("Friday", entry.getRating())); break;
-                case SATURDAY: dataSeries1.getData().add(new XYChart.Data("Saturday", entry.getRating())); break;
-                case SUNDAY: dataSeries1.getData().add(new XYChart.Data("Sunday", entry.getRating())); break;
+        for (RatingEntry entry : weekStatistics) {
+            switch (entry.getDate().getDayOfWeek()) {
+                case MONDAY:
+                    dataSeries1.getData().add(new XYChart.Data("Monday", entry.getRating()));
+                    break;
+                case TUESDAY:
+                    dataSeries1.getData().add(new XYChart.Data("Tuesday", entry.getRating()));
+                    break;
+                case WEDNESDAY:
+                    dataSeries1.getData().add(new XYChart.Data("Wednesday", entry.getRating()));
+                    break;
+                case THURSDAY:
+                    dataSeries1.getData().add(new XYChart.Data("Thursday", entry.getRating()));
+                    break;
+                case FRIDAY:
+                    dataSeries1.getData().add(new XYChart.Data("Friday", entry.getRating()));
+                    break;
+                case SATURDAY:
+                    dataSeries1.getData().add(new XYChart.Data("Saturday", entry.getRating()));
+                    break;
+                case SUNDAY:
+                    dataSeries1.getData().add(new XYChart.Data("Sunday", entry.getRating()));
+                    break;
             }
         }
         weekGraph.getData().setAll(dataSeries1);
@@ -129,18 +143,17 @@ public class StatisticsPageController  implements page, DateObserver, RatingObse
 
     }
 
-//------------functionality------------------
-    private List<RatingEntry> getWeekStatistics(LocalDate date, String topic){
+    //------------functionality------------------
+    private List<RatingEntry> getWeekStatistics(LocalDate date, String topic) {
         int weeknumber = date.get(woy);
         List<RatingEntry> entries = new ArrayList<>();
 
 
+        for (Ratings ratings : mainmodel.getRatings()) {
+            if (ratings.getTopic().equals(topic)) {
 
-        for(Ratings ratings: mainmodel.getRatings()){
-            if( ratings.getTopic().equals(topic)){
-
-                for( RatingEntry entry: ratings.getRatings()){
-                    if( (weeknumber == entry.getDate().get(woy)) && (date.getYear() == entry.getDate().getYear()) ){
+                for (RatingEntry entry : ratings.getRatings()) {
+                    if ((weeknumber == entry.getDate().get(woy)) && (date.getYear() == entry.getDate().getYear())) {
                         entries.add(entry);
                     }
                 }
@@ -151,15 +164,15 @@ public class StatisticsPageController  implements page, DateObserver, RatingObse
 
     }
 
-    private List<RatingEntry> getMonthStatistics(LocalDate date, String topic){
+    private List<RatingEntry> getMonthStatistics(LocalDate date, String topic) {
         List<RatingEntry> entries = new ArrayList<>();
 
 
-        for(Ratings ratings: mainmodel.getRatings()){
-            if( ratings.getTopic().equals(topic)){
+        for (Ratings ratings : mainmodel.getRatings()) {
+            if (ratings.getTopic().equals(topic)) {
 
-                for( RatingEntry entry: ratings.getRatings()){
-                    if( (date.getMonth().equals(entry.getDate().getMonth())) && (date.getYear() == entry.getDate().getYear())){
+                for (RatingEntry entry : ratings.getRatings()) {
+                    if ((date.getMonth().equals(entry.getDate().getMonth())) && (date.getYear() == entry.getDate().getYear())) {
                         entries.add(entry);
                     }
                 }
@@ -169,8 +182,6 @@ public class StatisticsPageController  implements page, DateObserver, RatingObse
         return entries;
 
     }
-
-
 
 
     // ------------Observer stuff-----------------------
@@ -181,24 +192,24 @@ public class StatisticsPageController  implements page, DateObserver, RatingObse
     }
 
     private void update() {
-       currentDate = mainmodel.getDate();
-       populateMonthGraph();
-       populateWeekGraph();
-       initTopicComoBox();
+        currentDate = mainmodel.getDate();
+        populateMonthGraph();
+        populateWeekGraph();
+        initTopicComoBox();
 
-       if(isWeekGraphShowing){
-           weekMonthLabel.setText("Week: ");
-           specWeekMonthLabel.setText("" + currentDate.get(woy));
-       }else{
-           weekMonthLabel.setText("Month: ");
-           specWeekMonthLabel.setText("" + currentDate.getMonth().toString());
-       }
+        if (isWeekGraphShowing) {
+            weekMonthLabel.setText("Week: ");
+            specWeekMonthLabel.setText("" + currentDate.get(woy));
+        } else {
+            weekMonthLabel.setText("Month: ");
+            specWeekMonthLabel.setText("" + currentDate.getMonth().toString());
+        }
 
     }
 
     //-----------init GUI  methods------------
 
-    private void initGraphs(){
+    private void initGraphs() {
         weekGraph.getYAxis().setLabel("Rating");
         weekGraph.getYAxis().setAutoRanging(false);
         NumberAxis weekAxisY = (NumberAxis) weekGraph.getYAxis();
@@ -207,7 +218,7 @@ public class StatisticsPageController  implements page, DateObserver, RatingObse
 
 
         CategoryAxis weekAxisX = (CategoryAxis) weekGraph.getXAxis();
-        ObservableList<String> weekdays = FXCollections.observableArrayList("Monday", "Tuesday","Wednesday", "Thursday","Friday","Saturday","Sunday");
+        ObservableList<String> weekdays = FXCollections.observableArrayList("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday");
         weekAxisX.setCategories(weekdays);
 
         monthLineGraph.getYAxis().setLabel("Rating");
@@ -216,15 +227,13 @@ public class StatisticsPageController  implements page, DateObserver, RatingObse
         CategoryAxis monthAxisX = (CategoryAxis) monthLineGraph.getXAxis();
         monthLineGraph.getYAxis().setAutoRanging(false);
 
-        if(isWeekGraphShowing){
+        if (isWeekGraphShowing) {
             weekMonthLabel.setText("Week: ");
             specWeekMonthLabel.setText("" + currentDate.get(woy));
-        }else{
+        } else {
             weekMonthLabel.setText("Month: ");
             specWeekMonthLabel.setText("" + currentDate.getMonth().toString());
         }
-
-
 
 
         monthAxisY.setLowerBound(0);
@@ -232,12 +241,12 @@ public class StatisticsPageController  implements page, DateObserver, RatingObse
     }
 
     //Bör läggas till en Observer för  om fler rating(topics) skapas.
-    private void initTopicComoBox(){
+    private void initTopicComoBox() {
         //TODO
         ArrayList<String> ratingTopics = new ArrayList<>();
 
-        for( Ratings rating : mainmodel.getUser().getRatings()){
-          ratingTopics.add(rating.getTopic());
+        for (Ratings rating : mainmodel.getUser().getRatings()) {
+            ratingTopics.add(rating.getTopic());
         }
 
         ObservableList<String> topics = FXCollections.observableArrayList(ratingTopics);
@@ -247,21 +256,46 @@ public class StatisticsPageController  implements page, DateObserver, RatingObse
 
 
     //Average water intake
+
+
+
     @FXML
     private Label averageWaterLabel;
 
     @FXML
-    void averageWaterIntake (ActionEvent event) {
+    void averageWaterIntake(ActionEvent event) {
         double av = 0;
         LocalDate startDate = mainmodel.getDate();
         LocalDate endDate = startDate.minusDays(6);
         for (LocalDate date = startDate; date.isAfter(endDate); date = date.minusDays(1)) {
             av += mainmodel.getWater().getWaterEntry(date).getWaterEntry();
         }
-        av = av/7;
+        av = av / 7;
 
         averageWaterLabel.setText(String.valueOf(new DecimalFormat("#.#").format(av)) + " liter(s)");
 
 
     }
+
+    @FXML
+    private Label averageSleepLabel;
+
+    @FXML
+    void averageSleep(ActionEvent event) {
+    /*
+        double hours = 0;
+        double mins = 0;
+        LocalDate startDate = mainmodel.getDate();
+        LocalDate endDate = startDate.minusDays(6);
+        for (LocalDate date = startDate; date.isAfter(endDate); date = date.minusDays(1)) {
+            mins += mainmodel.getSleep().getSleepEntry(date).get
+        }
+        hours = hours / 7;
+        mins = mins / 7;
+
+        averageSleepLabel.setText(String.valueOf(hours) + " hours " + String.valueOf(mins) + " mins");*/
+
+    }
+
+
 }

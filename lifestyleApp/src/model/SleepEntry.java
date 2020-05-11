@@ -1,6 +1,8 @@
 package model;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 public class SleepEntry {
 
@@ -9,6 +11,7 @@ public class SleepEntry {
     private int wakeupTimeHour;
     private int wakeupTimeMinute;
     private LocalDate date;
+    private double sleepEntry;
 
     public SleepEntry(LocalDate date) {
         this.bedtimeHour = 22;
@@ -18,6 +21,9 @@ public class SleepEntry {
         this.date = date;
     }
 
+    public double getSleepEntry() {
+        return sleepEntry;
+    }
 
     //setters
     public void setBedtimeHour(int bedtimeHour) {
