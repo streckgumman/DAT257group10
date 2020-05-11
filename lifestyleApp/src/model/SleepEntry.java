@@ -36,6 +36,10 @@ public class SleepEntry {
         this.wakeupTimeMinute = wakeupTimeMinute;
     }
 
+    public void setDate(LocalDate date) {
+        this.date = date;
+    }
+
     //Gettes
 
     public int getBedtimeHour() {
@@ -52,5 +56,9 @@ public class SleepEntry {
 
     public int getWakeupTimeMinute() {
         return wakeupTimeMinute;
+    }
+
+    public LocalDate getDate() {
+        return date;
     }
 }

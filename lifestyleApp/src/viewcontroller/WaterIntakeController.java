@@ -14,7 +14,7 @@ import java.util.Optional;
 public class WaterIntakeController implements page {
     private WaterEntry we;
 
-    double totalWaterIntake;
+    private double totalWaterIntake;
 
     @FXML
     private Label drinkLabel;

@@ -1,16 +1,140 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
 <?import javafx.scene.text.Font?>
-
 
 <AnchorPane prefHeight="540.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewcontroller.FitnessController">
    <children>
-      <Label layoutX="419.0" layoutY="42.0" text="Träning &amp; Hälsa" textAlignment="CENTER">
+      <Label layoutX="401.0" layoutY="6.0" text="Training &amp; Health" textAlignment="CENTER">
          <font>
             <Font size="51.0" />
          </font>
       </Label>
+      <AnchorPane layoutX="48.0" layoutY="106.0" prefHeight="390.0" prefWidth="461.0" style="-fx-background-color: #e4f7e6;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Label layoutX="174.0" layoutY="14.0" text="Workout">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Label>
+            <Label layoutX="39.0" layoutY="78.0" prefHeight="21.0" prefWidth="128.0" text="I worked out for">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Spinner fx:id="workoutHourSpinner" initialValue="0" layoutX="154.0" layoutY="76.0" max="24" min="0" onMouseClicked="#setWorkoutHour" prefHeight="25.0" prefWidth="65.0">
+
+            <editable>true</editable>
+         </Spinner>
+
+            <Spinner fx:id="workoutMinSpinner" initialValue="0" layoutX="251.0" layoutY="76.0" max="59" min="0" onMouseClicked="#setWorkoutMin" prefHeight="25.0" prefWidth="65.0">
+               <editable>true</editable>
+            </Spinner>
+            <Label layoutX="229.0" layoutY="78.0" text="h">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="325.0" layoutY="78.0" prefHeight="21.0" prefWidth="68.0" text="minutes.">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="184.0" layoutY="126.0" text="Training type">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="20.0" layoutY="161.0" prefHeight="65.0" prefWidth="65.0">
+               <children>
+                  <ImageView fitHeight="65.0" fitWidth="65.0" onMouseClicked="#setTrainingTypeWeight" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <image>
+                        <Image url="@../images/sports.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="104.0" layoutY="161.0" prefHeight="65.0" prefWidth="65.0">
+               <children>
+                  <ImageView fitHeight="65.0" fitWidth="65.0" onMouseClicked="#setTrainingTypeRunning" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/run.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Label layoutX="116.0" layoutY="226.0" text="Cardio" />
+            <Label layoutX="36.0" layoutY="226.0" text="Weight" />
+            <AnchorPane layoutX="186.0" layoutY="161.0" prefHeight="65.0" prefWidth="65.0">
+               <children>
+                  <ImageView fitHeight="65.0" fitWidth="65.0" onMouseClicked="#setTrainingTypeWalk" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/sports-and-competition.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="270.0" layoutY="161.0" prefHeight="65.0" prefWidth="65.0">
+               <children>
+                  <ImageView fitHeight="65.0" fitWidth="65.0" onMouseClicked="#setTrainingTypeMindFull" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/fitness.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="360.0" layoutY="163.0" prefHeight="65.0" prefWidth="65.0">
+               <children>
+                  <ImageView fitHeight="65.0" fitWidth="65.0" onMouseClicked="#setTrainingTypeOther" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/fashion.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Label layoutX="204.0" layoutY="226.0" text="Walk" />
+            <Label layoutX="268.0" layoutY="226.0" text="Mindfulness" />
+            <Label layoutX="379.0" layoutY="226.0" text="Other" />
+            <Label layoutX="192.0" layoutY="262.0" text="Intensity">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Slider fx:id="sliderIntensity" layoutX="126.0" layoutY="299.0" max="5" min="1" onMouseReleased="#setIntensity" prefHeight="14.0" prefWidth="225.0" showTickMarks="true" value="1.0" />
+            <Button fx:id="saveTraningButton" layoutX="322.0" layoutY="351.0" mnemonicParsing="false" onAction="#saveWorkout" prefHeight="25.0" prefWidth="116.0" text="Save" />
+            <Label fx:id="intensityLabel" layoutX="335.0" layoutY="276.0" text="1" />
+            <Label layoutX="129.0" layoutY="313.0" prefHeight="17.0" prefWidth="225.0" text="1              2              3              4              5" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="527.0" layoutY="106.0" prefHeight="390.0" prefWidth="648.0" style="-fx-background-color: #e4f7e6;">
+         <children>
+            <FlowPane layoutX="54.0" layoutY="82.0" prefHeight="190.0" prefWidth="540.0">
+               <children>
+                  <ListView fx:id="workoutListView" prefHeight="191.0" prefWidth="540.0" />
+               </children>
+            </FlowPane>
+            <Label layoutX="193.0" layoutY="14.0" prefHeight="49.0" prefWidth="263.0" text="Today's workouts">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Label>
+            <Button layoutX="494.0" layoutY="39.0" mnemonicParsing="false" onAction="#deleteWorkout" text="Delete Workout" />
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
    </children>
 </AnchorPane>

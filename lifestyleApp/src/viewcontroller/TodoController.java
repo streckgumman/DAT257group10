@@ -44,7 +44,7 @@ public class TodoController implements page{
 
         final int selectedTodo = todoListView.getSelectionModel().getSelectedIndex();
         if (selectedTodo != -1) {
-           // TodoEntry itemToRemove = todoListView.getSelectionModel().getSelectedItem();
+            // TodoEntry itemToRemove = todoListView.getSelectionModel().getSelectedItem();
             final int newSelectedTodo = (selectedTodo == todoListView.getItems().size() - 1) ? selectedTodo - 1 : selectedTodo;
 
             todoListView.getItems().remove(selectedTodo);

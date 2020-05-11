@@ -8,7 +8,7 @@ public class User {
 
 
 
-
+    private Water water = new Water();
     private String name;
     private Journal journal = new Journal();
     private List<Ratings> ratings= new ArrayList<>();
@@ -57,5 +57,9 @@ public class User {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Water getWater() {
+        return water;
     }
 }

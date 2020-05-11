@@ -41,6 +41,9 @@ public class MainModel {
         return user.getRatings();
     }
 
+    public Water getWater() { return user.getWater();
+    }
+
     public void removeRating(Ratings rating) {
         user.getRatings().remove(rating);
         notifyAllRateObservers();
