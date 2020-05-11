@@ -67,4 +67,31 @@ public class SleepEntry {
     public LocalDate getDate() {
         return date;
     }
+
+    public int getMinutesOfSleep() {
+        if (bedtimeMinute < wakeupTimeMinute) {
+            return (wakeupTimeMinute - bedtimeMinute);
+
+        } else if (bedtimeMinute > wakeupTimeMinute) {
+            return ((60 - bedtimeMinute) + wakeupTimeMinute);
+        }
+
+        return 0;
+    }
+
+    public int getHoursOfSleep(){
+        if(bedtimeHour < wakeupTimeHour){
+            if(wakeupTimeMinute < bedtimeMinute) {
+                return (wakeupTimeHour - bedtimeHour - 1);
+            }             return (wakeupTimeHour - bedtimeHour);
+        } else if (bedtimeHour > wakeupTimeHour){
+            if(wakeupTimeMinute < bedtimeMinute) {
+                return ((24-bedtimeHour) + wakeupTimeHour -1);
+            }
+            return ((24-bedtimeHour) + wakeupTimeHour);
+        }
+        return 0;
+    }
+
+
 }

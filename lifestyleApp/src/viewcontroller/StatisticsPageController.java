@@ -266,7 +266,8 @@ public class StatisticsPageController implements page, DateObserver, RatingObser
     void averageWaterIntake(ActionEvent event) {
         double av = 0;
         LocalDate startDate = mainmodel.getDate();
-        LocalDate endDate = startDate.minusDays(6);
+        LocalDate endDate = startDate.minusDays(7);
+
         for (LocalDate date = startDate; date.isAfter(endDate); date = date.minusDays(1)) {
             av += mainmodel.getWater().getWaterEntry(date).getWaterEntry();
         }
@@ -282,18 +283,22 @@ public class StatisticsPageController implements page, DateObserver, RatingObser
 
     @FXML
     void averageSleep(ActionEvent event) {
-    /*
+
         double hours = 0;
         double mins = 0;
-        LocalDate startDate = mainmodel.getDate();
-        LocalDate endDate = startDate.minusDays(6);
-        for (LocalDate date = startDate; date.isAfter(endDate); date = date.minusDays(1)) {
-            mins += mainmodel.getSleep().getSleepEntry(date).get
-        }
-        hours = hours / 7;
-        mins = mins / 7;
 
-        averageSleepLabel.setText(String.valueOf(hours) + " hours " + String.valueOf(mins) + " mins");*/
+        LocalDate startDate = mainmodel.getDate();
+        LocalDate endDate = startDate.minusDays(7);
+
+        for (LocalDate date = startDate; date.isAfter(endDate); date = date.minusDays(1)) {
+            mins += mainmodel.getUser().getSleepEntry(date).getMinutesOfSleep();
+            hours += mainmodel.getUser().getSleepEntry(date).getHoursOfSleep();
+        }
+
+        hours = hours / 7; //todo: fixa hur dessa ska kunna bli minuter om de ej är ett heltal
+        mins = mins / 7; //todo: fixa hur dessa ska bli 1 hour för varje 60 min och dra av 60 min på mins
+
+        averageSleepLabel.setText(String.valueOf(new DecimalFormat("#.#").format(hours)) + " hours " + String.valueOf(new DecimalFormat("#.#").format(mins)) + " mins");
 
     }
 
