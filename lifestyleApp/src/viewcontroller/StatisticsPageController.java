@@ -302,11 +302,16 @@ public class StatisticsPageController implements page, DateObserver, RatingObser
         double averageHours = hours / 7;        // EX: 5.98 Hours
         double averageMinutes = mins / 7;       // EX: 40 Minutes
 
-        //                   EX: 5.98 -> 5.0
+        //                   EX: Math.floor(5.98) -> 5.0
         double fullHours = Math.floor(averageHours);
 
         //                   EX: 40 min + ((5.98 - 5) * 60 hours) -> ____ minutes
         double fullMinutes = averageMinutes + ((averageHours - Math.floor(averageHours))*60);
+
+        if(fullMinutes > 60){
+            fullMinutes = fullMinutes-60;
+            fullHours = fullHours + 1;
+        }
 
         averageSleepLabel.setText(String.valueOf(new DecimalFormat("#.#").format(fullHours)) + " hours " +
                                   String.valueOf(new DecimalFormat("#.#").format((int)fullMinutes)) + " mins");
