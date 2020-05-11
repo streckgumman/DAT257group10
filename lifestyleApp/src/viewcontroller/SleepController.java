@@ -6,7 +6,6 @@ import javafx.scene.control.Label;
 import javafx.scene.control.Spinner;
 import javafx.scene.input.MouseEvent;
 import model.MainModel;
-import model.Sleep;
 import model.SleepEntry;
 
 import java.util.Optional;

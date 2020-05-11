@@ -86,6 +86,10 @@ public class MainModel {
         return user.getSleepEntry(this.date);
     }
 
+    public Workout getWorkout() {
+        return user.getWorkout(this.date);
+    }
+
     public LocalDate getDate() {
         return date;
     }
