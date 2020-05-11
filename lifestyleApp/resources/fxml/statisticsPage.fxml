@@ -70,7 +70,7 @@
                   <Font name="American Typewriter" size="21.0" />
                </font>
             </Text>
-            <ImageView fitHeight="79.0" fitWidth="87.0" layoutX="8.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="64.0" fitWidth="70.0" layoutX="8.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../images/full_glass.png" />
                </image>
@@ -80,6 +80,7 @@
                <font>
                   <Font size="20.0" />
                </font></Label>
+            <Text layoutX="14.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last 7 days since selected date" />
          </children>
          <effect>
             <DropShadow />

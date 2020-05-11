@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3e58e48c-3d95-4584-836b-9034806ca01b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/fxml/statisticsPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lifestyleApp/fxml/statisticsPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/viewcontroller/StatisticsPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lifestyleApp/viewcontroller/StatisticsPageController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/fxml/statisticsPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/fxml/statisticsPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/viewcontroller/StatisticsPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewcontroller/StatisticsPageController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +38,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/viewcontroller/StatisticsPageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
+            <state relative-caret-position="1130">
               <caret line="262" column="90" selection-start-line="262" selection-start-column="90" selection-end-line="262" selection-end-column="90" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -326,14 +323,28 @@
       <option name="project" value="LOCAL" />
       <updated>1589197132318</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Gjort en average water intake counter på statistiksidan. /Hanna B &amp; Oscar&#10;&#10;Co-authored-by: Oscaarr &lt;43784002+oscarforsbergg@users.noreply.github.com&gt;">
+      <created>1589205297250</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1589205297250</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Fixat till utskriften på average water räknaren. /Hanna B &amp; Oscar&#10;&#10;Co-authored-by: Oscaarr &lt;43784002+oscarforsbergg@users.noreply.github.com&gt;">
+      <created>1589205750878</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1589205750879</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4965035" visible="true" weight="0.23175965" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4965035" visible="true" weight="0.23175965" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -342,7 +353,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.5034965" side_tool="true" weight="0.21745351" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.6008584" visible="true" weight="0.26506025" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6008584" visible="true" weight="0.26506025" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4985694" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -435,7 +446,8 @@
     <MESSAGE value="Jobbat hela dagen med settings, lägga till ratings ändra namn etc. Även kodoptimerat då en del kod såg svajig ut. with Hanna T" />
     <MESSAGE value="Fixat sleep countern så att den räknar rätt&#10;&#10;Co-authored-by: berglandhanna &lt;62668813+berglandhanna@users.noreply.github.com&gt;" />
     <MESSAGE value="Gjort en average water intake counter på statistiksidan. /Hanna B &amp; Oscar&#10;&#10;Co-authored-by: Oscaarr &lt;43784002+oscarforsbergg@users.noreply.github.com&gt;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gjort en average water intake counter på statistiksidan. /Hanna B &amp; Oscar&#10;&#10;Co-authored-by: Oscaarr &lt;43784002+oscarforsbergg@users.noreply.github.com&gt;" />
+    <MESSAGE value="Fixat till utskriften på average water räknaren. /Hanna B &amp; Oscar&#10;&#10;Co-authored-by: Oscaarr &lt;43784002+oscarforsbergg@users.noreply.github.com&gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixat till utskriften på average water räknaren. /Hanna B &amp; Oscar&#10;&#10;Co-authored-by: Oscaarr &lt;43784002+oscarforsbergg@users.noreply.github.com&gt;" />
   </component>
   <component name="WindowStateProjectService">
     <state x="535" y="214" key="#com.intellij.fileTypes.FileTypeChooser" />
@@ -668,7 +680,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/viewcontroller/StatisticsPageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
+        <state relative-caret-position="1130">
           <caret line="262" column="90" selection-start-line="262" selection-start-column="90" selection-end-line="262" selection-end-column="90" />
           <folding>
             <element signature="imports" expanded="true" />
