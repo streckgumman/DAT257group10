@@ -43,6 +43,7 @@ public class WeatherController implements page {
     void click1(MouseEvent event) {
         if (anch1.getBlendMode() == BlendMode.SRC_OVER) {
             anch1.setBlendMode(BlendMode.OVERLAY);
+            wea.setWeatherType(null);
         } else {
             sun();
             wea.setWeatherType(WeatherEntry.WeatherType.SUN);
@@ -55,6 +56,7 @@ public class WeatherController implements page {
     void click2(MouseEvent event) {
         if (anch2.getBlendMode() == BlendMode.SRC_OVER) {
             anch2.setBlendMode(BlendMode.OVERLAY);
+            wea.setWeatherType(null);
         } else {
             sunCloud();
             wea.setWeatherType(WeatherEntry.WeatherType.SUNCLOUD);
@@ -66,6 +68,7 @@ public class WeatherController implements page {
     void click3(MouseEvent event) {
         if (anch3.getBlendMode() == BlendMode.SRC_OVER) {
             anch3.setBlendMode(BlendMode.OVERLAY);
+            wea.setWeatherType(null);
         } else {
             cloud();
             wea.setWeatherType(WeatherEntry.WeatherType.CLOUD);
@@ -77,6 +80,7 @@ public class WeatherController implements page {
     void click4(MouseEvent event) {
         if (anch4.getBlendMode() == BlendMode.SRC_OVER) {
             anch4.setBlendMode(BlendMode.OVERLAY);
+            wea.setWeatherType(null);
         } else {
             rain();
             wea.setWeatherType(WeatherEntry.WeatherType.RAIN);
@@ -88,6 +92,7 @@ public class WeatherController implements page {
     void click5(MouseEvent event) {
         if (anch5.getBlendMode() == BlendMode.SRC_OVER) {
             anch5.setBlendMode(BlendMode.OVERLAY);
+            wea.setWeatherType(null);
         } else {
             thunder();
             wea.setWeatherType(WeatherEntry.WeatherType.THUNDER);
@@ -99,6 +104,7 @@ public class WeatherController implements page {
     void click6(MouseEvent event) {
         if (anch6.getBlendMode() == BlendMode.SRC_OVER) {
             anch6.setBlendMode(BlendMode.OVERLAY);
+            wea.setWeatherType(null);
         } else {
             windy();
             wea.setWeatherType(WeatherEntry.WeatherType.WINDY);
@@ -110,6 +116,7 @@ public class WeatherController implements page {
     void click7(MouseEvent event) {
         if (anch7.getBlendMode() == BlendMode.SRC_OVER) {
             anch7.setBlendMode(BlendMode.OVERLAY);
+            wea.setWeatherType(null);
         } else {
             snow();
             wea.setWeatherType(WeatherEntry.WeatherType.SNOW);
