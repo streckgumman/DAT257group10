@@ -90,5 +90,6 @@ public class HomePageController implements DateObserver, RatingObserver, page {
         showRatings();
         initWaterIntakePanel();
         initSleepPanel();
+        initWeather();
     }
 }

@@ -90,6 +90,8 @@ public class MainModel {
         return user.getWorkout(this.date);
     }
 
+    public WeatherEntry getWeather() {return user.getWeather(this.date); }
+
     public LocalDate getDate() {
         return date;
     }
@@ -144,6 +146,7 @@ public class MainModel {
 
         }
     }
+
 
 
 }

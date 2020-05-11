@@ -1,6 +1,7 @@
 package model;
 
 import java.text.DecimalFormat;
+import java.time.LocalDate;
 
 public class WorkoutEntry {
 
@@ -8,6 +9,10 @@ public class WorkoutEntry {
     private int minute;
     private double intensity;
     private TrainingType type;
+
+    public WorkoutEntry(LocalDate date) {
+
+    }
 
     public enum TrainingType{
         WEIGHT,
