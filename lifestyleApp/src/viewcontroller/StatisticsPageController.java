@@ -9,9 +9,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
-import model.MainModel;
-import model.RatingEntry;
-import model.Ratings;
+import model.*;
 import sun.awt.ConstrainableGraphics;
 import viewcontroller.observers.DateObserver;
 import viewcontroller.observers.RatingObserver;
@@ -241,5 +239,22 @@ public class StatisticsPageController  implements page, DateObserver, RatingObse
         ObservableList<String> topics = FXCollections.observableArrayList(ratingTopics);
         ratingTopicComboBox.setItems(topics);
         ratingTopicComboBox.getSelectionModel().select(0);
+    }
+
+    Water water;
+
+    @FXML
+    private Label averageWaterLabel;
+
+    @FXML
+    void averageWaterIntake (ActionEvent event) {
+        List<WaterEntry> waterlist = water.getWaterEntries();
+        double av = 0;
+        for(int j = waterlist.size()-1;  j > waterlist.size() - 8;j--){
+            av += waterlist.get(j).getWaterEntry();
+        }
+
+        averageWaterLabel.setText(String.valueOf(av));
+
     }
 }
