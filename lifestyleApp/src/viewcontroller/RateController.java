@@ -148,7 +148,7 @@ public class RateController implements page{
     }
 
     public void initPage(MainModel model, Optional<MainPageController> empty) {
-        r.addRatingEntry(model.getDate());
+        r.getRating(model.getDate());
         this.model = model;
         this.re = r.getRating(model.getDate());
         setStars();

@@ -6,23 +6,26 @@ import java.util.List;
 
 public class Water {
     private List<WaterEntry> waterEntries = new ArrayList<>();
-    private WaterEntry wa;
     private double waterEntry;
-    public Water() {
 
+    public void setWaterEntry(LocalDate date, double intake){
+        getWaterEntry(date).setWaterEntry(intake);
     }
-
-    public void addWaterEntry(LocalDate date) {
-        waterEntries.add(new WaterEntry(waterEntry, date));
-    }
-
 
     public WaterEntry getWaterEntry(LocalDate date){
         for (WaterEntry we : waterEntries){
-            if (we.getDate()==date){
+            if (we.getDate().equals(date)){
                 return we;
             }
         }
-        return null;
+        WaterEntry nueva = new WaterEntry(date);
+        nueva.setWaterEntry(0);
+        waterEntries.add(nueva);
+        return nueva;
     }
+
+    public List<WaterEntry> getWaterEntries(){
+        return waterEntries;
+    }
+
 }

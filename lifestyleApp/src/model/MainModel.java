@@ -72,10 +72,15 @@ public class MainModel {
             }
         }
         notifyAllRateObservers();
-
     }
 
-    // TODO-Waterintake-stuff
+    public void setWaterIntake(double intake){
+        user.addWaterEntry(this.date, intake);
+    }
+
+    public WaterEntry getWaterIntake(){
+        return user.getWaterIntake(this.date);
+    }
 
 
 
@@ -102,7 +107,7 @@ public class MainModel {
         }
     }
 
-    //-------------observer stuff-------------
+    //-------------Rate observer-------------
 
 
     private List<RatingObserver> rateObservers = new ArrayList<>();
@@ -118,7 +123,7 @@ public class MainModel {
         }
     }
 
-    //-------------observer stuff-------------
+    //-------------User observer-------------
 
 
     private List<UserObserver> userObservers = new ArrayList<>();

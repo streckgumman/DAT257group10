@@ -13,14 +13,6 @@ public class Ratings {
         this.topic = topic;
     }
 
-    public void addRatingEntry(LocalDate date) {
-        if (getRating(date) == null) {
-            RatingEntry nueva = new RatingEntry(topic, date);
-            nueva.setRating(0);
-            ratings.add(nueva);
-        }
-    }
-
     // Getters and setters
     public String getTopic() {
         return topic;

@@ -23,22 +23,10 @@ public class User {
             ratings.add(new Ratings(topic));
         }
     }
-/*
-    void addRatingEntry(String topic, LocalDate date){
-        boolean exists = false;
-        for (Ratings r : ratings){
-            if (r.getTopic().equals(topic)){
-                r.addRatingEntry(date);
-                exists = true;
-                break;
-            }
-        }
-        if(!exists){
-            Ratings tempRatings = new Ratings(topic);
-            ratings.add(tempRatings);
-            tempRatings.addRatingEntry(date);
-        }
-    }*/
+
+    void addWaterEntry(LocalDate date, double intake){
+        water.setWaterEntry(date, intake);
+    }
 
     // Getters and Setters
     public Journal getJournal() {
@@ -61,5 +49,7 @@ public class User {
         return water;
     }
 
-    // TODO waterstuff
+    public WaterEntry getWaterIntake(LocalDate date) {
+        return getWater().getWaterEntry(date);
+    }
 }
