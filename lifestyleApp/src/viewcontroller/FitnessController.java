@@ -8,21 +8,27 @@ import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
 import model.MainModel;
 import model.TodoEntry;
+import model.Workout;
 import model.WorkoutEntry;
+import viewcontroller.observers.DateObserver;
 
 import java.text.DecimalFormat;
+import java.time.LocalDate;
+import java.util.Observer;
 import java.util.Optional;
 
-public class FitnessController implements page{
+public class FitnessController implements page, DateObserver {
 
+    private MainModel model;
     private int workoutHour;
     private int workoutMinute;
     private double intensity;
     private WorkoutEntry.TrainingType type;
-    private ObservableList<String> workoutEntries = FXCollections.observableArrayList();
+    private Workout workout;
+    private ObservableList<WorkoutEntry> workoutEntries = FXCollections.observableArrayList();
 
     @FXML
-    private ListView<String> workoutListView = new ListView<>();
+    private ListView<WorkoutEntry> workoutListView = new ListView<>();
 
     @FXML
     private Label intensityLabel;
@@ -90,12 +96,10 @@ public class FitnessController implements page{
     }
 
 
-
     @FXML
     void saveWorkout(ActionEvent event) {
-        WorkoutEntry entry = new WorkoutEntry(workoutHour, workoutMinute, intensity, type);
-        workoutEntries.add(entry.toString());
-        workoutListView.setItems(workoutEntries);
+        workout.addEntry(new WorkoutEntry(workoutHour, workoutMinute, intensity, type));
+        loadWorkout();
     }
 
     @FXML
@@ -104,15 +108,39 @@ public class FitnessController implements page{
       final int selectedWorkout = workoutListView.getSelectionModel().getSelectedIndex();
       if (selectedWorkout!= -1) {
           final int newSelectedWorkout = (selectedWorkout == workoutListView.getItems().size() - 1) ? selectedWorkout - 1 : selectedWorkout;
+          WorkoutEntry we = workoutListView.getSelectionModel().getSelectedItem();
+          workout.removeEntry(we);
           workoutListView.getItems().remove(selectedWorkout);
           workoutListView.getSelectionModel().select(newSelectedWorkout);
       }
 
     }
 
+    void loadWorkout(){
+        workoutEntries.clear();
+        for (WorkoutEntry we : workout.getWorkouts()){
+            workoutEntries.add(we);
+        }
+        workoutListView.setItems(workoutEntries);
+
+    }
+
     @Override
     public void initPage(MainModel model, Optional<MainPageController> mainPage) {
+        this.model = model;
+        model.attachDateOb(this);
+        this.workout = model.getWorkout();
+        loadWorkout();
+    }
 
+    @Override
+    public void notified() {
+        update();
+    }
+
+    private void update(){
+        this.workout=model.getWorkout();
+        loadWorkout();
     }
 }
 

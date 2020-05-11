@@ -59,7 +59,6 @@ public class WorkoutEntry {
         this.type = type;
     }
 
-    @Override
     public String toString(){
         return "Workout: " + hour + " hour(s), " + minute + " minute(s). " + " Workouttype: " + type +  ", intensity: " + String.valueOf(new DecimalFormat("#.#").format(intensity));
     }
