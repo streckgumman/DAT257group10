@@ -10,6 +10,7 @@ public class User {
     private String name;
     private Journal journal = new Journal();
     private List<Ratings> ratings= new ArrayList<>();
+    private List<Workout> workoutList= new ArrayList<>();
     ArrayList<SleepEntry> bedtimeList= new ArrayList<SleepEntry>();
 
 
@@ -67,8 +68,17 @@ public class User {
         return nueva;
     }
 
-    public List<SleepEntry> getSleepEntries(){
-        return bedtimeList;
+    public Workout getWorkout(LocalDate date) {
+        for (Workout wo : workoutList){
+            if (wo.getDate().equals(date)){
+                return wo;
+            }
+        }
+        Workout nueva = new Workout(date);
+        workoutList.add(nueva);
+        return nueva;
+
     }
+
 
 }
