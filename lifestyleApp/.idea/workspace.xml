@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e58e48c-3d95-4584-836b-9034806ca01b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/LifestyleApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LifestyleApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/viewcontroller/FitnessController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewcontroller/FitnessController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/viewcontroller/StatisticsPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewcontroller/StatisticsPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/LifestyleApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lifestyleApp/LifestyleApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/viewcontroller/StatisticsPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lifestyleApp/viewcontroller/StatisticsPageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/MainModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/MainModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/viewcontroller/RateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewcontroller/RateController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588677368451</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="merge with master">
+      <created>1589185710184</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1589185710184</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,13 +228,13 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created a skeleton for the application" />
     <MESSAGE value="Created some buttons for the header." />
-    <MESSAGE value="merge with master" />
     <MESSAGE value="branch" />
     <MESSAGE value="the program is now runnable. You can now set and get the different times for wake up and bed time with the help of spinners." />
     <MESSAGE value="push with error //w Hanna T" />
     <MESSAGE value="Johanna &amp; Linnea:&#10;Todo done!" />
     <MESSAGE value="Jobbat hela dagen med settings, lägga till ratings ändra namn etc. Även kodoptimerat då en del kod såg svajig ut. with Hanna T" />
-    <option name="LAST_COMMIT_MESSAGE" value="Jobbat hela dagen med settings, lägga till ratings ändra namn etc. Även kodoptimerat då en del kod såg svajig ut. with Hanna T" />
+    <MESSAGE value="merge with master" />
+    <option name="LAST_COMMIT_MESSAGE" value="merge with master" />
   </component>
   <component name="WindowStateProjectService">
     <state x="535" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589185408909" />
@@ -239,22 +249,22 @@
     <state x="237" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1589185408909" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1589185408909" />
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1589185408909" />
-    <state width="746" height="124" key="GridCell.Tab.0.bottom" timestamp="1589185442355">
+    <state width="746" height="124" key="GridCell.Tab.0.bottom" timestamp="1589186242800">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="124" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589185442355" />
-    <state width="746" height="124" key="GridCell.Tab.0.center" timestamp="1589185442355">
+    <state width="746" height="124" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589186242800" />
+    <state width="746" height="124" key="GridCell.Tab.0.center" timestamp="1589186242800">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="124" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589185442355" />
-    <state width="746" height="124" key="GridCell.Tab.0.left" timestamp="1589185442354">
+    <state width="746" height="124" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589186242800" />
+    <state width="746" height="124" key="GridCell.Tab.0.left" timestamp="1589186242800">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="124" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589185442354" />
-    <state width="746" height="124" key="GridCell.Tab.0.right" timestamp="1589185442355">
+    <state width="746" height="124" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589186242800" />
+    <state width="746" height="124" key="GridCell.Tab.0.right" timestamp="1589186242800">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="124" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589185442355" />
+    <state width="746" height="124" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589186242800" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1589185408909" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589185408909" />
     <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1589185408909" />
@@ -273,8 +283,10 @@
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1589185408909" />
     <state x="361" y="132" key="Vcs.Push.Dialog.v2" timestamp="1589185408909" />
     <state x="361" y="132" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1589185408909" />
-    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589185408909" />
-    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1589185408909" />
+    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589188634476">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1589188634476" />
     <state x="372" y="125" key="git4idea.branch.GitSmartOperationDialog" timestamp="1589185422766">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -296,11 +308,6 @@
           <url>file://$PROJECT_DIR$/src/viewcontroller/SettingsPageController.java</url>
           <line>86</line>
           <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/model/MainModel.java</url>
-          <line>65</line>
-          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

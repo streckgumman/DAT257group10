@@ -86,5 +86,6 @@ public class HomePageController implements DateObserver, RatingObserver, page {
 
     private void update(){
         showRatings();
+        // TODO update water
     }
 }

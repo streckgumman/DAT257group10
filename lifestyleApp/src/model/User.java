@@ -6,8 +6,6 @@ import java.util.List;
 
 public class User {
 
-
-
     private Water water = new Water();
     private String name;
     private Journal journal = new Journal();
@@ -62,4 +60,6 @@ public class User {
     public Water getWater() {
         return water;
     }
+
+    // TODO waterstuff
 }
