@@ -18,8 +18,6 @@ public class TodoController implements page{
 
     private ObservableList<TodoEntry> todoEntries = FXCollections.observableArrayList();
     private ArrayList<TodoEntry> todoEntryArrayList = new ArrayList<>();
-    private MainModel model;
-
 
     @FXML
     private TextArea todoTextArea;
@@ -27,12 +25,10 @@ public class TodoController implements page{
     @FXML
     private ListView<TodoEntry> todoListView = new ListView<>();
 
-
-
     @FXML
     void addTodoButton(ActionEvent event) {
         if (todoTextArea.getText() != null) {
-            TodoEntry todo = new TodoEntry(todoTextArea.getText(), model.getDate());
+            TodoEntry todo = new TodoEntry(todoTextArea.getText());
             todoEntries.add(todo);
             todoListView.setItems(todoEntries);
 
@@ -48,7 +44,7 @@ public class TodoController implements page{
 
         final int selectedTodo = todoListView.getSelectionModel().getSelectedIndex();
         if (selectedTodo != -1) {
-           // TodoEntry itemToRemove = todoListView.getSelectionModel().getSelectedItem();
+            // TodoEntry itemToRemove = todoListView.getSelectionModel().getSelectedItem();
             final int newSelectedTodo = (selectedTodo == todoListView.getItems().size() - 1) ? selectedTodo - 1 : selectedTodo;
 
             todoListView.getItems().remove(selectedTodo);
