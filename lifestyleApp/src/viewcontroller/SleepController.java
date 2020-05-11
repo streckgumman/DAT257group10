@@ -88,6 +88,7 @@ public class SleepController implements page {
         return 0;
     }
 
+
     public int getBedTimeHour() {
         return bedTimeHour;
     }
