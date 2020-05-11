@@ -43,8 +43,8 @@ public class HomePageController implements DateObserver, RatingObserver, page {
     }
 
     private void initWeather(){
-       weatherAnchorpane.getChildren().clear();
-       weatherAnchorpane.getChildren().add(PageLoader.createWeatherPane());
+        weatherAnchorpane.getChildren().clear();
+        weatherAnchorpane.getChildren().add(PageLoader.createWeatherPane());
     }
     private void initJournal() {
         journalAnchorPane.getChildren().clear();
@@ -89,5 +89,7 @@ public class HomePageController implements DateObserver, RatingObserver, page {
     private void update(){
         showRatings();
         initWaterIntakePanel();
+        initSleepPanel();
+        initWeather();
     }
 }

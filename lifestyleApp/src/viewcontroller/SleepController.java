@@ -6,107 +6,92 @@ import javafx.scene.control.Label;
 import javafx.scene.control.Spinner;
 import javafx.scene.input.MouseEvent;
 import model.MainModel;
-import model.Sleep;
+import model.SleepEntry;
 
 import java.util.Optional;
 
 public class SleepController implements page {
-    private int bedTimeHour = 12;
-    private int bedTimeMinute = 30;
-    private int wakeUpTimeHour = 12;
-    private int wakeUpTimeMinute = 30;
 
-    Sleep sleep;
+    private MainModel model;
+    private SleepEntry se;
 
     @FXML
     private Label totalSleepLabel;
 
     @FXML
-    private Spinner<?> bedTimeHourSpinner;
+    private Spinner<Integer> bedTimeHourSpinner;
 
     @FXML
-    private Spinner<?> bedTimeMinuteSpinner;
+    private Spinner<Integer> bedTimeMinuteSpinner;
 
     @FXML
-    private Spinner<?> wakeUpTimeHourSpinner;
+    private Spinner<Integer> wakeUpTimeHourSpinner;
 
     @FXML
-    private Spinner<?> wakeUpTimeMinuteSpinner;
+    private Spinner<Integer> wakeUpTimeMinuteSpinner;
+
 
 
     //Funkar bara när man ändrar tiden med knapparna
     @FXML
     void setWakeUpTimeHour(MouseEvent event) {
-        wakeUpTimeHour = (Integer) wakeUpTimeHourSpinner.getValue();
+        se.setWakeupTimeHour(wakeUpTimeHourSpinner.getValue());
 
     }
 
     //Funkar bara när man ändrar tiden med knapparna
     @FXML
     void setWakeUpTimeMinute(MouseEvent event) {
-        wakeUpTimeMinute = (Integer) wakeUpTimeMinuteSpinner.getValue();
-
-
+        se.setWakeupTimeMinute(wakeUpTimeMinuteSpinner.getValue());
     }
 
 
     //Funkar bara när man ändrar tiden med knapparna
     @FXML
     void setBedTimeHour(MouseEvent event) {
-        bedTimeHour = (Integer) bedTimeHourSpinner.getValue();
+        se.setBedtimeHour(bedTimeHourSpinner.getValue());
     }
 
     //Funkar bara när man ändrar tiden med knapparna
     @FXML
     void setBedTimeMinute(MouseEvent event) {
-        bedTimeMinute = (Integer) bedTimeMinuteSpinner.getValue();
+        se.setBedtimeMinute((Integer) bedTimeMinuteSpinner.getValue());
     }
 
-    public int getMinutesOfSleep() {
-        if (bedTimeMinute < wakeUpTimeMinute) {
-            return (wakeUpTimeMinute - bedTimeMinute);
+    private int getMinutesOfSleep() {
+        if (se.getBedtimeMinute() < se.getWakeupTimeMinute()) {
+            return (se.getWakeupTimeMinute() - se.getBedtimeMinute());
 
-        } else if (bedTimeMinute > wakeUpTimeMinute) {
-            return ((60 - bedTimeMinute) + wakeUpTimeMinute);
+        } else if (se.getBedtimeMinute() > se.getWakeupTimeMinute()) {
+            return ((60 - se.getBedtimeMinute()) + se.getWakeupTimeMinute());
         }
 
         return 0;
     }
 
-    public int getHoursOfSleep() {
-        if (bedTimeHour < wakeUpTimeHour) {
-            if (wakeUpTimeMinute < bedTimeMinute) {
-                return (wakeUpTimeHour - bedTimeHour - 1);
+    private int getHoursOfSleep() {
+        if (se.getBedtimeHour() < se.getWakeupTimeHour()) {
+            return (se.getWakeupTimeHour() - se.getBedtimeHour());
+        } else if (se.getBedtimeHour() > se.getWakeupTimeHour()) {
+            if (se.getWakeupTimeMinute() > se.getBedtimeMinute()) {
+                return ((24 - se.getBedtimeHour()) + se.getWakeupTimeHour());
             }
-            return (wakeUpTimeHour - bedTimeHour);
-        } else if (bedTimeHour > wakeUpTimeHour) {
-            if (wakeUpTimeMinute < bedTimeMinute) {
-                return ((24 - bedTimeHour) + wakeUpTimeHour - 1);
-            }
-            return ((24 - bedTimeHour) + wakeUpTimeHour);
+
+            return ((24 - se.getBedtimeHour()) + se.getWakeupTimeHour()) - 1; //Eventuellt -1
         }
         return 0;
-    }
-
-
-    public int getBedTimeHour() {
-        return bedTimeHour;
-    }
-
-    public int getBedTimeMinute() {
-        return bedTimeMinute;
-    }
-
-    public int getWakeUpTimeHour() {
-        return wakeUpTimeHour;
-    }
-
-    public int getWakeUpTimeMinute() {
-        return wakeUpTimeMinute;
     }
 
     @FXML
     void totalSleep(ActionEvent event) {
+        updateSleep();
+    }
+
+    private void updateSleep() {
+        bedTimeHourSpinner.getValueFactory().setValue(se.getBedtimeHour());
+        bedTimeMinuteSpinner.getValueFactory().setValue(se.getBedtimeMinute());
+        wakeUpTimeHourSpinner.getValueFactory().setValue(se.getWakeupTimeHour());
+        wakeUpTimeMinuteSpinner.getValueFactory().setValue(se.getWakeupTimeMinute());
         String totalHoursOfSleep = Integer.toString(getHoursOfSleep());
         String totalMinutesOfSleep = Integer.toString(getMinutesOfSleep());
         totalSleepLabel.setText(totalHoursOfSleep + " hours " + totalMinutesOfSleep + " minutes");
@@ -114,5 +99,8 @@ public class SleepController implements page {
 
 
     public void initPage(MainModel model, Optional<MainPageController> empty) {
+        this.model = model;
+        this.se = model.getSleep();
+        updateSleep();
     }
 }

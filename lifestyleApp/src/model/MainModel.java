@@ -61,7 +61,7 @@ public class MainModel {
         }
         if (!found && !topic.equals("")){
             user.addRating(topic);
-            notifyAllRateObservers(); 
+            notifyAllRateObservers();
         }
     }
 
@@ -82,7 +82,15 @@ public class MainModel {
         return user.getWaterIntake(this.date);
     }
 
+    public SleepEntry getSleep() {
+        return user.getSleepEntry(this.date);
+    }
 
+    public Workout getWorkout() {
+        return user.getWorkout(this.date);
+    }
+
+    public WeatherEntry getWeather() {return user.getWeather(this.date); }
 
     public LocalDate getDate() {
         return date;
@@ -138,6 +146,7 @@ public class MainModel {
 
         }
     }
+
 
 
 }

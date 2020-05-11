@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Weather {
-    private List<WeatherEntry> weatherEntries = new ArrayList<>();
+  /*  private List<WeatherEntry> weatherEntries = new ArrayList<>();
     private WeatherEntry wea;
     double weatherEntry;
     public Weather() {
@@ -25,5 +25,5 @@ public class Weather {
         }
         return null;
     }
-
+*/
 }

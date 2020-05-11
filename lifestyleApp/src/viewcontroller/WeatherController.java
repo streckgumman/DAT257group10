@@ -6,13 +6,17 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import model.MainModel;
 import model.WeatherEntry;
+import model.WorkoutEntry;
+import viewcontroller.observers.DateObserver;
 
 import javax.swing.text.html.ImageView;
 import java.awt.event.ActionEvent;
 import java.util.Optional;
 
-public class WeatherController implements page{
+public class WeatherController implements page {
+    private MainModel model;
     private WeatherEntry wea;
+    private WeatherEntry.WeatherType type;
 
     @FXML
     private AnchorPane anch4;
@@ -36,20 +40,13 @@ public class WeatherController implements page{
     private AnchorPane anch1;
 
     @FXML
-    private AnchorPane weather;
-
-    @FXML
     void click1(MouseEvent event) {
         if (anch1.getBlendMode() == BlendMode.SRC_OVER) {
             anch1.setBlendMode(BlendMode.OVERLAY);
+            wea.setWeatherType(null);
         } else {
-            anch1.setBlendMode(BlendMode.SRC_OVER);
-            anch2.setBlendMode(BlendMode.OVERLAY);
-            anch3.setBlendMode(BlendMode.OVERLAY);
-            anch4.setBlendMode(BlendMode.OVERLAY);
-            anch5.setBlendMode(BlendMode.OVERLAY);
-            anch6.setBlendMode(BlendMode.OVERLAY);
-            anch7.setBlendMode(BlendMode.OVERLAY);
+            sun();
+            wea.setWeatherType(WeatherEntry.WeatherType.SUN);
         }
 
     }
@@ -59,14 +56,10 @@ public class WeatherController implements page{
     void click2(MouseEvent event) {
         if (anch2.getBlendMode() == BlendMode.SRC_OVER) {
             anch2.setBlendMode(BlendMode.OVERLAY);
+            wea.setWeatherType(null);
         } else {
-            anch1.setBlendMode(BlendMode.OVERLAY);
-            anch2.setBlendMode(BlendMode.SRC_OVER);
-            anch3.setBlendMode(BlendMode.OVERLAY);
-            anch4.setBlendMode(BlendMode.OVERLAY);
-            anch5.setBlendMode(BlendMode.OVERLAY);
-            anch6.setBlendMode(BlendMode.OVERLAY);
-            anch7.setBlendMode(BlendMode.OVERLAY);
+            sunCloud();
+            wea.setWeatherType(WeatherEntry.WeatherType.SUNCLOUD);
         }
 
     }
@@ -75,14 +68,10 @@ public class WeatherController implements page{
     void click3(MouseEvent event) {
         if (anch3.getBlendMode() == BlendMode.SRC_OVER) {
             anch3.setBlendMode(BlendMode.OVERLAY);
+            wea.setWeatherType(null);
         } else {
-            anch1.setBlendMode(BlendMode.OVERLAY);
-            anch2.setBlendMode(BlendMode.OVERLAY);
-            anch3.setBlendMode(BlendMode.SRC_OVER);
-            anch4.setBlendMode(BlendMode.OVERLAY);
-            anch5.setBlendMode(BlendMode.OVERLAY);
-            anch6.setBlendMode(BlendMode.OVERLAY);
-            anch7.setBlendMode(BlendMode.OVERLAY);
+            cloud();
+            wea.setWeatherType(WeatherEntry.WeatherType.CLOUD);
         }
 
     }
@@ -91,14 +80,10 @@ public class WeatherController implements page{
     void click4(MouseEvent event) {
         if (anch4.getBlendMode() == BlendMode.SRC_OVER) {
             anch4.setBlendMode(BlendMode.OVERLAY);
+            wea.setWeatherType(null);
         } else {
-            anch1.setBlendMode(BlendMode.OVERLAY);
-            anch2.setBlendMode(BlendMode.OVERLAY);
-            anch3.setBlendMode(BlendMode.OVERLAY);
-            anch4.setBlendMode(BlendMode.SRC_OVER);
-            anch5.setBlendMode(BlendMode.OVERLAY);
-            anch6.setBlendMode(BlendMode.OVERLAY);
-            anch7.setBlendMode(BlendMode.OVERLAY);
+            rain();
+            wea.setWeatherType(WeatherEntry.WeatherType.RAIN);
         }
 
     }
@@ -107,14 +92,10 @@ public class WeatherController implements page{
     void click5(MouseEvent event) {
         if (anch5.getBlendMode() == BlendMode.SRC_OVER) {
             anch5.setBlendMode(BlendMode.OVERLAY);
+            wea.setWeatherType(null);
         } else {
-            anch1.setBlendMode(BlendMode.OVERLAY);
-            anch2.setBlendMode(BlendMode.OVERLAY);
-            anch3.setBlendMode(BlendMode.OVERLAY);
-            anch4.setBlendMode(BlendMode.OVERLAY);
-            anch5.setBlendMode(BlendMode.SRC_OVER);
-            anch6.setBlendMode(BlendMode.OVERLAY);
-            anch7.setBlendMode(BlendMode.OVERLAY);
+            thunder();
+            wea.setWeatherType(WeatherEntry.WeatherType.THUNDER);
         }
 
     }
@@ -123,14 +104,10 @@ public class WeatherController implements page{
     void click6(MouseEvent event) {
         if (anch6.getBlendMode() == BlendMode.SRC_OVER) {
             anch6.setBlendMode(BlendMode.OVERLAY);
+            wea.setWeatherType(null);
         } else {
-            anch1.setBlendMode(BlendMode.OVERLAY);
-            anch2.setBlendMode(BlendMode.OVERLAY);
-            anch3.setBlendMode(BlendMode.OVERLAY);
-            anch4.setBlendMode(BlendMode.OVERLAY);
-            anch5.setBlendMode(BlendMode.OVERLAY);
-            anch6.setBlendMode(BlendMode.SRC_OVER);
-            anch7.setBlendMode(BlendMode.OVERLAY);
+            windy();
+            wea.setWeatherType(WeatherEntry.WeatherType.WINDY);
         }
 
     }
@@ -139,25 +116,127 @@ public class WeatherController implements page{
     void click7(MouseEvent event) {
         if (anch7.getBlendMode() == BlendMode.SRC_OVER) {
             anch7.setBlendMode(BlendMode.OVERLAY);
+            wea.setWeatherType(null);
         } else {
-            anch1.setBlendMode(BlendMode.OVERLAY);
-            anch2.setBlendMode(BlendMode.OVERLAY);
-            anch3.setBlendMode(BlendMode.OVERLAY);
-            anch4.setBlendMode(BlendMode.OVERLAY);
-            anch5.setBlendMode(BlendMode.OVERLAY);
-            anch6.setBlendMode(BlendMode.OVERLAY);
-            anch7.setBlendMode(BlendMode.SRC_OVER);
+            snow();
+            wea.setWeatherType(WeatherEntry.WeatherType.SNOW);
         }
 
     }
 
+    void sun() {
+        anch1.setBlendMode(BlendMode.SRC_OVER);
+        anch2.setBlendMode(BlendMode.OVERLAY);
+        anch3.setBlendMode(BlendMode.OVERLAY);
+        anch4.setBlendMode(BlendMode.OVERLAY);
+        anch5.setBlendMode(BlendMode.OVERLAY);
+        anch6.setBlendMode(BlendMode.OVERLAY);
+        anch7.setBlendMode(BlendMode.OVERLAY);
+    }
 
-    public void setWeatherEntry(WeatherEntry wea) {
-        this.wea = wea;
+    void sunCloud() {
+        anch1.setBlendMode(BlendMode.OVERLAY);
+        anch2.setBlendMode(BlendMode.SRC_OVER);
+        anch3.setBlendMode(BlendMode.OVERLAY);
+        anch4.setBlendMode(BlendMode.OVERLAY);
+        anch5.setBlendMode(BlendMode.OVERLAY);
+        anch6.setBlendMode(BlendMode.OVERLAY);
+        anch7.setBlendMode(BlendMode.OVERLAY);
+    }
+
+    void cloud() {
+        anch1.setBlendMode(BlendMode.OVERLAY);
+        anch2.setBlendMode(BlendMode.OVERLAY);
+        anch3.setBlendMode(BlendMode.SRC_OVER);
+        anch4.setBlendMode(BlendMode.OVERLAY);
+        anch5.setBlendMode(BlendMode.OVERLAY);
+        anch6.setBlendMode(BlendMode.OVERLAY);
+        anch7.setBlendMode(BlendMode.OVERLAY);
+    }
+
+    void rain() {
+        anch1.setBlendMode(BlendMode.OVERLAY);
+        anch2.setBlendMode(BlendMode.OVERLAY);
+        anch3.setBlendMode(BlendMode.OVERLAY);
+        anch4.setBlendMode(BlendMode.SRC_OVER);
+        anch5.setBlendMode(BlendMode.OVERLAY);
+        anch6.setBlendMode(BlendMode.OVERLAY);
+        anch7.setBlendMode(BlendMode.OVERLAY);
+    }
+
+    void thunder() {
+        anch1.setBlendMode(BlendMode.OVERLAY);
+        anch2.setBlendMode(BlendMode.OVERLAY);
+        anch3.setBlendMode(BlendMode.OVERLAY);
+        anch4.setBlendMode(BlendMode.OVERLAY);
+        anch5.setBlendMode(BlendMode.SRC_OVER);
+        anch6.setBlendMode(BlendMode.OVERLAY);
+        anch7.setBlendMode(BlendMode.OVERLAY);
+    }
+
+    void windy() {
+        anch1.setBlendMode(BlendMode.OVERLAY);
+        anch2.setBlendMode(BlendMode.OVERLAY);
+        anch3.setBlendMode(BlendMode.OVERLAY);
+        anch4.setBlendMode(BlendMode.OVERLAY);
+        anch5.setBlendMode(BlendMode.OVERLAY);
+        anch6.setBlendMode(BlendMode.SRC_OVER);
+        anch7.setBlendMode(BlendMode.OVERLAY);
+    }
+
+    void snow() {
+        anch1.setBlendMode(BlendMode.OVERLAY);
+        anch2.setBlendMode(BlendMode.OVERLAY);
+        anch3.setBlendMode(BlendMode.OVERLAY);
+        anch4.setBlendMode(BlendMode.OVERLAY);
+        anch5.setBlendMode(BlendMode.OVERLAY);
+        anch6.setBlendMode(BlendMode.OVERLAY);
+        anch7.setBlendMode(BlendMode.SRC_OVER);
+    }
+
+    void reset() {
+        anch1.setBlendMode(BlendMode.OVERLAY);
+        anch2.setBlendMode(BlendMode.OVERLAY);
+        anch3.setBlendMode(BlendMode.OVERLAY);
+        anch4.setBlendMode(BlendMode.OVERLAY);
+        anch5.setBlendMode(BlendMode.OVERLAY);
+        anch6.setBlendMode(BlendMode.OVERLAY);
+        anch7.setBlendMode(BlendMode.OVERLAY);
     }
 
     public void initPage(MainModel model, Optional<MainPageController> empty) {
-        // images
+        this.model = model;
+        this.wea = model.getWeather();
+        setWeather();
     }
 
+    private void setWeather() {
+        if (wea.getWeatherType() == null) {
+            reset();
+        } else {
+            switch (wea.getWeatherType()) {
+                case SUN:
+                    sun();
+                    break;
+                case SUNCLOUD:
+                    sunCloud();
+                    break;
+                case CLOUD:
+                    cloud();
+                    break;
+                case RAIN:
+                    rain();
+                    break;
+                case THUNDER:
+                    thunder();
+                    break;
+                case WINDY:
+                    windy();
+                    break;
+                case SNOW:
+                    snow();
+                    break;
+            }
+        }
+    }
 }

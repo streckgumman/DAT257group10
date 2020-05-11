@@ -3,22 +3,31 @@ package model;
 import java.time.LocalDate;
 
 public class WeatherEntry {
-    private double weatherEntry;
+    private WeatherType weatherType;
     private LocalDate date;
 
-    public WeatherEntry(double weatherEntry, LocalDate date) {
-        this.weatherEntry = weatherEntry;
+    public WeatherEntry(LocalDate date) {
         this.date = date;
+    }
+
+    public enum WeatherType{
+        SUN,
+        SUNCLOUD,
+        CLOUD,
+        RAIN,
+        THUNDER,
+        WINDY,
+        SNOW
     }
 
     // Getters and Setters
 
-    public double getWeatherEntry() {
-        return weatherEntry;
+    public WeatherType getWeatherType() {
+        return weatherType;
     }
 
-    public void setWeatherEntry(double waterEntry) {
-        this.weatherEntry= weatherEntry;
+    public void setWeatherType(WeatherType wt) {
+        this.weatherType = wt;
     }
 
     public LocalDate getDate() {
