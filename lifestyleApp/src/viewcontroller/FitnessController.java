@@ -98,8 +98,10 @@ public class FitnessController implements page, DateObserver {
 
     @FXML
     void saveWorkout(ActionEvent event) {
-        workout.addEntry(new WorkoutEntry(workoutHour, workoutMinute, intensity, type));
-        loadWorkout();
+        if (type != null) {
+            workout.addEntry(new WorkoutEntry(workoutHour, workoutMinute, intensity, type));
+            loadWorkout();
+        }
     }
 
     @FXML
