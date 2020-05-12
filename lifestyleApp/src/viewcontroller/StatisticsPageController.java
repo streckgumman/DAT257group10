@@ -342,17 +342,17 @@ public class StatisticsPageController implements page, DateObserver, RatingObser
         LocalDate endDate = startDate.minusDays(7);
 
         for (LocalDate date = startDate; date.isAfter(endDate); date = date.minusDays(1)) {
-            for (WorkoutEntry we : mainmodel.getUser().getWorkout(date).getWorkouts()){
-                workoutTimeHours   += we.getHour();
+            for (WorkoutEntry we : mainmodel.getUser().getWorkout(date).getWorkouts()) {
+                workoutTimeHours += we.getHour();
                 workoutTimeMinutes += we.getMinute();
-                workoutIntensity   += we.getIntensity();
-        }
+                workoutIntensity += we.getIntensity();
+            }
 
         }
 
-        workoutTimeHours   = workoutTimeHours   / 7;
+        workoutTimeHours = workoutTimeHours / 7;
         workoutTimeMinutes = workoutTimeMinutes / 7;
-        workoutIntensity   = workoutIntensity   / 7;
+        workoutIntensity = workoutIntensity / 7;
 
         double noDecimalHours = Math.floor(workoutTimeHours);
         double fullMinutes = workoutTimeMinutes + ((workoutTimeHours - Math.floor(workoutTimeHours)) * 60);
@@ -363,8 +363,8 @@ public class StatisticsPageController implements page, DateObserver, RatingObser
         }
 
         averageWorkoutTime.setText(String.valueOf(new DecimalFormat("#.#").format(noDecimalHours)) + " hours " +
-                                 String.valueOf(new DecimalFormat("#.#").format((int)fullMinutes)) + " mins");
+                String.valueOf(new DecimalFormat("#.#").format((int) fullMinutes)) + " mins");
         averageWorkoutIntensity.setText("Intensity: " +
-                                 String.valueOf(new DecimalFormat("#.#").format(workoutIntensity)));
+                String.valueOf(new DecimalFormat("#.#").format(workoutIntensity)));
     }
 }
