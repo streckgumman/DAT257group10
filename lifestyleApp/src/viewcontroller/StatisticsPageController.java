@@ -88,7 +88,8 @@ public class StatisticsPageController implements page, DateObserver, RatingObser
 
     @FXML
     private void populateWeekGraph() {
-        List<RatingEntry> weekStatistics = getWeekStatistics(currentDate, ratingTopicComboBox.getSelectionModel().getSelectedItem());
+        List<RatingEntry> weekStatistics = getWeekStatistics(currentDate,
+                ratingTopicComboBox.getSelectionModel().getSelectedItem());
 
         XYChart.Series dataSeries1 = new XYChart.Series();
 
@@ -123,7 +124,8 @@ public class StatisticsPageController implements page, DateObserver, RatingObser
 
     @FXML
     private void populateMonthGraph() {
-        List<RatingEntry> monthStatistics = getMonthStatistics(currentDate, ratingTopicComboBox.getSelectionModel().getSelectedItem());
+        List<RatingEntry> monthStatistics = getMonthStatistics(currentDate,
+                ratingTopicComboBox.getSelectionModel().getSelectedItem());
 
         XYChart.Series dataSeries2 = new XYChart.Series();
         Collections.sort(monthStatistics);
@@ -172,7 +174,8 @@ public class StatisticsPageController implements page, DateObserver, RatingObser
             if (ratings.getTopic().equals(topic)) {
 
                 for (RatingEntry entry : ratings.getRatings()) {
-                    if ((date.getMonth().equals(entry.getDate().getMonth())) && (date.getYear() == entry.getDate().getYear())) {
+                    if ((date.getMonth().equals(entry.getDate().getMonth())) &&
+                            (date.getYear() == entry.getDate().getYear())) {
                         entries.add(entry);
                     }
                 }
@@ -218,7 +221,8 @@ public class StatisticsPageController implements page, DateObserver, RatingObser
 
 
         CategoryAxis weekAxisX = (CategoryAxis) weekGraph.getXAxis();
-        ObservableList<String> weekdays = FXCollections.observableArrayList("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday");
+        ObservableList<String> weekdays = FXCollections.observableArrayList
+                ("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday");
         weekAxisX.setCategories(weekdays);
 
         monthLineGraph.getYAxis().setLabel("Rating");
@@ -255,8 +259,7 @@ public class StatisticsPageController implements page, DateObserver, RatingObser
     }
 
 
-    //Average water intake
-
+    //----------------- Average water intake -----------
 
 
     @FXML
@@ -278,6 +281,8 @@ public class StatisticsPageController implements page, DateObserver, RatingObser
 
     }
 
+    //----------------------- Average Sleep -----------
+
     @FXML
     private Label averageSleepLabel;
 
@@ -295,12 +300,71 @@ public class StatisticsPageController implements page, DateObserver, RatingObser
             hours += mainmodel.getUser().getSleepEntry(date).getHoursOfSleep();
         }
 
-        hours = hours / 7; //todo: fixa hur dessa ska kunna bli minuter om de ej är ett heltal
-        mins = mins / 7; //todo: fixa hur dessa ska bli 1 hour för varje 60 min och dra av 60 min på mins
+        // EX: 5.98 Hours
+        double averageHours = hours / 7;
+        // EX: 40 Minutes
+        double averageMinutes = mins / 7;
 
-        averageSleepLabel.setText(String.valueOf(new DecimalFormat("#.#").format(hours)) + " hours " + String.valueOf(new DecimalFormat("#.#").format(mins)) + " mins");
+        // EX: Math.floor(5.98) -> 5.0
+        double noDecimalHours = Math.floor(averageHours);
+        // EX: 40 min + ((5.98 - 5) * 60 hours) -> ____ minutes
+        double fullMinutes = averageMinutes + ((averageHours - Math.floor(averageHours)) * 60);
+
+
+        // EX: after converting decimal hours to minutes and it results in the total minutes exceeding 59, then:
+        // REMOVE 60 from total minutes and add one hour to the total hours.
+        if (fullMinutes > 59) {
+            fullMinutes = fullMinutes - 60;
+            noDecimalHours = noDecimalHours + 1;
+        }
+
+        averageSleepLabel.setText(String.valueOf(new DecimalFormat("#.#").format(noDecimalHours)) + " hours " +
+                String.valueOf(new DecimalFormat("#.#").format((int) fullMinutes)) + " mins");
 
     }
 
+    // ------------ WORKOUT -------------
 
+    @FXML
+    private Label averageWorkoutIntensity;
+
+    @FXML
+    private Label averageWorkoutTime;
+
+    @FXML
+    void averageWorkout(ActionEvent event) {
+
+        double workoutTimeHours = 0;
+        double workoutTimeMinutes = 0;
+        double workoutIntensity = 0;
+
+        LocalDate startDate = mainmodel.getDate();
+        LocalDate endDate = startDate.minusDays(7);
+
+        for (LocalDate date = startDate; date.isAfter(endDate); date = date.minusDays(1)) {
+            for (WorkoutEntry we : mainmodel.getUser().getWorkout(date).getWorkouts()) {
+                workoutTimeHours += we.getHour();
+                workoutTimeMinutes += we.getMinute();
+                workoutIntensity += we.getIntensity();
+            }
+
+        }
+
+        workoutTimeHours = workoutTimeHours / 7;
+        workoutTimeMinutes = workoutTimeMinutes / 7;
+        workoutIntensity = workoutIntensity / 7;
+
+        double noDecimalHours = Math.floor(workoutTimeHours);
+        double fullMinutes = workoutTimeMinutes + ((workoutTimeHours - Math.floor(workoutTimeHours)) * 60);
+
+        if (fullMinutes > 59) {
+            fullMinutes = fullMinutes - 60;
+            noDecimalHours = noDecimalHours + 1;
+        }
+
+        averageWorkoutTime.setText(String.valueOf(new DecimalFormat("#.#").format(noDecimalHours)) + " hours " +
+                String.valueOf(new DecimalFormat("#.#").format((int) fullMinutes)) + " mins");
+        averageWorkoutIntensity.setText("Intensity: " +
+                String.valueOf(new DecimalFormat("#.#").format(workoutIntensity)));
+    }
 }
