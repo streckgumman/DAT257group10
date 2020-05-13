@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="540.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewcontroller.HomePageController">
+<AnchorPane prefHeight="540.0" prefWidth="1200.0" styleClass="mainPage" stylesheets="@../lifestyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewcontroller.HomePageController">
    <children>
       <Text layoutX="497.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rate your day">
          <font>
@@ -19,22 +19,22 @@
          </content>
       </ScrollPane>
       <AnchorPane fx:id="journalAnchorPane" layoutX="886.0" layoutY="98.0" prefHeight="478.0" prefWidth="300.0" />
-      <AnchorPane fx:id="sleepAnchorpane" layoutX="14.0" layoutY="14.0" prefHeight="150.0" prefWidth="300.0" style="-fx-background-color: #e4f7e6;" AnchorPane.topAnchor="20.0">
+      <AnchorPane fx:id="sleepAnchorpane" layoutX="14.0" layoutY="14.0" prefHeight="150.0" prefWidth="300.0" styleClass="panel" AnchorPane.topAnchor="20.0">
          <effect>
             <DropShadow />
          </effect>
       </AnchorPane>
-<AnchorPane fx:id="waterIntakeAnchorPane" layoutX="14.0" layoutY="178.0" prefHeight="155.0" prefWidth="300.0" style="-fx-background-color: #e4f7e6;">
+<AnchorPane fx:id="waterIntakeAnchorPane" layoutX="14.0" layoutY="178.0" prefHeight="155.0" prefWidth="300.0">
 <effect>
    <DropShadow />
 </effect></AnchorPane>
-      <AnchorPane fx:id="todoAnchorPane" layoutX="14.0" layoutY="346.0" prefHeight="180.0" prefWidth="300.0" style="-fx-background-color: #e4f7e6;">
+      <AnchorPane fx:id="todoAnchorPane" layoutX="14.0" layoutY="346.0" prefHeight="180.0" prefWidth="300.0">
          <effect>
             <DropShadow />
          </effect>
       </AnchorPane>
       <AnchorPane fx:id="water5" layoutX="250.0" layoutY="65.0" prefHeight="51.0" prefWidth="51.0" />
-      <AnchorPane fx:id="weatherAnchorpane" layoutX="886.0" layoutY="20.0" prefHeight="69.0" prefWidth="300.0" style="-fx-background-color: #e4f7e6;" AnchorPane.topAnchor="20.0">
+      <AnchorPane fx:id="weatherAnchorpane" layoutX="886.0" layoutY="20.0" prefHeight="69.0" prefWidth="300.0" AnchorPane.topAnchor="20.0">
          <effect>
             <DropShadow />
          </effect>

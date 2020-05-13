@@ -30,3 +30,16 @@
 .check-button:hover{
     -fx-effect: innershadow( gaussian, rgba( 255, 255, 255, 0.10), 100, 1, 0, 0 );
 }
+
+/*--------------------- Backgruond colors-----------------------*/
+
+.mainPage{
+    -fx-background-color: #FAFCF7;
+
+}
+
+.panels{
+    -fx-background-color: #ECF9E7;
+
+}
+
