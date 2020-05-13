@@ -13,6 +13,7 @@ import model.*;
 import sun.awt.ConstrainableGraphics;
 import viewcontroller.observers.DateObserver;
 import viewcontroller.observers.RatingObserver;
+import viewcontroller.observers.StatsObserver;
 
 import java.text.DecimalFormat;
 import java.time.LocalDate;
@@ -24,7 +25,7 @@ import java.util.*;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class StatisticsPageController implements page, DateObserver, RatingObserver {
+public class StatisticsPageController implements page, DateObserver, RatingObserver, StatsObserver {
 
 
     private MainModel mainmodel;
@@ -61,7 +62,11 @@ public class StatisticsPageController implements page, DateObserver, RatingObser
         this.mainmodel = model;
         mainmodel.attachDateOb(this); //For Date
         mainmodel.attachRateOb(this); //For Rate
+        mainmodel.attachStatsOb(this);
 
+        averageSleep();
+        averageWaterIntake();
+        averageWorkout();
         currentDate = model.getDate();
         initGraphs();
         initTopicComoBox();
@@ -198,6 +203,9 @@ public class StatisticsPageController implements page, DateObserver, RatingObser
         currentDate = mainmodel.getDate();
         populateMonthGraph();
         populateWeekGraph();
+        averageSleep();
+        averageWaterIntake();
+        averageWorkout();
         initTopicComoBox();
 
         if (isWeekGraphShowing) {
@@ -265,8 +273,7 @@ public class StatisticsPageController implements page, DateObserver, RatingObser
     @FXML
     private Label averageWaterLabel;
 
-    @FXML
-    void averageWaterIntake(ActionEvent event) {
+    void averageWaterIntake() {
         double av = 0;
         LocalDate startDate = mainmodel.getDate();
         LocalDate endDate = startDate.minusDays(7);
@@ -286,8 +293,7 @@ public class StatisticsPageController implements page, DateObserver, RatingObser
     @FXML
     private Label averageSleepLabel;
 
-    @FXML
-    void averageSleep(ActionEvent event) {
+    void averageSleep() {
 
         double hours = 0;
         double mins = 0;
@@ -331,8 +337,7 @@ public class StatisticsPageController implements page, DateObserver, RatingObser
     @FXML
     private Label averageWorkoutTime;
 
-    @FXML
-    void averageWorkout(ActionEvent event) {
+    void averageWorkout(){
 
         double workoutTimeHours = 0;
         double workoutTimeMinutes = 0;

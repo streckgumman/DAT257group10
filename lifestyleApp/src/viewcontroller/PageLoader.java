@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.layout.AnchorPane;
 import model.*;
+import viewcontroller.observers.MainObserver;
 
 public class PageLoader {
     private static MainModel model;
@@ -55,9 +56,9 @@ public class PageLoader {
         return res.root;
     }
 
-    public static AnchorPane createFitnessPage() {
+    public static AnchorPane createFitnessPage(MainPageController parent) {
         Result<FitnessController> res = loadPage("fxml/fitnessPage.fxml");
-        res.ctrl.initPage(model, Optional.empty());
+        res.ctrl.initPage(model, Optional.of(parent));
         return res.root;
     }
 

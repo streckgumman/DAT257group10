@@ -11,15 +11,17 @@ import model.TodoEntry;
 import model.Workout;
 import model.WorkoutEntry;
 import viewcontroller.observers.DateObserver;
+import viewcontroller.observers.MainObserver;
 
 import java.text.DecimalFormat;
 import java.time.LocalDate;
 import java.util.Observer;
 import java.util.Optional;
 
-public class FitnessController implements page, DateObserver {
+public class FitnessController implements page, DateObserver, MainObserver {
 
     private MainModel model;
+    private MainPageController parent;
     private int workoutHour;
     private int workoutMinute;
     private double intensity;
@@ -34,10 +36,10 @@ public class FitnessController implements page, DateObserver {
     private Label intensityLabel;
 
     @FXML
-    private Spinner<?> workoutHourSpinner;
+    private Spinner<Integer> workoutHourSpinner;
 
     @FXML
-    private Spinner<?> workoutMinSpinner;
+    private Spinner<Integer> workoutMinSpinner;
 
     @FXML
     private Slider sliderIntensity;
@@ -97,10 +99,13 @@ public class FitnessController implements page, DateObserver {
 
     @FXML
     void saveWorkout(ActionEvent event) {
-        if (type != null) {
-            workout.addEntry(new WorkoutEntry(workoutHour, workoutMinute, intensity, type));
+        if (type != null && !(workoutHourSpinner.getValue() == 0 && workoutMinSpinner.getValue() == 0)) {
+            workout.addEntry(new WorkoutEntry(workoutHourSpinner.getValue(), workoutMinSpinner.getValue(), sliderIntensity.getValue(), type));
             loadWorkout();
+            resetInputs();
         }
+        model.statsChanged();
+
     }
 
     @FXML
@@ -114,6 +119,7 @@ public class FitnessController implements page, DateObserver {
           workoutListView.getItems().remove(selectedWorkout);
           workoutListView.getSelectionModel().select(newSelectedWorkout);
       }
+      model.statsChanged();
 
     }
 
@@ -126,9 +132,17 @@ public class FitnessController implements page, DateObserver {
 
     }
 
+    void resetInputs(){
+        workoutHourSpinner.getValueFactory().setValue(0);
+        workoutMinSpinner.getValueFactory().setValue(0);
+        type = null;
+    }
+
     @Override
     public void initPage(MainModel model, Optional<MainPageController> mainPage) {
         this.model = model;
+        mainPage.ifPresent(page -> parent = page);
+        parent.attachMainOb(this);
         model.attachDateOb(this);
         this.workout = model.getWorkout();
         loadWorkout();
@@ -142,6 +156,7 @@ public class FitnessController implements page, DateObserver {
     private void update(){
         this.workout=model.getWorkout();
         loadWorkout();
+        resetInputs();
     }
 }
 

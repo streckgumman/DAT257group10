@@ -156,6 +156,7 @@ public class WaterIntakeController implements page {
         water10.setBlendMode(BlendMode.OVERLAY);
         drinkLabel.setText("0 L");
         we.setWaterEntry(0);
+        model.statsChanged();
     }
 
     private void oneGlass(){
@@ -171,6 +172,7 @@ public class WaterIntakeController implements page {
         water10.setBlendMode(BlendMode.OVERLAY);
         drinkLabel.setText("0.2 L");
         we.setWaterEntry(0.2);
+        model.statsChanged();
     }
 
     private void twoGlass(){
@@ -186,6 +188,7 @@ public class WaterIntakeController implements page {
         water10.setBlendMode(BlendMode.OVERLAY);
         drinkLabel.setText("0.4 L");
         we.setWaterEntry(0.4);
+        model.statsChanged();
     }
 
     private void threeGlass(){
@@ -201,6 +204,7 @@ public class WaterIntakeController implements page {
         water10.setBlendMode(BlendMode.OVERLAY);
         drinkLabel.setText("0.6 L");
         we.setWaterEntry(0.6);
+        model.statsChanged();
     }
 
     private void fourGlass(){
@@ -216,6 +220,7 @@ public class WaterIntakeController implements page {
         water10.setBlendMode(BlendMode.OVERLAY);
         drinkLabel.setText("0.8 L");
         we.setWaterEntry(0.8);
+        model.statsChanged();
     }
 
     private void fiveGlass(){
@@ -231,6 +236,7 @@ public class WaterIntakeController implements page {
         water10.setBlendMode(BlendMode.OVERLAY);
         drinkLabel.setText("1.0 L");
         we.setWaterEntry(1.0);
+        model.statsChanged();
     }
 
     private void sixGlass(){
@@ -246,6 +252,7 @@ public class WaterIntakeController implements page {
         water10.setBlendMode(BlendMode.OVERLAY);
         drinkLabel.setText("1.2 L");
         we.setWaterEntry(1.2);
+        model.statsChanged();
     }
 
     private void sevenGlass(){
@@ -261,6 +268,7 @@ public class WaterIntakeController implements page {
         water10.setBlendMode(BlendMode.OVERLAY);
         drinkLabel.setText("1.4 L");
         we.setWaterEntry(1.4);
+        model.statsChanged();
     }
 
     private void eightGlass(){
@@ -276,6 +284,7 @@ public class WaterIntakeController implements page {
         water10.setBlendMode(BlendMode.OVERLAY);
         drinkLabel.setText("1.6 L");
         we.setWaterEntry(1.6);
+        model.statsChanged();
     }
 
     private void nineGlass(){
@@ -291,6 +300,7 @@ public class WaterIntakeController implements page {
         water10.setBlendMode(BlendMode.OVERLAY);
         drinkLabel.setText("1.8 L");
         we.setWaterEntry(1.8);
+        model.statsChanged();
     }
 
     private void tenGlass(){
@@ -306,6 +316,7 @@ public class WaterIntakeController implements page {
         water10.setBlendMode(BlendMode.SRC_OVER);
         drinkLabel.setText("2.0 L");
         we.setWaterEntry(2.0);
+        model.statsChanged();
     }
 
 

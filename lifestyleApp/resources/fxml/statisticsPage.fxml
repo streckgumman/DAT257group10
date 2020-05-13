@@ -75,7 +75,6 @@
                         <Image url="@../images/full_glass.png" />
                     </image>
                 </ImageView>
-                <Button layoutX="193.0" layoutY="105.0" mnemonicParsing="false" onAction="#averageWaterIntake" styleClass="check-button" text="Calculate" />
                 <Label fx:id="averageWaterLabel" layoutX="79.0" layoutY="73.0" prefHeight="33.0" prefWidth="150.0" text="No input">
                     <font>
                         <Font size="20.0" />
@@ -98,7 +97,6 @@
                   <Image url="@../images/half-moon.png" />
                </image>
             </ImageView>
-            <Button layoutX="193.0" layoutY="105.0" mnemonicParsing="false" onAction="#averageSleep" styleClass="check-button" text="Calculate" />
             <Label fx:id="averageSleepLabel" layoutX="79.0" layoutY="73.0" prefHeight="33.0" prefWidth="150.0" text="No input">
                <font>
                   <Font size="20.0" />
@@ -122,7 +120,6 @@
                   <Image url="@../images/sports.png" />
                </image>
             </ImageView>
-            <Button layoutX="173.0" layoutY="303.0" mnemonicParsing="false" onAction="#averageWorkout" styleClass="check-button" text="Calculate" />
             <Label fx:id="averageWorkoutIntensity" layoutX="95.0" layoutY="127.0" prefHeight="33.0" prefWidth="175.0" text="No input">
                <font>
                   <Font size="20.0" />

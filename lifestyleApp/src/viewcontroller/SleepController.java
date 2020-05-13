@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.Spinner;
+import javafx.scene.control.SpinnerValueFactory;
 import javafx.scene.input.MouseEvent;
 import model.MainModel;
 import model.SleepEntry;
@@ -72,10 +73,24 @@ public class SleepController implements page {
         String totalHoursOfSleep = Integer.toString(se.getHoursOfSleep());
         String totalMinutesOfSleep = Integer.toString(se.getMinutesOfSleep());
         totalSleepLabel.setText(totalHoursOfSleep + " hours " + totalMinutesOfSleep + " minutes");
+        model.statsChanged();
     }
 
 
     public void initPage(MainModel model, Optional<MainPageController> empty) {
+        SpinnerValueFactory<Integer> bedHourFactory = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 23, 0);
+        SpinnerValueFactory<Integer> bedMinFactory = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 59, 0);
+        SpinnerValueFactory<Integer> upHourFactory = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 23, 0);
+        SpinnerValueFactory<Integer> upMinFactory = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 59, 0);
+
+        bedHourFactory.setWrapAround(true);
+        bedMinFactory.setWrapAround(true);
+        upHourFactory.setWrapAround(true);
+        upMinFactory.setWrapAround(true);
+        bedTimeHourSpinner.setValueFactory(bedHourFactory);
+        bedTimeMinuteSpinner.setValueFactory(bedMinFactory);
+        wakeUpTimeHourSpinner.setValueFactory(upHourFactory);
+        wakeUpTimeMinuteSpinner.setValueFactory(upMinFactory);
         this.model = model;
         this.se = model.getSleep();
         updateSleep();
