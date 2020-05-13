@@ -2,106 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6b9df68-7d87-4317-a37c-3973cd4d9bae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/persistence/JsonPersistence.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/persistence/Persistence.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/markdown-exported-files.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/markdown-navigator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lifestyleApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lifestyleApp.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/fxml/Journal.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/Journal.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/fxml/calendarPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/calendarPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/fxml/fitnessPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/fitnessPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/fxml/homePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/homePage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/fxml/mainPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/mainPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/fxml/rate.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/rate.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/fxml/rateItemSettingsPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/rateItemSettingsPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/fxml/settingsPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/settingsPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/fxml/sleepPanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/sleepPanel.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/fxml/statisticsPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/statisticsPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/fxml/todoPanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/todoPanel.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/fxml/waterIntake.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/waterIntake.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/fxml/weather.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/weather.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/1star.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/1star.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/2star.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/2star.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/3star.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/3star.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/4star.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/4star.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/5star.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/5star.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/Heart.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/Heart.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/Home2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/Home2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/Settings3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/Settings3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/Statistics.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/Statistics.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/calendarIcon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/calendarIcon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/cloud.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/cloud.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/exercise.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/exercise.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/fashion.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/fashion.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/fitness.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/fitness.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/full_glass.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/full_glass.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/half-moon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/half-moon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/home.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/home.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/nextDate.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/nextDate.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/otherPageIcon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/otherPageIcon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/previousDate.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/previousDate.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/rain.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/rain.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/run.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/run.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/settingsIcon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/settingsIcon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/snow.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/snow.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/sports-and-competition.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/sports-and-competition.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/sports.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/sports.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/statisticsIcon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/statisticsIcon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/storm.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/storm.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/sun.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/sun.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/suncloud.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/suncloud.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/sunrise.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/sunrise.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/thunder.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/thunder.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/timeeee.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/timeeee.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lifestyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/lifestyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LifestyleApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LifestyleApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Journal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Journal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/JournalEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/JournalEntry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/MainModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/MainModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/RatingEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/RatingEntry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Ratings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Ratings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/SleepEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/SleepEntry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Todo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Todo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/TodoEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/TodoEntry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Water.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Water.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/WaterEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/WaterEntry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Weather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Weather.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/WeatherEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/WeatherEntry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Workout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Workout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/WorkoutEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/WorkoutEntry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/viewcontroller/CalendarPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/viewcontroller/CalendarPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/viewcontroller/FitnessController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/viewcontroller/FitnessController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/viewcontroller/HomePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/viewcontroller/HomePageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/viewcontroller/JournalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/viewcontroller/JournalController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/viewcontroller/MainPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/viewcontroller/MainPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/viewcontroller/PageLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/viewcontroller/PageLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/viewcontroller/RateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/viewcontroller/RateController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/viewcontroller/RateItemSettingsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/viewcontroller/RateItemSettingsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/viewcontroller/SettingsPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/viewcontroller/SettingsPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/viewcontroller/SleepController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/viewcontroller/SleepController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/viewcontroller/StatisticsPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/viewcontroller/StatisticsPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/viewcontroller/TodoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/viewcontroller/TodoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/viewcontroller/WaterIntakeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/viewcontroller/WaterIntakeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/viewcontroller/WeatherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/viewcontroller/WeatherController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/viewcontroller/observers/DateObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/viewcontroller/observers/DateObserver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/viewcontroller/observers/MainObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/viewcontroller/observers/MainObserver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/viewcontroller/observers/RatingObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/viewcontroller/observers/RatingObserver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/viewcontroller/observers/StatsObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/viewcontroller/observers/StatsObserver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/viewcontroller/observers/UserObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/viewcontroller/observers/UserObserver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/viewcontroller/page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/viewcontroller/page.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,33 +73,49 @@
       <option name="presentableId" value="Default" />
       <updated>1589374241420</updated>
     </task>
+    <task id="LOCAL-00001" summary="gradle and json added to project. Built for us to be able to have multiple users">
+      <created>1589376858477</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1589376858479</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="gradle and json added to project. Built for us to be able to have multiple users" />
+    <option name="LAST_COMMIT_MESSAGE" value="gradle and json added to project. Built for us to be able to have multiple users" />
   </component>
   <component name="WindowStateProjectService">
     <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1589375799426">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1589375799426" />
+    <state x="-36" y="0" key="CommitChangelistDialog2" timestamp="1589376856256">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="-36" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1589376856256" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1589374300541">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1589374300541" />
-    <state width="1493" height="202" key="GridCell.Tab.0.bottom" timestamp="1589376573642">
+    <state width="1493" height="202" key="GridCell.Tab.0.bottom" timestamp="1589376725086">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="202" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589376573642" />
-    <state width="1493" height="202" key="GridCell.Tab.0.center" timestamp="1589376573641">
+    <state width="1493" height="202" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589376725086" />
+    <state width="1493" height="202" key="GridCell.Tab.0.center" timestamp="1589376725086">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="202" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589376573641" />
-    <state width="1493" height="202" key="GridCell.Tab.0.left" timestamp="1589376573641">
+    <state width="1493" height="202" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589376725086" />
+    <state width="1493" height="202" key="GridCell.Tab.0.left" timestamp="1589376725086">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="202" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589376573641" />
-    <state width="1493" height="202" key="GridCell.Tab.0.right" timestamp="1589376573641">
+    <state width="1493" height="202" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589376725086" />
+    <state width="1493" height="202" key="GridCell.Tab.0.right" timestamp="1589376725086">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="202" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589376573641" />
+    <state width="1493" height="202" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589376725086" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1589376516134">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -213,6 +132,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1589376516134" />
+    <state x="361" y="132" key="Vcs.Push.Dialog.v2" timestamp="1589376869316">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="132" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1589376869316" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
