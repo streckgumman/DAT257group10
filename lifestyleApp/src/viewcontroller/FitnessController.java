@@ -10,6 +10,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import model.MainModel;
 import model.TodoEntry;
+import model.Workout;
 import model.WorkoutEntry;
 import viewcontroller.observers.DateObserver;
 import viewcontroller.observers.MainObserver;
@@ -17,7 +18,6 @@ import viewcontroller.observers.MainObserver;
 import java.text.DecimalFormat;
 import java.util.Optional;
 
-public class FitnessController implements page{
 public class FitnessController implements page, DateObserver, MainObserver {
 
     private MainModel model;
@@ -26,10 +26,12 @@ public class FitnessController implements page, DateObserver, MainObserver {
     private int workoutMinute;
     private double intensity;
     private WorkoutEntry.TrainingType type;
-    private ObservableList<String> workoutEntries = FXCollections.observableArrayList();
+    private Workout workout;
+    private ObservableList<WorkoutEntry> workoutEntries = FXCollections.observableArrayList();
+
 
     @FXML
-    private ListView<String> workoutListView = new ListView<>();
+    private ListView<WorkoutEntry> workoutListView = new ListView<>();
 
     @FXML
     private Label intensityLabel;
@@ -67,6 +69,8 @@ public class FitnessController implements page, DateObserver, MainObserver {
     @FXML
     private Button deleteWorkoutButton;
 
+
+    // TODO-when fxml is done edited then these two are to be removed (serve no purpose)
     @FXML
     void setWorkoutHour(MouseEvent event) {
         workoutHour = (Integer) workoutHourSpinner.getValue();
@@ -119,25 +123,30 @@ public class FitnessController implements page, DateObserver, MainObserver {
     private void setTraingsTypeNull(){
         type = null;
         resetPictures();
-
     }
 
 
 
     @FXML
     void saveWorkout(ActionEvent event) {
-        WorkoutEntry entry = new WorkoutEntry(workoutHour, workoutMinute, intensity, type);
-        workoutEntries.add(entry.toString());
-        workoutListView.setItems(workoutEntries);
-        setTraingsTypeNull();
-        deleteWorkoutButton.setBlendMode(BlendMode.SRC_OVER);
-        samePageErrorWorkout.setText("");
+
         if (type != null && !(workoutHourSpinner.getValue() == 0 && workoutMinSpinner.getValue() == 0)) {
             workout.addEntry(new WorkoutEntry(workoutHourSpinner.getValue(), workoutMinSpinner.getValue(), sliderIntensity.getValue(), type));
+            deleteWorkoutButton.setBlendMode(BlendMode.SRC_OVER);
+            samePageErrorWorkout.setText("");
             loadWorkout();
             resetInputs();
         }
         model.statsChanged();
+
+    }
+
+    void loadWorkout(){
+        workoutEntries.clear();
+        for (WorkoutEntry we : workout.getWorkouts()){
+            workoutEntries.add(we);
+        }
+        workoutListView.setItems(workoutEntries);
 
     }
 
@@ -210,7 +219,7 @@ public class FitnessController implements page, DateObserver, MainObserver {
     void resetInputs(){
         workoutHourSpinner.getValueFactory().setValue(0);
         workoutMinSpinner.getValueFactory().setValue(0);
-        type = null;
+        setTraingsTypeNull();
     }
 
     @Override

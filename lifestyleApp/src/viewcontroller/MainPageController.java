@@ -65,7 +65,7 @@ public class MainPageController implements UserObserver, page {
     @FXML
     void showFitnessPage(MouseEvent event) {
         showPage(fitnessPage);
-
+        notifyAllObservers();
     }
 
 
