@@ -2,6 +2,7 @@ package model;
 
 import viewcontroller.observers.DateObserver;
 import viewcontroller.observers.RatingObserver;
+import viewcontroller.observers.StatsObserver;
 import viewcontroller.observers.UserObserver;
 
 import java.time.LocalDate;
@@ -147,6 +148,23 @@ public class MainModel {
         }
     }
 
+    //-------------User observer-------------
 
 
+    private List<StatsObserver> statsObservers = new ArrayList<>();
+
+    public void attachStatsOb(StatsObserver observer){
+        statsObservers.add(observer);
+    }
+
+    public void notifyAllStatsObservers(){
+        for (StatsObserver o : statsObservers) {
+            o.notified();
+
+        }
+    }
+
+    public void statsChanged() {
+        notifyAllStatsObservers();
+    }
 }

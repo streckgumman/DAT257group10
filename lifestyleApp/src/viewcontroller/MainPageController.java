@@ -65,7 +65,7 @@ public class MainPageController implements UserObserver, page {
     @FXML
     void showFitnessPage(MouseEvent event) {
         showPage(fitnessPage);
-
+        notifyAllObservers();
     }
 
 
@@ -91,7 +91,7 @@ public class MainPageController implements UserObserver, page {
         homePage = PageLoader.createHomePage();
         statisticPage = PageLoader.createStatisticsPage();
         settingsPage = PageLoader.createSettingsPage(this);
-        fitnessPage = PageLoader.createFitnessPage();
+        fitnessPage = PageLoader.createFitnessPage(this);
         showPage(homePage);
 
         datePicker.valueProperty().addListener((ov, oldValue, newValue) -> {
