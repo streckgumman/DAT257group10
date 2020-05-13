@@ -31,15 +31,27 @@
     -fx-effect: innershadow( gaussian, rgba( 255, 255, 255, 0.10), 100, 1, 0, 0 );
 }
 
-/*--------------------- Backgruond colors-----------------------*/
+/*--------------------- Background colors-----------------------*/
 
 .mainPage{
-    -fx-background-color: #FAFCF7;
+    -fx-background-color: white;
 
 }
 
 .panels{
     -fx-background-color: #ECF9E7;
+    -fx-background-radius: 5;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 10, 0.5, 0.0, 0.0);
+}
+
+.split-pane *.split-pane-divider {
+    -fx-padding: 0 1 0 1;
+}
+
+.red-components{
+    -fx-background-color: #D7B29D;
 
 }
+
+
 

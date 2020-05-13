@@ -10,9 +10,9 @@
 
 <AnchorPane prefHeight="180.0" prefWidth="300.0" styleClass="panels" stylesheets="@../lifestyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewcontroller.TodoController">
    <children>
-      <FlowPane layoutY="45.0" prefHeight="126.0" prefWidth="300.0" styleClass="panels" AnchorPane.bottomAnchor="38.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="45.0">
+      <FlowPane layoutY="45.0" prefHeight="126.0" prefWidth="300.0" AnchorPane.bottomAnchor="38.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="45.0">
          <children>
-            <ListView fx:id="todoListView" prefHeight="126.0" prefWidth="300.0" styleClass="panels" />
+            <ListView fx:id="todoListView" prefHeight="126.0" prefWidth="300.0" style="-fx-background-color: transparent;" />
          </children>
       </FlowPane>
       <TextArea fx:id="todoTextArea" layoutY="266.0" prefHeight="30.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="171.0" />
