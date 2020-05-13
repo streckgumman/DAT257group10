@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="150.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewcontroller.SleepController">
+<AnchorPane prefHeight="150.0" prefWidth="300.0" styleClass="panels" stylesheets="@../lifestyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewcontroller.SleepController">
    <children>
       <Label layoutX="67.0" layoutY="38.0" text="Bed time" />
       <Label layoutX="67.0" layoutY="80.0" text="Wake up" />
