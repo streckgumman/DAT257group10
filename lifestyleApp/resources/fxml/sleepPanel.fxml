@@ -7,50 +7,44 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="150.0" prefWidth="300.0" styleClass="panels" stylesheets="@../lifestyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewcontroller.SleepController">
+<AnchorPane prefHeight="139.0" prefWidth="300.0" styleClass="panels" stylesheets="@../lifestyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewcontroller.SleepController">
    <children>
-      <Label layoutX="67.0" layoutY="38.0" text="Bed time" />
-      <Label layoutX="67.0" layoutY="80.0" text="Wake up" />
-      <Spinner fx:id="bedTimeHourSpinner" initialValue="12" layoutX="120.0" layoutY="34.0" max="23" onMouseClicked="#setBedTimeHour" prefHeight="25.0" prefWidth="57.0">
+      <Label layoutX="67.0" layoutY="26.0" text="Bed time" />
+      <Label layoutX="68.0" layoutY="68.0" text="Wake up" />
+      <Spinner fx:id="bedTimeHourSpinner" initialValue="12" layoutX="120.0" layoutY="16.0" max="23" onMouseClicked="#setBedTimeHour" prefHeight="30.0" prefWidth="57.0" AnchorPane.leftAnchor="120.0">
          <editable>true</editable>
       </Spinner>
-      <Spinner fx:id="bedTimeMinuteSpinner" initialValue="30" layoutX="191.0" layoutY="34.0" max="59" min="00" onMouseClicked="#setBedTimeMinute" prefHeight="25.0" prefWidth="57.0">
+      <Spinner fx:id="bedTimeMinuteSpinner" initialValue="30" layoutX="203.0" layoutY="16.0" max="59" min="00" onMouseClicked="#setBedTimeMinute" prefHeight="30.0" prefWidth="57.0">
       <editable>true</editable>
    </Spinner>
-      <Label layoutX="180.0" layoutY="31.0" text=":">
+      <Label layoutX="187.0" layoutY="12.0" text=":" AnchorPane.leftAnchor="185.0">
          <font>
             <Font name="System Bold" size="26.0" />
          </font>
       </Label>
-      <Spinner fx:id="wakeUpTimeHourSpinner" initialValue="12" layoutX="120.0" layoutY="76.0" max="23" onMouseClicked="#setWakeUpTimeHour" prefHeight="25.0" prefWidth="57.0">
+      <Spinner fx:id="wakeUpTimeHourSpinner" initialValue="12" layoutX="122.0" layoutY="60.0" max="23" onMouseClicked="#setWakeUpTimeHour" prefHeight="30.0" prefWidth="57.0" AnchorPane.leftAnchor="120.0">
          <editable>true</editable>
       </Spinner>
-      <Spinner fx:id="wakeUpTimeMinuteSpinner" initialValue="30" layoutX="191.0" layoutY="76.0" max="59" onMouseClicked="#setWakeUpTimeMinute" prefHeight="25.0" prefWidth="57.0">
+      <Spinner fx:id="wakeUpTimeMinuteSpinner" initialValue="30" layoutX="203.0" layoutY="60.0" max="59" onMouseClicked="#setWakeUpTimeMinute" prefHeight="30.0" prefWidth="57.0">
          <editable>true</editable>
       </Spinner>
-      <Label layoutX="180.0" layoutY="74.0" text=":">
+      <Label layoutX="185.0" layoutY="58.0" text=":" AnchorPane.leftAnchor="185.0">
          <font>
             <Font name="System Bold" size="26.0" />
          </font>
       </Label>
-      <Button layoutX="15.0" layoutY="111.0" mnemonicParsing="false" onAction="#totalSleep" text="Count Sleep" />
-      <Label fx:id="totalSleepLabel" layoutX="123.0" layoutY="116.0" text="Sleep not redgisted!" />
-      <ImageView fitHeight="38.0" fitWidth="57.0" layoutX="19.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+      <Button layoutX="13.0" layoutY="104.0" mnemonicParsing="false" onAction="#totalSleep" styleClass="save-Button" stylesheets="@../lifestyle.css" text="Count Sleep" />
+      <Label fx:id="totalSleepLabel" layoutX="120.0" layoutY="108.0" text="Sleep not redgisted!" />
+      <ImageView fitHeight="38.0" fitWidth="57.0" layoutX="19.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/half-moon.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="45.0" fitWidth="47.0" layoutX="15.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="45.0" fitWidth="47.0" layoutX="16.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/sunrise.png" />
          </image>
       </ImageView>
-      <Text layoutX="5.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sleep" wrappingWidth="142.22900390625">
-         <font>
-            <Font name="American Typewriter" size="20.0" />
-         </font>
-      </Text>
    </children>
 </AnchorPane>

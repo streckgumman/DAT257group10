@@ -8,12 +8,12 @@
 
 <AnchorPane prefHeight="155.0" prefWidth="300.0" styleClass="panels" stylesheets="@../lifestyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewcontroller.WaterIntakeController">
     <children>
-        <Label fx:id="drinkLabel" layoutX="239.0" layoutY="-3.0" prefHeight="35.0" prefWidth="63.0" text="0 L">
+        <Label fx:id="drinkLabel" layoutX="239.0" layoutY="-3.0" prefHeight="35.0" prefWidth="63.0" text="O">
             <font>
                 <Font name="American Typewriter" size="20.0" />
             </font>
         </Label>
-        <Label layoutX="5.0" layoutY="-3.0" prefHeight="35.0" prefWidth="142.0" text="Water intake">
+        <Label layoutX="5.0" layoutY="-3.0" prefHeight="35.0" prefWidth="142.0" styleClass="headers" stylesheets="@../lifestyle.css" text="Water intake">
             <font>
                 <Font name="American Typewriter" size="20.0" />
             </font>
