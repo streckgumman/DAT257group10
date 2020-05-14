@@ -366,9 +366,12 @@ public class StatisticsPageController implements page, DateObserver, RatingObser
         totalWorkoutHours = workoutTimeHours;
         totalWorkoutMinutes = workoutTimeMinutes;
 
-        workoutTimeHours = workoutTimeHours / nrOfWorkouts;
-        workoutTimeMinutes = workoutTimeMinutes / nrOfWorkouts;
-        workoutIntensity = workoutIntensity / nrOfWorkouts;
+        if (nrOfWorkouts != 0) {
+            workoutTimeHours = workoutTimeHours / nrOfWorkouts;
+            workoutTimeMinutes = workoutTimeMinutes / nrOfWorkouts;
+            workoutIntensity = workoutIntensity / nrOfWorkouts;
+        }
+
 
 
         //time fix for average workout time
