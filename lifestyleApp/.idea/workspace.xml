@@ -8,12 +8,11 @@
       <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/fxml/mainPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lifestyleApp/fxml/mainPage.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/fxml/rate.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lifestyleApp/fxml/rate.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/lifestyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lifestyleApp/lifestyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/fxml/Journal.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/fxml/Journal.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/fxml/homePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/fxml/homePage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/fxml/mainPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/fxml/mainPage.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/fxml/sleepPanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/fxml/sleepPanel.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/fxml/todoPanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/fxml/todoPanel.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/fxml/waterIntake.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/fxml/waterIntake.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/fxml/weather.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/fxml/weather.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lifestyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lifestyle.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -151,7 +150,7 @@
       <option name="presentableId" value="Default" />
       <updated>1585814198043</updated>
       <workItem from="1588586038216" duration="2009000" />
-      <workItem from="1589445897848" duration="7213000" />
+      <workItem from="1589445897848" duration="10185000" />
     </task>
     <task id="LOCAL-00001" summary="Created a skeleton for the application">
       <created>1586037152957</created>
@@ -263,7 +262,13 @@
       <option name="presentableId" value="LOCAL−00017" />
       <updated>1589448535984</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL−00018" summary="Design on home/main page">
+      <created>1589456555008</created>
+      <option name="number" value="LOCAL−00018" />
+      <option name="presentableId" value="LOCAL−00018" />
+      <updated>1589456555009</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,7 +303,8 @@
     <MESSAGE value="Commit branch" />
     <MESSAGE value="Fixed main page with pictures" />
     <MESSAGE value="did som design changes on the rating component" />
-    <option name="LAST_COMMIT_MESSAGE" value="did som design changes on the rating component" />
+    <MESSAGE value="Design on home/main page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Design on home/main page" />
   </component>
   <component name="WindowStateProjectService">
     <state x="535" y="214" key="#com.intellij.fileTypes.FileTypeChooser" />

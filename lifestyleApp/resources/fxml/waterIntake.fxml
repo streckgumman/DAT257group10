@@ -13,7 +13,7 @@
                 <Font name="American Typewriter" size="20.0" />
             </font>
         </Label>
-        <Label layoutX="5.0" layoutY="-3.0" prefHeight="35.0" prefWidth="142.0" styleClass="headers" stylesheets="@../lifestyle.css" text="Water intake">
+        <Label layoutX="80.0" layoutY="-3.0" prefHeight="35.0" prefWidth="142.0" styleClass="headers" stylesheets="@../lifestyle.css" text="Water intake">
             <font>
                 <Font name="American Typewriter" size="20.0" />
             </font>
