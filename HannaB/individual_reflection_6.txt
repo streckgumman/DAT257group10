@@ -1,0 +1,20 @@
+Utgår från:
+
+... the current situation or "what is" (A), 
+... what you want the situation to be or "what might or should be" (B), and 
+... a plan for getting from where you are to where you want to be or "feedback designed to reduce the gap" (A -> B
+
+•	what do I want to learn or understand better?
+•	how can I help someone else, or the entire team, to learn something new?
+•	what is my contribution towards the team’s use of Scrum?
+•	what is my contribution towards the team’s deliveries?
+
+Ny vecka och ny teampartner. Denna veckan har jag jobbat tillsammans med Oscar och det har fungerat väldigt bra. Vi har jobbat med Bugfix på Sleep fuktionen samt lagt till statistik för water, sleep och training. Nu när vi är i slutet av kursen kan jag verkligen förstå vad Håkan (eller JP?) sa i början av kursen om att även vi från I kan koda och ligger inte så mycket efter i kunskap som vi tror. Det var skönt att känna så och få lite självförtroende tillbaka för att våga komma med ännu mer input kring programmeringen. 
+
+Från förra veckan pratade jag ju om att jag ville känna mig mer säker på hur man mergar och det har jag nu koll på. Dock tycker jag ändå det är skönt om någon kollar på när jag gör det så att det inte blir fel. Snart kommer det nog flyta på som rinnande vatten, men i början är det skönt att känna att det finns stöd.
+
+Ett problem som uppstod denna veckan var att jag och Oscar fixade bugg grej på sleep samtidigt som några andra jobbade på en annan branch. Den andra branchen hade då sedan inte vår uppdatering av sleep då det var den gamla verisionen av master. Så vårat fix skrevs över och vi fick lägga in det igen. Inget jättekrångel då vi snabbt fattade vad felet kom från, men till framtiden tar jag med mig att detta bör undvikas. Det kan göras genom att tydligare kommunicera vad man jobbar på och när man ändrat det så att kod inte skrivs över och utgår från gamla verisioner. 
+
+Min roll som Scrum master för Retrospective känns som rutin nu och jag känner mig trygg i rollen. En sak jag märkt är hur mycket svårare det är att starta diskussion och reflektion när vi sitter via zoom/discord än när vi sitter fysiskt tillsammans och det är verkligen en utmaning i min roll. 
+
+Jag är också ansvarig för vårat numera Burn-up chart vilket känns som en bra uppdatering från burn down. Vi ligger bra i fas även om nya user stories tillkommit och nu måste vi fokusera på vad stakeholdern värderar högst inför slutet. En sak som vi fick med oss från handledningen var att diskutera och reflektera mer över resultaten från våra KPI:er. Köper det helt då det är från reflektionerna vi får ut värdet från KPI:erna som kan berätta något för oss om hur det går. Diskussionerna behövs också för att kunna utvärdera om dessa KPI:er fungerade bra för oss eller om vi borde använt oss av andra. Eftersom jag är ansvarig för burn-up chartet ska jag under nästa möte vara noggrannare
