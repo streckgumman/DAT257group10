@@ -394,7 +394,7 @@ public class StatisticsPageController implements page, DateObserver, RatingObser
 
         averageWorkoutTime.setText(new DecimalFormat("#.#").format(noDecimalHours) + " hours " +
                 new DecimalFormat("#.#").format((int) fullMinutes) + " mins");
-        averageWorkoutIntensity.setText("Intensity: " + new DecimalFormat("#.#").format(workoutIntensity));
+        averageWorkoutIntensity.setText("Intensity: " + new DecimalFormat("#.#").format(workoutIntensity) + " / 5");
         totalWorkoutTime.setText(new DecimalFormat("#.#").format(noDecimalTotalHours) + " hours " +
                 new DecimalFormat("#.#").format((int) fullTotalMinutes) + " mins");
     }
