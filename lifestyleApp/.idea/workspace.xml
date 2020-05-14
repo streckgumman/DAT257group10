@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e58e48c-3d95-4584-836b-9034806ca01b" name="Default Changelist" comment="Finjusterat statistiken för sleep lite. Hours avrundas till heltal och läggs till på minuter istället.&#10;Glömde en bit kod&#10;&#10;Co-Authored-By: berglandhanna &lt;62668813+berglandhanna@users.noreply.github.com&gt;">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/viewcontroller/FitnessController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewcontroller/FitnessController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/viewcontroller/MainPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewcontroller/MainPageController.java" afterDir="false" />
-    </list>
+    <list default="true" id="3e58e48c-3d95-4584-836b-9034806ca01b" name="Default Changelist" comment="Finjusterat statistiken för sleep lite. Hours avrundas till heltal och läggs till på minuter istället.&#10;Glömde en bit kod&#10;&#10;Co-Authored-By: berglandhanna &lt;62668813+berglandhanna@users.noreply.github.com&gt;" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,7 +50,7 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="master" />
+        <entry key="$PROJECT_DIR$/.." value="Fix-GUI1" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -99,6 +96,18 @@
       <recent name="C:\Users\hanna\OneDrive\Documents\Chalmers\Agile software project management\DAT257group10\lifestyleApp\resources" />
     </key>
   </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager">
     <configuration name="LifestyleApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LifestyleApp" />
@@ -128,6 +137,7 @@
       <option name="presentableId" value="Default" />
       <updated>1585814198043</updated>
       <workItem from="1588586038216" duration="2009000" />
+      <workItem from="1589445897848" duration="276000" />
     </task>
     <task id="LOCAL-00001" summary="Created a skeleton for the application">
       <created>1586037152957</created>
@@ -226,12 +236,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created a skeleton for the application" />
@@ -321,21 +332,6 @@
           <url>file://$PROJECT_DIR$/src/PageLoader.java</url>
           <line>29</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/viewcontroller/SettingsPageController.java</url>
-          <line>86</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/model/MainModel.java</url>
-          <line>54</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/viewcontroller/FitnessController.java</url>
-          <line>153</line>
-          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
