@@ -337,11 +337,18 @@ public class StatisticsPageController implements page, DateObserver, RatingObser
     @FXML
     private Label averageWorkoutTime;
 
+    @FXML
+    private Label totalWorkoutTime;
+
     void averageWorkout(){
 
         double workoutTimeHours = 0;
         double workoutTimeMinutes = 0;
         double workoutIntensity = 0;
+        double totalWorkoutHours;
+        double totalWorkoutMinutes;
+
+        int nrOfWorkouts = 0;
 
         LocalDate startDate = mainmodel.getDate();
         LocalDate endDate = startDate.minusDays(7);
@@ -351,14 +358,20 @@ public class StatisticsPageController implements page, DateObserver, RatingObser
                 workoutTimeHours += we.getHour();
                 workoutTimeMinutes += we.getMinute();
                 workoutIntensity += we.getIntensity();
+                nrOfWorkouts++;
             }
 
         }
 
-        workoutTimeHours = workoutTimeHours / 7;
-        workoutTimeMinutes = workoutTimeMinutes / 7;
-        workoutIntensity = workoutIntensity / 7;
+        totalWorkoutHours = workoutTimeHours;
+        totalWorkoutMinutes = workoutTimeMinutes;
 
+        workoutTimeHours = workoutTimeHours / nrOfWorkouts;
+        workoutTimeMinutes = workoutTimeMinutes / nrOfWorkouts;
+        workoutIntensity = workoutIntensity / nrOfWorkouts;
+
+
+        //time fix for average workout time
         double noDecimalHours = Math.floor(workoutTimeHours);
         double fullMinutes = workoutTimeMinutes + ((workoutTimeHours - Math.floor(workoutTimeHours)) * 60);
 
@@ -367,9 +380,19 @@ public class StatisticsPageController implements page, DateObserver, RatingObser
             noDecimalHours = noDecimalHours + 1;
         }
 
-        averageWorkoutTime.setText(String.valueOf(new DecimalFormat("#.#").format(noDecimalHours)) + " hours " +
-                String.valueOf(new DecimalFormat("#.#").format((int) fullMinutes)) + " mins");
-        averageWorkoutIntensity.setText("Intensity: " +
-                String.valueOf(new DecimalFormat("#.#").format(workoutIntensity)));
+        //time fix for total workout time
+        double noDecimalTotalHours = Math.floor(totalWorkoutHours);
+        double fullTotalMinutes = totalWorkoutMinutes + ((totalWorkoutHours - Math.floor(totalWorkoutHours)) * 60);
+
+        if (fullTotalMinutes > 59) {
+            fullTotalMinutes = fullTotalMinutes - 60;
+            noDecimalTotalHours = noDecimalTotalHours + 1;
+        }
+
+        averageWorkoutTime.setText(new DecimalFormat("#.#").format(noDecimalHours) + " hours " +
+                new DecimalFormat("#.#").format((int) fullMinutes) + " mins");
+        averageWorkoutIntensity.setText("Intensity: " + new DecimalFormat("#.#").format(workoutIntensity));
+        totalWorkoutTime.setText(new DecimalFormat("#.#").format(noDecimalTotalHours) + " hours " +
+                new DecimalFormat("#.#").format((int) fullTotalMinutes) + " mins");
     }
 }
