@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e58e48c-3d95-4584-836b-9034806ca01b" name="Default Changelist" comment="" />
+    <list default="true" id="3e58e48c-3d95-4584-836b-9034806ca01b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/images/fitnessRound.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/homeRound.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/settingsRound.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/statisticsRound.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/fxml/mainPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lifestyleApp/fxml/mainPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/fxml/mainPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/fxml/mainPage.fxml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +145,7 @@
       <option name="presentableId" value="Default" />
       <updated>1585814198043</updated>
       <workItem from="1588586038216" duration="2009000" />
-      <workItem from="1589445897848" duration="534000" />
+      <workItem from="1589445897848" duration="1350000" />
     </task>
     <task id="LOCAL-00001" summary="Created a skeleton for the application">
       <created>1586037152957</created>
@@ -231,7 +239,13 @@
       <option name="presentableId" value="LOCAL−00014" />
       <updated>1589446295558</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL−00015" summary="Commit branch">
+      <created>1589446449463</created>
+      <option name="number" value="LOCAL−00015" />
+      <option name="presentableId" value="LOCAL−00015" />
+      <updated>1589446449463</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
