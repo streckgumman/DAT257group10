@@ -11,6 +11,10 @@
 
 }
 
+.headers{
+    -fx-font-family: Constantia;
+}
+
 .cross-button{
     -fx-background-color: #ff6666;
     -fx-background-radius: 0;
@@ -19,6 +23,18 @@
 
 .cross-button:hover{
     -fx-effect: innershadow( gaussian, rgba( 255, 255, 255, 0.10), 100, 1, 0, 0 );
+}
+
+.cross-button2{
+    -fx-background-color: #e3928d;
+    -fx-background-radius: 0;
+    -fx-text-fill: white;
+}
+
+.save-Button{
+    -fx-background-color: #B0E19E;
+    -fx-background-radius: 0;
+    -fx-text-fill: white;
 }
 
 .check-button{
