@@ -41,87 +41,115 @@ public class WeatherController implements page {
 
     @FXML
     void click1(MouseEvent event) {
-        if (anch1.getBlendMode() == BlendMode.SRC_OVER) {
-            anch1.setBlendMode(BlendMode.OVERLAY);
-            wea.setWeatherType(null);
-        } else {
+        if (isFilled()) {
             sun();
             wea.setWeatherType(WeatherEntry.WeatherType.SUN);
+        } else {
+            if (anch1.getBlendMode() == BlendMode.SRC_OVER) {
+                anch1.setBlendMode(BlendMode.OVERLAY);
+                wea.setWeatherType(null);
+            } else {
+                sun();
+                wea.setWeatherType(WeatherEntry.WeatherType.SUN);
+            }
         }
-
     }
 
 
     @FXML
     void click2(MouseEvent event) {
-        if (anch2.getBlendMode() == BlendMode.SRC_OVER) {
-            anch2.setBlendMode(BlendMode.OVERLAY);
-            wea.setWeatherType(null);
-        } else {
+        if (isFilled()) {
             sunCloud();
             wea.setWeatherType(WeatherEntry.WeatherType.SUNCLOUD);
+        } else {
+            if (anch2.getBlendMode() == BlendMode.SRC_OVER) {
+                anch2.setBlendMode(BlendMode.OVERLAY);
+                wea.setWeatherType(null);
+            } else {
+                sunCloud();
+                wea.setWeatherType(WeatherEntry.WeatherType.SUNCLOUD);
+            }
         }
-
     }
 
     @FXML
     void click3(MouseEvent event) {
-        if (anch3.getBlendMode() == BlendMode.SRC_OVER) {
-            anch3.setBlendMode(BlendMode.OVERLAY);
-            wea.setWeatherType(null);
-        } else {
+        if (isFilled()) {
             cloud();
             wea.setWeatherType(WeatherEntry.WeatherType.CLOUD);
+        } else {
+            if (anch3.getBlendMode() == BlendMode.SRC_OVER) {
+                anch3.setBlendMode(BlendMode.OVERLAY);
+                wea.setWeatherType(null);
+            } else {
+                cloud();
+                wea.setWeatherType(WeatherEntry.WeatherType.CLOUD);
+            }
         }
-
     }
 
     @FXML
     void click4(MouseEvent event) {
-        if (anch4.getBlendMode() == BlendMode.SRC_OVER) {
-            anch4.setBlendMode(BlendMode.OVERLAY);
-            wea.setWeatherType(null);
-        } else {
+        if (isFilled()) {
             rain();
             wea.setWeatherType(WeatherEntry.WeatherType.RAIN);
+        } else {
+            if (anch4.getBlendMode() == BlendMode.SRC_OVER) {
+                anch4.setBlendMode(BlendMode.OVERLAY);
+                wea.setWeatherType(null);
+            } else {
+                rain();
+                wea.setWeatherType(WeatherEntry.WeatherType.RAIN);
+            }
         }
-
     }
 
     @FXML
     void click5(MouseEvent event) {
-        if (anch5.getBlendMode() == BlendMode.SRC_OVER) {
-            anch5.setBlendMode(BlendMode.OVERLAY);
-            wea.setWeatherType(null);
-        } else {
+        if (isFilled()) {
             thunder();
             wea.setWeatherType(WeatherEntry.WeatherType.THUNDER);
+        } else {
+            if (anch5.getBlendMode() == BlendMode.SRC_OVER) {
+                anch5.setBlendMode(BlendMode.OVERLAY);
+                wea.setWeatherType(null);
+            } else {
+                thunder();
+                wea.setWeatherType(WeatherEntry.WeatherType.THUNDER);
+            }
         }
-
     }
 
     @FXML
     void click6(MouseEvent event) {
-        if (anch6.getBlendMode() == BlendMode.SRC_OVER) {
-            anch6.setBlendMode(BlendMode.OVERLAY);
-            wea.setWeatherType(null);
-        } else {
+        if (isFilled()) {
             windy();
             wea.setWeatherType(WeatherEntry.WeatherType.WINDY);
+        } else {
+            if (anch6.getBlendMode() == BlendMode.SRC_OVER) {
+                anch6.setBlendMode(BlendMode.OVERLAY);
+                wea.setWeatherType(null);
+            } else {
+                windy();
+                wea.setWeatherType(WeatherEntry.WeatherType.WINDY);
+            }
         }
-
     }
 
     @FXML
     void click7(MouseEvent event) {
-        if (anch7.getBlendMode() == BlendMode.SRC_OVER) {
-            anch7.setBlendMode(BlendMode.OVERLAY);
-            wea.setWeatherType(null);
-        } else {
+        if (isFilled()) {
             snow();
             wea.setWeatherType(WeatherEntry.WeatherType.SNOW);
+        } else {
+            if (anch7.getBlendMode() == BlendMode.SRC_OVER) {
+                anch7.setBlendMode(BlendMode.OVERLAY);
+                wea.setWeatherType(null);
+            } else {
+                snow();
+                wea.setWeatherType(WeatherEntry.WeatherType.SNOW);
+            }
         }
-
     }
 
     void sun() {
@@ -204,10 +232,31 @@ public class WeatherController implements page {
         anch7.setBlendMode(BlendMode.OVERLAY);
     }
 
+    boolean isFilled() {
+        return anch1.getBlendMode() == BlendMode.SRC_OVER && anch2.getBlendMode() == BlendMode.SRC_OVER &&
+                anch3.getBlendMode() == BlendMode.SRC_OVER && anch4.getBlendMode() == BlendMode.SRC_OVER &&
+                anch5.getBlendMode() == BlendMode.SRC_OVER && anch6.getBlendMode() == BlendMode.SRC_OVER &&
+                anch7.getBlendMode() == BlendMode.SRC_OVER;
+    }
+
+    void fill() {
+        anch1.setBlendMode(BlendMode.SRC_OVER);
+        anch2.setBlendMode(BlendMode.SRC_OVER);
+        anch3.setBlendMode(BlendMode.SRC_OVER);
+        anch4.setBlendMode(BlendMode.SRC_OVER);
+        anch5.setBlendMode(BlendMode.SRC_OVER);
+        anch6.setBlendMode(BlendMode.SRC_OVER);
+        anch7.setBlendMode(BlendMode.SRC_OVER);
+    }
+
     public void initPage(MainModel model, Optional<MainPageController> empty) {
         this.model = model;
         this.wea = model.getWeather();
         setWeather();
+        if(this.wea.getWeatherType() == null){
+            fill();
+        }
+
     }
 
     private void setWeather() {

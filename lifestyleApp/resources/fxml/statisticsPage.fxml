@@ -115,23 +115,39 @@
                   <Font name="American Typewriter" size="21.0" />
                </font>
             </Text>
-            <ImageView fitHeight="64.0" fitWidth="70.0" layoutX="18.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="64.0" fitWidth="70.0" layoutX="19.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../images/sports.png" />
                </image>
             </ImageView>
-            <Label fx:id="averageWorkoutIntensity" layoutX="95.0" layoutY="127.0" prefHeight="33.0" prefWidth="175.0" text="No input">
+            <Label fx:id="averageWorkoutIntensity" layoutX="95.0" layoutY="87.0" prefHeight="33.0" prefWidth="175.0" text="No input">
                <font>
                   <Font size="20.0" />
                </font>
             </Label>
             <Text layoutX="14.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last 7 days since selected date" />
-            <ImageView fitHeight="64.0" fitWidth="70.0" layoutX="19.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="64.0" fitWidth="70.0" layoutX="19.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../images/timeeee.png" />
                </image>
             </ImageView>
-            <Label fx:id="averageWorkoutTime" layoutX="95.0" layoutY="205.0" prefHeight="33.0" prefWidth="175.0" text="No input">
+            <Label fx:id="averageWorkoutTime" layoutX="95.0" layoutY="151.0" prefHeight="33.0" prefWidth="175.0" text="No input">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="64.0" fitWidth="70.0" layoutX="19.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/timeeee.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="16.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Workout Time" wrappingWidth="249.2384033203125">
+               <font>
+                  <Font name="American Typewriter" size="21.0" />
+               </font>
+            </Text>
+            <Text layoutX="16.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last 7 days since selected date" />
+            <Label fx:id="totalWorkoutTime" layoutX="95.0" layoutY="290.0" text="No input">
                <font>
                   <Font size="20.0" />
                </font>
