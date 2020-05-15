@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.FlowPane?>
@@ -12,7 +13,10 @@
          <children>
             <ScrollPane hbarPolicy="NEVER" layoutX="18.0" layoutY="76.0" prefHeight="351.0" prefWidth="430.0">
                <content>
-                  <FlowPane fx:id="ratingFlowPane" prefHeight="348.0" prefWidth="430.0" />
+                  <FlowPane fx:id="ratingFlowPane" layoutX="10.0" prefHeight="349.0" prefWidth="430.0">
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding></FlowPane>
                </content>
             </ScrollPane>
             <Text layoutX="103.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rate your day" textAlignment="CENTER" wrappingWidth="314.39691162109375">
