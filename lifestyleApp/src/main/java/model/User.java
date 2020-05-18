@@ -13,6 +13,7 @@ public class User {
     private List<Ratings> ratings= new ArrayList<>();
     private List<Workout> workoutList= new ArrayList<>();
     ArrayList<SleepEntry> bedtimeList= new ArrayList<SleepEntry>();
+    private List<TodoEntry> todoList = new ArrayList<>();
 
     public User(String name) {
         this.name = name;
@@ -31,6 +32,10 @@ public class User {
         }
     }
 
+    void addTodo(String todoText){
+        todoList.add(new TodoEntry(todoText));
+    }
+
     void addWaterEntry(LocalDate date, double intake){
         water.setWaterEntry(date, intake);
     }
@@ -43,6 +48,8 @@ public class User {
     public List<Ratings> getRatings() {
         return ratings;
     }
+
+    public List<TodoEntry> getTodos() { return todoList; }
 
     public String getName() {
         return name;
@@ -94,4 +101,6 @@ public class User {
         return nueva;
 
     }
+
+
 }

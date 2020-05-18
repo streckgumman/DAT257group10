@@ -65,13 +65,16 @@ public class MainModel {
         return activeUser.get().getName();
     }
 
-
     public Journal getJournal() {
         return activeUser.get().getJournal();
     }
 
     public List<Ratings> getRatings() {
         return activeUser.get().getRatings();
+    }
+
+    public List<TodoEntry> getTodos() {
+        return activeUser.get().getTodos();
     }
 
     public Water getWater() {
@@ -104,6 +107,14 @@ public class MainModel {
             }
         }
         notifyAllRateObservers();
+    }
+
+    public void removeTodo(TodoEntry todo) {
+        activeUser.get().getTodos().remove(todo);
+    }
+
+    public void addTodo(String text) {
+        activeUser.get().addTodo(text);
     }
 
     public void setWaterIntake(double intake) {

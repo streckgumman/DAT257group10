@@ -30,7 +30,7 @@ public class TodoEntry {
         this.isDone = true;
     }
 
-    private String getDescription() {
+    public String getDescription() {
         return description;
     }
 
