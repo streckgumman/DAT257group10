@@ -12,17 +12,14 @@
 <?import javafx.scene.layout.FlowPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="540.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewcontroller.FitnessController">
+<AnchorPane prefHeight="540.0" prefWidth="1200.0" stylesheets="@../lifestyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewcontroller.FitnessController">
    <children>
       <Label layoutX="419.0" layoutY="6.0" text="Träning &amp; Hälsa" textAlignment="CENTER">
          <font>
             <Font size="51.0" />
          </font>
       </Label>
-      <AnchorPane layoutX="48.0" layoutY="106.0" prefHeight="390.0" prefWidth="461.0" style="-fx-background-color: #e4f7e6;">
-         <effect>
-            <DropShadow />
-         </effect>
+      <AnchorPane layoutX="48.0" layoutY="106.0" prefHeight="390.0" prefWidth="461.0" styleClass="panels">
          <children>
             <Label layoutX="136.0" layoutY="14.0" text="TräningsPass">
                <font>
@@ -118,11 +115,11 @@
             <Label layoutX="129.0" layoutY="313.0" prefHeight="17.0" prefWidth="225.0" text="1              2              3              4              5" />
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="569.0" layoutY="106.0" prefHeight="390.0" prefWidth="580.0" style="-fx-background-color: #e4f7e6;">
+      <AnchorPane layoutX="569.0" layoutY="106.0" prefHeight="390.0" prefWidth="580.0" styleClass="panels">
          <children>
             <FlowPane layoutX="14.0" layoutY="18.0" prefHeight="244.0" prefWidth="519.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="31.0" AnchorPane.topAnchor="80.0">
                <children>
-                  <ListView fx:id="workoutListView" prefHeight="240.0" prefWidth="519.0" style="-fx-background-color: white;">
+                  <ListView fx:id="workoutListView" prefHeight="240.0" prefWidth="519.0" style="-fx-background-color: white;" styleClass="panels">
                      <effect>
                         <DropShadow color="#00000080" />
                      </effect>
@@ -137,9 +134,6 @@
             </Label>
             <Label fx:id="samePageErrorWorkout" layoutX="403.0" layoutY="331.0" prefHeight="49.0" prefWidth="163.0" textFill="RED" wrapText="true" />
          </children>
-         <effect>
-            <DropShadow />
-         </effect>
       </AnchorPane>
    </children>
 </AnchorPane>
