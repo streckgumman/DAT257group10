@@ -59,6 +59,7 @@ public class StatisticsPageController implements page, DateObserver, RatingObser
 
 
     public void initPage(MainModel model, Optional<MainPageController> parent) {
+
         this.mainmodel = model;
         mainmodel.attachDateOb(this); //For Date
         mainmodel.attachRateOb(this); //For Rate
@@ -222,11 +223,13 @@ public class StatisticsPageController implements page, DateObserver, RatingObser
     //-----------init GUI  methods------------
 
     private void initGraphs() {
+
+
         weekGraph.getYAxis().setLabel("Rating");
         weekGraph.getYAxis().setAutoRanging(false);
         NumberAxis weekAxisY = (NumberAxis) weekGraph.getYAxis();
         weekAxisY.setLowerBound(0);
-        weekAxisY.setUpperBound(5);
+        weekAxisY.setUpperBound(6);
 
 
         CategoryAxis weekAxisX = (CategoryAxis) weekGraph.getXAxis();

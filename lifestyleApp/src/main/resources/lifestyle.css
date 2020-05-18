@@ -106,4 +106,9 @@
     -fx-background-color: #cfedc4 ;
 }
 
+.bar-chart{
+    -fx-bar-fill: #2eb82e ;
+
+}
+
 
