@@ -25,17 +25,48 @@
     -fx-effect: innershadow( gaussian, rgba( 255, 255, 255, 0.10), 100, 1, 0, 0 );
 }
 
+
+
 .cross-button2{
     -fx-background-color: #e3928d;
     -fx-background-radius: 0;
     -fx-text-fill: white;
 }
 
+.cross-button2:hover{
+    -fx-effect: innershadow( gaussian, rgba( 255, 255, 255, 0.30), 100, 1, 0, 0 );
+}
+
+
+
 .save-Button{
     -fx-background-color: #B0E19E;
     -fx-background-radius: 0;
     -fx-text-fill: white;
 }
+
+.save-Button:hover{
+    -fx-effect: innershadow( gaussian, rgba( 255, 255, 255, 0.30), 100, 1, 0, 0 );
+}
+
+.star-Pliancy{
+
+}
+
+.star-Pliancy:hover{
+    -fx-effect: innershadow( gaussian, rgba( 255, 255, 255, 0.50), 100, 1, 0, 0 );
+}
+
+
+
+.traingtype-Button{
+
+}
+
+.traingtype-Button:hover{
+    -fx-effect: innershadow( gaussian, rgba( 255, 255, 255, 0.50), 100, 1, 0, 0 );
+}
+
 
 .check-button{
     -fx-background-color: #2eb82e;

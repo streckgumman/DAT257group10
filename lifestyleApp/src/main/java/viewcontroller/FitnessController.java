@@ -37,6 +37,9 @@ public class FitnessController implements page, DateObserver, MainObserver {
     private Label intensityLabel;
 
     @FXML
+    private Label timeLabel;
+
+    @FXML
     private Spinner<Integer> workoutHourSpinner;
 
     @FXML
@@ -130,13 +133,19 @@ public class FitnessController implements page, DateObserver, MainObserver {
     @FXML
     void saveWorkout(ActionEvent event) {
 
+
         if (type != null && !(workoutHourSpinner.getValue() == 0 && workoutMinSpinner.getValue() == 0)) {
             workout.addEntry(new WorkoutEntry(workoutHourSpinner.getValue(), workoutMinSpinner.getValue(), sliderIntensity.getValue(), type));
-            deleteWorkoutButton.setBlendMode(BlendMode.SRC_OVER);
             samePageErrorWorkout.setText("");
+            timeLabel.setText("");
             loadWorkout();
             resetInputs();
         }
+
+        else{
+            timeLabel.setText("*Every field needs to be filled in.");
+        }
+
         model.statsChanged();
 
     }
@@ -154,7 +163,7 @@ public class FitnessController implements page, DateObserver, MainObserver {
     void deleteWorkout(ActionEvent event) {
       final int selectedWorkout = workoutListView.getSelectionModel().getSelectedIndex();
       if (selectedWorkout == -1){
-          samePageErrorWorkout.setText("*Du måste markera träningspasset du vill ta bort");
+          samePageErrorWorkout.setText("*You need to select the workout you want to delete");
 
       }
       else {
@@ -162,8 +171,6 @@ public class FitnessController implements page, DateObserver, MainObserver {
           workoutListView.getItems().remove(selectedWorkout);
           workoutListView.getSelectionModel().select(newSelectedWorkout);
           samePageErrorWorkout.setText("");
-          if (workoutEntries.size() == 0);
-          deleteWorkoutButton.setBlendMode(BlendMode.OVERLAY);
       }
 
     }

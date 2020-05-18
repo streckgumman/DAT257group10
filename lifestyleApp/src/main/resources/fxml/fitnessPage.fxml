@@ -14,21 +14,21 @@
 
 <AnchorPane prefHeight="540.0" prefWidth="1200.0" stylesheets="@../lifestyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewcontroller.FitnessController">
    <children>
-      <Label layoutX="419.0" layoutY="6.0" text="Träning &amp; Hälsa" textAlignment="CENTER">
+      <Label layoutX="420.0" layoutY="22.0" styleClass="headers" stylesheets="@../lifestyle.css" text="Träning &amp; Hälsa" textAlignment="CENTER">
          <font>
             <Font size="51.0" />
          </font>
       </Label>
       <AnchorPane layoutX="48.0" layoutY="106.0" prefHeight="390.0" prefWidth="461.0" styleClass="panels">
          <children>
-            <Label layoutX="136.0" layoutY="14.0" text="TräningsPass">
+            <Label layoutX="136.0" layoutY="14.0" styleClass="headers" stylesheets="@../lifestyle.css" text="TräningsPass">
                <font>
                   <Font size="33.0" />
                </font>
             </Label>
-            <Label layoutX="60.0" layoutY="78.0" text="Jag tränade i ">
+            <Label layoutX="39.0" layoutY="75.0" prefHeight="23.0" prefWidth="107.0" styleClass="headers" stylesheets="@../lifestyle.css" text="Jag tränade i ">
                <font>
-                  <Font size="15.0" />
+                  <Font size="18.0" />
                </font>
             </Label>
             <Spinner fx:id="workoutHourSpinner" initialValue="0" layoutX="154.0" layoutY="76.0" max="24" min="0" onMouseClicked="#setWorkoutHour" prefHeight="25.0" prefWidth="65.0">
@@ -39,22 +39,22 @@
             <Spinner fx:id="workoutMinSpinner" initialValue="0" layoutX="251.0" layoutY="76.0" max="59" min="0" onMouseClicked="#setWorkoutMin" prefHeight="25.0" prefWidth="65.0">
                <editable>true</editable>
             </Spinner>
-            <Label layoutX="229.0" layoutY="78.0" text="h">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Label>
-            <Label layoutX="325.0" layoutY="78.0" text="minuter.">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Label>
-            <Label layoutX="184.0" layoutY="126.0" text="Träningstyp">
+            <Label layoutX="228.0" layoutY="75.0" styleClass="headers" stylesheets="@../lifestyle.css" text="h">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <AnchorPane layoutX="20.0" layoutY="161.0" prefHeight="65.0" prefWidth="65.0">
+            <Label layoutX="327.0" layoutY="75.0" styleClass="headers" stylesheets="@../lifestyle.css" text="minuter.">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="184.0" layoutY="126.0" styleClass="headers" stylesheets="@../lifestyle.css" text="Träningstyp">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="20.0" layoutY="161.0" prefHeight="65.0" prefWidth="65.0" styleClass="traingtype-Button" stylesheets="@../lifestyle.css">
                <children>
                   <ImageView fx:id="weightPicture" fitHeight="65.0" fitWidth="65.0" onMouseClicked="#setTrainingTypeWeight" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <image>
@@ -63,7 +63,7 @@
                   </ImageView>
                </children>
             </AnchorPane>
-            <AnchorPane layoutX="104.0" layoutY="161.0" prefHeight="65.0" prefWidth="65.0">
+            <AnchorPane layoutX="104.0" layoutY="161.0" prefHeight="65.0" prefWidth="65.0" styleClass="traingtype-Button" stylesheets="@../lifestyle.css">
                <children>
                   <ImageView fx:id="runningPictures" fitHeight="65.0" fitWidth="65.0" onMouseClicked="#setTrainingTypeRunning" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -74,7 +74,7 @@
             </AnchorPane>
             <Label layoutX="116.0" layoutY="226.0" text="Kondition" />
             <Label layoutX="36.0" layoutY="226.0" text="Styrka" />
-            <AnchorPane layoutX="186.0" layoutY="161.0" prefHeight="65.0" prefWidth="65.0">
+            <AnchorPane layoutX="186.0" layoutY="161.0" prefHeight="65.0" prefWidth="65.0" styleClass="traingtype-Button" stylesheets="@../lifestyle.css">
                <children>
                   <ImageView fx:id="walkingPicture" fitHeight="65.0" fitWidth="65.0" onMouseClicked="#setTrainingTypeWalk" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -83,7 +83,7 @@
                   </ImageView>
                </children>
             </AnchorPane>
-            <AnchorPane layoutX="270.0" layoutY="161.0" prefHeight="65.0" prefWidth="65.0">
+            <AnchorPane layoutX="270.0" layoutY="161.0" prefHeight="65.0" prefWidth="65.0" styleClass="traingtype-Button" stylesheets="@../lifestyle.css">
                <children>
                   <ImageView fx:id="mindfullnessPicuture" fitHeight="65.0" fitWidth="65.0" onMouseClicked="#setTrainingTypeMindFull" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -92,7 +92,7 @@
                   </ImageView>
                </children>
             </AnchorPane>
-            <AnchorPane layoutX="360.0" layoutY="163.0" prefHeight="65.0" prefWidth="65.0">
+            <AnchorPane layoutX="360.0" layoutY="163.0" prefHeight="65.0" prefWidth="65.0" styleClass="traingtype-Button" stylesheets="@../lifestyle.css">
                <children>
                   <ImageView fx:id="otherPicture" fitHeight="65.0" fitWidth="65.0" onMouseClicked="#setTrainingTypeOther" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -104,15 +104,16 @@
             <Label layoutX="204.0" layoutY="226.0" text="Gång" />
             <Label layoutX="268.0" layoutY="226.0" text="Mindfullness" />
             <Label layoutX="379.0" layoutY="226.0" text="Annan" />
-            <Label layoutX="192.0" layoutY="262.0" text="Intensitet">
+            <Label layoutX="201.0" layoutY="262.0" styleClass="headers" stylesheets="@../lifestyle.css" text="Intensitet">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
             <Slider fx:id="sliderIntensity" layoutX="126.0" layoutY="299.0" max="5" min="1" onMouseReleased="#setIntensity" prefHeight="14.0" prefWidth="225.0" showTickMarks="true" value="1.0" />
-            <Button fx:id="saveTraningButton" layoutX="322.0" layoutY="351.0" mnemonicParsing="false" onAction="#saveWorkout" prefHeight="25.0" prefWidth="116.0" text="Spara" />
+            <Button fx:id="saveTraningButton" layoutX="322.0" layoutY="351.0" mnemonicParsing="false" onAction="#saveWorkout" prefHeight="25.0" prefWidth="116.0" styleClass="save-Button" stylesheets="@../lifestyle.css" text="Spara" />
             <Label fx:id="intensityLabel" layoutX="335.0" layoutY="276.0" text="1" />
             <Label layoutX="129.0" layoutY="313.0" prefHeight="17.0" prefWidth="225.0" text="1              2              3              4              5" />
+            <Label fx:id="timeLabel" layoutX="39.0" layoutY="355.0" prefHeight="17.0" prefWidth="248.0" textFill="RED" />
          </children>
       </AnchorPane>
       <AnchorPane layoutX="569.0" layoutY="106.0" prefHeight="390.0" prefWidth="580.0" styleClass="panels">
@@ -126,8 +127,8 @@
                   </ListView>
                </children>
             </FlowPane>
-            <Button fx:id="deleteWorkoutButton" blendMode="OVERLAY" layoutX="207.0" layoutY="345.0" mnemonicParsing="false" onAction="#deleteWorkout" prefHeight="25.0" prefWidth="188.0" text="Ta bort träningspass" />
-            <Label layoutX="158.0" layoutY="14.0" text="Dagen träningspass">
+            <Button fx:id="deleteWorkoutButton" layoutX="207.0" layoutY="345.0" mnemonicParsing="false" onAction="#deleteWorkout" prefHeight="25.0" prefWidth="188.0" styleClass="save-Button" stylesheets="@../lifestyle.css" text="Ta bort träningspass" />
+            <Label layoutX="158.0" layoutY="14.0" styleClass="headers" stylesheets="@../lifestyle.css" text="Dagen träningspass">
                <font>
                   <Font size="33.0" />
                </font>
