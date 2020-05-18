@@ -20,6 +20,7 @@ public class JournalController implements DateObserver, page {
         model.attachDateOb(this);
         this.model = model;
         this.journal = model.getJournal();
+        update();
     }
 
     @FXML

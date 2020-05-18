@@ -14,6 +14,10 @@ public class User {
     private List<Workout> workoutList= new ArrayList<>();
     ArrayList<SleepEntry> bedtimeList= new ArrayList<SleepEntry>();
 
+    public User(String name) {
+        this.name = name;
+    }
+
     void addRating(String topic){
         boolean exists = false;
         for (Ratings r : ratings){

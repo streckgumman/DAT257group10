@@ -54,5 +54,6 @@ public class TodoController implements page{
     }
 
     public void initPage(MainModel model, Optional<MainPageController> empty) {
+
     }
 }
