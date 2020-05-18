@@ -159,8 +159,11 @@ public class FitnessController implements page, DateObserver, MainObserver {
       }
       else {
           final int newSelectedWorkout = (selectedWorkout == workoutListView.getItems().size() - 1) ? selectedWorkout - 1 : selectedWorkout;
+
+          workout.removeEntry(workoutListView.getSelectionModel().getSelectedItem());
           workoutListView.getItems().remove(selectedWorkout);
           workoutListView.getSelectionModel().select(newSelectedWorkout);
+
           samePageErrorWorkout.setText("");
           if (workoutEntries.size() == 0);
           deleteWorkoutButton.setBlendMode(BlendMode.OVERLAY);
