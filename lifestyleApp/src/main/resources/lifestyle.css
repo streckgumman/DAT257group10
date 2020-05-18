@@ -99,4 +99,11 @@
 
 }
 
+.combo-box{
+    -fx-background-color: #cfedc4 ;
+}
+.spinner{
+    -fx-background-color: #cfedc4 ;
+}
+
 

@@ -13,7 +13,7 @@
             <Font name="Constantia" size="25.0" />
          </font>
       </Label>
-      <AnchorPane fx:id="star1anchor" layoutX="134.0" layoutY="4.0" prefHeight="50.0" prefWidth="50.0" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="134.0" AnchorPane.topAnchor="4.0">
+      <AnchorPane fx:id="star1anchor" layoutX="134.0" layoutY="4.0" prefHeight="50.0" prefWidth="50.0" styleClass="icons-pliancy" stylesheets="@../lifestyle.css" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="134.0" AnchorPane.topAnchor="4.0">
          <children>
             <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="2.0" onMouseClicked="#rate1star" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <image>
@@ -22,7 +22,7 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="star2anchor" layoutX="207.0" layoutY="6.0" prefHeight="50.0" prefWidth="50.0" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="190.0" AnchorPane.topAnchor="4.0">
+      <AnchorPane fx:id="star2anchor" layoutX="207.0" layoutY="6.0" prefHeight="50.0" prefWidth="50.0" styleClass="icons-pliancy" stylesheets="@../lifestyle.css" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="190.0" AnchorPane.topAnchor="4.0">
          <children>
             <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="-14.0" onMouseClicked="#rate2star" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <image>
@@ -31,7 +31,7 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="star3anchor" layoutX="246.0" layoutY="5.0" prefHeight="0.0" prefWidth="0.0" AnchorPane.leftAnchor="246.0" AnchorPane.topAnchor="5.0">
+      <AnchorPane fx:id="star3anchor" layoutX="246.0" layoutY="5.0" prefHeight="0.0" prefWidth="0.0" styleClass="icons-pliancy" stylesheets="@../lifestyle.css" AnchorPane.leftAnchor="246.0" AnchorPane.topAnchor="5.0">
          <children>
             <ImageView fitHeight="50.0" fitWidth="50.0" onMouseClicked="#rate3star" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <image>
@@ -40,7 +40,7 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="star4anchor" layoutX="301.0" layoutY="4.0" prefHeight="50.0" prefWidth="50.0" AnchorPane.leftAnchor="301.0" AnchorPane.topAnchor="4.0">
+      <AnchorPane fx:id="star4anchor" layoutX="301.0" layoutY="4.0" prefHeight="50.0" prefWidth="50.0" styleClass="icons-pliancy" stylesheets="@../lifestyle.css" AnchorPane.leftAnchor="301.0" AnchorPane.topAnchor="4.0">
          <children>
             <ImageView fitHeight="50.0" fitWidth="50.0" layoutY="6.0" onMouseClicked="#rate4star" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <image>
@@ -49,7 +49,7 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="star5anchor" layoutX="355.0" layoutY="4.0" prefHeight="50.0" prefWidth="50.0" AnchorPane.leftAnchor="355.0" AnchorPane.topAnchor="4.0">
+      <AnchorPane fx:id="star5anchor" layoutX="355.0" layoutY="4.0" prefHeight="50.0" prefWidth="50.0" styleClass="icons-pliancy" stylesheets="@../lifestyle.css" AnchorPane.leftAnchor="355.0" AnchorPane.topAnchor="4.0">
          <children>
             <ImageView fitHeight="50.0" fitWidth="50.0" layoutY="1.0" onMouseClicked="#rate5star" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <image>
