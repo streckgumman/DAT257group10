@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.image.*?>
-<?import java.lang.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="58.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewcontroller.WeatherController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="101.0" prefWidth="300.0" styleClass="panels" stylesheets="@../lifestyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewcontroller.WeatherController">
    <children>
-      <AnchorPane fx:id="anch1" layoutX="9.0" layoutY="14.0" prefHeight="30.0" prefWidth="30.0">
+      <AnchorPane fx:id="anch1" layoutX="9.0" layoutY="14.0" prefHeight="30.0" prefWidth="30.0" AnchorPane.topAnchor="50.0">
          <children>
             <ImageView fx:id="weather1" fitHeight="30.0" fitWidth="30.0" layoutY="4.0" onMouseClicked="#click1" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <image>
@@ -15,7 +17,7 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="anch2" layoutX="50.0" layoutY="16.0" prefHeight="30.0" prefWidth="30.0">
+      <AnchorPane fx:id="anch2" layoutX="50.0" layoutY="16.0" prefHeight="30.0" prefWidth="30.0" AnchorPane.topAnchor="50.0">
          <children>
             <ImageView fx:id="weather2" fitHeight="30.0" fitWidth="30.0" layoutY="4.0" onMouseClicked="#click2" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <image>
@@ -24,7 +26,7 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="anch3" layoutX="93.0" layoutY="16.0" prefHeight="30.0" prefWidth="30.0">
+      <AnchorPane fx:id="anch3" layoutX="93.0" layoutY="16.0" prefHeight="30.0" prefWidth="30.0" AnchorPane.topAnchor="50.0">
          <children>
             <ImageView fx:id="weather3" fitHeight="30.0" fitWidth="30.0" layoutY="4.0" onMouseClicked="#click3" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <image>
@@ -33,7 +35,7 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="anch4" layoutX="138.0" layoutY="15.0" prefHeight="30.0" prefWidth="30.0">
+      <AnchorPane fx:id="anch4" layoutX="138.0" layoutY="15.0" prefHeight="30.0" prefWidth="30.0" AnchorPane.topAnchor="50.0">
          <children>
             <ImageView fx:id="weather4" fitHeight="30.0" fitWidth="30.0" layoutY="4.0" onMouseClicked="#click4" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <image>
@@ -42,7 +44,7 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="anch5" layoutX="179.0" layoutY="16.0" prefHeight="30.0" prefWidth="30.0">
+      <AnchorPane fx:id="anch5" layoutX="179.0" layoutY="16.0" prefHeight="30.0" prefWidth="30.0" AnchorPane.topAnchor="50.0">
          <children>
             <ImageView fx:id="weather5" fitHeight="30.0" fitWidth="30.0" layoutY="4.0" onMouseClicked="#click5" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <image>
@@ -51,7 +53,7 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="anch6" layoutX="218.0" layoutY="15.0" prefHeight="30.0" prefWidth="30.0">
+      <AnchorPane fx:id="anch6" layoutX="218.0" layoutY="15.0" prefHeight="30.0" prefWidth="30.0" AnchorPane.topAnchor="50.0">
          <children>
             <ImageView fx:id="weather6" fitHeight="30.0" fitWidth="30.0" layoutY="4.0" onMouseClicked="#click6" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <image>
@@ -60,7 +62,7 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="anch7" layoutX="260.0" layoutY="17.0" prefHeight="30.0" prefWidth="30.0">
+      <AnchorPane fx:id="anch7" layoutX="260.0" layoutY="17.0" prefHeight="30.0" prefWidth="30.0" AnchorPane.topAnchor="50.0">
          <children>
             <ImageView fx:id="weather7" fitHeight="30.0" fitWidth="30.0" layoutY="4.0" onMouseClicked="#click7" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <image>
@@ -69,5 +71,10 @@
             </ImageView>
          </children>
       </AnchorPane>
+      <Label layoutX="47.0" layoutY="14.0" styleClass="headers" stylesheets="@../lifestyle.css" text="Register todays weather">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
