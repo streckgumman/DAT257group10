@@ -27,13 +27,8 @@ public class LifestyleApp extends Application {
             }
         }
 
-        model.login("Name");
-
+        model.login("My Lifestyle");
         model.setDate(LocalDate.now());
-        model.addRating("Overall");
-        model.addRating("Mood");
-        model.addRating("Sleep");
-
 
         PageLoader.setModel(model);
         Scene scene = new Scene(PageLoader.createMainPage(), 1200, 700);
