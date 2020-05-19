@@ -1,15 +1,14 @@
 # DAT257group10
   
 How to run the LifeStyle Application:  
-IntelliJ. Java 8 (?)  
+To run the program we use IntelliJ and Java 8.
   
-Trello:  
+Our groups trello:  
 https://trello.com/b/wqvnnadf/dat257-group-10  
   
 GIT INSPECTOR!!!!  
   
-Description Week by Week assignments: 
-  
+Description Week by Week MAIN assignments: 
 Ebba:  
 Week 1:   
 Week 2:  
