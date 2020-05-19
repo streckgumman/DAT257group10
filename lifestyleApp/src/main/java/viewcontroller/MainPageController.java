@@ -55,7 +55,7 @@ public class MainPageController implements UserObserver, page {
     private ImageView fitnessImage;
 
     ColorAdjust colorAdjust = new ColorAdjust();
-
+    ColorAdjust neutral = new ColorAdjust();
 
     // Pages
 
@@ -63,12 +63,19 @@ public class MainPageController implements UserObserver, page {
     void showHomePage(ActionEvent event) {
         showPage(homePage);
         homeImage.setEffect(colorAdjust);
+        settingsImage.setEffect(neutral);
+        statisticsImage.setEffect(neutral);
+        fitnessImage.setEffect(neutral);
     }
 
     @FXML
     void showSettingsPage(MouseEvent event) {
         showPage(settingsPage);
         notifyAllObservers();
+        homeImage.setEffect(neutral);
+        settingsImage.setEffect(colorAdjust);
+        statisticsImage.setEffect(neutral);
+        fitnessImage.setEffect(neutral);
 
 
     }
@@ -76,17 +83,29 @@ public class MainPageController implements UserObserver, page {
     @FXML
     void showStatisticsPage(MouseEvent event) {
         showPage(statisticPage);
+        homeImage.setEffect(neutral);
+        settingsImage.setEffect(neutral);
+        statisticsImage.setEffect(colorAdjust);
+        fitnessImage.setEffect(neutral);
     }
 
     @FXML
     void showHomepage2(MouseEvent event) {
         showPage(homePage);
+        homeImage.setEffect(colorAdjust);
+        settingsImage.setEffect(neutral);
+        statisticsImage.setEffect(neutral);
+        fitnessImage.setEffect(neutral);
     }
 
     @FXML
     void showFitnessPage(MouseEvent event) {
         showPage(fitnessPage);
         notifyAllObservers();
+        homeImage.setEffect(neutral);
+        settingsImage.setEffect(neutral);
+        statisticsImage.setEffect(neutral);
+        fitnessImage.setEffect(colorAdjust);
     }
 
 
@@ -106,7 +125,8 @@ public class MainPageController implements UserObserver, page {
 
     public void initPage(MainModel model, Optional<MainPageController> empty) {
         this.model = model;
-        colorAdjust.setBrightness(-0.1);
+        colorAdjust.setBrightness(-0.3);
+        neutral.setBrightness(0);
         updateDateLabel();
         model.attachUserOb(this);
         update();
