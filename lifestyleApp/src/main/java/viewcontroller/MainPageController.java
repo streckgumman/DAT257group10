@@ -7,6 +7,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
 import javafx.scene.effect.BlendMode;
+import javafx.scene.effect.ColorAdjust;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
@@ -53,18 +54,23 @@ public class MainPageController implements UserObserver, page {
     @FXML
     private ImageView fitnessImage;
 
+    ColorAdjust colorAdjust = new ColorAdjust();
+
+
     // Pages
 
     @FXML
     void showHomePage(ActionEvent event) {
         showPage(homePage);
-        homeImage.setBlendMode(BlendMode.COLOR_BURN);
+        homeImage.setEffect(colorAdjust);
     }
 
     @FXML
     void showSettingsPage(MouseEvent event) {
         showPage(settingsPage);
         notifyAllObservers();
+
+
     }
 
     @FXML
@@ -100,6 +106,7 @@ public class MainPageController implements UserObserver, page {
 
     public void initPage(MainModel model, Optional<MainPageController> empty) {
         this.model = model;
+        colorAdjust.setBrightness(-0.1);
         updateDateLabel();
         model.attachUserOb(this);
         update();

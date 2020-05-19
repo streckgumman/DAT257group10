@@ -38,12 +38,12 @@
                         <DatePicker fx:id="datePicker" layoutX="481.0" layoutY="58.0" prefHeight="37.0" prefWidth="232.0" />
                         <AnchorPane fx:id="homeIconAnchorpane" layoutX="31.0" layoutY="10.0" prefHeight="80.0" prefWidth="80.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="0.0">
                            <children>
-                              <ImageView fitHeight="104.0" fitWidth="104.0" layoutX="2.0" onMouseClicked="#showHomepage2" pickOnBounds="true" preserveRatio="true" styleClass="icons-pliancy" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                              <ImageView fx:id="homeImage" fitHeight="104.0" fitWidth="104.0" layoutX="2.0" onMouseClicked="#showHomepage2" pickOnBounds="true" preserveRatio="true" styleClass="icons-pliancy" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
                                  <image>
                                     <Image url="@../images/whitecircle.png" />
                                  </image>
                               </ImageView>
-                              <ImageView fx:id="homeImage" fitHeight="104.0" fitWidth="104.0" layoutX="-2.0" layoutY="-12.0" onMouseClicked="#showHomepage2" pickOnBounds="true" preserveRatio="true" styleClass="icons-pliancy" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                              <ImageView fitHeight="104.0" fitWidth="104.0" layoutX="-2.0" layoutY="-12.0" onMouseClicked="#showHomepage2" pickOnBounds="true" preserveRatio="true" styleClass="icons-pliancy" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
                                  <image>
                                     <Image url="@../images/homeIcon.png" />
                                  </image>
