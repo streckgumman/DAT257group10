@@ -279,7 +279,7 @@ public class StatisticsPageController implements page, DateObserver, RatingObser
         LocalDate endDate = startDate.minusDays(7);
 
         for (LocalDate date = startDate; date.isAfter(endDate); date = date.minusDays(1)) {
-            av += mainmodel.getWater().getWaterEntry(date).getWaterEntry();
+            av += mainmodel.getWater().getWaterEntry(date, mainmodel.getUser().getGlassSize()).getWaterEntry();
         }
         av = av / 7;
 

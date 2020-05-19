@@ -7,6 +7,7 @@ import java.util.List;
 public class User {
 
     private Water water = new Water();
+    private double glassSize;
     private List<WeatherEntry> wes = new ArrayList<>();
     private String name;
     private Journal journal = new Journal();
@@ -32,7 +33,7 @@ public class User {
     }
 
     void addWaterEntry(LocalDate date, double intake){
-        water.setWaterEntry(date, intake);
+        water.setWaterEntry(date, intake, glassSize);
     }
 
     // Getters and Setters
@@ -57,7 +58,7 @@ public class User {
     }
 
     public WaterEntry getWaterIntake(LocalDate date) {
-        return getWater().getWaterEntry(date);
+        return getWater().getWaterEntry(date, glassSize);
     }
 
     public SleepEntry getSleepEntry(LocalDate date){
@@ -94,4 +95,14 @@ public class User {
         return nueva;
 
     }
+
+
+    public double getGlassSize() {
+        return glassSize;
+    }
+
+    public void setGlassSize(double glassSize) {
+        this.glassSize = glassSize;
+    }
+
 }

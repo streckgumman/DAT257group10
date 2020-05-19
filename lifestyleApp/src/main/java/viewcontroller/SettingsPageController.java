@@ -4,6 +4,7 @@ import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Spinner;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.FlowPane;
@@ -23,17 +24,32 @@ public class SettingsPageController implements page, MainObserver, RatingObserve
 
 
     @FXML
-    private TextField nameField;
-
-    @FXML
     private FlowPane ratingFlowPane;
 
     @FXML
     private TextField newRatingField;
 
     @FXML
+    private TextField avgGlassField;
+
+    @FXML
+    private TextField homepageTitleField;
+
+    @FXML
+    private Spinner<?> wakeUpHourSpinner;
+
+    @FXML
+    private Spinner<?> wakeUpMinSpinner;
+
+    @FXML
+    private Spinner<?> bedTimeHourSpinner;
+
+    @FXML
+    private Spinner<?> bedTimeMinSpinner;
+
+    @FXML
     void saveSettings(ActionEvent event) {
-        model.setUserName(nameField.getText());
+        model.setUserName(homepageTitleField.getText());
     }
 
     @FXML
@@ -41,14 +57,21 @@ public class SettingsPageController implements page, MainObserver, RatingObserve
         model.addRating(newRatingField.getText());
     }
 
+    @FXML
+    void saveGlassSize(ActionEvent event) {
+        String glassSize = avgGlassField.getText();
+        model.getUser().setGlassSize(Double.valueOf(glassSize));
+
+    }
+
     public void initPage(MainModel model, Optional<MainPageController> mainPage) {
         this.model = model;
         mainPage.ifPresent(page -> parent = page);
         parent.attachMainOb(this);
         model.attachRateOb(this);
-        addTextLimiter(nameField, 15);
+        addTextLimiter(homepageTitleField, 15);
         addTextLimiter(newRatingField, 10);
-        nameField.setText(model.getUserName());
+        homepageTitleField.setText(model.getUserName());
     }
 
     void showRatings() {
@@ -84,9 +107,11 @@ public class SettingsPageController implements page, MainObserver, RatingObserve
     }
 
     private void update() {
-        nameField.setText(model.getUserName());
+        homepageTitleField.setText(model.getUserName());
         newRatingField.setText("");
         ratingFlowPane.getChildren().clear();   
         showRatings();
     }
+
+
 }

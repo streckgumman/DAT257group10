@@ -11,7 +11,7 @@ public class TodoEntry {
 
     }
 
-    // Makes the ToDos show up as strings in the CourseMainPage ListView
+    //Makes the ToDos show up as strings in the CourseMainPage ListView
     @Override
     public String toString() {
         return this.getDescription();
