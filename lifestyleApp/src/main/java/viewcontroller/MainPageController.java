@@ -6,6 +6,8 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
+import javafx.scene.effect.BlendMode;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import model.MainModel;
@@ -26,7 +28,6 @@ public class MainPageController implements UserObserver, page {
 
     // Other Pages
     private AnchorPane homePage;
-    private AnchorPane calendarPage;
     private AnchorPane statisticPage;
     private AnchorPane settingsPage;
     private AnchorPane fitnessPage;
@@ -41,8 +42,23 @@ public class MainPageController implements UserObserver, page {
     private AnchorPane mainPageAnchorPane;
 
     @FXML
+    private ImageView homeImage;
+
+    @FXML
+    private ImageView statisticsImage;
+
+    @FXML
+    private ImageView settingsImage;
+
+    @FXML
+    private ImageView fitnessImage;
+
+    // Pages
+
+    @FXML
     void showHomePage(ActionEvent event) {
         showPage(homePage);
+        homeImage.setBlendMode(BlendMode.COLOR_BURN);
     }
 
     @FXML
@@ -59,7 +75,6 @@ public class MainPageController implements UserObserver, page {
     @FXML
     void showHomepage2(MouseEvent event) {
         showPage(homePage);
-
     }
 
     @FXML
