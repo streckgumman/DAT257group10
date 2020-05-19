@@ -1,6 +1,8 @@
 # DAT257group10
 
-Description Week by Week assignments:
+Description Week by Week assignments:  
+
+Oscar:
 Week 1:
 Week 2:
 Week 3:
