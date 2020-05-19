@@ -6,8 +6,8 @@ IntelliJ. Java 8 (?)
 Trello:  
 https://trello.com/b/wqvnnadf/dat257-group-10  
   
+GIT INSPECTOR!!!!  
   
- 
 Description Week by Week assignments: 
   
 Ebba:  
