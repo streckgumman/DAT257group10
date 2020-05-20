@@ -11,8 +11,9 @@ import java.util.Optional;
 
 import javafx.fxml.FXML;
 import model.TodoEntry;
+import viewcontroller.observers.TodoObserver;
 
-public class TodoController implements page {
+public class TodoController implements page, TodoObserver {
 
     private MainModel model;
 
@@ -25,26 +26,37 @@ public class TodoController implements page {
     @FXML
     void addTodoButton(ActionEvent event) {
         model.addTodo(todoTextField.getText());
+        update();
     }
 
     public void initPage(MainModel model, Optional<MainPageController> empty) {
         this.model = model;
+        model.attachTodoOb(this);
         update();
+        if (model.getTodos() != null){
+            for (TodoEntry te : model.getTodos()){
+                if (te.getIsDone()){
+                    te.setActive();
+                }
+            }
+        }
+
     }
-
-
 
     void showTodos() {
         todoFlowPane.getChildren().clear();
         if (model.getTodos() != null) {
             for (TodoEntry te : model.getTodos()) {
-                AnchorPane todoPane = PageLoader.createTodoPane();
-                AnchorPane todoItem = PageLoader.createTodoItemPage();
-                todoFlowPane.getChildren().add(todoPane);
+                AnchorPane todoItem = PageLoader.createTodoItemPage(te);
                 todoFlowPane.getChildren().add(todoItem);
-
             }
         }
+
+    }
+
+    @Override
+    public void notified() {
+        update();
     }
 
     private void update() {
@@ -52,5 +64,6 @@ public class TodoController implements page {
         todoFlowPane.getChildren().clear();
         showTodos();
     }
+
 
 }

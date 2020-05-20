@@ -111,8 +111,9 @@ public class PageLoader {
         return res.root;
     }
 
-    public static AnchorPane createTodoItemPage() {
+    public static AnchorPane createTodoItemPage(TodoEntry te) {
         Result<TodoItemController> res = loadPage("fxml/todoItem.fxml");
+        res.ctrl.setTodo(te);
         res.ctrl.initPage(model, Optional.empty());
         return res.root;
     }
@@ -123,4 +124,3 @@ public class PageLoader {
         return res.root;
     }
 }
-

@@ -7,12 +7,14 @@ import model.MainModel;
 import model.Ratings;
 import viewcontroller.observers.DateObserver;
 import viewcontroller.observers.RatingObserver;
+import viewcontroller.observers.TodoObserver;
 
 import java.util.Optional;
 
 public class HomePageController implements DateObserver, RatingObserver, page {
     private MainModel model;
     private MainPageController parent;
+    private TodoController tc;
 
     @FXML
     private AnchorPane journalAnchorPane;
@@ -30,7 +32,7 @@ public class HomePageController implements DateObserver, RatingObserver, page {
     private AnchorPane weatherAnchorpane;
 
     public void initPage(MainModel model, Optional<MainPageController> mainPage) {
-        this.model=model;
+        this.model = model;
         mainPage.ifPresent(page -> parent = page);
         model.attachDateOb(this);
         model.attachRateOb(this);
@@ -42,10 +44,11 @@ public class HomePageController implements DateObserver, RatingObserver, page {
         initWeather();
     }
 
-    private void initWeather(){
+    private void initWeather() {
         weatherAnchorpane.getChildren().clear();
         weatherAnchorpane.getChildren().add(PageLoader.createWeatherPane());
     }
+
     private void initJournal() {
         journalAnchorPane.getChildren().clear();
         journalAnchorPane.getChildren().add(PageLoader.createJournal(model.getJournal()));
@@ -79,17 +82,16 @@ public class HomePageController implements DateObserver, RatingObserver, page {
     }
 
 
-
-
     @Override
     public void notified() {
         update();
     }
 
-    private void update(){
+    private void update() {
         showRatings();
         initWaterIntakePanel();
         initSleepPanel();
         initWeather();
+        initTodoPanel();
     }
 }

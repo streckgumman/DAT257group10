@@ -2,6 +2,7 @@ package viewcontroller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.CheckBox;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
 import model.MainModel;
@@ -19,6 +20,9 @@ public class TodoItemController implements page {
 
     @FXML
     private Text todoName;
+
+    @FXML
+    private CheckBox checkbox;
 
     @FXML
     void cancel(ActionEvent event){
@@ -41,4 +45,19 @@ public class TodoItemController implements page {
         todoName.setText(todo.getDescription());
     }
 
+    @FXML
+    public void clickCheckbox(ActionEvent event){
+        if (checkbox.isSelected()){
+            todo.setActive();
+            checkbox.setSelected(true);
+        }
+        else{
+            todo.setInactive();
+            checkbox.setSelected(false);
+        }
+    }
+
+    public void setTodo(TodoEntry te) {
+        this.todo = te;
+    }
 }

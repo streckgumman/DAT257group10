@@ -18,15 +18,15 @@ public class TodoEntry {
     }
 
     // Getters and Setters
-    private boolean getIsDone() {
+    public boolean getIsDone() {
         return isDone;
     }
 
-    private void setActive() {
+    public void setActive() {
         this.isDone = false;
     }
 
-    private void setInactive() {
+    public void setInactive() {
         this.isDone = true;
     }
 
