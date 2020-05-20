@@ -2,6 +2,7 @@ package model;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class User {
@@ -32,8 +33,14 @@ public class User {
         }
     }
 
-    void addTodo(String todoText){
-        todoList.add(new TodoEntry(todoText));
+    void addTodo(String todoText) {
+        TodoEntry temp = new TodoEntry(todoText);
+        if(todoList != null){
+            todoList.add(temp);
+        }else{
+            todoList = new ArrayList<>(Arrays.asList(temp));
+        }
+
     }
 
     void addWaterEntry(LocalDate date, double intake){
