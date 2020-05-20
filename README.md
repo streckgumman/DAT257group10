@@ -1,5 +1,7 @@
 # DAT257group10
-  
+
+FÖR ATT GÖRA EN NY RAD GÖR MAN TVÅ MELLANSLAG
+
 How to run the LifeStyle Application:  
 To run the program we use IntelliJ and Java 8.
   
@@ -19,18 +21,18 @@ Week 4:
 Week 5:  
   
 Oscar:  
-Week 1: Create mainpage, switch between pages, w. Johanna. 
-Week 2: Implement dates, store info at spec. dates, w Hanna T. 
-Week 3: Settingspage, delete/add-ratings, w Hanna T. 
+Week 1: Create mainpage, switch between pages, w. Johanna.  
+Week 2: Implement dates, store info at spec. dates, w Hanna T.  
+Week 3: Settingspage, delete/add-ratings, w Hanna T.  
 Week 4: Create more statistics, w Hanna B.  
-Week 5: Fix Json, prepare repo, w Hanna T. 
+Week 5: Fix Json, prepare repo, w Hanna T.  
   
 Hanna T:  
 Week 1:  
-Week 2: Implement dates, store info at spec. dates, w Oscar. 
-Week 3: Settingspage, delete/add-ratings, w Oscar. 
+Week 2: Implement dates, store info at spec. dates, w Oscar.  
+Week 3: Settingspage, delete/add-ratings, w Oscar.  
 Week 4:  
-Week 5: Fix Json, prepare repo, w Oscar. 
+Week 5: Fix Json, prepare repo, w Oscar.  
   
 Hanna B:  
 Week 1:  
