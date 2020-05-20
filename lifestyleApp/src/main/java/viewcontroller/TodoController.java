@@ -33,14 +33,6 @@ public class TodoController implements page, TodoObserver {
         this.model = model;
         model.attachTodoOb(this);
         update();
-        if (model.getTodos() != null){
-            for (TodoEntry te : model.getTodos()){
-                if (te.getIsDone()){
-                    te.setActive();
-                }
-            }
-        }
-
     }
 
     void showTodos() {
@@ -49,6 +41,9 @@ public class TodoController implements page, TodoObserver {
             for (TodoEntry te : model.getTodos()) {
                 AnchorPane todoItem = PageLoader.createTodoItemPage(te);
                 todoFlowPane.getChildren().add(todoItem);
+                if (te.getIsDone()){
+                    te.setActive();
+                }
             }
         }
 

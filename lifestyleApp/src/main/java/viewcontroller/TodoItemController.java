@@ -43,11 +43,12 @@ public class TodoItemController implements page {
     public void initPage(MainModel model, Optional<MainPageController> mainPage) {
         this.model = model;
         todoName.setText(todo.getDescription());
+        checkbox.setSelected(todo.getIsDone());
     }
 
     @FXML
     public void clickCheckbox(ActionEvent event){
-        if (checkbox.isSelected()){
+       if (checkbox.isSelected()){
             todo.setActive();
             checkbox.setSelected(true);
         }
@@ -60,4 +61,7 @@ public class TodoItemController implements page {
     public void setTodo(TodoEntry te) {
         this.todo = te;
     }
+
+
+
 }
