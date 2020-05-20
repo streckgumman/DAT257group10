@@ -8,6 +8,8 @@ https://trello.com/b/wqvnnadf/dat257-group-10
   
 GIT INSPECTOR!!!!  
   
+DELA DRIVE MAPP!
+  
 Description Week by Week MAIN assignments: 
 Ebba:  
 Week 1:   
