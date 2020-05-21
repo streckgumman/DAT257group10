@@ -9,7 +9,14 @@ Here you can find the groups user-stories.
   
 **Link to drive**  
 https://drive.google.com/open?id=1Anqb0hKxk4iKKPQ-nFicwSI5b1sDw4eg   
-Here you can find the social contract, team reflections, customer-value and scope, design decisions & product structure, meetingnotes, discussion about the testing of our program/code...  
+Here you can find:  
+Social contract.    
+Team reflections.  
+Customer-value and scope.  
+Design decisions & product structure.  
+Meetingnotes.  
+Discussion about the testing of our program/code.  
+...  
   
 **Where to find individual reflections:**  
 There is a separate folder for every member of the group. The individual reflections can be found in respective folder in the git repository.  
