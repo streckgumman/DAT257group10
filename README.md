@@ -8,7 +8,7 @@ To run the program we use IntelliJ and Java 8.
 Link to trello:  
 https://trello.com/b/wqvnnadf/dat257-group-10  
   
-Link to drive. 
+Link to drive  
 https://drive.google.com/open?id=1Anqb0hKxk4iKKPQ-nFicwSI5b1sDw4eg  
   
 GIT INSPECTOR!!!!  
