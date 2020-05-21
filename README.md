@@ -5,14 +5,17 @@ FÖR ATT GÖRA EN NY RAD GÖR MAN TVÅ MELLANSLAG
 How to run the LifeStyle Application:  
 To run the program we use IntelliJ and Java 8.
   
-Our groups trello:  
+Link to trello:  
 https://trello.com/b/wqvnnadf/dat257-group-10  
+  
+Link to drive. 
+https://drive.google.com/open?id=1Anqb0hKxk4iKKPQ-nFicwSI5b1sDw4eg  
   
 GIT INSPECTOR!!!!  
   
-DELA DRIVE MAPP!
+Description Week by Week MAIN assignments:  
+(first two weeks excluded)  
   
-Description Week by Week MAIN assignments: 
 Ebba:  
 Week 1:   
 Week 2:  
