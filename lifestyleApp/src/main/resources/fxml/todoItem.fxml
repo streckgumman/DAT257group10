@@ -12,12 +12,12 @@
             <children>
                 <Button layoutX="462.0" mnemonicParsing="false" onAction="#cancel" prefHeight="20.0" prefWidth="40.0" styleClass="cross-button" text="Cancel" AnchorPane.bottomAnchor="1.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <font>
-                        <Font size="15.0" />
+                        <Font size="8.0" />
                     </font>
                 </Button>
                 <Button mnemonicParsing="false" onAction="#confirm" prefHeight="20.0" prefWidth="40.0" styleClass="check-button" text="Confirm" AnchorPane.bottomAnchor="1.0" AnchorPane.rightAnchor="41.0" AnchorPane.topAnchor="0.0">
                     <font>
-                        <Font size="15.0" />
+                        <Font size="8.0" />
                     </font>
                 </Button>
                 <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Are you sure?" wrappingWidth="142.38591677480997" AnchorPane.bottomAnchor="5.0">
@@ -35,7 +35,7 @@
                 </Text>
                 <Button alignment="CENTER" contentDisplay="CENTER" layoutX="281.0" layoutY="-1.0" mnemonicParsing="false" onAction="#delete" prefHeight="20.0" prefWidth="40.0" styleClass="cross-button" stylesheets="@../lifestyle.css" text="Delete" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <font>
-                        <Font size="16.0" />
+                        <Font size="8.0" />
                     </font>
                 </Button>
             <CheckBox fx:id="checkbox" layoutX="217.0" layoutY="1.0" mnemonicParsing="false" onAction="#clickCheckbox" />

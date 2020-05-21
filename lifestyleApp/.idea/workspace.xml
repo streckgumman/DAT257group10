@@ -2,40 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6b9df68-7d87-4317-a37c-3973cd4d9bae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/LifestyleApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/fxml/calendarPage.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/fxml/settingsPage.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/images/1star.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/images/2star.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/images/3star.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/images/4star.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/images/5star.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/images/calendarIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/images/otherPageIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/images/settingsIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/images/statisticsIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/model/Journal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/model/JournalEntry.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/model/MainModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/model/RatingEntry.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/model/Ratings.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/model/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/viewcontroller/CalendarPageController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/viewcontroller/HomePageController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/viewcontroller/JournalController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/viewcontroller/MainPageController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/viewcontroller/PageLoader$Result.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/viewcontroller/PageLoader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/viewcontroller/RateController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lifestyleApp/viewcontroller/SettingsPageController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/TodoEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/TodoEntry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/viewcontroller/TodoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/viewcontroller/TodoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/viewcontroller/TodoItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/viewcontroller/TodoItemController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/todoItem.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/todoItem.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -72,9 +40,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/viewcontroller/TodoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="44" column="33" lean-forward="true" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
+            <state relative-caret-position="495">
+              <caret line="44" column="33" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
               <folding>
+                <element signature="e#1256#1257#0" expanded="true" />
                 <element signature="e#1280#1281#0" expanded="true" />
               </folding>
             </state>
@@ -86,10 +55,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
               <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-              <folding>
-                <element signature="e#531#532#0" expanded="true" />
-                <element signature="e#566#567#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -97,12 +62,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/viewcontroller/TodoItemController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="57" column="9" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
+            <state relative-caret-position="376">
+              <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1311#1312#0" expanded="true" />
-                <element signature="e#1341#1342#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -158,6 +121,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -223,7 +187,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -269,6 +232,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.LifestyleApp" />
+        <item itemvalue="Application.LifestyleApp" />
       </list>
     </recent_temporary>
   </component>
@@ -303,7 +267,7 @@
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13376252" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13662376" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -526,9 +490,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/viewcontroller/TodoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="44" column="33" lean-forward="true" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
+        <state relative-caret-position="495">
+          <caret line="44" column="33" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
           <folding>
+            <element signature="e#1256#1257#0" expanded="true" />
             <element signature="e#1280#1281#0" expanded="true" />
           </folding>
         </state>
@@ -538,21 +503,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding>
-            <element signature="e#531#532#0" expanded="true" />
-            <element signature="e#566#567#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/viewcontroller/TodoItemController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="57" column="9" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
+        <state relative-caret-position="376">
+          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1311#1312#0" expanded="true" />
-            <element signature="e#1341#1342#0" expanded="true" />
           </folding>
         </state>
       </provider>
