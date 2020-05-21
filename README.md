@@ -70,9 +70,9 @@ Week 3:
 Week 4:  
 Week 5:  
   
-Johanna Wiberg. 
-CID: jwiberg. 
-gituser: johannawiberg   
+Johanna Wiberg.  
+CID: jwiberg.  
+gituser: johannawiberg.   
 Week 1: Create mainpage, switch between pages, w. Oscar.  
 Week 2:  
 Week 3:  
