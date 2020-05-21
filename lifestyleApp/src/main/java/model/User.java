@@ -2,6 +2,7 @@ package model;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class User {
@@ -10,28 +11,39 @@ public class User {
     private List<WeatherEntry> wes = new ArrayList<>();
     private String name;
     private Journal journal = new Journal();
-    private List<Ratings> ratings= new ArrayList<>();
-    private List<Workout> workoutList= new ArrayList<>();
-    ArrayList<SleepEntry> bedtimeList= new ArrayList<SleepEntry>();
+    private List<Ratings> ratings = new ArrayList<>();
+    private List<Workout> workoutList = new ArrayList<>();
+    ArrayList<SleepEntry> bedtimeList = new ArrayList<SleepEntry>();
+    private List<TodoEntry> todoList = new ArrayList<TodoEntry>();
 
     public User(String name) {
         this.name = name;
     }
 
-    void addRating(String topic){
+    void addRating(String topic) {
         boolean exists = false;
-        for (Ratings r : ratings){
+        for (Ratings r : ratings) {
             if (r.getTopic().equals(topic)) {
                 exists = true;
                 break;
             }
         }
-        if (!exists){
+        if (!exists) {
             ratings.add(new Ratings(topic));
         }
     }
 
-    void addWaterEntry(LocalDate date, double intake){
+    void addTodo(String todoText) {
+        TodoEntry temp = new TodoEntry(todoText);
+        if(todoList != null){
+            todoList.add(temp);
+        }else{
+            todoList = new ArrayList<>(Arrays.asList(temp));
+        }
+
+    }
+
+    void addWaterEntry(LocalDate date, double intake) {
         water.setWaterEntry(date, intake);
     }
 
@@ -42,6 +54,10 @@ public class User {
 
     public List<Ratings> getRatings() {
         return ratings;
+    }
+
+    public List<TodoEntry> getTodos() {
+        return todoList;
     }
 
     public String getName() {
@@ -60,9 +76,9 @@ public class User {
         return getWater().getWaterEntry(date);
     }
 
-    public SleepEntry getSleepEntry(LocalDate date){
-        for (SleepEntry se : bedtimeList){
-            if (se.getDate().equals(date)){
+    public SleepEntry getSleepEntry(LocalDate date) {
+        for (SleepEntry se : bedtimeList) {
+            if (se.getDate().equals(date)) {
                 return se;
             }
         }
@@ -72,8 +88,8 @@ public class User {
     }
 
     public Workout getWorkout(LocalDate date) {
-        for (Workout wo : workoutList){
-            if (wo.getDate().equals(date)){
+        for (Workout wo : workoutList) {
+            if (wo.getDate().equals(date)) {
                 return wo;
             }
         }
@@ -84,8 +100,8 @@ public class User {
     }
 
     public WeatherEntry getWeather(LocalDate date) {
-        for (WeatherEntry we : wes){
-            if (we.getDate().equals(date)){
+        for (WeatherEntry we : wes) {
+            if (we.getDate().equals(date)) {
                 return we;
             }
         }
@@ -94,4 +110,6 @@ public class User {
         return nueva;
 
     }
+
+
 }
