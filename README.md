@@ -5,12 +5,14 @@ To run the program we use IntelliJ and Java 8.
   
 **Link to trello:**  
 https://trello.com/b/wqvnnadf/dat257-group-10  
+Here you can find the groups user-stories.  
   
 **Link to drive**  
 https://drive.google.com/open?id=1Anqb0hKxk4iKKPQ-nFicwSI5b1sDw4eg   
+Here you can find the social contract, team reflections, customer-value and scope, design decisions & product structure, meetingnotes etc.  
   
 **Where to find individual reflections:**  
-There is a separate folder for every member of the group. The individual reflections can be found in respective folder.  
+There is a separate folder for every member of the group. The individual reflections can be found in respective folder in the git repository.  
   
 **Description Week by Week MAIN assignments**:  
 (first two weeks excluded)  
