@@ -1,7 +1,5 @@
 # DAT257group10
-
-FÖR ATT GÖRA EN NY RAD GÖR MAN TVÅ MELLANSLAG
-
+  
 How to run the LifeStyle Application:  
 To run the program we use IntelliJ and Java 8.
   
@@ -9,9 +7,10 @@ Link to trello:
 https://trello.com/b/wqvnnadf/dat257-group-10  
   
 Link to drive  
-https://drive.google.com/open?id=1Anqb0hKxk4iKKPQ-nFicwSI5b1sDw4eg  
+https://drive.google.com/open?id=1Anqb0hKxk4iKKPQ-nFicwSI5b1sDw4eg   
   
-GIT INSPECTOR!!!!  
+Where to find individual reflections:  
+There is a separate folder for every member of the group. The individual reflections can be found in respective folder.  
   
 Description Week by Week MAIN assignments:  
 (first two weeks excluded)  
