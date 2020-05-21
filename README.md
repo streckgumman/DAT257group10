@@ -45,7 +45,7 @@ Week 5: Fix Json, prepare repo, w Oscar.
    
 Hanna Bergland:  
 CID:  
-gituser: berglandhanna. 
+gituser: berglandhanna.  
 Week 1:  
 Week 2:  
 Week 3:  
@@ -54,7 +54,7 @@ Week 5:
   
 Naomi Espinosa:  
 CID:  
-gituser: naomiespinosa. 
+gituser: naomiespinosa.  
 Week 1:  
 Week 2:  
 Week 3:  
@@ -63,7 +63,7 @@ Week 5:
   
 Linnea Johanson. 
 CID:  
-gituser: streckgumman. 
+gituser: streckgumman.  
 Week 1:  
 Week 2:  
 Week 3:  
@@ -72,7 +72,7 @@ Week 5:
   
 Johanna Wiberg. 
 CID: jwiberg. 
-gituser: johannawiberg  
+gituser: johannawiberg   
 Week 1: Create mainpage, switch between pages, w. Oscar.  
 Week 2:  
 Week 3:  
