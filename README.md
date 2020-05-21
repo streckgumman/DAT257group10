@@ -3,7 +3,7 @@
 How to run the LifeStyle Application:  
 To run the program we use IntelliJ and Java 8.
   
-Link to trello:  
+**Link to trello:**  
 https://trello.com/b/wqvnnadf/dat257-group-10  
   
 Link to drive  
