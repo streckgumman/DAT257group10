@@ -1,0 +1,22 @@
+Utgår från:
+
+... the current situation or "what is" (A), 
+... what you want the situation to be or "what might or should be" (B), and 
+... a plan for getting from where you are to where you want to be or "feedback designed to reduce the gap" (A -> B).
+
+•	what do I want to learn or understand better?
+•	how can I help someone else, or the entire team, to learn something new?
+•	what is my contribution towards the team’s use of Scrum?
+•	what is my contribution towards the team’s deliveries?
+
+Under denna sista sprint har jag parprogrammerat med Linnea och Ebba. Vi skulle göra om våran todo-list så den såg lite annorlunda ut och hade en checkbox. Vi utgick från en funktion som finns på settingspage och gjorde ett liknande misstag som vi gjort innan med att kolla för mycket på kod vi tror ska vara lik. Detta gjorde att det tog lite längre tid än förväntat men vi löste det tills slut. För att undvika detta nästa gång tror jag att det kan vara bra att påminna sig själv om tidigare reflektioner så man undviker att göra samma misstag. 
+
+Genom veckan projekt känner jag också att observers äntligen fallit på plats för mig. Jag vet att vi pratade mycket om det i vår andra programmeringskurs, men nu äntligen landade det mycket tack vare Linnea. Detta är en återkommande grej under denna kursen och förhppningsvis för framtiden, att saker jag kanske endast kan från teori och nån enkel labb appliceras i ett sammanhang som jag varit med och skapat vilket gör det lättare att förstå. Det är alltså ett arbetssätt jag verkligen tror på att använda för att lära mig saker med en djupare förståelse.
+
+Annars har jag nog bidragit till kodandet dels genom att vara lite eftertänksam och inte så snabb alltid. Det är något jag lärt mig av andra gruppmedlemmar, att stanna upp och fundera innan man skriver massa kod. I mitt delteam denna veckan kändes et som jag var den som gjorde detta mycket och ville fundera och vara lite långsam och jobbig men jag tror ändå det gynnade teamworket i slutändan genom att vi hittade rätt väg. 
+
+Jag har också bättrat det jag beskrivit som en utmaning tidigare veckor och tydligt visat burn-up chartet. Det skapas en bra diskussion där i gruppen angående vårat poängsystem för userstories, om vi har tillräckligt många userstories som är representativa för just en och endast en uppgift och lite annat. Det är såklart lite obekävmt att ”tjata” om ett diagram när alla bara vill sätt igång och koda men jag tror det var väldigt bra att vi fick till denna diskussionen innan kursen är slut. I fortsättningen ska jag fortsätta vara ihållig när det kommer till sånt här och tänka att det gynnar hela gruppen även om man kanske inte förstår det på direkten. Det kan jag göra genom att ta på mig roller där jag tvingas leverera i form av diskussionsledning men också genom att starta denna reflektion tidigt i en ny grupp.
+
+Efter denna veckan känner jag mig ännu mer säker på git och hur allt ska pushas och mergas hit och dit. Jag har tagit på mig att vara den som gör det i mitt delteam för att verkligen få känna att jag kan och klarar det. Det sköna är att alla i min grupp är super hjälpsamma och snabbt svarar på mina frågor om jag blir osäker. Med detta ser jag en väg för att lösa framtida osäkerheter där jag inte är rädd att be om hjälp men inte heller rädd att testa. Det är så enkelt ibland att bara en någon med mer kunskap lösa ens problem, men för att få den kunskapen måste ju även jag utmana mig själv och testa. 
+
+Sist men inte minst hade jag under denna sprint lite svårt att förstå vad Oscar och Hanna T gjorde när de implementerade Json och gradle till projektet. Jag vill veta hur vårt projekt fungerar för att också kunna veta vad som händer när jag lägger till eller ändrar i en feature. För att minska det här förståelsegapet så var Hanna en ängel och tog sig tid att grundligt förklara hur de gjort och hur allt fungerade, men också hur de googlat och pusslat sig fram till lösningen. Allt detta var väldigt intressant och hjälpsamt för mig. 
