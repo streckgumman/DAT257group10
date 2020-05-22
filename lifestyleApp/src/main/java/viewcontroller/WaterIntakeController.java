@@ -15,8 +15,8 @@ import java.util.Optional;
 public class WaterIntakeController implements page {
     private WaterEntry we;
     private MainModel model;
+    private double glassVolume;
 
-    private double totalWaterIntake;
 
     @FXML
     private Label drinkLabel;
@@ -170,8 +170,8 @@ public class WaterIntakeController implements page {
         water8.setBlendMode(BlendMode.OVERLAY);
         water9.setBlendMode(BlendMode.OVERLAY);
         water10.setBlendMode(BlendMode.OVERLAY);
-        drinkLabel.setText("0.2 L");
-        we.setWaterEntry(0.2);
+        drinkLabel.setText(Double.toString(glassVolume));
+        we.setWaterEntry(glassVolume);
         model.statsChanged();
     }
 
@@ -186,8 +186,8 @@ public class WaterIntakeController implements page {
         water8.setBlendMode(BlendMode.OVERLAY);
         water9.setBlendMode(BlendMode.OVERLAY);
         water10.setBlendMode(BlendMode.OVERLAY);
-        drinkLabel.setText("0.4 L");
-        we.setWaterEntry(0.4);
+        drinkLabel.setText(Double.toString(glassVolume*2));
+        we.setWaterEntry(glassVolume*2);
         model.statsChanged();
     }
 
@@ -202,8 +202,8 @@ public class WaterIntakeController implements page {
         water8.setBlendMode(BlendMode.OVERLAY);
         water9.setBlendMode(BlendMode.OVERLAY);
         water10.setBlendMode(BlendMode.OVERLAY);
-        drinkLabel.setText("0.6 L");
-        we.setWaterEntry(0.6);
+        drinkLabel.setText(Double.toString(glassVolume*3));
+        we.setWaterEntry(glassVolume*3);
         model.statsChanged();
     }
 
@@ -218,8 +218,8 @@ public class WaterIntakeController implements page {
         water8.setBlendMode(BlendMode.OVERLAY);
         water9.setBlendMode(BlendMode.OVERLAY);
         water10.setBlendMode(BlendMode.OVERLAY);
-        drinkLabel.setText("0.8 L");
-        we.setWaterEntry(0.8);
+        drinkLabel.setText(Double.toString(glassVolume*4));
+        we.setWaterEntry(glassVolume*4);
         model.statsChanged();
     }
 
@@ -234,8 +234,8 @@ public class WaterIntakeController implements page {
         water8.setBlendMode(BlendMode.OVERLAY);
         water9.setBlendMode(BlendMode.OVERLAY);
         water10.setBlendMode(BlendMode.OVERLAY);
-        drinkLabel.setText("1.0 L");
-        we.setWaterEntry(1.0);
+        drinkLabel.setText(Double.toString(glassVolume*5));
+        we.setWaterEntry(glassVolume*5);
         model.statsChanged();
     }
 
@@ -250,8 +250,8 @@ public class WaterIntakeController implements page {
         water8.setBlendMode(BlendMode.OVERLAY);
         water9.setBlendMode(BlendMode.OVERLAY);
         water10.setBlendMode(BlendMode.OVERLAY);
-        drinkLabel.setText("1.2 L");
-        we.setWaterEntry(1.2);
+        drinkLabel.setText(Double.toString(glassVolume*6));
+        we.setWaterEntry(glassVolume*6);
         model.statsChanged();
     }
 
@@ -266,8 +266,8 @@ public class WaterIntakeController implements page {
         water8.setBlendMode(BlendMode.OVERLAY);
         water9.setBlendMode(BlendMode.OVERLAY);
         water10.setBlendMode(BlendMode.OVERLAY);
-        drinkLabel.setText("1.4 L");
-        we.setWaterEntry(1.4);
+        drinkLabel.setText(Double.toString(glassVolume*7));
+        we.setWaterEntry(glassVolume*7);
         model.statsChanged();
     }
 
@@ -282,8 +282,8 @@ public class WaterIntakeController implements page {
         water8.setBlendMode(BlendMode.SRC_OVER);
         water9.setBlendMode(BlendMode.OVERLAY);
         water10.setBlendMode(BlendMode.OVERLAY);
-        drinkLabel.setText("1.6 L");
-        we.setWaterEntry(1.6);
+        drinkLabel.setText(Double.toString(glassVolume*8));
+        we.setWaterEntry(glassVolume*8);
         model.statsChanged();
     }
 
@@ -298,8 +298,8 @@ public class WaterIntakeController implements page {
         water8.setBlendMode(BlendMode.SRC_OVER);
         water9.setBlendMode(BlendMode.SRC_OVER);
         water10.setBlendMode(BlendMode.OVERLAY);
-        drinkLabel.setText("1.8 L");
-        we.setWaterEntry(1.8);
+        drinkLabel.setText(Double.toString(glassVolume*9));
+        we.setWaterEntry(glassVolume*9);
         model.statsChanged();
     }
 
@@ -314,8 +314,8 @@ public class WaterIntakeController implements page {
         water8.setBlendMode(BlendMode.SRC_OVER);
         water9.setBlendMode(BlendMode.SRC_OVER);
         water10.setBlendMode(BlendMode.SRC_OVER);
-        drinkLabel.setText("2.0 L");
-        we.setWaterEntry(2.0);
+        drinkLabel.setText(Double.toString(glassVolume*10));
+        we.setWaterEntry(glassVolume*10);
         model.statsChanged();
     }
 
@@ -323,43 +323,47 @@ public class WaterIntakeController implements page {
     public void initPage(MainModel model, Optional<MainPageController> empty) {
         this.model = model;
         this.we = model.getWaterIntake();
+        this.glassVolume = we.getGlassVolume();
         setIntake();
+
     }
 
 
     private void setIntake(){
-        switch (Double.toString(we.getWaterEntry())){
-            case "0.0":
+        int filledGlasses = (int) (we.getWaterEntry()/glassVolume);
+
+        switch (filledGlasses){
+            case 0:
                 resetGlasses();
                 break;
-            case "0.2":
+            case 1:
                 oneGlass();
                 break;
-            case "0.4":
+            case 2:
                 twoGlass();
                 break;
-            case "0.6":
+            case 3:
                 threeGlass();
                 break;
-            case "0.8":
+            case 4:
                 fourGlass();
                 break;
-            case "1.0":
+            case 5:
                 fiveGlass();
                 break;
-            case "1.2":
+            case 6:
                 sixGlass();
                 break;
-            case "1.4":
+            case 7:
                 sevenGlass();
                 break;
-            case "1.6":
+            case 8:
                 eightGlass();
                 break;
-            case "1.8":
+            case 9:
                 nineGlass();
                 break;
-            case "2.0":
+            case 10:
                 tenGlass();
                 break;
         }

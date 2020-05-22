@@ -4,6 +4,8 @@ import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Spinner;
+import javafx.scene.control.SpinnerValueFactory;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.FlowPane;
@@ -23,17 +25,32 @@ public class SettingsPageController implements page, MainObserver, RatingObserve
 
 
     @FXML
-    private TextField nameField;
-
-    @FXML
     private FlowPane ratingFlowPane;
 
     @FXML
     private TextField newRatingField;
 
     @FXML
+    private TextField avgGlassField;
+
+    @FXML
+    private TextField homepageTitleField;
+
+    @FXML
+    private Spinner<Integer> wakeUpHourSpinner;
+
+    @FXML
+    private Spinner<Integer> wakeUpMinSpinner;
+
+    @FXML
+    private Spinner<Integer> bedTimeHourSpinner;
+
+    @FXML
+    private Spinner<Integer> bedTimeMinSpinner;
+
+    @FXML
     void saveSettings(ActionEvent event) {
-        model.setUserName(nameField.getText());
+        model.setUserName(homepageTitleField.getText());
     }
 
     @FXML
@@ -41,14 +58,49 @@ public class SettingsPageController implements page, MainObserver, RatingObserve
         model.addRating(newRatingField.getText());
     }
 
+    @FXML
+    void saveGlassSize(ActionEvent event) {
+        String glassSize = avgGlassField.getText();
+        model.getUser().setGlassSize(Double.valueOf(glassSize));
+
+    }
+
+    @FXML
+    void saveSleepInitVal(ActionEvent event){
+        int[] tmpArr = model.getUser().getSleepInitVal();
+
+        tmpArr[0] = bedTimeHourSpinner.getValue();
+        tmpArr[1] = bedTimeMinSpinner.getValue();
+        tmpArr[2] = wakeUpHourSpinner.getValue();
+        tmpArr[3] = wakeUpMinSpinner.getValue();
+
+        model.getUser().setSleepInitVal(tmpArr);
+
+
+    }
+
     public void initPage(MainModel model, Optional<MainPageController> mainPage) {
         this.model = model;
         mainPage.ifPresent(page -> parent = page);
         parent.attachMainOb(this);
         model.attachRateOb(this);
-        addTextLimiter(nameField, 15);
+        addTextLimiter(homepageTitleField, 15);
         addTextLimiter(newRatingField, 10);
-        nameField.setText(model.getUserName());
+        homepageTitleField.setText(model.getUserName());
+
+        SpinnerValueFactory<Integer> bedHourFactory = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 23, model.getUser().getSleepInitVal()[0]);
+        SpinnerValueFactory<Integer> bedMinFactory = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 59, model.getUser().getSleepInitVal()[1]);
+        SpinnerValueFactory<Integer> upHourFactory = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 23, model.getUser().getSleepInitVal()[2]);
+        SpinnerValueFactory<Integer> upMinFactory = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 59, model.getUser().getSleepInitVal()[3]);
+
+        bedHourFactory.setWrapAround(true);
+        bedMinFactory.setWrapAround(true);
+        upHourFactory.setWrapAround(true);
+        upMinFactory.setWrapAround(true);
+        bedTimeHourSpinner.setValueFactory(bedHourFactory);
+        bedTimeMinSpinner.setValueFactory(bedMinFactory);
+        wakeUpHourSpinner.setValueFactory(upHourFactory);
+        wakeUpMinSpinner.setValueFactory(upMinFactory);
     }
 
     void showRatings() {
@@ -84,9 +136,11 @@ public class SettingsPageController implements page, MainObserver, RatingObserve
     }
 
     private void update() {
-        nameField.setText(model.getUserName());
+        homepageTitleField.setText(model.getUserName());
         newRatingField.setText("");
         ratingFlowPane.getChildren().clear();   
         showRatings();
     }
+
+
 }

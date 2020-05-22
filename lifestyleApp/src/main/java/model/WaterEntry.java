@@ -5,10 +5,13 @@ import java.time.LocalDate;
 
 public class WaterEntry {
     private double waterEntry;
+
+    private double glassVolume;
     private LocalDate date;
 
-    public WaterEntry(LocalDate date) {
+    public WaterEntry(LocalDate date, Double glassVolume) {
         this.date = date;
+        this.glassVolume = glassVolume;
     }
 
     // Getters and Setters
@@ -26,9 +29,11 @@ public class WaterEntry {
         return date;
     }
 
-    public void setDate(LocalDate date) {
-        this.date = date;
-    }
+    public void setDate(LocalDate date) { this.date = date; }
+
+    public double getGlassVolume() { return glassVolume; }
+
+    public void setGlassVolume(double glassVolume) { this.glassVolume = glassVolume; }
 }
 
 
