@@ -14,6 +14,7 @@ public class User {
     private List<Ratings> ratings= new ArrayList<>();
     private List<Workout> workoutList= new ArrayList<>();
     ArrayList<SleepEntry> bedtimeList= new ArrayList<SleepEntry>();
+    private int[] sleepInitVal;
 
     public User(String name) {
         this.name = name;
@@ -95,6 +96,11 @@ public class User {
         return nueva;
 
     }
+
+    public int[] getSleepInitVal() { return sleepInitVal; }
+
+    public void setSleepInitVal(int[] sleepInitVal) { this.sleepInitVal = sleepInitVal; }
+
 
 
     public double getGlassSize() {

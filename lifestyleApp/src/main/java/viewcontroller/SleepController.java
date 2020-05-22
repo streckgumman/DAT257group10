@@ -78,10 +78,21 @@ public class SleepController implements page {
 
 
     public void initPage(MainModel model, Optional<MainPageController> empty) {
-        SpinnerValueFactory<Integer> bedHourFactory = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 23, 0);
-        SpinnerValueFactory<Integer> bedMinFactory = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 59, 0);
-        SpinnerValueFactory<Integer> upHourFactory = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 23, 0);
-        SpinnerValueFactory<Integer> upMinFactory = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 59, 0);
+
+        this.model = model;
+        this.se = model.getSleep();
+        updateSleep();
+
+        if (model.getUser().getSleepInitVal() == null){
+            int[] arr = {0,0,0,0};
+            model.getUser().setSleepInitVal(arr);
+        }
+
+
+        SpinnerValueFactory<Integer> bedHourFactory = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 23, model.getUser().getSleepInitVal()[0]);
+        SpinnerValueFactory<Integer> bedMinFactory = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 59, model.getUser().getSleepInitVal()[1]);
+        SpinnerValueFactory<Integer> upHourFactory = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 23, model.getUser().getSleepInitVal()[2]);
+        SpinnerValueFactory<Integer> upMinFactory = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 59, model.getUser().getSleepInitVal()[3]);
 
         bedHourFactory.setWrapAround(true);
         bedMinFactory.setWrapAround(true);
@@ -91,8 +102,5 @@ public class SleepController implements page {
         bedTimeMinuteSpinner.setValueFactory(bedMinFactory);
         wakeUpTimeHourSpinner.setValueFactory(upHourFactory);
         wakeUpTimeMinuteSpinner.setValueFactory(upMinFactory);
-        this.model = model;
-        this.se = model.getSleep();
-        updateSleep();
     }
 }

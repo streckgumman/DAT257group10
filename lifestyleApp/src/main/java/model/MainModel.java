@@ -17,6 +17,7 @@ public class MainModel {
     private List<User> users = new ArrayList<>();
     private Optional<User> activeUser = Optional.empty();
 
+
     public static MainModel createMainController() {
         return new MainModel();
     }
@@ -134,6 +135,8 @@ public class MainModel {
         this.date = date;
         notifyAllDateObservers();
     }
+
+
 
     //----------------Date-Observers-------------------------
 

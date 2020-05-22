@@ -12,7 +12,7 @@
 <AnchorPane prefHeight="595.0" prefWidth="1200.0" stylesheets="@../lifestyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewcontroller.SettingsPageController">
    <children>
       <TextField fx:id="newRatingField" layoutX="618.0" layoutY="456.0" prefHeight="35.0" prefWidth="323.0" />
-      <Button layoutX="961.0" layoutY="456.0" mnemonicParsing="false" onAction="#createRating" prefHeight="35.0" prefWidth="84.0" styleClass="check-button" text="Add Rating" />
+      <Button layoutX="961.0" layoutY="456.0" mnemonicParsing="false" onAction="#createRating" prefHeight="35.0" prefWidth="84.0" styleClass="save-Button" text="Add Rating" />
       <AnchorPane layoutX="69.0" layoutY="156.0" prefHeight="100.0" prefWidth="357.0" styleClass="panels">
          <children>
             <Label layoutX="14.0" layoutY="-9.0" prefHeight="46.0" prefWidth="323.0" text="Avarage waterglass size">
@@ -20,8 +20,8 @@
                   <Font size="29.0" />
                </font>
             </Label>
-            <TextField fx:id="avgGlassField" layoutX="17.0" layoutY="43.0" prefHeight="26.0" prefWidth="43.0" />
-            <Label layoutX="60.0" layoutY="42.0" prefHeight="20.0" prefWidth="14.0" text="L">
+            <TextField fx:id="avgGlassField" layoutX="17.0" layoutY="43.0" prefHeight="26.0" prefWidth="49.0" promptText="0.33" />
+            <Label layoutX="71.0" layoutY="42.0" prefHeight="20.0" prefWidth="14.0" text="L">
                <font>
                   <Font size="18.0" />
                </font>
@@ -41,7 +41,7 @@
                   <Font size="29.0" />
                </font>
             </Label>
-            <Button layoutX="214.0" layoutY="50.0" mnemonicParsing="false" onAction="#saveSettings" prefHeight="27.0" prefWidth="60.0" text="Save" />
+            <Button layoutX="220.0" layoutY="50.0" mnemonicParsing="false" onAction="#saveSettings" prefHeight="27.0" prefWidth="60.0" text="Save" />
             <TextField fx:id="homepageTitleField" layoutX="14.0" layoutY="51.0" />
          </children>
       </AnchorPane>
@@ -52,30 +52,31 @@
                   <Font size="27.0" />
                </font>
             </Label>
-            <Spinner fx:id="wakeUpHourSpinner" layoutX="119.0" layoutY="59.0" prefHeight="26.0" prefWidth="50.0" />
+            <Spinner fx:id="wakeUpHourSpinner" editable="true" layoutX="113.0" layoutY="58.0" prefHeight="26.0" prefWidth="74.0" />
             <Label layoutX="14.0" layoutY="62.0" text="Wake up time:">
                <font>
                   <Font size="14.0" />
                </font>
             </Label>
-            <Label layoutX="176.0" layoutY="58.0" text=":">
+            <Label layoutX="195.0" layoutY="58.0" text=":">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <Spinner fx:id="wakeUpMinSpinner" layoutX="190.0" layoutY="58.0" prefHeight="26.0" prefWidth="50.0" />
-            <Spinner fx:id="bedTimeHourSpinner" layoutX="120.0" layoutY="96.0" prefHeight="26.0" prefWidth="50.0" />
+            <Spinner fx:id="wakeUpMinSpinner" layoutX="210.0" layoutY="59.0" prefHeight="26.0" prefWidth="74.0" />
+            <Spinner fx:id="bedTimeHourSpinner" layoutX="113.0" layoutY="95.0" prefHeight="26.0" prefWidth="74.0" />
             <Label layoutX="14.0" layoutY="98.0" text="Bed time:">
                <font>
                   <Font size="14.0" />
                </font>
             </Label>
-            <Label layoutX="177.0" layoutY="95.0" text=":">
+            <Label layoutX="195.0" layoutY="94.0" text=":">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <Spinner fx:id="bedTimeMinSpinner" layoutX="191.0" layoutY="95.0" prefHeight="26.0" prefWidth="50.0" />
+            <Spinner fx:id="bedTimeMinSpinner" layoutX="210.0" layoutY="95.0" prefHeight="26.0" prefWidth="74.0" />
+            <Button layoutX="126.0" layoutY="144.0" mnemonicParsing="false" onAction="#saveSleepInitVal" prefHeight="46.0" prefWidth="101.0" text="Save" />
          </children>
       </AnchorPane>
       <AnchorPane layoutX="495.0" layoutY="41.0" prefHeight="406.0" prefWidth="650.0" styleClass="panels">
@@ -92,5 +93,10 @@
             </Label>
          </children>
       </AnchorPane>
+      <Label layoutX="81.0" layoutY="505.0" text="Restart application to update settings" textFill="#575454">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

@@ -17,7 +17,6 @@ public class WaterIntakeController implements page {
     private MainModel model;
     private double glassVolume;
 
-    private double totalWaterIntake;
 
     @FXML
     private Label drinkLabel;
