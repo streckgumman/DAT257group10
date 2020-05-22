@@ -7,7 +7,7 @@ import java.util.List;
 public class User {
 
     private Water water = new Water();
-    private double glassSize;
+    private double glassSize = 0.2;
     private List<WeatherEntry> wes = new ArrayList<>();
     private String name;
     private Journal journal = new Journal();
@@ -34,6 +34,10 @@ public class User {
     }
 
     void addWaterEntry(LocalDate date, double intake){
+        if (glassSize == 0.0){
+            glassSize = 0.2;
+        }
+
         water.setWaterEntry(date, intake, glassSize);
     }
 
