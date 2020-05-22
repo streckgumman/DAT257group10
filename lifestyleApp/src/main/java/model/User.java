@@ -37,102 +37,105 @@ public class User {
 
     void addTodo(String todoText) {
         TodoEntry temp = new TodoEntry(todoText);
-        if(todoList != null){
+        if (todoList != null) {
             todoList.add(temp);
-        }else{
+        } else {
             todoList = new ArrayList<>(Arrays.asList(temp));
         }
 
     }
 
-    void addWaterEntry(LocalDate date, double intake) {
-        water.setWaterEntry(date, intake);
-    void addWaterEntry(LocalDate date, double intake){
-        if (glassSize == 0.0){
-            glassSize = 0.2;
-        }
 
-        water.setWaterEntry(date, intake, glassSize);
-    }
-
-    // Getters and Setters
-    public Journal getJournal() {
-        return journal;
-    }
-
-    public List<Ratings> getRatings() {
-        return ratings;
-    }
-
-    public List<TodoEntry> getTodos() {
-        return todoList;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public Water getWater() {
-        return water;
-    }
-
-    public WaterEntry getWaterIntake(LocalDate date) {
-        return getWater().getWaterEntry(date, glassSize);
-    }
-
-    public SleepEntry getSleepEntry(LocalDate date) {
-        for (SleepEntry se : bedtimeList) {
-            if (se.getDate().equals(date)) {
-                return se;
+        void addWaterEntry (LocalDate date,double intake){
+            if (glassSize == 0.0) {
+                glassSize = 0.2;
             }
-        }
-        SleepEntry nueva = new SleepEntry(date);
-        bedtimeList.add(nueva);
-        return nueva;
-    }
 
-    public Workout getWorkout(LocalDate date) {
-        for (Workout wo : workoutList) {
-            if (wo.getDate().equals(date)) {
-                return wo;
+            water.setWaterEntry(date, intake, glassSize);
+        }
+
+
+        // Getters and Setters
+        public Journal getJournal () {
+            return journal;
+        }
+
+        public List<Ratings> getRatings () {
+            return ratings;
+        }
+
+        public List<TodoEntry> getTodos () {
+            return todoList;
+        }
+
+        public String getName () {
+            return name;
+        }
+
+        public void setName (String name){
+            this.name = name;
+        }
+
+        public Water getWater () {
+            return water;
+        }
+
+        public WaterEntry getWaterIntake (LocalDate date){
+            return getWater().getWaterEntry(date, glassSize);
+        }
+
+        public SleepEntry getSleepEntry (LocalDate date){
+            for (SleepEntry se : bedtimeList) {
+                if (se.getDate().equals(date)) {
+                    return se;
+                }
             }
+            SleepEntry nueva = new SleepEntry(date);
+            bedtimeList.add(nueva);
+            return nueva;
         }
-        Workout nueva = new Workout(date);
-        workoutList.add(nueva);
-        return nueva;
 
-    }
-
-    public WeatherEntry getWeather(LocalDate date) {
-        for (WeatherEntry we : wes) {
-            if (we.getDate().equals(date)) {
-                return we;
+        public Workout getWorkout (LocalDate date){
+            for (Workout wo : workoutList) {
+                if (wo.getDate().equals(date)) {
+                    return wo;
+                }
             }
+            Workout nueva = new Workout(date);
+            workoutList.add(nueva);
+            return nueva;
+
         }
-        WeatherEntry nueva = new WeatherEntry(date);
-        wes.add(nueva);
-        return nueva;
+
+        public WeatherEntry getWeather (LocalDate date){
+            for (WeatherEntry we : wes) {
+                if (we.getDate().equals(date)) {
+                    return we;
+                }
+            }
+            WeatherEntry nueva = new WeatherEntry(date);
+            wes.add(nueva);
+            return nueva;
+
+        }
+
+        public int[] getSleepInitVal () {
+            return sleepInitVal;
+        }
+
+        public void setSleepInitVal ( int[] sleepInitVal){
+            this.sleepInitVal = sleepInitVal;
+        }
+
+
+        public double getGlassSize () {
+            return glassSize;
+        }
+
+        public void setGlassSize ( double glassSize){
+            this.glassSize = glassSize;
+        }
+
 
     }
 
-    public int[] getSleepInitVal() { return sleepInitVal; }
-
-    public void setSleepInitVal(int[] sleepInitVal) { this.sleepInitVal = sleepInitVal; }
-
-
-
-    public double getGlassSize() {
-        return glassSize;
-    }
-
-    public void setGlassSize(double glassSize) {
-        this.glassSize = glassSize;
-    }
-
-
-
-}
