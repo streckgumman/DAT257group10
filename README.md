@@ -27,10 +27,10 @@ There is a separate folder for every member of the group. The individual reflect
 **Ebba Richnau:**  
 CID:  
 gituser: ebbari.  
-Week 1:   
+Week 1: Created ratings, w Hanna T   
 Week 2:   
 Week 3:   
-Week 4:  
+Week 4: Made everything automatically update, w Hanna T and Linnea 
 Week 5:  
    
 **Oscar Forsberg:**  
@@ -40,16 +40,16 @@ Week 1: Create mainpage, switch between pages, w. Johanna.
 Week 2: Implement dates, store info at spec. dates, w Hanna T.  
 Week 3: Settingspage, delete/add-ratings, w Hanna T.  
 Week 4: Create more statistics, w Hanna B.  
-Week 5: Fix Json, prepare repo, w Hanna T.  
+Week 5: Fix Gradle and Json, prepare repo, w Hanna T.  
    
 **Hanna Tärnåsen:**  
-CID:  
+CID: hannata  
 gituser: Hannat98.  
-Week 1:  
+Week 1: Created skeleton for the entire project. Also created ratings, w Ebba 
 Week 2: Implement dates, store info at spec. dates, w Oscar.  
-Week 3: Settingspage, delete/add-ratings, w Oscar.  
-Week 4:  
-Week 5: Fix Json, prepare repo, w Oscar.  
+Week 3: Settingspage, delete/add-ratings, w Oscar. Also bugfixes 
+Week 4: Made everything automatically update, w Ebba and Linnea 
+Week 5: Fix Gradle and Json, prepare repo, w Oscar.  
    
 **Hanna Bergland:**  
 CID:  
@@ -75,7 +75,7 @@ gituser: streckgumman.
 Week 1:  
 Week 2:  
 Week 3:  
-Week 4:  
+Week 4: Made everything automatically update, w Ebba and Hanna T 
 Week 5:  
   
 **Johanna Wiberg:**  
