@@ -52,6 +52,9 @@ public class FitnessController implements page, DateObserver, MainObserver {
     private Label samePageErrorWorkout;
 
     @FXML
+    private Label fillAllFieldsLabel;
+
+    @FXML
     private ImageView weightPicture;
 
     @FXML
@@ -136,6 +139,8 @@ public class FitnessController implements page, DateObserver, MainObserver {
             samePageErrorWorkout.setText("");
             loadWorkout();
             resetInputs();
+        }else{
+            fillAllFieldsLabel.setText("*Fill in all fields to save the workout.");
         }
         model.statsChanged();
 
@@ -154,7 +159,7 @@ public class FitnessController implements page, DateObserver, MainObserver {
     void deleteWorkout(ActionEvent event) {
       final int selectedWorkout = workoutListView.getSelectionModel().getSelectedIndex();
       if (selectedWorkout == -1){
-          samePageErrorWorkout.setText("*Du måste markera träningspasset du vill ta bort");
+          samePageErrorWorkout.setText("*You need to select a workout to delete it.");
 
       }
       else {
@@ -165,8 +170,9 @@ public class FitnessController implements page, DateObserver, MainObserver {
           workoutListView.getSelectionModel().select(newSelectedWorkout);
 
           samePageErrorWorkout.setText("");
-          if (workoutEntries.size() == 0);
-          deleteWorkoutButton.setBlendMode(BlendMode.OVERLAY);
+          if (workoutEntries.size() == 0) {
+              deleteWorkoutButton.setBlendMode(BlendMode.OVERLAY);
+          }
       }
 
     }

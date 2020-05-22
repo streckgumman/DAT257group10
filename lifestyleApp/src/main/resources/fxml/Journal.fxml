@@ -9,7 +9,11 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="300.0" styleClass="panels" stylesheets="@../lifestyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewcontroller.JournalController">
    <children>
-      <TextArea fx:id="textArea" layoutX="19.0" layoutY="74.0" prefHeight="303.0" prefWidth="263.0" wrapText="true" />
+      <AnchorPane fx:id="labelAnchorpane" layoutX="15.0" layoutY="69.0" prefHeight="309.0" prefWidth="269.0" style="-fx-background-color: #ECF9E7;">
+         <children>
+            <Label fx:id="showJournal" alignment="TOP_LEFT" contentDisplay="TOP" layoutX="7.0" layoutY="8.0" prefHeight="295.0" prefWidth="256.0" styleClass="headers" stylesheets="@../lifestyle.css" text="heh" wrapText="true" />
+         </children>
+      </AnchorPane>
       <Button fx:id="saveButton" layoutX="173.0" layoutY="390.0" mnemonicParsing="false" onAction="#saveEntry" prefHeight="25.0" prefWidth="79.0" styleClass="save-Button" stylesheets="@../lifestyle.css" text="Save" />
       <Button fx:id="deleteButton" layoutX="51.0" layoutY="390.0" mnemonicParsing="false" onAction="#deleteEntry" prefHeight="25.0" prefWidth="79.0" styleClass="cross-button2" stylesheets="@../lifestyle.css" text="Delete" />
       <Label layoutX="93.0" layoutY="14.0" text="Journal">
@@ -17,6 +21,11 @@
             <Font name="Constantia" size="36.0" />
          </font>
       </Label>
+      <AnchorPane fx:id="textAreaAnchorpane" layoutX="19.0" layoutY="74.0" prefHeight="303.0" prefWidth="263.0" style="-fx-background-color: #ECF9E7;">
+         <children>
+            <TextArea fx:id="textArea" prefHeight="303.0" prefWidth="263.0" style="-fx-background-color: #B0E19E;" styleClass="headers" stylesheets="@../lifestyle.css" wrapText="true" />
+         </children>
+      </AnchorPane>
    </children>
    <effect>
       <DropShadow />

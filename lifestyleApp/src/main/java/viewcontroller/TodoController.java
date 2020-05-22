@@ -1,59 +1,64 @@
 package viewcontroller;
 
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
-import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.FlowPane;
 import model.MainModel;
 
 
-import java.util.ArrayList;
 import java.util.Optional;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.ListView;
 import model.TodoEntry;
+import viewcontroller.observers.TodoObserver;
 
-public class TodoController implements page{
+public class TodoController implements page, TodoObserver {
 
-    private ObservableList<TodoEntry> todoEntries = FXCollections.observableArrayList();
-    private ArrayList<TodoEntry> todoEntryArrayList = new ArrayList<>();
-
-    @FXML
-    private TextArea todoTextArea;
+    private MainModel model;
 
     @FXML
-    private ListView<TodoEntry> todoListView = new ListView<>();
+    private FlowPane todoFlowPane;
+
+    @FXML
+    private TextField todoTextField;
 
     @FXML
     void addTodoButton(ActionEvent event) {
-        if (todoTextArea.getText() != null) {
-            TodoEntry todo = new TodoEntry(todoTextArea.getText());
-            todoEntries.add(todo);
-            todoListView.setItems(todoEntries);
-
-            todoTextArea.setText(null);
-        }
-
-    }
-
-
-
-    @FXML
-    void deleteTodoButton(ActionEvent event) {
-
-        final int selectedTodo = todoListView.getSelectionModel().getSelectedIndex();
-        if (selectedTodo != -1) {
-            // TodoEntry itemToRemove = todoListView.getSelectionModel().getSelectedItem();
-            final int newSelectedTodo = (selectedTodo == todoListView.getItems().size() - 1) ? selectedTodo - 1 : selectedTodo;
-
-            todoListView.getItems().remove(selectedTodo);
-            todoListView.getSelectionModel().select(newSelectedTodo);
-
-        }
+        model.addTodo(todoTextField.getText());
+        update();
     }
 
     public void initPage(MainModel model, Optional<MainPageController> empty) {
+        this.model = model;
+        model.attachTodoOb(this);
+        update();
+    }
+
+    void showTodos() {
+        todoFlowPane.getChildren().clear();
+        if (model.getTodos() != null) {
+            for (TodoEntry te : model.getTodos()) {
+                AnchorPane todoItem = PageLoader.createTodoItemPage(te);
+                todoFlowPane.getChildren().add(todoItem);
+                if (te.getIsDone()){
+                    te.setActive();
+                }
+            }
+        }
 
     }
+
+    @Override
+    public void notified() {
+        update();
+    }
+
+    private void update() {
+        todoTextField.setText("");
+        todoFlowPane.getChildren().clear();
+        showTodos();
+    }
+
+
 }

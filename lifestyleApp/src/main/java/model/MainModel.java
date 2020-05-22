@@ -1,9 +1,6 @@
 package model;
 
-import viewcontroller.observers.DateObserver;
-import viewcontroller.observers.RatingObserver;
-import viewcontroller.observers.StatsObserver;
-import viewcontroller.observers.UserObserver;
+import viewcontroller.observers.*;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -66,13 +63,16 @@ public class MainModel {
         return activeUser.get().getName();
     }
 
-
     public Journal getJournal() {
         return activeUser.get().getJournal();
     }
 
     public List<Ratings> getRatings() {
         return activeUser.get().getRatings();
+    }
+
+    public List<TodoEntry> getTodos() {
+        return activeUser.get().getTodos();
     }
 
     public Water getWater() {
@@ -105,6 +105,16 @@ public class MainModel {
             }
         }
         notifyAllRateObservers();
+    }
+
+    public void removeTodo(TodoEntry todo) {
+        activeUser.get().getTodos().remove(todo);
+        notifyAllTodoObservers();
+    }
+
+    public void addTodo(String text) {
+        activeUser.get().addTodo(text);
+        notifyAllTodoObservers();
     }
 
     public void setWaterIntake(double intake) {
@@ -168,6 +178,22 @@ public class MainModel {
         }
     }
 
+    //-------------To do observer-------------
+
+
+    private List<TodoObserver> todoObservers = new ArrayList<>();
+
+    public void attachTodoOb(TodoObserver observer) {
+        todoObservers.add(observer);
+    }
+
+    public void notifyAllTodoObservers() {
+        for (TodoObserver o : todoObservers) {
+            o.notified();
+
+        }
+    }
+
     //-------------User observer-------------
 
 
@@ -180,7 +206,6 @@ public class MainModel {
     public void notifyAllUserObservers() {
         for (UserObserver o : userObservers) {
             o.notified();
-
         }
     }
 
@@ -196,7 +221,6 @@ public class MainModel {
     public void notifyAllStatsObservers() {
         for (StatsObserver o : statsObservers) {
             o.notified();
-
         }
     }
 

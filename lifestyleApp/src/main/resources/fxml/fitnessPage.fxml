@@ -39,7 +39,7 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="326.0" layoutY="77.0" styleClass="headers" stylesheets="@../lifestyle.css" text="minutes">
+            <Label layoutX="326.0" layoutY="77.0" styleClass="headers" stylesheets="@../lifestyle.css" text="minutes.">
                <font>
                   <Font size="18.0" />
                </font>
@@ -108,7 +108,7 @@
             <Button fx:id="saveTraningButton" layoutX="322.0" layoutY="351.0" mnemonicParsing="false" onAction="#saveWorkout" prefHeight="25.0" prefWidth="116.0" styleClass="save-Button" stylesheets="@../lifestyle.css" text="Save" />
             <Label fx:id="intensityLabel" layoutX="335.0" layoutY="276.0" text="1" />
             <Label layoutX="129.0" layoutY="313.0" prefHeight="17.0" prefWidth="225.0" text="1              2              3              4              5" />
-            <Label fx:id="timeLabel" layoutX="39.0" layoutY="355.0" textFill="RED" />
+            <Label fx:id="fillAllFieldsLabel" layoutX="17.0" layoutY="355.0" prefHeight="17.0" prefWidth="257.0" textFill="RED" />
          </children>
       </AnchorPane>
       <AnchorPane layoutX="567.0" layoutY="75.0" prefHeight="390.0" prefWidth="580.0" styleClass="panels">
@@ -122,7 +122,7 @@
                   </ListView>
                </children>
             </FlowPane>
-            <Button fx:id="deleteWorkoutButton" layoutX="207.0" layoutY="345.0" mnemonicParsing="false" onAction="#deleteWorkout" prefHeight="25.0" prefWidth="188.0" styleClass="save-Button" stylesheets="@../lifestyle.css" text="Delete workout" />
+            <Button fx:id="deleteWorkoutButton" layoutX="207.0" layoutY="345.0" mnemonicParsing="false" onAction="#deleteWorkout" prefHeight="25.0" prefWidth="188.0" styleClass="cross-button2" stylesheets="@../lifestyle.css" text="Delete workout" />
             <Label layoutX="174.0" layoutY="14.0" styleClass="headers" stylesheets="@../lifestyle.css" text="Todays workout">
                <font>
                   <Font size="33.0" />

@@ -84,6 +84,12 @@
     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 10, 0.5, 0.0, 0.0);
 }
 
+.statistics-panels{
+    -fx-background-color: #cfedc4;
+    -fx-background-radius: 5;
+
+}
+
 .split-pane *.split-pane-divider {
     -fx-padding: 0 1 0 1;
 }
@@ -94,6 +100,18 @@
 
 .green-components{
     -fx-background-color:
+
+}
+
+.combo-box{
+    -fx-background-color: #cfedc4 ;
+}
+.spinner{
+    -fx-background-color: #cfedc4 ;
+}
+
+.bar-chart{
+    -fx-bar-fill: #2eb82e ;
 
 }
 

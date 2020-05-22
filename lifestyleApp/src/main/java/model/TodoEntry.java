@@ -11,26 +11,20 @@ public class TodoEntry {
 
     }
 
-    //Makes the ToDos show up as strings in the CourseMainPage ListView
-    @Override
-    public String toString() {
-        return this.getDescription();
-    }
-
     // Getters and Setters
-    private boolean getIsDone() {
+    public boolean getIsDone() {
         return isDone;
     }
 
-    private void setActive() {
-        this.isDone = false;
-    }
-
-    private void setInactive() {
+    public void setActive() {
         this.isDone = true;
     }
 
-    private String getDescription() {
+    public void setInactive() {
+        this.isDone = false;
+    }
+
+    public String getDescription() {
         return description;
     }
 

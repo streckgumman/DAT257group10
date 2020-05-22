@@ -16,20 +16,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="589.0" prefWidth="1198.0" stylesheets="@../lifestyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewcontroller.StatisticsPageController">
     <children>
-        <Label layoutX="394.0" layoutY="7.0" text="Statistics" textFill="#269190">
-            <font>
-                <Font name="Courier New" size="64.0" />
-            </font>
-        </Label>
-        <Button fx:id="weekButton" layoutX="436.0" layoutY="507.0" mnemonicParsing="false" onAction="#weekGraphToFront" text="Week" />
-        <Button fx:id="monthbutton" layoutX="650.0" layoutY="507.0" mnemonicParsing="false" onAction="#monthGraphToFront" text="Month" />
-        <ComboBox fx:id="ratingTopicComboBox" layoutX="537.0" layoutY="89.0" onAction="#changeTopicActionEvent" prefWidth="150.0" />
-        <Text layoutX="395.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="See statistics for" wrappingWidth="174.936767578125">
-            <font>
-                <Font size="18.0" />
-            </font>
-        </Text>
-        <AnchorPane fx:id="monthAnchorPane" layoutX="351.0" layoutY="139.0" prefHeight="350.0" prefWidth="500.0" styleClass="panels">
+        <AnchorPane fx:id="monthAnchorPane" layoutX="370.0" layoutY="122.0" prefHeight="306.0" prefWidth="474.0" style="-fx-background-color: #ECF9E7;">
             <children>
                 <LineChart fx:id="monthLineGraph" layoutY="-40.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <xAxis>
@@ -41,9 +28,9 @@
                 </LineChart>
             </children>
         </AnchorPane>
-        <AnchorPane fx:id="weekAnchorPane" layoutX="351.0" layoutY="139.0" prefHeight="350.0" prefWidth="500.0" styleClass="panels">
+        <AnchorPane fx:id="weekAnchorPane" layoutX="351.0" layoutY="63.0" prefHeight="426.0" prefWidth="500.0" styleClass="panels">
             <children>
-                <BarChart fx:id="weekGraph" layoutX="-2.0" layoutY="1.0" prefHeight="281.0" prefWidth="439.0" styleClass="panels" title="Week" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                <BarChart fx:id="weekGraph" layoutY="60.0" prefHeight="306.0" prefWidth="474.0" styleClass="bar-chart" stylesheets="@../lifestyle.css" AnchorPane.topAnchor="60.0">
                     <xAxis>
                         <CategoryAxis side="BOTTOM" />
                     </xAxis>
@@ -51,105 +38,143 @@
                         <NumberAxis side="LEFT" />
                     </yAxis>
                 </BarChart>
+              <Text layoutX="94.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="headers" text="See statistics for" wrappingWidth="137.936767578125">
+                  <font>
+                      <Font size="18.0" />
+                  </font>
+              </Text>
+              <ComboBox fx:id="ratingTopicComboBox" layoutX="250.0" layoutY="25.0" onAction="#changeTopicActionEvent" prefWidth="150.0" />
+              <Label fx:id="weekMonthLabel" layoutX="14.0" layoutY="387.0" styleClass="headers" stylesheets="@../lifestyle.css" text="Week">
+                  <font>
+                      <Font size="18.0" />
+                  </font>
+              </Label>
+              <Button fx:id="weekButton" layoutX="325.0" layoutY="369.0" mnemonicParsing="false" onAction="#weekGraphToFront" prefHeight="43.0" prefWidth="70.0" styleClass="save-Button" stylesheets="@../lifestyle.css" text="Week" />
+              <Button fx:id="monthbutton" layoutX="406.0" layoutY="369.0" mnemonicParsing="false" onAction="#monthGraphToFront" prefHeight="43.0" prefWidth="70.0" styleClass="save-Button" stylesheets="@../lifestyle.css" text="Month" />
+              <Label fx:id="specWeekMonthLabel" layoutX="71.0" layoutY="387.0" prefHeight="23.0" prefWidth="46.0" styleClass="headers" stylesheets="@../lifestyle.css">
+                  <font>
+                      <Font size="18.0" />
+                  </font>
+              </Label>
             </children>
         </AnchorPane>
-        <Label fx:id="weekMonthLabel" layoutX="716.0" layoutY="88.0" text="Week">
-            <font>
-                <Font size="18.0" />
-            </font>
-        </Label>
-        <Label fx:id="specWeekMonthLabel" layoutX="785.0" layoutY="88.0" text="Label">
-            <font>
-                <Font size="18.0" />
-            </font>
-        </Label>
-        <AnchorPane layoutX="888.0" layoutY="139.0" prefHeight="146.0" prefWidth="281.0" styleClass="panels">
+        <AnchorPane layoutX="888.0" layoutY="63.0" prefHeight="200.0" prefWidth="281.0" styleClass="panels">
             <children>
-                <Text layoutX="14.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Average Water Intake" wrappingWidth="249.2384033203125">
-                    <font>
-                        <Font name="American Typewriter" size="21.0" />
-                    </font>
-                </Text>
-                <ImageView fitHeight="64.0" fitWidth="70.0" layoutX="8.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@../images/full_glass.png" />
-                    </image>
-                </ImageView>
-                <Label fx:id="averageWaterLabel" layoutX="79.0" layoutY="73.0" prefHeight="33.0" prefWidth="150.0" text="No input">
-                    <font>
-                        <Font size="20.0" />
-                    </font></Label>
-                <Text layoutX="14.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last 7 days since selected date" />
+            <AnchorPane layoutX="20.0" layoutY="73.0" prefHeight="99.0" prefWidth="242.0" styleClass="statistics-panels" stylesheets="@../lifestyle.css" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="19.0">
+               <children>
+                      <Label fx:id="averageWaterLabel" layoutX="92.0" layoutY="33.0" prefHeight="33.0" prefWidth="123.0" styleClass="headers" stylesheets="@../lifestyle.css" text="No input">
+                          <font>
+                              <Font size="20.0" />
+                          </font>
+                  </Label>
+                      <ImageView fitHeight="53.0" fitWidth="53.0" layoutX="14.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                              <Image url="@../images/full_glass.png" />
+                          </image>
+                      </ImageView>
+               </children>
+            </AnchorPane>
+            <Label layoutX="25.0" layoutY="14.0" prefHeight="29.0" prefWidth="242.0" styleClass="headers" stylesheets="@../lifestyle.css" text="Average Water Intake" AnchorPane.topAnchor="15.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="49.0" styleClass="headers" stylesheets="@../lifestyle.css" text="Statistics on the last 7 days from selected date." AnchorPane.topAnchor="48.0" />
             </children>
             <effect>
                 <DropShadow />
             </effect>
         </AnchorPane>
-      <AnchorPane layoutX="888.0" layoutY="343.0" prefHeight="146.0" prefWidth="281.0" styleClass="panels">
+      <AnchorPane layoutX="888.0" layoutY="289.0" prefHeight="200.0" prefWidth="281.0" styleClass="panels">
          <children>
-            <Text layoutX="14.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Average Sleep" wrappingWidth="249.2384033203125">
+            <AnchorPane layoutX="20.0" layoutY="83.0" prefHeight="99.0" prefWidth="242.0" styleClass="statistics-panels" stylesheets="@../lifestyle.css" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="19.0">
+               <children>
+                  <Label fx:id="averageSleepLabel" layoutX="79.0" layoutY="34.0" prefHeight="33.0" prefWidth="150.0" styleClass="headers" stylesheets="@../lifestyle.css" text="No input">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="43.0" fitWidth="46.0" layoutX="21.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/half-moon.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Label layoutX="25.0" layoutY="14.0" styleClass="headers" stylesheets="@../lifestyle.css" text="Average time off sleep" AnchorPane.topAnchor="15.0">
                <font>
-                  <Font name="American Typewriter" size="21.0" />
-               </font>
-            </Text>
-            <ImageView fitHeight="54.0" fitWidth="53.0" layoutX="19.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../images/half-moon.png" />
-               </image>
-            </ImageView>
-            <Label fx:id="averageSleepLabel" layoutX="79.0" layoutY="73.0" prefHeight="33.0" prefWidth="150.0" text="No input">
-               <font>
-                  <Font size="20.0" />
+                  <Font size="24.0" />
                </font>
             </Label>
-            <Text layoutX="14.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last 7 days since selected date" />
+            <Label layoutX="20.0" layoutY="43.0" styleClass="headers" stylesheets="@../lifestyle.css" text="Statistics on the last 7 days from selected date." AnchorPane.topAnchor="48.0" />
          </children>
          <effect>
             <DropShadow />
          </effect>
       </AnchorPane>
-      <AnchorPane layoutX="34.0" layoutY="139.0" prefHeight="350.0" prefWidth="281.0" styleClass="panels">
+      <AnchorPane layoutX="33.0" layoutY="63.0" prefHeight="426.0" prefWidth="281.0" styleClass="panels">
          <children>
-            <Text layoutX="14.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Average Workout" wrappingWidth="249.2384033203125">
+            <AnchorPane layoutX="16.0" layoutY="343.0" prefHeight="64.0" prefWidth="249.0" styleClass="statistics-panels" stylesheets="@../lifestyle.css" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="16.0">
+               <children>
+                  <ImageView fitHeight="43.0" fitWidth="46.0" layoutX="15.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="12.0">
+                     <image>
+                        <Image url="@../images/hours.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="averageWorkoutTime" layoutX="84.0" layoutY="16.0" prefHeight="33.0" prefWidth="142.0" styleClass="headers" stylesheets="@../lifestyle.css" text="No input" AnchorPane.leftAnchor="84.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="18.0" layoutY="244.0" prefHeight="64.0" prefWidth="249.0" styleClass="statistics-panels" stylesheets="@../lifestyle.css" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="240.0">
+               <children>
+                  <ImageView fitHeight="43.0" fitWidth="46.0" layoutX="13.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="12.0">
+                     <image>
+                        <Image url="@../images/hours.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="totalWorkoutTime" layoutX="85.0" layoutY="20.0" prefHeight="24.0" prefWidth="138.0" styleClass="headers" stylesheets="@../lifestyle.css" text="No input" AnchorPane.leftAnchor="84.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="17.0" layoutY="137.0" prefHeight="64.0" prefWidth="249.0" styleClass="statistics-panels" stylesheets="@../lifestyle.css" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="16.0">
+               <children>
+                  <ImageView fitHeight="53.0" fitWidth="53.0" layoutX="14.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="6.0">
+                     <image>
+                        <Image url="@../images/sports.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Label fx:id="averageWorkoutIntensity" layoutX="89.0" layoutY="152.0" prefHeight="33.0" prefWidth="123.0" styleClass="headers" stylesheets="@../lifestyle.css" text="No input" AnchorPane.leftAnchor="100.0">
                <font>
-                  <Font name="American Typewriter" size="21.0" />
-               </font>
-            </Text>
-            <ImageView fitHeight="64.0" fitWidth="70.0" layoutX="19.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../images/sports.png" />
-               </image>
-            </ImageView>
-            <Label fx:id="averageWorkoutIntensity" layoutX="95.0" layoutY="87.0" prefHeight="33.0" prefWidth="175.0" text="No input">
-               <font>
-                  <Font size="20.0" />
+                  <Font name="Cambria" size="20.0" />
                </font>
             </Label>
-            <Text layoutX="14.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last 7 days since selected date" />
-            <ImageView fitHeight="64.0" fitWidth="70.0" layoutX="19.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../images/timeeee.png" />
-               </image>
-            </ImageView>
-            <Label fx:id="averageWorkoutTime" layoutX="95.0" layoutY="151.0" prefHeight="33.0" prefWidth="175.0" text="No input">
+            <Label layoutX="79.0" layoutY="19.0" styleClass="headers" stylesheets="@../lifestyle.css" text="Workout">
                <font>
-                  <Font size="20.0" />
+                  <Font size="36.0" />
                </font>
             </Label>
-            <ImageView fitHeight="64.0" fitWidth="70.0" layoutX="19.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../images/timeeee.png" />
-               </image>
-            </ImageView>
-            <Text layoutX="16.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Workout Time" wrappingWidth="249.2384033203125">
+            <Label layoutX="12.0" layoutY="102.0" prefHeight="30.0" prefWidth="242.0" styleClass="headers" stylesheets="@../lifestyle.css" text="Average workout intensity " wrapText="true" AnchorPane.leftAnchor="16.0">
                <font>
-                  <Font name="American Typewriter" size="21.0" />
+                  <Font size="18.0" />
                </font>
-            </Text>
-            <Text layoutX="16.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last 7 days since selected date" />
-            <Label fx:id="totalWorkoutTime" layoutX="95.0" layoutY="290.0" text="No input">
+            </Label>
+            <Label layoutX="13.0" layoutY="213.0" prefHeight="23.0" prefWidth="257.0" styleClass="headers" stylesheets="@../lifestyle.css" text="Average time spent working out" AnchorPane.leftAnchor="13.0" AnchorPane.topAnchor="210.0">
                <font>
-                  <Font size="20.0" />
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="62.0" styleClass="headers" stylesheets="@../lifestyle.css" text="Statistics on the last 7 days from selected date." />
+            <Label layoutX="14.0" layoutY="314.0" styleClass="headers" stylesheets="@../lifestyle.css" text="Total time spent working out" AnchorPane.leftAnchor="16.0">
+               <font>
+                  <Font size="18.0" />
                </font>
             </Label>
          </children>

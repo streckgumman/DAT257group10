@@ -59,6 +59,7 @@ public class StatisticsPageController implements page, DateObserver, RatingObser
 
 
     public void initPage(MainModel model, Optional<MainPageController> parent) {
+
         this.mainmodel = model;
         mainmodel.attachDateOb(this); //For Date
         mainmodel.attachRateOb(this); //For Rate
@@ -89,6 +90,7 @@ public class StatisticsPageController implements page, DateObserver, RatingObser
         isWeekGraphShowing = false;
         weekMonthLabel.setText("Month: ");
         specWeekMonthLabel.setText("" + currentDate.getMonth().toString());
+
     }
 
     @FXML
@@ -221,11 +223,13 @@ public class StatisticsPageController implements page, DateObserver, RatingObser
     //-----------init GUI  methods------------
 
     private void initGraphs() {
+
+
         weekGraph.getYAxis().setLabel("Rating");
         weekGraph.getYAxis().setAutoRanging(false);
         NumberAxis weekAxisY = (NumberAxis) weekGraph.getYAxis();
         weekAxisY.setLowerBound(0);
-        weekAxisY.setUpperBound(5);
+        weekAxisY.setUpperBound(6);
 
 
         CategoryAxis weekAxisX = (CategoryAxis) weekGraph.getXAxis();
@@ -394,7 +398,7 @@ public class StatisticsPageController implements page, DateObserver, RatingObser
 
         averageWorkoutTime.setText(new DecimalFormat("#.#").format(noDecimalHours) + " hours " +
                 new DecimalFormat("#.#").format((int) fullMinutes) + " mins");
-        averageWorkoutIntensity.setText("Intensity: " + new DecimalFormat("#.#").format(workoutIntensity) + " / 5");
+        averageWorkoutIntensity.setText(new DecimalFormat("#.#").format(workoutIntensity) + " / 5");
         totalWorkoutTime.setText(new DecimalFormat("#.#").format(noDecimalTotalHours) + " hours " +
                 new DecimalFormat("#.#").format((int) fullTotalMinutes) + " mins");
     }
