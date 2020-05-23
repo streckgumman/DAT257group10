@@ -1,7 +1,7 @@
 # DAT257group10
   
 **How to run the LifeStyle Application:**  
-To run the program we use IntelliJ and Java 8.
+To run the program we use IntelliJ and Java.  
   
 **Link to trello:**  
 https://trello.com/b/wqvnnadf/dat257-group-10  
