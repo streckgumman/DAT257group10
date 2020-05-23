@@ -28,10 +28,10 @@ There is a separate folder for every member of the group. The individual reflect
 CID: ebbari.
 gituser: ebbari.  
 Week 1: Created ratings, w Hanna T.   
-Week 2: Created weekly statistics graph and statistics page, w Naomi.
-Week 3: Created monthly statistics graph and statistics page, w Naomi and created weather function on mainpage.   
+Week 2: Created weekly statistics graph and statistics page, w Naomi.  
+Week 3: Created monthly statistics graph and statistics page, w Naomi and created weather function on mainpage.    
 Week 4: Made everything automatically update, w Hanna T and Linnea.   
-Week 5: Create updated to-do with check off function and prepared demo, with Hanna B and Linnea.
+Week 5: Create updated to-do with check off function and prepared demo, with Hanna B and Linnea.  
  
    
 **Oscar Forsberg:**  
