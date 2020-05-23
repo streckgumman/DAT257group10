@@ -74,11 +74,11 @@ Week 5:
 **Linnea Johanson:**  
 CID:  
 gituser: streckgumman.  
-Week 1:
+Week 1:  
 Week 2:  
 Week 3:  
-Week 4: Made everything automatically update, w Ebba and Hanna T 
-Week 5: Create updated to-do with check off function and prepared demo, with Hanna B and Ebba. 
+Week 4: Made everything automatically update, w Ebba and Hanna T   
+Week 5: Create updated to-do with check off function and prepared demo, with Hanna B and Ebba.   
  
   
 **Johanna Wiberg:**  
