@@ -25,13 +25,14 @@ There is a separate folder for every member of the group. The individual reflect
 (first two weeks excluded)  
   
 **Ebba Richnau:**  
-CID:  
+CID: ebbari.
 gituser: ebbari.  
-Week 1: Created ratings, w Hanna T   
-Week 2:   
-Week 3:   
-Week 4: Made everything automatically update, w Hanna T and Linnea   
-Week 5:  
+Week 1: Created ratings, w Hanna T.   
+Week 2: Created weekly statistics graph and statistics page, w Naomi.
+Week 3: Created monthly statistics graph and statistics page, w Naomi and created weather function on mainpage.   
+Week 4: Made everything automatically update, w Hanna T and Linnea.   
+Week 5: Create updated to-do with check off function and prepared demo, with Hanna B and Linnea.
+ 
    
 **Oscar Forsberg:**  
 CID: oscfors.  
@@ -58,14 +59,15 @@ Week 1:
 Week 2:  
 Week 3:  
 Week 4: Create more statistics, w Oscar.  
-Week 5:  
+Week 5: Create updated to-do with check off function and prepared demo, with Ebba and Linnea. 
+
   
 **Naomi Espinosa:**  
 CID:  
 gituser: naomiespinosa.  
 Week 1:  
-Week 2:  
-Week 3:  
+Week 2: Created weekly statistics graph and statistics page, w Ebba. 
+Week 3: Created monthly statistics graph and statistics page, w Ebba. 
 Week 4:  
 Week 5:  
   
@@ -76,7 +78,8 @@ Week 1:
 Week 2:  
 Week 3:  
 Week 4: Made everything automatically update, w Ebba and Hanna T 
-Week 5:  
+Week 5: Create updated to-do with check off function and prepared demo, with Hanna B and Ebba. 
+ 
   
 **Johanna Wiberg:**  
 CID: jwiberg.  
