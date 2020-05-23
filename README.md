@@ -66,8 +66,8 @@ Week 5: Create updated to-do with check off function and prepared demo, with Ebb
 CID:  
 gituser: naomiespinosa.  
 Week 1:  
-Week 2: Created weekly statistics graph and statistics page, w Ebba. 
-Week 3: Created monthly statistics graph and statistics page, w Ebba. 
+Week 2: Created weekly statistics graph and statistics page, w Ebba.  
+Week 3: Created monthly statistics graph and statistics page, w Ebba.  
 Week 4:  
 Week 5:  
   
