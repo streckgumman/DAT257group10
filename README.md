@@ -25,7 +25,7 @@ There is a separate folder for every member of the group. The individual reflect
 (first two weeks excluded)  
   
 **Ebba Richnau:**  
-CID: ebbari.
+CID: ebbari.  
 gituser: ebbari.  
 Week 1: Created ratings, w Hanna T.   
 Week 2: Created weekly statistics graph and statistics page, w Naomi.  
