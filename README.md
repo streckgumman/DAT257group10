@@ -73,11 +73,11 @@ Week 5:
 **Linnea Johanson:**  
 CID: johalinn  
 gituser: streckgumman.  
-Week 1: Created first domain model and some use cases.
+Week 1: Created first domain model and some use cases.  
 Week 2: Created water intake w. Johanna and created Sleep-tracker w. Johanna and Hanna B.  
-Week 3: Worked on Training and Health page w. Johanna and Hanna B. 
+Week 3: Worked on Training and Health page w. Johanna and Hanna B.  
 Week 4: Made everything automatically update, w Ebba and Hanna T   
-Week 5: Create updated to-do with check off function and prepared demo, with Hanna B and Ebba.    
+Week 5: Create updated to-do with check off function and prepared demo, with Hanna B and Ebba.     
  
   
 **Johanna Wiberg:**  
