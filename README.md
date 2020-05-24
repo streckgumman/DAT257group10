@@ -85,7 +85,7 @@ CID: jwiberg.
 gituser: johannawiberg.   
 Week 1: Create mainpage, switch between pages, w. Oscar.    
 Week 2: Created water intake w. Linnea and created Sleep-tracker w. Hanna B and Linnea.  
-Week 3: Worked on Training and Health page w. Linnea and Hanna B. 
+Week 3: Worked on Training and Health page w. Linnea and Hanna B.  
 Week 4:  
 Week 5: 
   
