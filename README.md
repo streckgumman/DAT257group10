@@ -53,13 +53,13 @@ Week 4: Made everything automatically update, w Ebba and Linnea
 Week 5: Fix Gradle and Json, prepare repo, w Oscar.  
    
 **Hanna Bergland:**  
-CID:  
+CID: hanbergl
 gituser: berglandhanna.  
-Week 1:  
-Week 2:  
-Week 3: Worked on Training and Health page w. Johanna and Linnea
-Week 4: Create more statistics, w Oscar.  
-Week 5: Create updated to-do with check off function and prepared demo, with Ebba and Linnea. 
+Week 1: Created journal, w. Naomi.
+Week 2: Created Sleep-tracker w. Johanna and Linnea.
+Week 3: Worked on Training and Health page, w. Johanna and Linnea.
+Week 4: Create more statistics, w. Oscar + bugfix on sleep-tracker.
+Week 5: Create updated to-do with check off function and prepared demo, w. Ebba and Linnea.  
 
   
 **Naomi Espinosa:**  
@@ -75,8 +75,8 @@ Week 5:
 CID: johalinn 
 gituser: streckgumman.  
 Week 1: Created first domain model and some use cases.
-Week 2: Created water intake w. Johanna 
-Week 3: Worked on Training and Health page w. Johanna and Hanna 
+Week 2: Created water intake w. Johanna and created Sleep-tracker w. Johanna and Hanna B.
+Week 3: Worked on Training and Health page w. Johanna and Hanna B
 Week 4: Made everything automatically update, w Ebba and Hanna T   
 Week 5: Create updated to-do with check off function and prepared demo, with Hanna B and Ebba.   
  
@@ -85,7 +85,7 @@ Week 5: Create updated to-do with check off function and prepared demo, with Han
 CID: jwiberg.  
 gituser: johannawiberg.   
 Week 1: Create mainpage, switch between pages, w. Oscar.  
-Week 2: Created water intake w. Linnea
+Week 2: Created water intake w. Linnea and created Sleep-tracker w. Hanna B and Linnea.
 Week 3: Worked on Training and Health page w. Linnea and Hanna B
 Week 4:  
 Week 5: 
