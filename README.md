@@ -53,7 +53,7 @@ Week 4: Made everything automatically update, w Ebba and Linnea
 Week 5: Fix Gradle and Json, prepare repo, w Oscar.  
    
 **Hanna Bergland:**  
-CID: hanbergl. 
+CID: hanbergl.  
 gituser: berglandhanna.  
 Week 1: Created journal, w. Naomi.  
 Week 2: Created Sleep-tracker w. Johanna and Linnea.  
