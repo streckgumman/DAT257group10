@@ -54,6 +54,13 @@ Konflikter löses i första hand genom diskussion och i andra hand genom röstni
        E.     Regelbrott
 Regelbrott kan leda till rimlig konsekvens. Till exempel att om en gruppmedlem inte bidrar till en inlämning så är en rimlig konsekvens att resten av gruppen meddelar sitt missnöje till examinatorn.
 
+	F. Övrigt
+Definition of done:
+Koden ska vara strukturerad och väl uppbyggd
+Tillhörande user stories ska vara uppfylld
+Applikationen fungerar som den ska och ser bra ut
+Branchen ska mergeas med master och fungera som den ska 
+
 
 3. Deklaration 
 Vid signatur godkänner alla medlemmar reglerna och riktningarna vi tagit upp ovan. 
