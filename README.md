@@ -57,7 +57,7 @@ CID:
 gituser: berglandhanna.  
 Week 1:  
 Week 2:  
-Week 3:  
+Week 3: Worked on Training and Health page w. Johanna and Linnea
 Week 4: Create more statistics, w Oscar.  
 Week 5: Create updated to-do with check off function and prepared demo, with Ebba and Linnea. 
 
@@ -74,9 +74,9 @@ Week 5:
 **Linnea Johanson:**  
 CID:  
 gituser: streckgumman.  
-Week 1:  
-Week 2:  
-Week 3:  
+Week 1: Created first domain model and some use cases.
+Week 2: Created water intake w. Johanna 
+Week 3: Worked on Training and Health page w. Johanna and Hanna B
 Week 4: Made everything automatically update, w Ebba and Hanna T   
 Week 5: Create updated to-do with check off function and prepared demo, with Hanna B and Ebba.   
  
@@ -85,8 +85,8 @@ Week 5: Create updated to-do with check off function and prepared demo, with Han
 CID: jwiberg.  
 gituser: johannawiberg.   
 Week 1: Create mainpage, switch between pages, w. Oscar.  
-Week 2:  
-Week 3:  
+Week 2: Created water intake w. Linnea
+Week 3: Worked on Training and Health page w. Linnea and Hanna B
 Week 4:  
 Week 5: 
   
