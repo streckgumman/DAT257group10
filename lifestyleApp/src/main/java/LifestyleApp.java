@@ -27,6 +27,7 @@ public class LifestyleApp extends Application {
             }
         }
 
+        // can be more users
         model.login("My Lifestyle");
         model.setDate(LocalDate.now());
 
