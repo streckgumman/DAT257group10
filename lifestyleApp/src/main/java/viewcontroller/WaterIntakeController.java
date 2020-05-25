@@ -101,6 +101,7 @@ public class WaterIntakeController implements page {
 
     @FXML
     void intake6(MouseEvent event) {
+
         if (water6.getBlendMode() == BlendMode.SRC_OVER && water7.getBlendMode() == BlendMode.OVERLAY) {
             resetGlasses();
         } else {
