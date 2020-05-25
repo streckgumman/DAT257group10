@@ -6,8 +6,14 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
+import javafx.scene.effect.BlurType;
+import javafx.scene.effect.DropShadow;
+import javafx.scene.effect.DropShadow;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Border;
+import javafx.scene.paint.Color;
 import model.MainModel;
 import viewcontroller.observers.DateObserver;
 import viewcontroller.observers.MainObserver;
@@ -40,8 +46,34 @@ public class MainPageController implements UserObserver, page {
     @FXML
     private AnchorPane mainPageAnchorPane;
 
+
+    @FXML
+    private ImageView homePic;
+
+    @FXML
+    private ImageView statsPic;
+
+    @FXML
+    private ImageView settingsPic;
+
+
+    @FXML
+    private ImageView fitnessPic;
+
+    private DropShadow dropShadow = new DropShadow();
+
+
+    private void setShadow(){
+    dropShadow.setHeight(22);
+    dropShadow.setWidth(22);
+    dropShadow.setBlurType(BlurType.THREE_PASS_BOX);
+    dropShadow.setColor(Color.BLACK);
+
+    }
+
     @FXML
     void showHomePage(ActionEvent event) {
+
         showPage(homePage);
     }
 
@@ -64,6 +96,7 @@ public class MainPageController implements UserObserver, page {
 
     @FXML
     void showFitnessPage(MouseEvent event) {
+
         showPage(fitnessPage);
         notifyAllObservers();
     }

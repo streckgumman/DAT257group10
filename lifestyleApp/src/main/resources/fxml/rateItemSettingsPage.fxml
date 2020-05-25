@@ -9,7 +9,7 @@
    <children>
       <AnchorPane fx:id="confirmationAnchorPane" layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="63.0" prefWidth="481.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Text layoutX="14.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Är du säker?" wrappingWidth="356.37939453125">
+            <Text layoutX="14.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="headers" text="Är du säker?" wrappingWidth="356.37939453125">
                <font>
                   <Font size="30.0" />
                </font>
@@ -29,7 +29,7 @@
          <children>
             <Text fx:id="ratingName" layoutX="14.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="369.22900390625">
                <font>
-                  <Font size="30.0" />
+                  <Font name="Constantia" size="30.0" />
                </font>
             </Text>
             <Button alignment="CENTER" contentDisplay="CENTER" layoutX="462.0" layoutY="-1.0" mnemonicParsing="false" onAction="#delete" prefHeight="63.0" prefWidth="78.0" styleClass="cross-button2" stylesheets="@../lifestyle.css" text="Ta bort" textFill="WHITE" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="462.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-1.0">

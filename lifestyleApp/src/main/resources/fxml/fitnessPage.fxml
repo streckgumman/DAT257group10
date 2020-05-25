@@ -123,7 +123,7 @@
                </children>
             </FlowPane>
             <Button fx:id="deleteWorkoutButton" layoutX="207.0" layoutY="345.0" mnemonicParsing="false" onAction="#deleteWorkout" prefHeight="25.0" prefWidth="188.0" styleClass="cross-button2" stylesheets="@../lifestyle.css" text="Delete workout" />
-            <Label layoutX="174.0" layoutY="14.0" styleClass="headers" stylesheets="@../lifestyle.css" text="Todays workout">
+            <Label layoutX="174.0" layoutY="14.0" styleClass="headers" stylesheets="@../lifestyle.css" text="Todays workouts">
                <font>
                   <Font size="33.0" />
                </font>

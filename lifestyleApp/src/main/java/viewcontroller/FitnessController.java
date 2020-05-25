@@ -139,6 +139,9 @@ public class FitnessController implements page, DateObserver, MainObserver {
             samePageErrorWorkout.setText("");
             loadWorkout();
             resetInputs();
+            fillAllFieldsLabel.setText("");
+            sliderIntensity.setValue(1);
+            intensityLabel.setText("1");
         }else{
             fillAllFieldsLabel.setText("*Fill in all fields to save the workout.");
         }
