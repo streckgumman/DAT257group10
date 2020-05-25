@@ -64,10 +64,10 @@ Week 5: Create updated to-do with check off function and prepared demo, w. Ebba 
 **Naomi Espinosa:**  
 CID: shekka
 gituser: naomiespinosa.  
-Week 1:  Created Jounral functionality w/ Hanna.
+Week 1:  Created Jounral functionality w/ Hanna.  
 Week 2: Created weekly statistics graph and statistics page, w Ebba.  
 Week 3: Created monthly statistics graph and statistics page, w Ebba.  
-Week 4: Worked/improved on the GUI for the different pages in appl. w/ Johanna.
+Week 4: Worked/improved on the GUI for the different pages in appl. w/ Johanna.  
 Week 5: Added new settings (default sleep, and water intake) the user can change.
   
 **Linnea Johanson:**  
@@ -86,6 +86,6 @@ gituser: johannawiberg.
 Week 1: Create mainpage, switch between pages, w. Oscar.    
 Week 2: Created water intake w. Linnea and created Sleep-tracker w. Hanna B and Linnea.  
 Week 3: Worked on Training and Health page w. Linnea and Hanna B.  
-Week 4: Worked/improved on the GUI for the different pages in appl. w/ Naomi.
+Week 4: Worked/improved on the GUI for the different pages in appl. w/ Naomi.  
 Week 5: 
  
