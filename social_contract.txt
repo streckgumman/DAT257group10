@@ -42,7 +42,7 @@ Vid muntlig kommunikation används applikationen discord.
      C.   Möten
 	i) Schemalagt
 Handledning varje vecka på måndag förmiddag.
-Ändring 30/4 -20: Möten hålls två gånger i veckan, måndag och tordag, om inget annat bestäms. 
+Ändring 30/4 -20: Möten hålls två gånger i veckan, måndag och torsdag, om inget annat bestäms. 
 Nästa mötes tid och dag bekräftas eller bestäms i slutet av varje möte. 
  	ii) Närvaro
 Om man inte meddelat annat förväntas personen i fråga att delta på mötet. 
@@ -55,7 +55,8 @@ Konflikter löses i första hand genom diskussion och i andra hand genom röstni
 Regelbrott kan leda till rimlig konsekvens. Till exempel att om en gruppmedlem inte bidrar till en inlämning så är en rimlig konsekvens att resten av gruppen meddelar sitt missnöje till examinatorn.
 
 	F. Övrigt
-Definition of done:
+Ändring 4/5 -20:
+Definition of done
 Koden ska vara strukturerad och väl uppbyggd
 Tillhörande user stories ska vara uppfylld
 Applikationen fungerar som den ska och ser bra ut
