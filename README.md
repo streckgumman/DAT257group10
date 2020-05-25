@@ -2,6 +2,14 @@
   
 **How to run the LifeStyle Application:**  
 To run the program we use IntelliJ and Java.  
+
+**How to use the LifeStyle Application:**  
+The application is a digital lifestyle application in which the user can write their own personal diary. 
+The home page title can be set on the settings page and entered values will be saved to that specific user. On the settings page the user can also set a default water glass size, default sleep times and customize their rateings.
+On the mainpage the user can rate their day, register todays weather, water intake and sleep, write a todo-list and journal. 
+On the workout page the user can register their workouts with training type and intensity. 
+On the statistics page the user can see weekly and monthly statistics for rateings as well as statistics for workouts, water intake and average sleep time. 
+The target group is mainly students who want to have a digital diary where they can keep track of their wellbeing over time.
   
 **Link to trello:**  
 https://trello.com/b/wqvnnadf/dat257-group-10  
@@ -62,13 +70,13 @@ Week 4: Create more statistics, w. Oscar + bugfix on sleep-tracker.
 Week 5: Create updated to-do with check off function and prepared demo, w. Ebba and Linnea.  
   
 **Naomi Espinosa:**  
-CID:  
+CID: shekka
 gituser: naomiespinosa.  
-Week 1:  
+Week 1:  Created Jounral functionality w/ Hanna.  
 Week 2: Created weekly statistics graph and statistics page, w Ebba.  
 Week 3: Created monthly statistics graph and statistics page, w Ebba.  
-Week 4:  
-Week 5:  
+Week 4: Worked/improved on the GUI for the different pages in appl. w/ Johanna.  
+Week 5: Added new settings (default sleep, and water intake) the user can change.
   
 **Linnea Johanson:**  
 CID: johalinn  
@@ -86,6 +94,6 @@ gituser: johannawiberg.
 Week 1: Create mainpage, switch between pages, w. Oscar.    
 Week 2: Created water intake w. Linnea and created Sleep-tracker w. Hanna B and Linnea.  
 Week 3: Worked on Training and Health page w. Linnea and Hanna B.  
-Week 4:  
-Week 5: 
-  
+Week 4: Worked/improved on the GUI for the different pages in appl. w/ Naomi.  
+Week 5: Fixed GUI in statistics page and fixed bugs in appl.
+ 
