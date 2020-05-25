@@ -95,32 +95,60 @@ public class FitnessController implements page, DateObserver, MainObserver {
 
     @FXML
     void setTrainingTypeMindFull(MouseEvent event) {
-        type = WorkoutEntry.TrainingType.MINDFULNESS;
-        feedbackMindfullness();
+        if(type == null || !(type.toString().equals("MINDFULNESS"))){
+            type = WorkoutEntry.TrainingType.MINDFULNESS;
+            feedbackMindfullness();
+        }
+        else{
+            resetInputs();
+            resetPictures();
+        }
+
     }
 
     @FXML
     void setTrainingTypeOther(MouseEvent event) {
-        type = WorkoutEntry.TrainingType.OTHER;
-        feedbackOther();
+        if(type == null || !(type.toString().equals("OTHER"))) {
+            type = WorkoutEntry.TrainingType.OTHER;
+            feedbackOther();
+        }else {
+            resetPictures();
+            resetInputs();
+        }
     }
 
     @FXML
     void setTrainingTypeRunning(MouseEvent event) {
-        type = WorkoutEntry.TrainingType.RUNNING;
-        feedbackRunning();
+        if(type == null || !(type.toString().equals("RUNNING"))) {
+            type = WorkoutEntry.TrainingType.RUNNING;
+            feedbackRunning();
+        }else {
+            resetPictures();
+            resetInputs();
+        }
     }
 
     @FXML
     void setTrainingTypeWalk(MouseEvent event) {
-        type = WorkoutEntry.TrainingType.WALKING;
-        feedbackWalking();
+        if(type == null || !(type.toString().equals("WALKING"))) {
+            type = WorkoutEntry.TrainingType.WALKING;
+            feedbackWalking();
+        }else {
+            resetPictures();
+            resetInputs();
+        }
     }
 
     @FXML
     void setTrainingTypeWeight(MouseEvent event) {
-        type = WorkoutEntry.TrainingType.WEIGHT;
-        feedbackWeight();
+        if(type == null || !(type.toString().equals("WEIGHT"))) {
+            type = WorkoutEntry.TrainingType.WEIGHT;
+            feedbackWeight();
+        }
+        else {
+            resetPictures();
+            resetInputs();
+        }
     }
 
     private void setTraingsTypeNull(){
@@ -156,6 +184,16 @@ public class FitnessController implements page, DateObserver, MainObserver {
         }
         workoutListView.setItems(workoutEntries);
 
+    }
+
+
+
+    void fill() {
+        walkingPicture.setBlendMode(BlendMode.SRC_OVER);
+        runningPictures.setBlendMode(BlendMode.SRC_OVER);
+        mindfullnessPicuture.setBlendMode(BlendMode.SRC_OVER);
+        otherPicture.setBlendMode(BlendMode.SRC_OVER);
+        weightPicture.setBlendMode(BlendMode.SRC_OVER);
     }
 
     @FXML

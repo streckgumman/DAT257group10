@@ -10,6 +10,7 @@ import model.RatingEntry;
 import model.WaterEntry;
 import viewcontroller.observers.DateObserver;
 
+import java.text.DecimalFormat;
 import java.util.Optional;
 
 public class WaterIntakeController implements page {
@@ -170,7 +171,7 @@ public class WaterIntakeController implements page {
         water8.setBlendMode(BlendMode.OVERLAY);
         water9.setBlendMode(BlendMode.OVERLAY);
         water10.setBlendMode(BlendMode.OVERLAY);
-        drinkLabel.setText(Double.toString(glassVolume));
+        drinkLabel.setText(String.valueOf(new DecimalFormat("#.#").format(glassVolume*1))+ " L");
         we.setWaterEntry(glassVolume);
         model.statsChanged();
     }
@@ -186,7 +187,7 @@ public class WaterIntakeController implements page {
         water8.setBlendMode(BlendMode.OVERLAY);
         water9.setBlendMode(BlendMode.OVERLAY);
         water10.setBlendMode(BlendMode.OVERLAY);
-        drinkLabel.setText(Double.toString(glassVolume*2));
+        drinkLabel.setText(String.valueOf(new DecimalFormat("#.#").format(glassVolume*2)) + " L");
         we.setWaterEntry(glassVolume*2);
         model.statsChanged();
     }
@@ -202,7 +203,7 @@ public class WaterIntakeController implements page {
         water8.setBlendMode(BlendMode.OVERLAY);
         water9.setBlendMode(BlendMode.OVERLAY);
         water10.setBlendMode(BlendMode.OVERLAY);
-        drinkLabel.setText(Double.toString(glassVolume*3));
+        drinkLabel.setText(String.valueOf(new DecimalFormat("#.#").format(glassVolume*3)) + " L");
         we.setWaterEntry(glassVolume*3);
         model.statsChanged();
     }
@@ -218,7 +219,7 @@ public class WaterIntakeController implements page {
         water8.setBlendMode(BlendMode.OVERLAY);
         water9.setBlendMode(BlendMode.OVERLAY);
         water10.setBlendMode(BlendMode.OVERLAY);
-        drinkLabel.setText(Double.toString(glassVolume*4));
+        drinkLabel.setText(String.valueOf(new DecimalFormat("#.#").format(glassVolume*4))+" L");
         we.setWaterEntry(glassVolume*4);
         model.statsChanged();
     }
@@ -234,7 +235,7 @@ public class WaterIntakeController implements page {
         water8.setBlendMode(BlendMode.OVERLAY);
         water9.setBlendMode(BlendMode.OVERLAY);
         water10.setBlendMode(BlendMode.OVERLAY);
-        drinkLabel.setText(Double.toString(glassVolume*5));
+        drinkLabel.setText(String.valueOf(new DecimalFormat("#.#").format(glassVolume*5)) + " L");
         we.setWaterEntry(glassVolume*5);
         model.statsChanged();
     }
@@ -250,7 +251,7 @@ public class WaterIntakeController implements page {
         water8.setBlendMode(BlendMode.OVERLAY);
         water9.setBlendMode(BlendMode.OVERLAY);
         water10.setBlendMode(BlendMode.OVERLAY);
-        drinkLabel.setText(Double.toString(glassVolume*6));
+        drinkLabel.setText(String.valueOf(new DecimalFormat("#.#").format(glassVolume*6))+ " L");
         we.setWaterEntry(glassVolume*6);
         model.statsChanged();
     }
@@ -266,7 +267,7 @@ public class WaterIntakeController implements page {
         water8.setBlendMode(BlendMode.OVERLAY);
         water9.setBlendMode(BlendMode.OVERLAY);
         water10.setBlendMode(BlendMode.OVERLAY);
-        drinkLabel.setText(Double.toString(glassVolume*7));
+        drinkLabel.setText(String.valueOf(new DecimalFormat("#.#").format(glassVolume*7))+ " L");
         we.setWaterEntry(glassVolume*7);
         model.statsChanged();
     }
@@ -282,7 +283,7 @@ public class WaterIntakeController implements page {
         water8.setBlendMode(BlendMode.SRC_OVER);
         water9.setBlendMode(BlendMode.OVERLAY);
         water10.setBlendMode(BlendMode.OVERLAY);
-        drinkLabel.setText(Double.toString(glassVolume*8));
+        drinkLabel.setText(String.valueOf(new DecimalFormat("#.#").format(glassVolume*8))+ " L");
         we.setWaterEntry(glassVolume*8);
         model.statsChanged();
     }
@@ -298,7 +299,7 @@ public class WaterIntakeController implements page {
         water8.setBlendMode(BlendMode.SRC_OVER);
         water9.setBlendMode(BlendMode.SRC_OVER);
         water10.setBlendMode(BlendMode.OVERLAY);
-        drinkLabel.setText(Double.toString(glassVolume*9));
+        drinkLabel.setText(String.valueOf(new DecimalFormat("#.#").format(glassVolume*9))+ " L");
         we.setWaterEntry(glassVolume*9);
         model.statsChanged();
     }
@@ -314,7 +315,8 @@ public class WaterIntakeController implements page {
         water8.setBlendMode(BlendMode.SRC_OVER);
         water9.setBlendMode(BlendMode.SRC_OVER);
         water10.setBlendMode(BlendMode.SRC_OVER);
-        drinkLabel.setText(Double.toString(glassVolume*10));
+        drinkLabel.setText(String.valueOf(new DecimalFormat("#.#").format(glassVolume*10)) + " L");
+        //intensityLabel.setText(String.valueOf(new DecimalFormat("#.#").format(intensity)));
         we.setWaterEntry(glassVolume*10);
         model.statsChanged();
     }

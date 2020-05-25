@@ -18,7 +18,7 @@
                 <Font name="American Typewriter" size="20.0" />
             </font>
         </Label>
-        <AnchorPane fx:id="water1" layoutX="35.0" layoutY="35.0" prefHeight="50.0" prefWidth="40.0" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="40.0">
+        <AnchorPane fx:id="water1" layoutX="35.0" layoutY="35.0" prefHeight="50.0" prefWidth="40.0" styleClass="icons-pliancy" stylesheets="@../lifestyle.css" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="40.0">
             <children>
                 <ImageView fitHeight="42.0" fitWidth="45.0" layoutY="4.0" onMouseClicked="#intake1" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <image>
@@ -27,7 +27,7 @@
                 </ImageView>
             </children>
         </AnchorPane>
-        <AnchorPane fx:id="water2" layoutX="80.0" layoutY="35.0" prefHeight="42.0" prefWidth="45.0" AnchorPane.leftAnchor="88.0" AnchorPane.topAnchor="40.0">
+        <AnchorPane fx:id="water2" layoutX="80.0" layoutY="35.0" prefHeight="42.0" prefWidth="45.0" styleClass="icons-pliancy" stylesheets="@../lifestyle.css" AnchorPane.leftAnchor="88.0" AnchorPane.topAnchor="40.0">
             <children>
                 <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="8.0" layoutY="10.0" onMouseClicked="#intake2" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <image>
@@ -36,7 +36,7 @@
                 </ImageView>
             </children>
         </AnchorPane>
-        <AnchorPane fx:id="water3" layoutX="125.0" layoutY="55.0" prefHeight="42.0" prefWidth="43.0" AnchorPane.leftAnchor="129.5" AnchorPane.rightAnchor="129.5" AnchorPane.topAnchor="40.0">
+        <AnchorPane fx:id="water3" layoutX="125.0" layoutY="55.0" prefHeight="42.0" prefWidth="43.0" styleClass="icons-pliancy" stylesheets="@../lifestyle.css" AnchorPane.leftAnchor="129.5" AnchorPane.rightAnchor="129.5" AnchorPane.topAnchor="40.0">
             <children>
                 <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="-11.0" layoutY="-11.0" onMouseClicked="#intake3" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <image>
@@ -45,7 +45,7 @@
                 </ImageView>
             </children>
         </AnchorPane>
-        <AnchorPane fx:id="water4" layoutX="167.0" layoutY="35.0" prefHeight="42.0" prefWidth="45.0" AnchorPane.rightAnchor="88.0" AnchorPane.topAnchor="40.0">
+        <AnchorPane fx:id="water4" layoutX="167.0" layoutY="35.0" prefHeight="42.0" prefWidth="45.0" styleClass="icons-pliancy" stylesheets="@../lifestyle.css" AnchorPane.rightAnchor="88.0" AnchorPane.topAnchor="40.0">
             <children>
                 <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="4.0" layoutY="2.0" onMouseClicked="#intake4" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <image>
@@ -54,16 +54,16 @@
                 </ImageView>
             </children>
         </AnchorPane>
-        <AnchorPane fx:id="water5" layoutX="216.0" layoutY="41.0" prefHeight="42.0" prefWidth="45.0" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="40.0">
+        <AnchorPane fx:id="water5" layoutX="216.0" layoutY="41.0" prefHeight="42.0" prefWidth="51.0" styleClass="icons-pliancy" stylesheets="@../lifestyle.css" AnchorPane.rightAnchor="39.0" AnchorPane.topAnchor="40.0">
             <children>
-                <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="3.0" onMouseClicked="#intake5" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="2.0" onMouseClicked="#intake5" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="0.0">
                     <image>
                         <Image url="@../images/full_glass.png" />
                     </image>
                 </ImageView>
             </children>
         </AnchorPane>
-        <AnchorPane fx:id="water10" layoutX="222.0" layoutY="133.0" prefHeight="42.0" prefWidth="45.0" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="90.0">
+        <AnchorPane fx:id="water10" layoutX="222.0" layoutY="133.0" prefHeight="42.0" prefWidth="45.0" styleClass="icons-pliancy" stylesheets="@../lifestyle.css" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="90.0">
             <children>
                 <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="15.0" layoutY="-8.0" onMouseClicked="#intake10" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <image>
@@ -72,7 +72,7 @@
                 </ImageView>
             </children>
         </AnchorPane>
-        <AnchorPane fx:id="water9" layoutX="175.0" layoutY="129.0" prefHeight="42.0" prefWidth="45.0" AnchorPane.rightAnchor="88.0" AnchorPane.topAnchor="90.0">
+        <AnchorPane fx:id="water9" layoutX="175.0" layoutY="129.0" prefHeight="42.0" prefWidth="45.0" styleClass="icons-pliancy" stylesheets="@../lifestyle.css" AnchorPane.rightAnchor="88.0" AnchorPane.topAnchor="90.0">
             <children>
                 <ImageView fitHeight="42.0" fitWidth="45.0" onMouseClicked="#intake9" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <image>
@@ -81,7 +81,7 @@
                 </ImageView>
             </children>
         </AnchorPane>
-        <AnchorPane fx:id="water8" layoutX="125.0" layoutY="123.0" prefHeight="42.0" prefWidth="43.0" AnchorPane.leftAnchor="129.5" AnchorPane.rightAnchor="129.5" AnchorPane.topAnchor="90.0">
+        <AnchorPane fx:id="water8" layoutX="125.0" layoutY="123.0" prefHeight="42.0" prefWidth="43.0" styleClass="icons-pliancy" stylesheets="@../lifestyle.css" AnchorPane.leftAnchor="129.5" AnchorPane.rightAnchor="129.5" AnchorPane.topAnchor="90.0">
             <children>
                 <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="3.0" onMouseClicked="#intake8" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <image>
@@ -90,7 +90,7 @@
                 </ImageView>
             </children>
         </AnchorPane>
-        <AnchorPane fx:id="water7" layoutX="67.0" layoutY="123.0" prefHeight="42.0" prefWidth="45.0" AnchorPane.leftAnchor="88.0" AnchorPane.topAnchor="90.0">
+        <AnchorPane fx:id="water7" layoutX="67.0" layoutY="123.0" prefHeight="42.0" prefWidth="45.0" styleClass="icons-pliancy" stylesheets="@../lifestyle.css" AnchorPane.leftAnchor="88.0" AnchorPane.topAnchor="90.0">
             <children>
                 <ImageView fitHeight="42.0" fitWidth="45.0" onMouseClicked="#intake7" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <image>
@@ -99,7 +99,7 @@
                 </ImageView>
             </children>
         </AnchorPane>
-        <AnchorPane fx:id="water6" layoutX="10.0" layoutY="123.0" prefHeight="42.0" prefWidth="45.0" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="90.0">
+        <AnchorPane fx:id="water6" layoutX="10.0" layoutY="123.0" prefHeight="42.0" prefWidth="45.0" styleClass="icons-pliancy" stylesheets="@../lifestyle.css" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="90.0">
             <children>
                 <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="3.0" onMouseClicked="#intake6" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <image>

@@ -80,8 +80,10 @@ public class JournalController implements DateObserver, page {
         JournalEntry entry = journal.getCurrentEntry(model.getDate());
         if(entry != null){
             textArea.setText(entry.getEntry());
+            showJournal.setText(entry.getEntry());
         } else {
             textArea.setText("");
+           showJournal.setText("");
         }
     }
 }
