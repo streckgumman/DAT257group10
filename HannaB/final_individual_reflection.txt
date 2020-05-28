@@ -1,0 +1,64 @@
+What do I want to learn or understand better?
+
+A: När jag gick in i detta projektet hade jag hittills på Chalmers aldrig arbetat i grupp med personer från andra program. Jag hade endast arbetat med personer från min klass vilket gör att man har haft ungefär samma erfarenheter och ofta liknande arbetssätt på grund av att man läst exakt samma kurser innan. 
+
+B: I detta projekt fick jag chansen att arbeta med personer från ett annat program på Chalmers vilket gjorde att vi hade olika erfarenheter. Detta kan både göra det svårare att arbeta tillsammans då man har olika arbetssätt, men framförallt kan man också lära sig mycket av varandra.
+
+AB: Genom att ha ett öppet sinne och inte ett bestämt bästa sätt man tror på har jag kunnat samarbete bra med alla i gruppen. Jag har lärt mig massa tips och trix om allt från programmering till var man kan köpa god lunch på Chalmers. Vi har försökt att mixa så att alla får chansen att arbeta med någon som inte går i ens klass. Detta har gjort att alla fått utmana sig lite genom att bryta de arbetssätt man kanske är van vid och man har fått chansen att bryta sina trender och lära av någon annan. 
+
+A: Detta är det första riktiga projekt inom IT som jag jobbat i. Innan detta projekt hade jag bara gjort labbar i de programmerings kurser jag läst men aldrig haft ett längre projekt i en större grupp. Detta gjorde mig lite nervös till en början men nu efter kursens gång känner jag att det var väldigt roligt. 
+
+B: Jag vill känna mig mer trygg i IT projekt likt detta, hur processen går till och vad man kan välja för arbetssätt.
+
+AB: Genom användning av Scrum fick vi snabbt ett utarbetat arbetssätt som gruppen förhöll sig till vilket skapade trygghet för mig. Därför tror jag att det är bra i framtida projekt att ha ett tydligt arbetssätt där man har en plan för planering men också reflektion och utvärdering. Eftersom de som läser IT har gjort liknande projekt tidigare, fast inte mha. Scrum, så hade de lite koll på saker som funkat bättre eller sämre och vi kunde därmed dra lärdomar direkt utifrån vad de berättade. Det är något jag tar med mig och till nästa projekt kan jag vara en person som kommer med inputs från tidigare projekt. 
+
+A: Även om denna kursen handlar mer om processen så vill jag ändå lyfta kodandet också. Vid starten av projektet kände jag mig sämre än de flesta andra i gruppen och var inte trygg i kodandet då jag aldrig gjort något kodprojekt i liknande storlek innan. Detta gjorde att jag var lite mer tillbakadragen i början. Efter ett par gånger insåg jag dock att jag hade bättre koll än vad jag trodde och mycket som jag tidigare lärt mig som små delar för sig, t.ex. observers, fick helt plötsligt ett sammanhang för första gången på hela denna IT-basen. Tack vare detta har jag nu ännu mer självförtroende när det kommer till kodande. 
+
+B: Jag vill fortsätta förbättra mitt självförtroende när det kommer till kodande. Till nästa projekt ska jag inte gå in med inställningen att jag är sämst utan fokusera på vad jag kan och bara testa.
+
+AB: Genom att kolla tillbaka på detta projekt så vet jag att jag kan mer än jag tror vilket jag tror är viktigt att ha i bakhuvudet när jag nästa gång går in i ett större och till en början kanske förvirrande projekt. Det som är så bra med att arbeta i par, vilket vi har gjort, är ju att om man råkar hamna fel så finns det någon annan som också är med och tänker och söker efter en lösning. Att jobba med kodande ger en chansen att testa sig fram och genom användning av Git kan man ju också backa vilket för mig har varit en trygghet. Jag har kunnat testa mig fram och ändå vetat att någon mer står vid min sida, samt att vi bara kan backa om något blir fel. Detta har gett mig trygghet och är något jag tar med mig för att fortsätta känna såhär i framtida projekt.
+
+
+
+How can I help someone else, or the entire team, to learn something new?
+
+A: I början av kursen var det flera i gruppen som inte visste vad t.ex. en business model canvas var samt som inte jobbat med en extern stakeholder som hela tiden var i fokus när det kom till vad som skulle skapa värde. Eftersom jag haft flera kurser innan där jag jobbat med både business model canvas men också mycket med hur man kan mäta värde, hur värde klassificeras olika för olika personer etc. så kunde jag föra detta vidare till resten av gruppen under de möten med tillhörande diskussioner som vi hade. 
+
+B: Jag vill i framtida projekt fortsätta dela kunskap jag besitter som andra i gruppen kanske vet mindre om (och vice versa såklart). Genom att göra detta säkerhetsställer man att hela gruppen är på samma bana och att vi tar vara på varandras kunskaper.
+
+AB: Möten är viktiga för att samla gruppen och skapa diskussion och reflektion. I vårt fall var det extra viktigt i början, men också under vägens gång för att påminna om t.ex. vad värde kan innebära. Utöver det är det väldigt bra att jobba i mixade team med olika kunskaper och erfarenheter för att kunna sprida kunskap likt jag gjorde med business model canvas och värdeskapande.
+
+A: Genom att jobba med parprogrammering och genom att komma med en ganska ren palett när det kommer till olika sätt att arbeta med parprogrammering så har jag kunnat hitta vissa saker som fungerar bättre och sämre oavsett vem jag jobbat med. Med detta vill jag säga att jag varit öppen för förändring och försökt förmedla vidare tips om hur man kan jobba till min nästa team partner.
+
+B: Jag vill fortsätta vara öppen för ny kunskap och vara noga med att föra det jag lär mig vidare till fler personer.
+
+AB: Detta kan jag göra genom att arbeta med olika personer för att dels ta vara på kunskap men också för att få chansen att sprida det jag lärt mig vidare.
+
+A: En annan grej jag tyckte jag bidrog med var att ofta vara lite ledande i våra möten. Speciellt när vi kört digitalt har det varit lite svårt att få igång en bra mötestruktur och när man kommer in i en ny grupp som i detta projekt vill man inte ta för mycket plats i början. Efter att ha gått i en klass där väldigt många ser sig själva som den som tar ledarrollen i en grupp så har jag lärt mig att backa lite vilket jag är väldigt glad och stolt över att vara medveten om. Men i denna gruppen var det snarare bra att jag tog ett steg fram ibland och drev på mötet framåt.
+
+B: Att anpassa sig i nya grupper är viktigt och jag tror inte riktigt på att man har en bestämd roll som man tar oavsett grupp. Även om man är en person som brukar finnas i bakgrunden och vara duktig på att lyssna eller om man är en person som gärna tar ledarrollen så tror jag att dessa kan förändras väldigt i olika grupper. Det fick jag bevis på genom att arbete i detta projekt och ett annat projekt med andra personer samtidigt. 
+
+AB: För att lyckas uppnå detta gäller det att vara öppen och flexibel för att se var man behövs i en grupp. Det kan man göra genom att känna av läget i början, men också genom att såklart prata med varandra. Att ha en öppen kommunikation inom gruppen tror jag är jätteviktigt för att inte det ska känns som att någon inte tar för sig eller att någon tar för sig för mycket. Man kan inte tro att alla vill stå i centrum men man måste ge alla chansen.
+
+
+What is my contribution towards the team’s use of Scrum?
+
+A: I detta project har jag varit ansvarig för två specifika grejer när det kommer till Scrum. Jag har fixat vårat burn-up chart och uppdaterat det varje vecka samt förklarat för gruppen vad det säger oss och hur vi ligger till. Med burn-up chartet har jag också skapat diskussion kring huruvida det varit representabelt för oss eller inte. Sedan har jag även varit Scrum master för delen Retrospective. Både dessa ansvarsområden har jag läst på extra genom att t.ex. kolla på youtube videos. Denna nya kunskap har jag sedan kunna föra vidare till gruppen genom de möten vi har haft.
+
+B: Jag skulle gärna testa att inneha alla delroller av en Scrum master någon gång för att se hur rollen då förändras genom att ha helhetstänket. Jag skulle gärna också vilja lära mig av andra som haft Scum master rollen samt andra som arbetat med olika typer av KPI:er. I min grupp blev ju etta svårt då vi delade ut ansvarssområdena.
+
+AB: Genom att diskutera med andra grupper så skulle jag kunna få bättre koll på vilka KPI:er de upplevt fungera bra eller mindre bra för ett ganska kort projekt likt det vi gjort. Jag skulle också kunna få höra om hur de delat upp Scrum master rollen samt hur de upplevt att ha det ansvaret. Hur gick deras möten till? Hur ledde Scrum mastern diskussion och reflektion? Att höra andras tankar hade gett bra input för att fortsätta växa in i rollen.
+
+A: En annan grej som jag tycker jag bidragit med när det kommer till Scrum är att jag verkligen ser vikten av både planering och reflektion och att det är viktigt att ge detta tid varje vecka. Ibland har jag fått bromsa gruppen när vi bara velat komma igång och koda. Jag tror det har gynnat oss i slutändan att ta några extra minuter till både planering och reflektion, även om jag ibland känt mig lite tjatig.
+
+B: I kommande projekt kan det vara bra om alla är på samma tankebana när det kommer till hur man upplever planering och reflektion bidrar till arbetet. Det skulle också kunna ha gjorts ännu mer i vår grupp för att undvika att samma problem uppstår under flera sprintar eller att prioriteringen av user stories blir fel.
+
+AB: Jag tror att det kan vara bra att vid start ha ett möte där man tydligt bestämmer vad som ska gås igenom varje vecka och sätta upp några frågor som man sen alltid går igenom. Det kan också vara bra att utvärdera vad man kan ha undvikit för problem genom att reflektera över tidigare liknande och på så sätt se värdet i reflektionen. Utöver det tror jag att Scrum master rollen är viktig här för att leda detta arbete och verkligen se till att planering och reflektion ges den tid det behöver.
+
+What is my contribution towards the team’s deliveries?
+
+A: Utöver det jag beskrivit tidigare om vad jag kunnat lära andra i min grupp så har jag bidragit genom att vara med på möten och vara aktivt i vår utveckling. Genom mötena har jag bidragit med mina tankar om projektet och projektets gång. Vi har jobbat i par med programmeringen ändå från start och jag har efter fem veckor testat att arbeta med alla utom en i denna grupp. Vi har turats om att vara den som skriver koden och det har funkat bra både när vi suttit tillsammans men också när vi suttit via zoom. Till en början kände jag mig lite osäker, men med tiden kom ett stigande självförtroende och jag förstod att det inte är det att jag inte kan, det är bara det att vi kan lite olika grejer.
+
+B: Parprogrammering fungerade väldigt bra och jag ser absolut att jag skulle föreslå det i en ny grupp i något kommande projekt. Jag vill fortsätta ha min aktiva inställning i grupparbeten där jag är delaktig och kommer med förslag samt arbetar aktivt och kontinuerligt.
+
+AB: Jag kommer föreslå parprogrammering i framtida projekt om möjligt då jag tyckt det varit väldigt givande. I framtiden ska jag dock försöka ha mer självförtroende när det kommer till kodandet redan från start, nu tog det ändå 1-2 sprint innan mitt självförtroende var bra. Det är viktigt att försöka se vad man kan istället för vad man inte kan. Sen vill jag fortsätta vara aktiv genom att delta aktivt i möten ör att då få möjlighet att ge mina tankar och åsikter samtidigt som jag får lyssna på andras. 
